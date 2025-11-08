@@ -57,15 +57,24 @@
     "org/gnome/shell/extensions/burn-my-windows" = {
       enable = true;
       activation-mode = "normal";
+      effect = "apparition"; 
       
-
-
-      extraConfig = ''
-        
-        activation-mode='normal'
-        effect='aura glow'
-
-      '';
+      # Globale Animationseinstellungen
+      duration = 1.5;
+    };
+    # Apparition-spezifische Einstellungen
+    "org/gnome/shell/extensions/burn-my-windows/apparition" = {
+      # Zufälligkeit des Einsaugpunktes
+      randomness = 0.7;  # 0.0 - 1.0
+      
+      # Wirbelintensität
+      swirl-intensity = 0.8;  # 0.0 - 1.0
+      
+      # Wackelintensität
+      wobble-intensity = 0.6;  # 0.0 - 1.0
+      
+      # Saugintensität
+      suction-intensity = 0.9;  # 0.0 - 1.0
     };
 
 
