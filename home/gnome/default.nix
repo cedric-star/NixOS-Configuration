@@ -5,7 +5,6 @@
     gnomeExtensions.user-themes
     gnomeExtensions.blur-my-shell
     gnomeExtensions.burn-my-windows
-    gnomeExtensions.transparent-top-bar-adjustable-transparency
 
     dconf-editor
     tela-icon-theme
@@ -34,6 +33,7 @@
         "firefox.desktop"
         "org.gnome.Geary.desktop"
         "org.gnome.Calendar.desktop"
+        "org.gnome.Nautilus.desktop"
       ];
     };
 
@@ -45,6 +45,7 @@
 
 ### Transparenz von Fenstern beim verschieben
     "org/gnome/shell/extensions/transparent-window-moving" = {
+      enable = true;
       opacity = 70; # Noch transparenter während Bewegung
     };
 
@@ -53,7 +54,7 @@
     "org/gnome/shell/extensions/burn-my-windows" = {
       enable = true;
       activation-mode = "normal";
-      effect = "apparition"; 
+      effect = "Apparieren"; 
       
       # Globale Animationseinstellungen
       duration = 1.5;
