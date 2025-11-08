@@ -14,6 +14,7 @@
   ];
 
 
+
 ### Hintergrundbild importieren
   home.file.".local/share/wallpapers/b1.png".source = ./wallpapers/b1.png;
 
