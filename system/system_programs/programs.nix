@@ -26,52 +26,49 @@
 
 
 ### IDE's ###
-#    jetbrains.webstorm
-#    jetbrains.idea-community
-#    jetbrains.pycharm-community
-#    jetbrains.clion
-#    jetbrains.datagrip
+    jetbrains.webstorm
+    jetbrains.idea-community
+    jetbrains.pycharm-community
+    jetbrains.clion
+    jetbrains.datagrip
 
 
 ### Kommunikations ###
-#    discord
-#    signal-desktop
-#    whatsie
+    discord
+    signal-desktop
+    whatsie
 
 
 ### Dev Tools ###
     git
-#    nodejs_24
-#    ihaskell
-#    docker
-#    docker-compose
+    nodejs_24
+    ihaskell
+    docker
+    docker-compose
 
     
 ### Multimedia ###
-#    lmms
-#    spotify
+    lmms
+    spotify
     gimp
 
 
 ### inf programme ###
-#    gftp
-#    gns3-gui
-#    kicad
-#    virtualbox
-#    virt-manager
-#    dosbox
-#    doxbox-x
+    gftp
+    gns3-gui
+    kicad
+    virtualbox
+    virt-manager
+    dosbox
+    doxbox-x
 #    wineWowPackages.stable # oder wineWowPackages.wayland für wine
     eduvpn-client
 
 
 ### Spiele/Launcher ###
-#    steam
-#    prism#minecraft
-#    heroic #epic games
-
-
-#fehlt: (java: jre, jdk), winboat
+    steam
+    prism#minecraft
+    heroic #epic games
   ];
 
   # Install firefox.
