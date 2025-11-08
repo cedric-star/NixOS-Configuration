@@ -5,6 +5,7 @@
     gnomeExtensions.user-themes
     gnomeExtensions.blur-my-shell
     gnomeExtensions.burn-my-windows
+    gnomeExtensions.transparent-window-moving
 
     dconf-editor
     tela-icon-theme
@@ -24,6 +25,8 @@
         "user-theme@gnome-shell-extensions.gcampax.github.com"
         "blur-my-shell@aunetx"
         "burn-my-windows@schneegans.github.com"
+        "transparent-window-moving@noobsai.github.com"
+
         "transparent-window-moving@noobsai.github.com"
       ];
 
