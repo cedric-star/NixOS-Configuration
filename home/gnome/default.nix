@@ -58,7 +58,7 @@
     "org/gnome/shell/extensions/burn-my-windows" = {
       enable = true;
       activation-mode = "normal";
-      effect = "Apparieren"; 
+      effect = "apparition"; 
       
       # Globale Animationseinstellungen
       duration = 1.5;
