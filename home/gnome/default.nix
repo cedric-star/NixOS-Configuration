@@ -61,6 +61,8 @@
 
 
       extraConfig = ''
+        activation-mode='normal'
+        effect='aura glow'
         
       '';
     };
