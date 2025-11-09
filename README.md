@@ -21,3 +21,7 @@
  - für verschiedene pakete
  - und systemsachen
  - configoptionen nachlesen
+
+
+ # funktioniert schon:
+ 
