@@ -23,5 +23,6 @@
  - configoptionen nachlesen
 
 
- # funktioniert schon:
+ # funktioniert noch nicht:
+ - jdk korrekt in intellij einbinden (nix entwicklungsumgebung???)
  
