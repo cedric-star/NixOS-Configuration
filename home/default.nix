@@ -32,7 +32,7 @@
 
   programs.idea-community = {
     enable = true;
-    package = pkgs.jetbrains-community;
+    #package = pkgs.jetbrains.idea-community;
     jdk = pkgs.jetbrains.jdk;
   };
 
