@@ -10,7 +10,7 @@
     #gradle
   ];
 
-  environment.sessionVariables = {
-      JAVA_HOME = "${pkgs.openjdk21}/";
-  };
+  #environment.sessionVariables = {
+   #   JAVA_HOME = "${pkgs.openjdk21}/";
+ # };#
 }
