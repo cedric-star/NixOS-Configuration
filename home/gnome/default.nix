@@ -55,20 +55,9 @@
 
 ### Schließenanimation für alle Fenster
     "org/gnome/shell/extensions/burn-my-windows" = {
-      active-mode = "default";
-      effect = "aura-glow";
+      active-profile = "aura";
+      effect = "aura";
 
-    };
-
-    "org/gnome/shell/extensions/burn-my-windows/aura-glow" = {
-        animation-time = 394;
-        color-randomize = true;
-        color-randomize-hue = 0.00;
-        effect-speed = 1.07;
-        color-saturation = 0.21;
-        block-size = 1.00;
-        block-hardness = 1.00;
-        blur-size = 23.07;
     };
 
 
