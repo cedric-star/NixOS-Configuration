@@ -67,12 +67,14 @@
 
 ### Spiele/Launcher ###
     steam
+    steam-run
     prism#minecraft
     heroic #epic games
   ];
 
   # Install firefox.
   programs.firefox.enable = true;
+  programs.steam.enable = true;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
