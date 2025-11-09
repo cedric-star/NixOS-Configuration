@@ -79,7 +79,6 @@
     };
 
 
-
 ### fenster klein, groß, schließen buttons dazutun
     "org/gnome/desktop/wm/preferences" = {
       button-layout = "appmenu:minimize,maximize,close";
