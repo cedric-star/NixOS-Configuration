@@ -56,26 +56,17 @@
 
 ### Schließenanimation für alle Fenster
     "org/gnome/shell/extensions/burn-my-windows" = {
-      enable = true;
-      activation-mode = "normal";
-      effect = "apparition"; 
-      
-      # Globale Animationseinstellungen
-      duration = 1.5;
-    };
-    # Apparition-spezifische Einstellungen
-    "org/gnome/shell/extensions/burn-my-windows/apparition" = {
-      # Zufälligkeit des Einsaugpunktes
-      randomness = 0.7;  # 0.0 - 1.0
-      
-      # Wirbelintensität
-      swirl-intensity = 0.8;  # 0.0 - 1.0
-      
-      # Wackelintensität
-      wobble-intensity = 0.6;  # 0.0 - 1.0
-      
-      # Saugintensität
-      suction-intensity = 0.9;  # 0.0 - 1.0
+      active-profile = "aura";
+      aura = {
+        animation-time = 394;
+        color-randomize = true;
+        color-randomize-hue = 0.00;
+        effect-speed = 1.07;
+        color-saturation = 0.21;
+        block-size = 1.00;
+        block-hardness = 1.00;
+        blur-size = 23.07;
+      };
     };
 
 
