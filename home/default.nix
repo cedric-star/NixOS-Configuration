@@ -25,8 +25,8 @@
   #home.file.".jdks/jetbrainsjdk21".source = "${pkgs.jetbrains.jdk}";
   #home.sessionVariables.JAVA_HOME = "$HOME/.jdks/jetbrainsjdk21";
   home.activation.copyJetBrainsJdk = lib.hm.dag.entryAfter ["writeBoundary"] ''
-    rm -rf "$HOME/.jdks/jetbrainsjdk21"
-    cp -r "${pkgs.jetbrains.jdk}" "$HOME/.jdks/jetbrainsjdk21"
+    rm -rf "$HOME/.jdks/testjdklink"
+    cp -r "${pkgs.jetbrains.jdk}" "$HOME/.jdks/testjdklink"
   '';
 
 
