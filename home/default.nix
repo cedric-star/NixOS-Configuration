@@ -19,6 +19,7 @@
   };
 
   programs.fish.enable = true;
+  programs.java.enable = true;
 
 ##############
 
