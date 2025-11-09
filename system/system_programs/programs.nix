@@ -16,6 +16,8 @@
     gcc                         # c lang
     glibc.dev                   # c header
     stdenv.cc.libc              # c libraries
+    #openjdk21
+    jetbrains-jdk-jcef
 
 
 ### Code Editoren ###
