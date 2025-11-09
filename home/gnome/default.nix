@@ -52,7 +52,6 @@
       opacity = 70; # Noch transparenter während Bewegung
     };
 
-
 ### Schließenanimation für alle Fenster
     "org/gnome/shell/extensions/burn-my-windows" = {
       active-profile = "aura";
