@@ -22,7 +22,10 @@
 
 
   #programs.java.enable = true;
-  home.file.".local/share/jdk".source = "${pkgs.openjdk21}";
+  home.file.".local/share/jdk" = {
+    source = "${pkgs.openjdk21}";
+    recursive = true;
+  };
   home.sessionVariables.JAVA_HOME = "$HOME/.local/share/jdk";
 
 ##############
