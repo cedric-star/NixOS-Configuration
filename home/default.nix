@@ -24,7 +24,7 @@
   #programs.java.enable = true;
   #home.file.".local/share/jdk".source = "${pkgs.openjdk21}";
   home.sessionVariables.JAVA_HOME = "$HOME/.local/share/jdk";
-  programs."jetbrains.idea-community" = {
+  programs.jetbrains.idea-community = {
     enable = true;
     jdk = pkgs.openjdk21;
   };
