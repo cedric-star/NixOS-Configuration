@@ -30,9 +30,9 @@
   #  cp -r "${pkgs.jetbrains.jdk}" "$HOME/.jdks/testjdklink"
   #'';
 
-  programs.idea-community = {
+  programs.idea = {
     enable = true;
-    #package = pkgs.jetbrains.idea-community;
+    package = pkgs.jetbrains.idea-community;
     jdk = pkgs.jetbrains.jdk;
   };
 
