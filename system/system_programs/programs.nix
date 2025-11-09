@@ -69,7 +69,6 @@
     steam
     prism#minecraft
     heroic #epic games
-    balatro
   ];
 
   # Install firefox.
