@@ -22,8 +22,8 @@
 
 
   #programs.java.enable = true;
-  home.file.".jdks/jetbrainsjdk21".source = "${pkgs.openjdk21}/lib/openjdk";
-  home.sessionVariables.JAVA_HOME = "$HOME/.jdks/jetbrainsjdk21";
+  home.file.".jdks/jdk21".source = "${pkgs.openjdk21}/lib/openjdk";
+  home.sessionVariables.JAVA_HOME = "$HOME/.jdks/jdk21";
 
 
 
