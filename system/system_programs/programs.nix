@@ -37,7 +37,7 @@
 
 ### Kommunikations ###
     discord
-    signal-desktop #unstable.signal-desktops
+    signal-desktop-bin #unstable.signal-desktops
     whatsie
 
 
