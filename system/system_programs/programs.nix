@@ -37,7 +37,7 @@
 
 ### Kommunikations ###
     discord
-    signal-desktop-bin #unstable.signal-desktops
+    signal-desktop
     whatsie
 
 
@@ -70,6 +70,7 @@
 ### Spiele/Launcher ###
     steam
     steam-run
+    protonup
     prism#minecraft
     heroic #epic games
   ];
