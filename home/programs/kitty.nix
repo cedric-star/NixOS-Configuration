@@ -47,6 +47,8 @@
       inactive_tab_background #121213
 
       # Tastenkombinationen für Kopieren & Einfügen
+      copy_on_select yes
+      
       map ctrl+shift+c copy_to_clipboard
       map ctrl+shift+v paste_from_clipboard
     '';
