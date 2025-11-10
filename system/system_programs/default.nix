@@ -4,5 +4,6 @@
   imports = [
     ./programs.nix
     ./python.nix
+    ./steam.nix
   ];
 }

@@ -6,7 +6,6 @@
     ./vscodium.nix
     ./kitty.nix
     ./nvim.nix
-    ./steam.nix
   ];
    
 }
