@@ -22,19 +22,8 @@
 
 
   #programs.java.enable = true;
-  #home.file.".jdks/jetbrainsjdk21".source = "${pkgs.jetbrains.jdk}";
-  #home.sessionVariables.JAVA_HOME = "$HOME/.jdks/jetbrainsjdk21";
-  
-  #home.activation.copyJetBrainsJdk = lib.hm.dag.entryAfter ["writeBoundary"] ''
-  #  rm -rf "$HOME/.jdks/testjdklink"
-  #  cp -r "${pkgs.jetbrains.jdk}" "$HOME/.jdks/testjdklink"
-  #'';
-
-  programs.idea = {
-    enable = true;
-    package = pkgs.jetbrains.idea-community;
-    jdk = pkgs.jetbrains.jdk;
-  };
+  home.file.".jdks/jetbrainsjdk21".source = "${pkgs.openjdk21}/lib/openjdk";
+  home.sessionVariables.JAVA_HOME = "$HOME/.jdks/jetbrainsjdk21";
 
 
 
