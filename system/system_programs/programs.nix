@@ -9,6 +9,7 @@
     home-manager                # home Konfigurationen 
     kitty                       # Terminal Emulator
     fish                        # geile Shell
+    wine
 
 
 ### Compiler ###                

@@ -45,6 +45,10 @@
       active_tab_background   #444444
       inactive_tab_foreground #c4c8c5
       inactive_tab_background #121213
+
+      # Tastenkombinationen für Kopieren & Einfügen
+      map ctrl+shift+c copy_to_clipboard
+      map ctrl+shift+v paste_from_clipboard
     '';
   };
 }
