@@ -69,10 +69,11 @@
 
 ### Spiele/Launcher ###
     steam
-    steam-run
-    protonup
-    prism#minecraft
-    heroic #epic games
+    steam-run                   # nötig für steam (RE)
+    protonup                    # proton GE in compatibility für ein spiel auswählen
+    mangohud                    # overlay mit fps, ...
+    prism                       # minecraft
+    heroic                      # epic games
   ];
 
   # Install firefox.
