@@ -14,7 +14,7 @@
     enable = true;
     defaultApplications = {
       "application/pdf" = [ "firefox.desktop" ];
-      "text/plain" = [ "org.gnome.TextEditor" ];
+      "text/plain" = [ "org.gnome.TextEditor.desktop" ];
       "image/png" = [ "org.gnome.Loupe.desktop" ];
       "image/jpg" = [ "org.gnome.Loupe.desktop" ];
       "image/gif" = [ "org.gnome.Loupe.desktop" ];
