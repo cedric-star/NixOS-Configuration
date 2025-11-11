@@ -30,7 +30,7 @@
         "burn-my-windows@schneegans.github.com"
         "transparent-window-moving@noobsai.github.com"
         "clipboard-indicator@tudmotu.com"
-        "logo-menu@honnip"
+        "logo-menu@gnome-shell-extensions.gcampax.github.com"
       ];
 
 
