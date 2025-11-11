@@ -23,6 +23,13 @@
   services.libinput.enable = true;
   services.touchegg.enable = true;
   # Enable the X11 windowing system.
+
+  services = {
+    displayManager.autoLogin.enable = true;
+    displayManager.autoLogin.user = "cedric";
+  };
+    
+  
   services.xserver = {
     enable = true;
     
@@ -31,11 +38,6 @@
     displayManager.gdm = { #anstatt gdm
       enable = true;
       wayland = true;
-
-      autoLogin = {
-        enable = true;
-        user = "cedric";
-      };
     };
     # Configure keymap in X11
     xkb = {
