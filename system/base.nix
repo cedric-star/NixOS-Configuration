@@ -31,6 +31,11 @@
     displayManager.gdm = { #anstatt gdm
       enable = true;
       wayland = true;
+
+      autoLogin = {
+        enable = true;
+        user = "cedric";
+      };
     };
     # Configure keymap in X11
     xkb = {
