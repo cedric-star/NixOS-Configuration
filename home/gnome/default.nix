@@ -9,7 +9,7 @@
     gnomeExtensions.clipboard-indicator
     gnomeExtensions.logo-menu
     gnomeExtensions.astra-monitor
-    gnomeExtensions.quick-settings-tweaker
+    gnomeExtensions.media-controls
 
     dconf-editor
     tela-icon-theme
