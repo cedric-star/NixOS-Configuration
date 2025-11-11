@@ -64,6 +64,7 @@
     virt-manager
     dosbox
     dosbox-x
+    notes
 #    wineWowPackages.stable # oder wineWowPackages.wayland für wine
     eduvpn-client
 
