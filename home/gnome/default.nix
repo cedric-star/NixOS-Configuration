@@ -87,7 +87,7 @@
       cursor-theme = "Adwaita";
     };
     "org/gnome/shell/extensions/user-theme" = {
-      name = "Qogir-win-dark"; 
+      name = "Qogir-win-dark";  
     };
 
 
