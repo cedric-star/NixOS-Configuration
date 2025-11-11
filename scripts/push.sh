@@ -1,8 +1,9 @@
 #!/bin/bash
 
-unset SSH_ASKPASS
+
 cat gittoken
 cd ../
+unset SSH_ASKPASS
 git push origin main
 ###clear
 
