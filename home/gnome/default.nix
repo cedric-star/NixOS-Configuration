@@ -9,7 +9,6 @@
     gnomeExtensions.clipboard-indicator
     gnomeExtensions.logo-menu
     gnomeExtensions.astra-monitor
-    gnomeExtensions.arcmenu
 
     dconf-editor
     tela-icon-theme
@@ -35,7 +34,6 @@
         "clipboard-indicator@tudmotu.com"
         "logomenu@aryan_k"
         "monitor@astraext.github.io"
-        "arcmenu@arcmenu.com"
       ];
 
 
