@@ -54,6 +54,11 @@
       symbolic-icon = true;
     };
 
+    "org/gnome/shell/extensions/astra-monitor" = {
+      compact-mode = true;
+
+    };
+
 ### Blur My Shell alles blurryyyy
     "org/gnome/shell/extensions/blur-my-shell" = {
       blur = true;
