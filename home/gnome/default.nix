@@ -44,7 +44,7 @@
       ];
     };
 
-    "org/gnome/shell/extensions/logomenu" = {
+    "org/gnome/shell/extensions/logo-menu" = {
       menu-button-icon-image = 23;
       menu-button-icon-size = 24;
       symbolic-icon = true;
