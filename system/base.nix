@@ -79,5 +79,30 @@
 
 
 
+
+  programs.dconf.enable = true;
+
+  programs.dconf.settings = {
+    "org/gnome/login-screen" = {
+      banner-message-enable = true;
+      banner-message-text = "Willkommen!";
+
+      # Hintergrundbild
+      background = "file:///etc/gdm/background.jpg";
+    };
+  };
+
+  # Bild bereitstellen
+  environment.etc."gdm/background.jpg".source = ./home/gnome/b2.png;
+
+
+
+
+
+
+
+
+
+
   system.stateVersion = "25.05"; 
 }
