@@ -6,6 +6,7 @@
     gnomeExtensions.blur-my-shell
     gnomeExtensions.burn-my-windows
     gnomeExtensions.transparent-window-moving
+    gnomeExtensions.clipboard-indicator
 
     dconf-editor
     tela-icon-theme
@@ -27,7 +28,7 @@
         "blur-my-shell@aunetx"
         "burn-my-windows@schneegans.github.com"
         "transparent-window-moving@noobsai.github.com"
-
+        "clipboard-indicator@tudmotu.com"
       ];
 
 
