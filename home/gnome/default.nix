@@ -33,6 +33,7 @@
         "transparent-window-moving@noobsai.github.com"
         "clipboard-indicator@tudmotu.com"
         "logomenu@aryan_k"
+        "monitor@astraext.github.io"
       ];
 
 
