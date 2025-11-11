@@ -24,7 +24,6 @@
 
 
 # weitere Extensions für Gnome:
-- clipboard indicator
 - logo menu -> nixos logo oben links
 - quick settings tweaker (neotifcations nach rechts, nicht mehr beim kalender)
 - arc menu (alle apps anzeigen lassen wie bei kali)
