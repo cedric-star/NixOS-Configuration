@@ -24,13 +24,13 @@
     "org/gnome/shell" = {
 
 ### Alle Erweiterungen
-      enabled-extensions = [
+      enabled-extensions = [#gnome-extensions list
         "user-theme@gnome-shell-extensions.gcampax.github.com"
         "blur-my-shell@aunetx"
         "burn-my-windows@schneegans.github.com"
         "transparent-window-moving@noobsai.github.com"
         "clipboard-indicator@tudmotu.com"
-        "logo-menu@gnome-shell-extensions.gcampax.github.com"
+        "logomenu@aryan_k"
       ];
 
 
