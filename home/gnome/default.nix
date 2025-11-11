@@ -8,6 +8,7 @@
     gnomeExtensions.transparent-window-moving
     gnomeExtensions.clipboard-indicator
     gnomeExtensions.logo-menu
+    gnomeExtensions.astra-monitor
 
     dconf-editor
     tela-icon-theme

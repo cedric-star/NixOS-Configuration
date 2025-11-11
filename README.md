@@ -24,7 +24,6 @@
 
 
 # weitere Extensions für Gnome:
-- logo menu -> nixos logo oben links
 - quick settings tweaker (neotifcations nach rechts, nicht mehr beim kalender)
 - arc menu (alle apps anzeigen lassen wie bei kali)
 - media control (bei videos/musik oben mittig pause und so titel angezeigt)
