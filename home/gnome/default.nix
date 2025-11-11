@@ -35,6 +35,7 @@
         "clipboard-indicator@tudmotu.com"
         "logomenu@aryan_k"
         "monitor@astraext.github.io"
+        "arcmenu@arcmenu.com"
       ];
 
 
