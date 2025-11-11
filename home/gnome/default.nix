@@ -24,6 +24,7 @@
     "org/gnome/shell" = {
 
 ### Alle Erweiterungen
+      disabled-extensions = [ ];
       enabled-extensions = [#gnome-extensions list
         "user-theme@gnome-shell-extensions.gcampax.github.com"
         "blur-my-shell@aunetx"
@@ -43,7 +44,7 @@
       ];
     };
 
-    "org/gnome/shell/extensions/logo-menu" = {
+    "org/gnome/shell/extensions/logomenu" = {
       menu-button-icon-image = 23;
       menu-button-icon-size = 24;
       symbolic-icon = true;
