@@ -24,11 +24,7 @@
   services.touchegg.enable = true;
   # Enable the X11 windowing system.
 
-  services = {
-    displayManager.autoLogin.enable = true;
-    displayManager.autoLogin.user = "cedric";
-  };
-    
+
   
   services.xserver = {
     enable = true;

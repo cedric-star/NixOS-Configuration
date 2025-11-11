@@ -14,6 +14,7 @@
     tela-icon-theme
     qogir-theme
     gnome-tweaks
+    gdm-settings
   ];
 
 
