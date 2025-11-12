@@ -24,7 +24,7 @@
   dconf.settings = {
     "org/gnome/shell" = {
       disabled-extensions = [ ];
-      enabled-extensions = [#gnome-extensions list
+      enabled-extensions = [#cli: 'gnome-extensions list'
         "blur-my-shell@aunetx"
         "clipboard-indicator@tudmotu.com"
         "logomenu@aryan_k"
