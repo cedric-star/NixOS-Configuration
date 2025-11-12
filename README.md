@@ -21,8 +21,6 @@
  - für verschiedene pakete
  - und systemsachen
  - configoptionen nachlesen
-
-
-# weitere Extensions für Gnome:
-- libvirt
+- nixos-rebuild switch --rollback
+ - wenn was wirklich schief läuft zurückgehen
  

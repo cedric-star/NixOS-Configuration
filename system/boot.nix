@@ -7,11 +7,12 @@
     enable = true;
     efiSupport = true;
     device = "nodev";  # Wichtig für EFI-Installation!
-    # useOSProber = true;  # Optional: falls du andere OS hast
   };
   
   boot.loader.efi = {
     canTouchEfiVariables = true;
     efiSysMountPoint = "/boot";
   };
+
+  boot.loader.systemd-boot.configurationLimit = 20;
 }

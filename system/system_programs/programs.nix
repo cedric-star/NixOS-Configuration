@@ -23,7 +23,7 @@
 
 ### Code Editoren ###
     vscodium                    # codium
-    vscode                      # nur für copilot (brauch ich doch eigntlich nicht hihi)
+    #vscode                      # nur für copilot (brauch ich doch eigntlich nicht hihi)
     vim                         # vim halt
     neovim                      # nvim halt
 

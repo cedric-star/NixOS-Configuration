@@ -10,6 +10,7 @@
     flags = ["-L"];
   };
 }
+#für zeiten: man systemd.time
 #               minutely → *-*-* *:*:00
 #                 hourly → *-*-* *:00:00
 #                  daily → *-*-* 00:00:00
