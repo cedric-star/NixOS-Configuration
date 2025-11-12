@@ -2,7 +2,7 @@
 
 {
   imports = [
-    ./settings.nix
     ./extensions
+    ./settings.nix
   ];
 }
