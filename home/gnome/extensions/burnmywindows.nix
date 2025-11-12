@@ -11,10 +11,9 @@
       disabled-extensions = [];
     };
   ### Schließenanimation für alle Fenster
-    #"org/gnome/shell/extensions/burn-my-windows" = {
+    "org/gnome/shell/extensions/burn-my-windows" = {
       #active-profile = "default";
-     # effect = "aura-glow";
-
-    #};
+      effect = "aura-glow";
+    };
   };  
 }
