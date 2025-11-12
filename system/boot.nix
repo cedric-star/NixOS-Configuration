@@ -11,7 +11,8 @@
       owner =  "shvchk";
       repo = "fallout-grub-theme";
       rev = "master";
-      sha256 = "0000000000000000000000000000000000000000000000000000";
+      sha256 = "iQU1Rv7Q0BFdsIX9c7mxDhhYaWemuaNRYs+sR1DF0Rc";
+      # um hahs herauszufinden: fehlerhaften eintragen, rebuilden, aus fehlermeldug kopieren
     };
   };
   
