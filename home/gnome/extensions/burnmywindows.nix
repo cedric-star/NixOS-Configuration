@@ -5,9 +5,17 @@
     gnomeExtensions.burn-my-windows
   ];
 
-  home.file.".config/burn-my-windows/profiles/1762983870745102.conf" = ''
-    hallo
+  home.file.".config/burn-my-windows/profiles/1762983870745102.conf" = {
+    text = ''
+[burn-my-windows-profile]
+aura-glow-enable-effect=true
+aura-glow-animation-time=602
+fire-enable-effect=false
   '';
+  force = true;  # Überschreibt vorhandene Datei
+  };
+
+
   dconf.settings = {
     "org/gnome/shell" = {
       enabled-extensions = [ "burn-my-windows@schneegans.github.com"];
