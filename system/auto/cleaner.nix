@@ -2,7 +2,7 @@
 
 {
 ### Garbage Collection (/nix/store)
-  nix-gc = {
+  nix.gc = {
     automatic = true;
     dates = "daily";
   };
