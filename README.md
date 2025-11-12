@@ -24,5 +24,5 @@
 
 
 # weitere Extensions für Gnome:
-
+- libvirt
  

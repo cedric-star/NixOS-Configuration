@@ -48,10 +48,6 @@
     pulse.enable = true;
   };
 
-
-
-  virtualisation.docker.enable = true;
-
   users.users.cedric = {
     isNormalUser = true;
     description = "cedric";

@@ -47,6 +47,10 @@
         "org.gnome.Nautilus.desktop"
       ];
     };
+    "org/virt-manager/virt-manager/connections" = {
+      autoconnect = ["qemu:///system"];
+      uris = ["qemu:///system"];
+    };
 
     "org/gnome/shell/extensions/Logo-menu" = {
       menu-button-icon-image = 23;
