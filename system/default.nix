@@ -6,6 +6,7 @@
     ./boot.nix
     ./networking.nix
     ./system_programs
+    ./auto
     ./virt.nix
   ];
 }
