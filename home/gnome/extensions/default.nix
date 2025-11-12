@@ -34,5 +34,9 @@
         "burn-my-windows@schneegans.github.com"
       ];
     };
+
+    "org/gnome/shell/extensions/clipboard-indicator" = {
+      clear-on-boot = true;
+    };
   };
 }
