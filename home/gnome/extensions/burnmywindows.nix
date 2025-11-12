@@ -7,7 +7,7 @@
 
   dconf.settings = {
     "org/gnome/shell" = {
-      enabled-extensions = [ "burn-my-windows@schneegans.github.com "];
+      enabled-extensions = [ "burn-my-windows@schneegans.github.com"];
       disabled-extensions = [];
     };
   ### Schließenanimation für alle Fenster
