@@ -4,7 +4,6 @@
   imports = [
     ./burnmywindows.nix
     ./transparentwindowmoving.nix
-    ./userthemes.nix
     ./astramonitor.nix
     ./blurmyshell.nix
     ./logomenu.nix
