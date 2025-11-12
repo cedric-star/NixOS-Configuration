@@ -16,6 +16,7 @@ fire-enable-effect=false
   };
 
 
+
   dconf.settings = {
     "org/gnome/shell" = {
       enabled-extensions = [ "burn-my-windows@schneegans.github.com"];
