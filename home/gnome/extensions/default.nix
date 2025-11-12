@@ -7,7 +7,6 @@
   home.packages = with pkgs; [
     gnomeExtensions.user-themes
     gnomeExtensions.blur-my-shell
-    gnomeExtensions.burn-my-windows
     gnomeExtensions.transparent-window-moving
     gnomeExtensions.clipboard-indicator
     gnomeExtensions.logo-menu
@@ -26,7 +25,6 @@
       enabled-extensions = [#gnome-extensions list
         "user-theme@gnome-shell-extensions.gcampax.github.com"
         "blur-my-shell@aunetx"
-        "burn-my-windows@schneegans.github.com"
         "transparent-window-moving@noobsai.github.com"
         "clipboard-indicator@tudmotu.com"
         "logomenu@aryan_k"
@@ -61,10 +59,6 @@
       opacity = 70; # Noch transparenter während Bewegung
     };
 
-### Schließenanimation für alle Fenster
-    "org/gnome/shell/extensions/burn-my-windows" = {
-      active-profile = "aura-glow";
-      effect = "aura-glow";
-    };
+
   };
 }
