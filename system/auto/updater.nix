@@ -1,14 +1,20 @@
 { config, lib, pkgs, inputs, ...}:
 
 {
+  # update flakes
   system.autoUpgrade = {
     enable = true;
     flake = "/etc/nixos";
     operation = "switch"; # Änderung sofort übernehmen
     dates = "weekly";
 
-    flags = ["-L"];
+    flags = [
+      "--update-input" #flake updaten
+      "nixpkgs"        # pakete von flake updaten 
+      "-L"];
   };
+
+
 }
 #für zeiten: man systemd.time
 #               minutely → *-*-* *:*:00
