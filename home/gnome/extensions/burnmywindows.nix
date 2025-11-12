@@ -9,8 +9,14 @@
     text = ''
 [burn-my-windows-profile]
 aura-glow-enable-effect=true
-aura-glow-animation-time=602
+aura-glow-animation-time=443
 fire-enable-effect=false
+aura-glow-speed=0.0
+aura-glow-edge-size=0.68000000000000005
+aura-glow-saturation=0.14000000000000001
+aura-glow-random-color=false
+aura-glow-blur=0.0
+aura-glow-start-hue=0.70999999999999996
   '';
   force = true;  # Überschreibt vorhandene Datei
   };
