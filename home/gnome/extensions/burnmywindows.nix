@@ -14,6 +14,10 @@
     "org/gnome/shell/extensions/burn-my-windows" = {
       #active-profile = "default";
       effect = "aura-glow";
+
+      extraConfig = ''
+        hallo
+      '';
     };
   };  
 }
