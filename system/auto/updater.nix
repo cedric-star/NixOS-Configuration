@@ -8,7 +8,7 @@
     dates = "weekly";
 
     flags = ["-L"];
-  }
+  };
 }
 #               minutely → *-*-* *:*:00
 #                 hourly → *-*-* *:00:00
