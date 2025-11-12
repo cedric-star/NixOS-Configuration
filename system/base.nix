@@ -50,13 +50,17 @@
 
 
 
+  virtualisation.docker.enable = true;
+
   users.users.cedric = {
     isNormalUser = true;
     description = "cedric";
-    extraGroups = [ "networkmanager" "wheel" "input"];
+    extraGroups = [ "networkmanager" "wheel" "input" "docker"];
     packages = with pkgs; [
     ];
   };
+
+
 
   system.stateVersion = "25.05"; 
 }
