@@ -1,6 +1,9 @@
 { config, pkgs, ... }:
 
 {
+  imports = [
+    ./burnmywindows.nix
+  ];
   home.packages = with pkgs; [
     gnomeExtensions.user-themes
     gnomeExtensions.blur-my-shell
@@ -9,7 +12,6 @@
     gnomeExtensions.clipboard-indicator
     gnomeExtensions.logo-menu
     gnomeExtensions.astra-monitor
-    gnomeExtensions.media-controls
   ];
 
 
@@ -63,17 +65,6 @@
     "org/gnome/shell/extensions/burn-my-windows" = {
       active-profile = "aura-glow";
       effect = "aura-glow";
-
     };
-
-
-    
-
-
-
-
-
-
-   
   };
 }
