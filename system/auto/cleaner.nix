@@ -10,7 +10,7 @@
 ### Store Optimisation
   nix.optimise = {
     automatic = true;
-    dates = "daily";
+    dates = [ "daily" ];
   };
 
 ### Boot Generations
