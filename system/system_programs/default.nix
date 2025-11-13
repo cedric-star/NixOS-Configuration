@@ -18,6 +18,7 @@
       "image/png" = [ "org.gnome.Loupe.desktop" ];
       "image/jpg" = [ "org.gnome.Loupe.desktop" ];
       "image/gif" = [ "org.gnome.Loupe.desktop" ];
+      "image/jpeg" = [ "org.gnome.Loupe.desktop" ];
     };
   };
 }
