@@ -13,9 +13,13 @@
 
 ### Theming
     lxappearance
-    gtk-engine-murrine    # Für GTK2-Themes
-    gtk_engines          # Weitere GTK-Engines
+    gtk3
+    gtk2
     gsettings-desktop-schemas
+    glib
+    gtk-engine-murrine
+    gtk_engines
+    hicolor-icon-theme
 
 
 ### Compiler ###                
