@@ -6,7 +6,7 @@
       autofg-bar = false;
       bgalpha = 0.0;
       bradius = 20;
-      bwidth = 0;
+      bwidth = 0.0;
       candy1 = ["1.000" "0.000" "0.561"];
       candy2 = ["1.000" "0.000" "0.561"];
       candy3 = ["1.000" "0.000" "0.561"];
