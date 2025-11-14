@@ -8,6 +8,7 @@
     ./blurmyshell.nix
     ./logomenu.nix
     ./clipboardindicator.nix
+    ./openbar.nix
   ];
 
 
