@@ -28,7 +28,7 @@
       font = "Adwaita Mono Bold 10";
 
       height = 30;
-      hpad = 2.3
+      hpad = 2.3;
     };
   };
 }
