@@ -27,13 +27,14 @@
     "org/gnome/shell" = {
       disabled-extensions = [ ];
       enabled-extensions = [#cli: 'gnome-extensions list'
-        "blur-my-shell@aunetx"
+        #"blur-my-shell@aunetx"
         "clipboard-indicator@tudmotu.com"
         "logomenu@aryan_k"
         "monitor@astraext.github.io"
         "user-theme@gnome-shell-extensions.gcampax.github.com"
         "transparent-window-moving@noobsai.github.com" 
         "burn-my-windows@schneegans.github.com"
+        "openbar@neuromorph"
       ];
     };
   };
