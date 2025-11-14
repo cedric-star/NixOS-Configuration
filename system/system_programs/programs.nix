@@ -10,7 +10,12 @@
     kitty                       # Terminal Emulator
     fish                        # geile Shell
     wine
+
+### Theming
     lxappearance
+    gtk-engine-murrine    # Für GTK2-Themes
+    gtk_engines          # Weitere GTK-Engines
+    gsettings-desktop-schemas
 
 
 ### Compiler ###                
