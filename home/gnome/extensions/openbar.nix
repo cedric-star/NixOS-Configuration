@@ -29,6 +29,7 @@
 
       height = 30;
       hpad = 2.3;
+      vpad = 2.3;
 
       neon = false;
       
