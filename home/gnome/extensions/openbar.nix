@@ -7,7 +7,7 @@
   dconf.settings = {
     "org/gnome/shell/extensions/openbar" = {
 
-      extraConfig = ./configs/openbar.conf
+      extraConfig = ./configs/openbar.conf;
       
     };
   };
