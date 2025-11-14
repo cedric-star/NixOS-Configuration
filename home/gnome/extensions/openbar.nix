@@ -14,7 +14,7 @@
       candy5 = ["1.000" "0.000" "0.561"];
       candy6 = ["1.000" "0.000" "0.561"];
 y
-      candyalpha = 0.5;
+      #candyalpha = 0.5;
       candybar = true;
 
       dark-candy1 = ["1.000" "0.000" "0.561"];
