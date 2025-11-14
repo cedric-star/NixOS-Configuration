@@ -8,6 +8,7 @@
     qogir-theme
     gnome-tweaks
     gdm-settings
+    lxappearance
   ];
 
   ### Hintergrundbild importieren
