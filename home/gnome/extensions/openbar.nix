@@ -4,7 +4,7 @@
   dconf.settings = {
     "org/gnome/shell/extensions/openbar" = {
       autofg-bar = false;
-      bgalpha = 0;
+      bgalpha = 0.0;
       bradius = 20;
       bwidth = 0;
       candy1 = ["1.000" "0.000" "0.561"];
