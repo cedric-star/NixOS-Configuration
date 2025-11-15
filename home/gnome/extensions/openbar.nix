@@ -25,7 +25,7 @@
       dark-candy6 = ["1.000" "0.000" "0.561"];
 
       fgcolor = ["0.122" "0.106" "0.106"];
-      font = "Adwaita Mono Bold 10";
+      font = "Adwaita Mono Bold 13";
 
       height = 30;
       margin = 0;
