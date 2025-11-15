@@ -10,4 +10,5 @@
     "org/gnome/shell/extensions/blur-my-shell/panel" = {
       blur = false;
     };
+  };
 }
