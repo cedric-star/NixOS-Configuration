@@ -60,11 +60,12 @@
 
       mshalpha = 0.0; #shadow hinter hintergrundfarbe wegmachen
 
+      dashdock-style = "Custom";
       dbgalpha = 0.0; #hintergrundtransparenz dashdock
       disize = 60; #icon größe dashdock
       dborder = false; # border dash dock 
       dshadow = false;
-      
+
     };
 
   };
