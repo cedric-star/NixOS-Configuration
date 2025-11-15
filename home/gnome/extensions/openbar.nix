@@ -29,6 +29,7 @@
 
       height = 30;
       margin = 0.0;
+      bmargin = 0.0;
       hpad = 2.3;
       vpad = 2.3;
 
