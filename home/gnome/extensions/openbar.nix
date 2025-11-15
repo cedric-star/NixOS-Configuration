@@ -28,12 +28,15 @@
       font = "Adwaita Mono Bold 13";
 
       height = 30;
-      margin = 0.0;
-      bmargin = 0.0;
+      margin = 0.2;
+      bmargin = 0.2;
       hpad = 2.3;
       vpad = 2.3;
 
       neon = false;
+
+      ### menüs:
+      menustyle = true;
     };
   };
 }
