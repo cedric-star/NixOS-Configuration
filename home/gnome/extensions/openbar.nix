@@ -39,43 +39,17 @@
       ### menüs:
       menustyle = true;
 
-      mbalpha = 0.0;
+      mbalpha = 0.0; #linien umrandung um fenster entfernen
+      dakr-mbalpha = 0.0;
+
+      #---
 
       mfgcolor = ["0.0" "0.0" "0.0"];
       dark-mfgcolor = ["0.0" "0.0" "0.0"];
 
       mbgcolor = ["0.361" "0.047" "0.098"];  # 5C0C19 normalisiert
       dark-mbgcolor = ["0.361" "0.047" "0.098"];
-      
-      # Menu Shadow
-      menushadowcolor = ["0.537" "0.078" "0.227"];  # 89143A normalisiert
-      dark-menushadowcolor = ["0.537" "0.078" "0.227"];
-      menushadowalpha = 0.45;
-      dark-menushadowalpha = 0.45;
-      
-      # Menu Radius
-      menupanelradius = 21;
-      calendarsubsradius = 8;
-      
-      # Menu Alpha Values
-      mfgalpha = 1.0;
-      dark-mfgalpha = 1.0;
-      mbgalpha = 1.0;
-      dark-mbgalpha = 1.0;
-      
-      # Menu Highlight
-      menuhighlightcolor = ["0.871" "0.867" "0.855"];  # DEDDDA normalisiert
-      dark-menuhighlightcolor = ["0.871" "0.867" "0.855"];
-      
-      # Menu Border
-      menuborderalpha = 0.0;
-      dark-menuborderalpha = 0.0;
-      
-      # Menu Accent
-      menuaccentcolor = ["0.882" "0.463" "0.714"];  # E176B6 normalisiert
-      dark-menuaccentcolor = ["0.882" "0.463" "0.714"];
-      menuaccentalpha = 0.45;
-      dark-menuaccentalpha = 0.45;
+    
     };
 
   };
