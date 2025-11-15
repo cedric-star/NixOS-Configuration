@@ -42,8 +42,6 @@
       mbalpha = 0.0; #linien umrandung um fenster entfernen
       dakr-mbalpha = 0.0;
 
-      #---
-
       mfgcolor = ["0.0" "0.0" "0.0"];#scriftfarbe
       dark-mfgcolor = ["0.0" "0.0" "0.0"];
 
@@ -52,6 +50,8 @@
   
       mbgalpha = 0.55; #hintergrund transparent
 
+      autohg-menu = false; #für custom farbe beim hovern
+      dark-mhcolor = ["0.871" "0.867" "0.855"]; #über buttons hovern
       mhcolor = ["0.871" "0.867" "0.855"]; #über buttons hovern
       mhalpha = 0.55;
 
