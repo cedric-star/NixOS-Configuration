@@ -50,6 +50,15 @@
       mbgcolor = ["0.361" "0.047" "0.098"];  # 5C0C19 normalisiert
       dark-mbgcolor = ["0.361" "0.047" "0.098"];
   
+      mbgalpha = 0.55; #hintergrund transparent
+
+      mhcolor = ["0.871" "0.867" "0.855"]; #über buttons hovern
+      mhalpha = 0.55;
+
+      mscolor = ["0.882" "0.463" "0.714"]; #farbe von gedrückten buttons
+      msalpha = 0.55;
+
+      mshalpha = 0.0; #shadow hinter hintergrundfarbe wegmachen
     };
 
   };
