@@ -38,7 +38,6 @@
 
       ### menüs:
       menustyle = true;
-
     };
   };
 }
