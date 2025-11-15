@@ -38,6 +38,9 @@
 
       ### menüs:
       menustyle = true;
+
+      mfgcolor = ["0.0" "0.0" "0.0"];
+      dark-mfgcolor = ["0.0" "0.0" "0.0"];
     };
   };
 }
