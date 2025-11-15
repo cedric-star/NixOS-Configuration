@@ -64,6 +64,7 @@
       disize = 60; #icon größe dashdock
       dborder = false; # border dash dock 
       dshadow = false;
+      
     };
 
   };
