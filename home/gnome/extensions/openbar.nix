@@ -44,7 +44,7 @@
 
       #---
 
-      mfgcolor = ["0.0" "0.0" "0.0"];
+      mfgcolor = ["0.0" "0.0" "0.0"];#scriftfarbe
       dark-mfgcolor = ["0.0" "0.0" "0.0"];
 
       mbgcolor = ["0.361" "0.047" "0.098"];  # 5C0C19 normalisiert
