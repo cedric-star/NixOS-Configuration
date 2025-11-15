@@ -33,7 +33,6 @@
       vpad = 2.3;
 
       neon = false;
-      
     };
   };
 }
