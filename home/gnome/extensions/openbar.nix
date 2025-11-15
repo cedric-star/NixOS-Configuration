@@ -66,6 +66,12 @@
       dborder = false; # border dash dock 
       dshadow = false;
 
+
+      ### weiteres
+      apply-accent-shell = true;
+      apply-all-shell = false;
+      apply-menu-notif = true;
+      apply-menu-shell = true;
     };
 
   };
