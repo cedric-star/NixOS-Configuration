@@ -49,7 +49,7 @@
 
       mbgcolor = ["0.361" "0.047" "0.098"];  # 5C0C19 normalisiert
       dark-mbgcolor = ["0.361" "0.047" "0.098"];
-    
+  
     };
 
   };
