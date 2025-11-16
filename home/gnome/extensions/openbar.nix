@@ -52,7 +52,7 @@
 
       autohg-menu = false; #für custom farbe beim hovern
       dark-mhcolor = ["0.871" "0.867" "0.855"]; #über buttons hovern
-      mhcolor = ["0.871" "0.867" "0.855"]; #über buttons hovern
+      mhcolor = ["1.000" "0.835" "0.587"]; #über buttons hovern
       mhalpha = 0.55;
 
       mscolor = ["0.882" "0.463" "0.714"]; #farbe von gedrückten buttons
