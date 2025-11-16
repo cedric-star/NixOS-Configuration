@@ -17,7 +17,6 @@
     gnomeExtensions.user-themes 
     gnomeExtensions.clipboard-indicator
     gnomeExtensions.logo-menu
-    gnomeExtensions.astra-monitor
     gnomeExtensions.transparent-window-moving
     gnomeExtensions.burn-my-windows
     gnomeExtensions.open-bar
@@ -32,12 +31,11 @@
         "blur-my-shell@aunetx"
         "clipboard-indicator@tudmotu.com"
         "logomenu@aryan_k"
-        "monitor@astraext.github.io"
         "user-theme@gnome-shell-extensions.gcampax.github.com"
         "transparent-window-moving@noobsai.github.com" 
         "burn-my-windows@schneegans.github.com"
         "openbar@neuromorph"
-        "Vitals@CoreCoding.com"
+        "Vitals@CoreCoding.com "
       ];
     };
   };
