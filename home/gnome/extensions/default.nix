@@ -21,6 +21,7 @@
     gnomeExtensions.transparent-window-moving
     gnomeExtensions.burn-my-windows
     gnomeExtensions.open-bar
+    gnomeExtensions.vitals
   ];
 
 
