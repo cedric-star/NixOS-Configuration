@@ -36,12 +36,10 @@
     isNormalUser = true;
     description = "cedric";
     extraGroups = [ "networkmanager" "wheel" "input" "docker"];
-    packages = with pkgs; [
-    ];
+    shell = pkgs.fish;
   };
 
   programs.nix-ld.enable = true;
-  shell = pkgs.fish;
 
   system.stateVersion = "25.05"; 
 }
