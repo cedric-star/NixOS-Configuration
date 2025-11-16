@@ -12,7 +12,7 @@ aura-glow-edge-size=0.68000000000000005
 aura-glow-saturation=0.14000000000000001
 aura-glow-random-color=false
 aura-glow-blur=0.0
-aura-glow-start-hue=0.70999999999999996
+aura-glow-start-hue=0.83000000000000000
   '';
   force = true;  # Überschreibt vorhandene Datei
   };
