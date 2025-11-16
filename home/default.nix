@@ -19,7 +19,7 @@
   };
 
   programs.fish.enable = true;
-  shell = pkgs.fish;
+ 
 
 
   #programs.java.enable = true;

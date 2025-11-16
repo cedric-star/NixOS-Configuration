@@ -19,6 +19,7 @@
   };
 
 
+
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
@@ -40,6 +41,7 @@
   };
 
   programs.nix-ld.enable = true;
+  shell = pkgs.fish;
 
   system.stateVersion = "25.05"; 
 }
