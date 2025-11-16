@@ -1,15 +1,9 @@
 # ToDo:
 - nvim config (lazyvim evtl.)
-- programme aus stuff hinzufügen
-- fehlende programme #fehlt: cryptool, (java: jre, jdk), winboat
-- vms einrichten (für sicherheit rechnernetze)
-- auskommentierte programme in system > system_packages > programs.nix ausprobieren
 - kompatibilitäten überprüfen:
  - screensharing (hdmi, ...)
  - drucken/scannen
- - spiele deklarieren (über steam, epic, andere externe spiele)
-- kalender, mail einrichten
-
+- gtk2/3 ricing
 
 # Hindweise
 - für skripte ausführen immer von ./scripts aus ausführen
