@@ -37,6 +37,7 @@
         "transparent-window-moving@noobsai.github.com" 
         "burn-my-windows@schneegans.github.com"
         "openbar@neuromorph"
+        "Vitals@CoreCoding.com"
       ];
     };
   };
