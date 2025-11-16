@@ -32,6 +32,7 @@
     pulse.enable = true;
   };
 
+  programs.fish.enable = true;
   users.users.cedric = {
     isNormalUser = true;
     description = "cedric";
