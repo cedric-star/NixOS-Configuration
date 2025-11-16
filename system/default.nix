@@ -8,5 +8,6 @@
     ./system_programs
     ./auto
     ./virt.nix
+    ./location.nix
   ];
 }
