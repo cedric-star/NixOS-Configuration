@@ -63,7 +63,7 @@
     gftp
     gns3-gui
     kicad
-    virtualbox
+    #virtualbox
     virt-manager
     dosbox
     dosbox-x
