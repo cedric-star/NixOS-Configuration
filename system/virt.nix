@@ -12,4 +12,5 @@
     programs.virt-manager.enable = false;
     virtualisation.libvirtd.enable = false;
     virtualisation.spiceUSBRedirection.enable = false;
+    boot.kernelParams = [ "kvm.enable_virt_at_load=0" ];
 }
