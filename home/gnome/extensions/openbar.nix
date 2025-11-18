@@ -1,8 +1,11 @@
 { config, pkgs, ... }:
 
 let 
-  primary-background = ["0.361" "0.047" "0.098"];  # Dunkles Weinrot;
-  primary-foreground = ["0.871" "0.867" "0.855"];  # hellgrau (fast weiß)
+  bg0 = ["0.361" "0.047" "0.098"];  #hintergrund: Dunkles Weinrot;     
+  bg1 = ["1.000" "0.835" "0.587"]; #gehovert so gild gelb beige
+  bg2 = ["0.882" "0.463" "0.714"];
+
+  fg0 = ["0.871" "0.867" "0.855"];  # hellgrau (fast weiß)
 in 
 
 {
@@ -17,25 +20,28 @@ in
 ### candybar: in panel um jedes item ellipse
       candyalpha = 0.5;
       candybar = true;
-      candy1 = primary-background;
-      candy2 = primary-background;
-      candy3 = primary-background;
-      candy4 = primary-background;
-      candy5 = primary-background;
-      candy6 = primary-background;
-      dark-candy1 = primary-background;
-      dark-candy2 = primary-background;
-      dark-candy3 = primary-background;
-      dark-candy4 = primary-background;
-      dark-candy5 = primary-background;
-      dark-candy6 = primary-background;
+      candy1 = bg0;
+      candy2 = bg0;
+      candy3 = bg0;
+      candy4 = bg0;
+      candy5 = bg0;
+      candy6 = bg0;
+      dark-candy1 = bg0;
+      dark-candy2 = bg0;
+      dark-candy3 = bg0;
+      dark-candy4 = bg0;
+      dark-candy5 = bg0;
+      dark-candy6 = bg0;
 
 ### schrift
-      fgcolor = primary-foreground; # schriftfarbe in panel
-      dark-fgcolor = primary-foreground;
+      fgcolor = fg0; # schriftfarbe in panel
+      dark-fgcolor = fg0;
 
-      mfgcolor = primary-foreground; # scriftfarbe in gnome boxen
-      dark-mfgcolor = primary-foreground;
+      mfgcolor = fg0; # scriftfarbe in gnome boxen
+      dark-mfgcolor = fg0;
+
+      mhcolor = bg0; # kp
+      dark-mhcolor = bg0;
 
       font = "Adwaita Mono Bold 13";
 
@@ -45,23 +51,21 @@ in
       hpad = 4.5;
       vpad = 2.3;
 
-      neon = false;
-
-      ### menüs:
-      menustyle = true;
 
 
 
-      mbgcolor = primary-background;  # allgemeine hintergrundfarbe
-      dark-mbgcolor = primary-background;
-  
+### hintergründ
       mbgalpha = 0.55; #hintergrund transparent
+      mbgcolor = bg0;  # allgemeine hintergrundfarbe
+      dark-mbgcolor = bg0;
+  
 
-      dark-mhcolor = ["0.871" "0.867" "0.855"]; #über buttons hovern
-      mhcolor = ["1.000" "0.835" "0.587"]; #über buttons hovern
+### buttons
+      mhcolor = bg1; # über buttons hovern
+      dark-mhcolor = bg1;
       mhalpha = 0.55;
 
-      mscolor = ["0.882" "0.463" "0.714"]; #farbe von gedrückten buttons
+      mscolor = bg2; #farbe von gedrückten buttons
       msalpha = 0.55;
 
 
@@ -76,6 +80,10 @@ in
       apply-menu-shell = true;
 
       ### styles löschen (clean machen)
+      neon = false;
+
+      menustyle = true;
+
       mbalpha = 0.0; #linien umrandung um fenster entfernen
       dark-mbalpha = 0.0;
       
