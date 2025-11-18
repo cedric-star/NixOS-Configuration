@@ -18,7 +18,7 @@ in
       bwidth = 0.0;
 
 ### candybar: in panel um jedes item ellipse
-      candyalpha = 0.5;
+      candyalpha = 0.72;
       candybar = true;
       candy1 = bg0;
       candy2 = bg0;
@@ -60,7 +60,7 @@ in
 ### buttons
       mhcolor = bg1; # über buttons hovern
       dark-mhcolor = bg1;
-      mhalpha = 0.55;
+      mhalpha = 0.10;
 
       mscolor = bg2; #farbe von gedrückten buttons
       msalpha = 0.55;
