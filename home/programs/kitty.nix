@@ -51,8 +51,8 @@
       map ctrl+shift+c copy_to_clipboard
       map ctrl+shift+v paste_from_clipboard
 
-      # weitere configs:
-      tab_bar_min_tabs 2
+      
+      
     '';
   };
 }

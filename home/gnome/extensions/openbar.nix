@@ -24,8 +24,8 @@
       dark-candy5 = ["0.361" "0.047" "0.098"];
       dark-candy6 = ["0.361" "0.047" "0.098"];
 
-      fgcolor = ["0.0" "0.0" "0.0"];
-      dark-fgcolor = ["0.0" "0.0" "0.0"];
+      fgcolor = ["0.871" "0.867" "0.855"];
+      dark-fgcolor = ["0.871" "0.867" "0.855"];
       font = "Adwaita Mono Bold 13";
 
       height = 30;
