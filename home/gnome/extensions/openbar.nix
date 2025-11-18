@@ -26,6 +26,7 @@ in
       reloadstyle = true;
       trigger-reload = false;
 
+
 ### candybar: in panel um jedes item ellipse
       candyalpha = 0.72;
       candybar = true;
