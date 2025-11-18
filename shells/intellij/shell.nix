@@ -25,7 +25,8 @@ pkgs.mkShell {
     export JAVA_HOME=${pkgs.jdk21}
     export PATH=$JAVA_HOME/bin:$PATH
     echo "Java dev shell ready — using $JAVA_HOME"
-    echo "run: <idea-community>"
+    echo "starting idea-community..."
+    idea-community .
   '';
 }
 ### Ausführen: 
