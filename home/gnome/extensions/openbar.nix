@@ -40,9 +40,6 @@ in
       mfgcolor = fg0; # scriftfarbe in gnome boxen
       dark-mfgcolor = fg0;
 
-      mhcolor = bg0; # kp
-      dark-mhcolor = bg0;
-
       font = "Adwaita Mono Bold 13";
 
       height = 30;
