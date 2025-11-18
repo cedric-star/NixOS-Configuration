@@ -12,10 +12,19 @@ in
 
   dconf.settings = {
     "org/gnome/shell/extensions/openbar" = {
+
+### panel
       autofg-bar = false;
       bgalpha = 0.0;
       bradius = 20;
       bwidth = 0.0;
+
+      ### über candy items drüber hovern/anklicken
+      halpha = 0.55;
+      hcolor = bg1;
+      dark-hcolor = bg1;
+      reloadstyle = true;
+      trigger-reload = false;
 
 ### candybar: in panel um jedes item ellipse
       candyalpha = 0.72;
@@ -34,6 +43,7 @@ in
       dark-candy6 = bg0;
 
 ### schrift
+      fgalpha = 0.85;
       fgcolor = fg0; # schriftfarbe in panel
       dark-fgcolor = fg0;
 
