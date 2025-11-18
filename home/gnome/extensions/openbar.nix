@@ -1,29 +1,33 @@
 { config, pkgs, ... }:
 
+let 
+  primary-background = ["0.361" "0.047" "0.098"];  # Dunkles Weinrot;
+in 
 
 {
+
   dconf.settings = {
     "org/gnome/shell/extensions/openbar" = {
       autofg-bar = false;
       bgalpha = 0.0;
       bradius = 20;
       bwidth = 0.0;
-      candy1 = ["0.361" "0.047" "0.098"];
-      candy2 = ["0.361" "0.047" "0.098"];
-      candy3 = ["0.361" "0.047" "0.098"];
-      candy4 = ["0.361" "0.047" "0.098"];
-      candy5 = ["0.361" "0.047" "0.098"];
-      candy6 = ["0.361" "0.047" "0.098"];
 
+### candybar: in panel um jedes item ellipse
       candyalpha = 0.5;
       candybar = true;
-
-      dark-candy1 = ["0.361" "0.047" "0.098"];
-      dark-candy2 = ["0.361" "0.047" "0.098"];
-      dark-candy3 = ["0.361" "0.047" "0.098"];
-      dark-candy4 = ["0.361" "0.047" "0.098"];
-      dark-candy5 = ["0.361" "0.047" "0.098"];
-      dark-candy6 = ["0.361" "0.047" "0.098"];
+      candy1 = primary-background;
+      candy2 = primary-background;
+      candy3 = primary-background;
+      candy4 = primary-background;
+      candy5 = primary-background;
+      candy6 = primary-background;
+      dark-candy1 = primary-background;
+      dark-candy2 = primary-background;
+      dark-candy3 = primary-background;
+      dark-candy4 = primary-background;
+      dark-candy5 = primary-background;
+      dark-candy6 = primary-background;
 
       fgcolor = ["0.871" "0.867" "0.855"];
       dark-fgcolor = ["0.871" "0.867" "0.855"];
@@ -46,8 +50,8 @@
       mfgcolor = ["0.0" "0.0" "0.0"];#scriftfarbe
       dark-mfgcolor = ["0.0" "0.0" "0.0"];
 
-      mbgcolor = ["0.361" "0.047" "0.098"];  # allgemeine hintergrundfarbe
-      dark-mbgcolor = ["0.361" "0.047" "0.098"];
+      mbgcolor = primary-background;  # allgemeine hintergrundfarbe
+      dark-mbgcolor = primary-background;
   
       mbgalpha = 0.55; #hintergrund transparent
 
