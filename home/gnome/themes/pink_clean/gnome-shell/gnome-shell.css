@@ -1,12 +1,3 @@
-:root {
-  --bg0: rgba(92, 12, 25, 1);    /* Dunkles Weinrot */
-  --bg1: rgba(255, 213, 150, 1);  /* Helles Gelb-Beige, Hover */
-  --bg2: rgba(230, 128, 192, 1);  /* Pink / aktive Elemente */
-  --bg3: rgba(153, 38, 64, 1);    /* Sekundäres Dunkelrot, Menüs, Dropdowns */
-  --bg4: rgba(255, 153, 204, 1);  /* Hellrosa, Akzente, Buttons */
-  --bg5: rgba(242, 242, 230, 1);  /* Helles Beige, Text auf dunklem Hintergrund */
-}
-/* !important drückt regel durch, absolut und wird nicht überschireben*/
 
 
 #panel {
