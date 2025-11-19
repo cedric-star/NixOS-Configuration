@@ -8,6 +8,11 @@ let
     src = ./my-theme.css;
 
     dontUnpack = true;
+
+    installPhase = ''
+      mkdir -p $out/share/themes/my-theme/gnome-shell
+      cp $src/* $out/share/themes/my-theme/gnome-shell/
+    '';
   };
 in {
   home.packages = [ my-theme ];
