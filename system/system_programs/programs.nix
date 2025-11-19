@@ -10,6 +10,7 @@
     kitty                       # Terminal Emulator
     fish                        # geile Shell
     wine
+    sass
 
 ### Theming
 
