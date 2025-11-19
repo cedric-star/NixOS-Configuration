@@ -10,7 +10,7 @@
 
 
 #panel {
-  background-color: transparent;
+  background-color: var(--bg3);
 }
 
 .button-button {
