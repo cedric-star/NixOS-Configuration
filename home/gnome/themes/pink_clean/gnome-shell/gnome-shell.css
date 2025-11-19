@@ -1,18 +1,21 @@
-.calendar {
-	border-radius: 14px;
-	background-color: rgba(202, 13, 13, 0.9);
-	box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.03) !important;
-	border-color: transparent;
-	padding: 3px;
-	margin: 0;
-    background-image: url("./assets/test.svg");
+:root {
+  --bg0: rgba(92, 12, 25, 1);    /* Dunkles Weinrot */
+  --bg1: rgba(255, 213, 150, 1);  /* Helles Gelb-Beige, Hover */
+  --bg2: rgba(230, 128, 192, 1);  /* Pink / aktive Elemente */
+  --bg3: rgba(153, 38, 64, 1);    /* Sekundäres Dunkelrot, Menüs, Dropdowns */
+  --bg4: rgba(255, 153, 204, 1);  /* Hellrosa, Akzente, Buttons */
+  --bg5: rgba(242, 242, 230, 1);  /* Helles Beige, Text auf dunklem Hintergrund */
 }
+/* !important drückt regel durch, absolut und wird nicht überschireben*/
+
 
 #panel {
-  background-color: rgba(192, 0, 64, 0.5) !important;
+  background-color: rgba(0, 0, 0, 0.0) !important;
+  transition-duration: 500ms;
+  font-weight: bold;
 }
 
-
-#dash {
-  background-color: pink !important;
+#panel .button-button {
+	color: var(--bg1);
+	background-color: var(--bg0);
 }
