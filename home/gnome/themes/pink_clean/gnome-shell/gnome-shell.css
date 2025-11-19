@@ -11,4 +11,9 @@
 #dash {
   background-color: transparent; }
 
+#overview {
+  background-color: transparent !important;
+  background-image: url("file:///");
+}
+
 /*# sourceMappingURL=gnome-shell.css.map */

@@ -40,5 +40,13 @@
 
   programs.nix-ld.enable = true;
 
-  system.stateVersion = "25.05"; 
+  system.stateVersion = "25.05";
+
+  system.activationScripts.buildCSS = {
+    text = ''
+      echo "CSS Build Script...
+      cd ../home/gnome/themes/
+      ls
+    '';
+  };
 }
