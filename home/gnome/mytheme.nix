@@ -11,7 +11,7 @@ let
 
     installPhase = ''
       mkdir -p $out/share/themes/my-theme
-      cp $src/* $out/share/themes/my-theme/
+      cp -r $src/* $out/share/themes/my-theme/
     '';
   };
 in {
