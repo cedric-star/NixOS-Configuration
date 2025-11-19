@@ -6,3 +6,7 @@
 	padding: 3px;
 	margin: 0;
 }
+
+#panel {
+  background-color: red !important;
+}
