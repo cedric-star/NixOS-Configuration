@@ -12,11 +12,7 @@ let
     installPhase = ''
       mkdir -p $out/share/themes/my-theme
 
-      # Alle Dateien kopieren, inkl. SCSS
       cp -r $src/* $out/share/themes/my-theme/
-
-      # Optional: SCSS entfernen
-      rm "$out/share/themes/my-theme/gnome-shell.scss"
     '';
   };
 in {
