@@ -10,9 +10,7 @@
 
 
 #panel {
-  background-color: transparent !important;
-  transition-duration: 500ms;
-  font-weight: bold;
+  background-color: transparent;
 }
 
 .button-button {
