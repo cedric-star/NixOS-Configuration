@@ -42,9 +42,6 @@
       cursor-theme = "Adwaita";
     };
 
-    "org/gnome/shell/extensions/user-theme" = {
-      name = "Qogir-win-dark";  
-    };
 
     ### Hintergrund klar für dark und light mode
     "org/gnome/desktop/background" = {
@@ -57,4 +54,7 @@
       picture-uri-dark = "file://${config.home.homeDirectory}/.local/share/wallpapers/b1.png";
     }; 
   };
+
+
+  
 }
