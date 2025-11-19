@@ -23,7 +23,7 @@ in
       halpha = 0.55;
       hcolor = bg1;
       dark-hcolor = bg1;
-      reloadstyle = true;
+      reloadstyle = false;
       trigger-reload = false;
 
 
