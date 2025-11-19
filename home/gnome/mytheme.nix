@@ -7,7 +7,7 @@ let
     src = ./my-theme.css;
   };
 in {
-  environment.systemPackages = [ my-theme ];
+  home.packages = [ my-theme ];
   dconf.settings = {
     "org/gnome/shell/extensions/user-theme" = {
       name = "my-theme";
