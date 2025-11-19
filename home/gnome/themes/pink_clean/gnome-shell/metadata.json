@@ -1,0 +1,7 @@
+{
+  "name": "my-theme",
+  "shell-version": ["45", "46", "47", "48"],
+  "author": "Dein Name",
+  "version": "1.0",
+  "description": "Mein eigenes GNOME Shell Theme"
+}

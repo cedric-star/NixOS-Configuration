@@ -5,13 +5,13 @@ let
     name = "my-theme";
     pane = "my-theme";
     verison = "1.0";
-    src = ./my-theme.css;
+    src = ./themes/pink_clean;
 
     dontUnpack = true;
 
     installPhase = ''
-      mkdir -p $out/share/themes/my-theme/gnome-shell
-      cp $src $out/share/themes/my-theme/gnome-shell/gnome-shell.css
+      mkdir -p $out/share/themes/my-theme
+      cp $src/* $out/share/themes/my-theme/
     '';
   };
 in {
