@@ -42,7 +42,7 @@
 
   system.stateVersion = "25.05";
 
-  system.activationScripts.buildCSS = {
+  system.activationScripts = {
     text = ''
       #!${pkgs.runtimeShell}
       echo "CSS Build Script...
