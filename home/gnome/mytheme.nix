@@ -11,14 +11,19 @@ let
     buildInputs = [ pkgs.sass ];
 
     installPhase = ''
-      mkdir -p $out/share/themes/my-theme
+  mkdir -p $out/share/themes/my-theme
 
-      echo "building css from scss..."
-      sass "$src/gnome-shell.scss" "$out/share/themes/my-theme/gnome-shell.css"
+  # Alle Dateien kopieren, inkl. SCSS
+  cp -r $src/* $out/share/themes/my-theme/
 
-      cp -r $src/* $out/share/themes/my-theme/
-    '';
-  };
+  # Jetzt SCSS in $out referenzieren
+  echo "building css from scss"
+  sass "$out/share/themes/my-theme/gnome-shell.scss" "$out/share/themes/my-theme/gnome-shell.css"
+
+  # Optional: SCSS entfernen
+  rm "$out/share/themes/my-theme/gnome-shell.scss"
+'';
+
 in {
   home.packages = [ my-theme ];
   dconf.settings = {
