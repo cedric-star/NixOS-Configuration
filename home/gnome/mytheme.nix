@@ -8,17 +8,18 @@ let
     src = ./themes/pink_clean;
 
     dontUnpack = true;
-    buildInputs = [ pkgs.sass ];
+
+    preBuild = ''
+      echo "Generating gnome-shell.css from gnome-shell.scss..."
+      sass "$src/gnome-shell.scss" "$src/gnome-shell.css"
+      echo "Done."
+    '';
 
     installPhase = ''
       mkdir -p $out/share/themes/my-theme
 
       # Alle Dateien kopieren, inkl. SCSS
       cp -r $src/* $out/share/themes/my-theme/
-
-      # Jetzt SCSS in $out referenzieren
-      echo "building css from scss"
-      sass "$out/share/themes/my-theme/gnome-shell.scss" "$out/share/themes/my-theme/gnome-shell.css"
 
       # Optional: SCSS entfernen
       rm "$out/share/themes/my-theme/gnome-shell.scss"
