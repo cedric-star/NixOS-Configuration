@@ -2,6 +2,7 @@
 
 let 
   my-theme = pkgs.stdenv.mkDerivation {
+    name = "my-theme";
     pane = "my-theme";
     verison = "1.0";
     src = ./my-theme.css;
