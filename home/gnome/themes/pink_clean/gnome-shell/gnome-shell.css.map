@@ -1,0 +1,7 @@
+{
+"version": 3,
+"mappings": ";AAA8B,qBAAqB;AACpB,8BAA8B;AAC/B,4BAA4B;AAC3B,4CAA4C;AAC5C,gCAAgC;AAChC,gDAAgD;AAG/E,MAAO;EACL,gBAAgB,EAAE,kBAAe;;AAGnC,KAAM;EACJ,gBAAgB,EAAE,WAAW",
+"sources": ["gnome-shell.scss"],
+"names": [],
+"file": "gnome-shell.css"
+}

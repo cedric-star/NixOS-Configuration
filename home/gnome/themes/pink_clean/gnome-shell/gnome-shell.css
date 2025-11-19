@@ -1,0 +1,14 @@
+@charset "UTF-8";
+/* Dunkles Weinrot */
+/* Helles Gelb-Beige, Hover */
+/* Pink / aktive Elemente */
+/* Sekundäres Dunkelrot, Menüs, Dropdowns */
+/* Hellrosa, Akzente, Buttons */
+/* Helles Beige, Text auf dunklem Hintergrund */
+#panel {
+  background-color: #5c0c19 !important; }
+
+#dash {
+  background-color: transparent; }
+
+/*# sourceMappingURL=gnome-shell.css.map */

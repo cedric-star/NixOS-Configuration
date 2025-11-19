@@ -9,12 +9,6 @@ let
 
     dontUnpack = true;
 
-    preBuild = ''
-      echo "Generating gnome-shell.css from gnome-shell.scss..."
-      sass "$src/gnome-shell.scss" "$src/gnome-shell.css"
-      echo "Done."
-    '';
-
     installPhase = ''
       mkdir -p $out/share/themes/my-theme
 
