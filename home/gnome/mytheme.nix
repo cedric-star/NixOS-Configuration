@@ -6,6 +6,8 @@ let
     pane = "my-theme";
     verison = "1.0";
     src = ./my-theme.css;
+
+    dontUnpack = true;
   };
 in {
   home.packages = [ my-theme ];
