@@ -11,6 +11,6 @@ in {
   dconf.settings = {
     "org/gnome/shell/extensions/user-theme" = {
       name = "my-theme";
-    }
-  }
+    };
+  };
 }
