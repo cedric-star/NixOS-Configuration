@@ -4,6 +4,6 @@
   imports = [
     ./extensions
     ./settings.nix
-    ./mytheme.nix
+    #./mytheme.nix
   ];
 }

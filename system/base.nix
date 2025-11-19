@@ -42,12 +42,4 @@
 
   system.stateVersion = "25.05";
 
-  system.activationScripts = {
-    text = ''
-      #!${pkgs.runtimeShell}
-      echo "CSS Build Script...
-      cd ../home/gnome/themes/
-      ls
-    '';
-  };
 }
