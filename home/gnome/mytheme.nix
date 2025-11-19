@@ -11,7 +11,7 @@ let
 
     installPhase = ''
       mkdir -p $out/share/themes/my-theme/gnome-shell
-      cp $src/* $out/share/themes/my-theme/gnome-shell/*
+      cp $src/ $out/share/themes/my-theme/gnome-shell/gnome-shell.css
     '';
   };
 in {
