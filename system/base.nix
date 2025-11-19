@@ -44,6 +44,7 @@
 
   system.activationScripts.buildCSS = {
     text = ''
+      #!${pkgs.runtimeShell}
       echo "CSS Build Script...
       cd ../home/gnome/themes/
       ls
