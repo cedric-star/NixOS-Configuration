@@ -6,14 +6,12 @@
 /* Hellrosa, Akzente, Buttons */
 /* Helles Beige, Text auf dunklem Hintergrund */
 #panel {
-  background-color: #5c0c19 !important; }
+  background-color: transparent !important; }
+
+#panel > * {
+  background-color: #992640 !important; }
 
 #dash {
   background-color: transparent; }
-
-#overview {
-  background-color: transparent !important;
-  background-image: url("file:///");
-}
 
 /*# sourceMappingURL=gnome-shell.css.map */

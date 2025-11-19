@@ -5,9 +5,16 @@ $bg3: rgba(153, 38, 64, 1);    /* Sekundäres Dunkelrot, Menüs, Dropdowns */
 $bg4: rgba(255, 153, 204, 1);  /* Hellrosa, Akzente, Buttons */
 $bg5: rgba(242, 242, 230, 1);  /* Helles Beige, Text auf dunklem Hintergrund */
 
+/*
+--watch ../home/gnome/themes/pink_clean/gnome-shell/gnome-shell.scss:../home/gnome/themes/pink_clean/gnome-shell/gnome-shell.css
+*/
 
 #panel {
-  background-color: $bg0 !important;
+  background-color: transparent !important;
+}
+
+#panel > * {
+  background-color: $bg3 !important;
 }
 
 #dash {
