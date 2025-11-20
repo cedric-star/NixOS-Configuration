@@ -33,6 +33,9 @@
       nnoremap ö l
       nnoremap k j
       nnoremap l k
+
+      inoremap nn <Esc>
+      nnoremap ii i
     '';
   };
 }
