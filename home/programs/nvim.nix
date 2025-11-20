@@ -8,8 +8,21 @@
     vimAlias = true;
     vimdiffAlias = true;
 
-    plugins = [
+    plugins = with pkgs.vimPlugins; [
+      nvim-treesitter
+      nvim-treesitter-parsers.bash
+      nvim-treesitter-parsers.haskell
+      nvim-treesitter-parsers.nix
+      nvim-treesitter-parsers.yaml
+      nvim-treesitter-parsers.json
+      nvim-treesitter-parsers.prolog
 
+            # LSP Support
+      nvim-lspconfig
+      cmp-nvim-lsp
+      nvim-cmp
+      luasnip
+      cmp_luasnip
     ];
   };
 }
