@@ -24,5 +24,15 @@
       luasnip
       cmp_luasnip
     ];
+
+    extraConfig = ''
+      set number
+      set relativenumber
+
+      nnoremap j h
+      nnoremap ö l
+      nnoremap k j
+      nnoremap l k
+    '';
   };
 }
