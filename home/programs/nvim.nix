@@ -36,6 +36,7 @@
 
       inoremap nn <Esc>
       nnoremap ii i
+      
     '';
   };
 }
