@@ -49,7 +49,7 @@
 " modi wechseln
       inoremap nn <Esc>
       nnoremap ii i
-      nnoremap v m
+      nnoremap m v
 
       
 
