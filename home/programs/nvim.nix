@@ -50,6 +50,7 @@
       inoremap nn <Esc>
       nnoremap ii i
       nnoremap m v
+      vnoremap 
 
       
 
@@ -66,6 +67,18 @@
       vnoremap v p
       nnoremap V P
       vnoremap V P
+
+      " UNDO/REDO mit Strg+Z und Strg+Y
+      nnoremap <C-z> u
+      inoremap <C-z> <C-o>u
+      nnoremap <C-y> <C-r>
+      inoremap <C-y> <C-o><C-r>
+
+
+
+
+
+
       " ============ JETZT DEAKTIVIEREN WIR ALLE RESTLICHEN TASTEN ============
 
       " === Normal Mode (nnoremap) ===
