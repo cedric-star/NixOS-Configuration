@@ -30,9 +30,20 @@
       set relativenumber
 
       nnoremap j h
+      vnoremap j h
+      onoremap j h
+
       nnoremap ö l
+      vnoremap ö l  
+      onoremap ö l
+
       nnoremap k j
+      vnoremap k j
+      onoremap k j
+
       nnoremap l k
+      vnoremap l k
+      onoremap l k
 
       inoremap nn <Esc>
       nnoremap ii i
