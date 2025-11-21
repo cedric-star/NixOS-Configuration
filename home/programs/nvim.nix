@@ -34,7 +34,7 @@
       onoremap j h
 
       nnoremap ö l
-      vnoremap ö l  
+      vnoremap ö e  
       onoremap ö l
 
       nnoremap k j
