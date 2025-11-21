@@ -26,7 +26,7 @@
     ];
 
     extraConfig = ''
-      set number          
+      set number
       set relativenumber
       set tabstop=2
 
@@ -47,9 +47,9 @@
       onoremap l k
 
 " modi wechseln
-      inoremap nn <Esc>   
-      nnoremap ii i       
-      nnoremap v m        
+      inoremap nn <Esc>
+      nnoremap ii i
+      nnoremap v m
 
       
 
