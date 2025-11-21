@@ -77,6 +77,8 @@
       nnoremap ^ <Nop>
       nnoremap G <Nop>
       nnoremap gg <Nop>
+      nnoremap s <Nop>
+
 
       " Such- und Navigations-Tasten
       nnoremap / <Nop>
