@@ -26,7 +26,7 @@
     ];
 
     extraConfig = ''
-      set number          " zeilennummerrierung
+      set number          # zeilennummerrierung
       set relativenumber
       set tabstop=2
 
@@ -47,9 +47,9 @@
       onoremap l k
 
 " modi wechseln
-      inoremap nn <Esc>   " normal modus
-      nnoremap ii i       " insert modus
-      nnoremap v m        " Visual mode: markieren
+      inoremap nn <Esc>   # normal modus
+      nnoremap ii i       # insert modus
+      nnoremap v m        # Visual mode: markieren
 
       
 
