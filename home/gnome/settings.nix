@@ -8,6 +8,7 @@
     qogir-theme
     gnome-tweaks
     gdm-settings
+    pywal
     #lxappearance
   ];
 
@@ -16,7 +17,7 @@
 
   dconf.settings = {
     "org/gnome/shell" = {
-      
+
       favorite-apps = [
         "kitty.desktop"
         "firefox.desktop"
@@ -54,11 +55,9 @@
       picture-uri = "file://${config.home.homeDirectory}/.local/share/wallpapers/b1.png";
       picture-uri-dark = "file://${config.home.homeDirectory}/.local/share/wallpapers/b1.png";
     }; 
+
   };
 
   services.pywal.enable = true;
-
-
-
   
 }
