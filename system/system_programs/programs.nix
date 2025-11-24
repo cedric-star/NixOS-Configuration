@@ -12,6 +12,7 @@
     wine
     sass
     pywal
+    imagemagick
 
 ### Theming
 
@@ -24,6 +25,7 @@
     stdenv.cc.libc              # c libraries
     openjdk21
     jetbrains.jdk
+    python3
 
 
 ### Code Editoren ###
