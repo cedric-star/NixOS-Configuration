@@ -11,6 +11,7 @@
     fish                        # geile Shell
     wine
     sass
+    pywal
 
 ### Theming
 
