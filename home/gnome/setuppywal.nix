@@ -15,6 +15,6 @@
     wallpaper = ../wallpapers/b1.png;
     light = false;
     backend = "wal";
-    enableKittyIntegratioin = true;
+    enableKittyIntegration = true;
   };
 }
