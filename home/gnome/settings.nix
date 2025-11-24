@@ -58,6 +58,6 @@
 
   };
 
-  services.pywal.enable = true;
+  pywal.enable = true;
   
 }
