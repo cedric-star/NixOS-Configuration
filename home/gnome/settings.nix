@@ -8,7 +8,6 @@
     qogir-theme
     gnome-tweaks
     gdm-settings
-    pywal
     #lxappearance
   ];
 
@@ -58,6 +57,5 @@
 
   };
 
-  pywal.enable = true;
   
 }
