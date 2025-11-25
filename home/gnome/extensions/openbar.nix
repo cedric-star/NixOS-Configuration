@@ -83,7 +83,7 @@ in
       ### styles löschen (clean machen)
       neon = false;
 
-      menustyle = false; #farben nicht überschreiben
+      menustyle = true; #farben nicht überschreiben
 
       mbalpha = 0.0; #linien umrandung um fenster entfernen
       dark-mbalpha = 0.0;
