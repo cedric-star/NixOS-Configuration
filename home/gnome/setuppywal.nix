@@ -11,7 +11,7 @@
       }
     )).homeManagerModules.${builtins.currentSystem}.default
   ];
-    pywal-nix = {
+  home.packages.pywal-nix = {
     wallpaper = ../wallpapers/b1.png;
     light = false;
     backend = "wal";
