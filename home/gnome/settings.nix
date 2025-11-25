@@ -45,15 +45,15 @@
 
 
     ### Hintergrund klar für dark und light mode
-    "org/gnome/desktop/background" = {
-      picture-uri = "file://${config.home.homeDirectory}/.local/share/wallpapers/b1.png";
-      picture-options = "zoom";
-      picture-uri-dark = "file://${config.home.homeDirectory}/.local/share/wallpapers/b1.png";
-    };
-    "org/gnome/desktop/screensaver" = {
-      picture-uri = "file://${config.home.homeDirectory}/.local/share/wallpapers/b1.png";
-      picture-uri-dark = "file://${config.home.homeDirectory}/.local/share/wallpapers/b1.png";
-    }; 
+    #"org/gnome/desktop/background" = {
+    #  picture-uri = "file://${config.home.homeDirectory}/.local/share/wallpapers/b1.png";
+    #  picture-options = "zoom";
+    #  picture-uri-dark = "file://${config.home.homeDirectory}/.local/share/wallpapers/b1.png";
+    #};
+    #"org/gnome/desktop/screensaver" = {
+    #  picture-uri = "file://${config.home.homeDirectory}/.local/share/wallpapers/b1.png";
+    #  picture-uri-dark = "file://${config.home.homeDirectory}/.local/share/wallpapers/b1.png";
+    #}; 
 
   };
 
