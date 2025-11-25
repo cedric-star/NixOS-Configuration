@@ -42,7 +42,6 @@ in
 
 ### hintergründ
       mbgalpha = 0.55; #hintergrund transparent
-      dark-mbgcolor = bg0;
   
 
 ### buttons
