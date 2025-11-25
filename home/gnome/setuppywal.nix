@@ -16,5 +16,6 @@
     light = false;
     backend = "wal";
     enableKittyIntegration = true;
+    
   };
 }
