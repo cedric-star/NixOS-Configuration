@@ -9,7 +9,7 @@
         
     
     settings = {
-      background_opacity = 0.92;
+      #background_opacity = 0.92;
       hide_window_decorations = "no";
     };
     
