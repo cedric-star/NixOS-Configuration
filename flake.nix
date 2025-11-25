@@ -30,7 +30,7 @@
           home-manager.backupFileExtension = "backup";
         }
 
-        stylix.nixosModules.stylix
+        inputs.stylix.nixosModules.stylix
 
       ];
     };
