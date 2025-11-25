@@ -66,7 +66,7 @@ in
       #dark-mhcolor = bg1;
       mhalpha = 0.10;
 
-      mscolor = disable; #farbe von gedrückten buttons
+      #mscolor = ; #farbe von gedrückten buttons
       msalpha = 0.55;
 
 
