@@ -11,11 +11,5 @@
       }
     )).homeManagerModules.${builtins.currentSystem}.default
   ];
-  home.packages.pywal-nix = {
-    wallpaper = ../wallpapers/b1.png;
-    light = false;
-    backend = "wal";
-    enableKittyIntegration = true;
-    
-  };
+
 }
