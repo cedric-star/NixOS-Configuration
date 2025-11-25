@@ -8,8 +8,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     }; 
      
-    stylix.url = "github:danth/stylix";
-
+    stylix = {
+      url = "github:nix-community/stylix/release-25.05";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
   
   outputs = {self, nixpkgs, home-manager, ... }@inputs: {
@@ -19,7 +21,6 @@
       specialArgs = {inherit inputs;};
       modules = [
         ./configuration.nix
-        inputs.stylix.nixosModules.stylix
         
         home-manager.nixosModules.default
         {
@@ -29,6 +30,7 @@
           home-manager.backupFileExtension = "backup";
         }
 
+        stylix.nixosModules.stylix
 
       ];
     };
