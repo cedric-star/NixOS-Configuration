@@ -37,11 +37,11 @@
     };
 
     ### Themen
-    "org/gnome/desktop/interface" = {
-      gtk-theme = "Qogir-win-dark";
-      icon-theme = "Tela-nord-light";
-      cursor-theme = "Adwaita";
-    };
+    #"org/gnome/desktop/interface" = {
+    #  gtk-theme = "Qogir-win-dark";
+    #  icon-theme = "Tela-nord-light";
+    #  cursor-theme = "Adwaita";
+    #};
 
 
     ### Hintergrund klar für dark und light mode
