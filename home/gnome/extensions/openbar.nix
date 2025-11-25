@@ -1,11 +1,7 @@
 { config, pkgs, ... }:
 
 let 
-  bg0 = ["0.361" "0.047" "0.098"];  #hintergrund: Dunkles Weinrot;     
-  bg1 = ["1.000" "0.835" "0.587"]; #gehovert so gild gelb beige
-  bg2 = ["0.882" "0.463" "0.714"];
-
-  fg0 = ["0.871" "0.867" "0.855"];  # hellgrau (fast weiß)
+  mydatatest = false;
 in 
 
 {
@@ -21,8 +17,7 @@ in
 
       ### über candy items drüber hovern/anklicken
       halpha = 0.55;
-      hcolor = bg1;
-      dark-hcolor = bg1;
+
       reloadstyle = false;
       trigger-reload = false;
 
@@ -30,26 +25,10 @@ in
 ### candybar: in panel um jedes item ellipse
       candyalpha = 0.72;
       candybar = true;
-      candy1 = bg0;
-      candy2 = bg0;
-      candy3 = bg0;
-      candy4 = bg0;
-      candy5 = bg0;
-      candy6 = bg0;
-      dark-candy1 = bg0;
-      dark-candy2 = bg0;
-      dark-candy3 = bg0;
-      dark-candy4 = bg0;
-      dark-candy5 = bg0;
-      dark-candy6 = bg0;
+
 
 ### schrift
-      fgalpha = 0.85;
-      fgcolor = fg0; # schriftfarbe in panel
-      dark-fgcolor = fg0;
-
-      mfgcolor = fg0; # scriftfarbe in gnome boxen
-      dark-mfgcolor = fg0;
+      fgalpha = 0.85;# schriftfarbe in panel
 
       font = "Adwaita Mono Bold 13";
 
@@ -63,17 +42,14 @@ in
 
 ### hintergründ
       mbgalpha = 0.55; #hintergrund transparent
-      mbgcolor = bg0;  # allgemeine hintergrundfarbe
       dark-mbgcolor = bg0;
   
 
 ### buttons
-      mhcolor = bg1; # über buttons hovern
-      dark-mhcolor = bg1;
-      mhalpha = 0.10;
+     
+      mhalpha = 0.10; #hover über buttons
 
-      mscolor = bg2; #farbe von gedrückten buttons
-      msalpha = 0.55;
+      msalpha = 0.55; #farbe von gedrückten buttons transparent
 
 
       disize = 60; #icon größe dashdock
@@ -81,10 +57,10 @@ in
 
 
       ### farben auf alles anwenden
-      apply-accent-shell = true;
-      apply-all-shell = true;
-      apply-menu-notif = true;
-      apply-menu-shell = true;
+      apply-accent-shell = false;
+      apply-all-shell = false;
+      apply-menu-notif = false;
+      apply-menu-shell = false;
 
       ### styles löschen (clean machen)
       neon = false;
