@@ -1,7 +1,7 @@
 { config, pkgs, ... }:
 
 let 
-  mydatatest = false;
+  
 in 
 
 {
@@ -17,7 +17,8 @@ in
 
       ### über candy items drüber hovern/anklicken
       halpha = 0.55;
-
+      #hcolor = bg1;
+      #dark-hcolor = bg1;
       reloadstyle = false;
       trigger-reload = false;
 
@@ -25,10 +26,26 @@ in
 ### candybar: in panel um jedes item ellipse
       candyalpha = 0.72;
       candybar = true;
-
+      candy1 = stylixColors.base00;
+      candy2 = stylixColors.base00;
+      candy3 = stylixColors.base00;
+      candy4 = stylixColors.base00;
+      candy5 = stylixColors.base00;
+      candy6 = stylixColors.base00;
+      dark-candy1 = stylixColors.base00;
+      dark-candy2 = stylixColors.base00;
+      dark-candy3 = stylixColors.base00;
+      dark-candy4 = stylixColors.base00;
+      dark-candy5 = stylixColors.base00;
+      dark-candy6 = stylixColors.base00;
 
 ### schrift
-      fgalpha = 0.85;# schriftfarbe in panel
+      fgalpha = 0.85;
+      #fgcolor = fg0; # schriftfarbe in panel
+      #dark-fgcolor = fg0;
+
+      #mfgcolor = fg0; # scriftfarbe in gnome boxen
+      #dark-mfgcolor = fg0;
 
       font = "Adwaita Mono Bold 13";
 
@@ -42,13 +59,17 @@ in
 
 ### hintergründ
       mbgalpha = 0.55; #hintergrund transparent
+      #mbgcolor = bg0;  # allgemeine hintergrundfarbe
+      #dark-mbgcolor = bg0;
   
 
 ### buttons
-     
-      mhalpha = 0.10; #hover über buttons
+      #mhcolor = bg1; # über buttons hovern
+      #dark-mhcolor = bg1;
+      mhalpha = 0.10;
 
-      msalpha = 0.55; #farbe von gedrückten buttons transparent
+      #mscolor = bg2; #farbe von gedrückten buttons
+      msalpha = 0.55;
 
 
       disize = 60; #icon größe dashdock
@@ -56,10 +77,10 @@ in
 
 
       ### farben auf alles anwenden
-      apply-accent-shell = false;
-      apply-all-shell = false;
-      apply-menu-notif = false;
-      apply-menu-shell = false;
+      apply-accent-shell = true;
+      apply-all-shell = true;
+      apply-menu-notif = true;
+      apply-menu-shell = true;
 
       ### styles löschen (clean machen)
       neon = false;
