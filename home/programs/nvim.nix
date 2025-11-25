@@ -16,6 +16,7 @@
       nvim-treesitter-parsers.yaml
       nvim-treesitter-parsers.json
       nvim-treesitter-parsers.prolog
+      vimPlugins.pywal-nvim
 
             # LSP Support
       nvim-lspconfig
