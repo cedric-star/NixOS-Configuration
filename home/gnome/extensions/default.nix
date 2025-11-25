@@ -26,7 +26,9 @@
 
   dconf.settings = {
     "org/gnome/shell" = {
-      disabled-extensions = [
+      disabled-extensions = [#
+
+      
         "openbar@neuromorph"
 
       ];
