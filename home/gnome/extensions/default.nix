@@ -30,7 +30,6 @@
         "blur-my-shell@aunetx"
         "clipboard-indicator@tudmotu.com"
         "logomenu@aryan_k"
-        "user-theme@gnome-shell-extensions.gcampax.github.com"
         "transparent-window-moving@noobsai.github.com" 
         "burn-my-windows@schneegans.github.com"
         "openbar@neuromorph"
