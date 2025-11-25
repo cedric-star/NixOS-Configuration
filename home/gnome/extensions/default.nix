@@ -26,9 +26,7 @@
 
   dconf.settings = {
     "org/gnome/shell" = {
-      disabled-extensions = [ 
-      ];
-      enabled-extensions = [#cli: 'gnome-extensions list'
+      disabled-extensions = [
         "blur-my-shell@aunetx"
         "clipboard-indicator@tudmotu.com"
         "logomenu@aryan_k"
@@ -36,7 +34,12 @@
         "transparent-window-moving@noobsai.github.com" 
         "burn-my-windows@schneegans.github.com"
         "openbar@neuromorph"
-        "Vitals@CoreCoding.com"
+        "Vitals@CoreCoding.com" 
+      ];
+      enabled-extensions = [#cli: 'gnome-extensions list'
+
+        "user-theme@gnome-shell-extensions.gcampax.github.com"
+
       ];
     };
   };
