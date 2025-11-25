@@ -25,7 +25,7 @@ in
 
 ### candybar: in panel um jedes item ellipse
       candyalpha = 0.72;
-      candybar = true;
+      candybar = false;
       candy1 = stylixColors.base00;
       candy2 = stylixColors.base00;
       candy3 = stylixColors.base00;
