@@ -46,8 +46,7 @@ in
 
       #mfgcolor = fg0; # scriftfarbe in gnome boxen
       #dark-mfgcolor = fg0;
-
-      font = "Adwaita Mono Bold 13";
+      #font = "Adwaita Mono Bold 13";
 
       height = 30;
       margin = 0.2;
@@ -77,15 +76,15 @@ in
 
 
       ### farben auf alles anwenden
-      apply-accent-shell = true;
-      apply-all-shell = true;
-      apply-menu-notif = true;
-      apply-menu-shell = true;
+      apply-accent-shell = false;
+      apply-all-shell = false;
+      apply-menu-notif = false;
+      apply-menu-shell = false;
 
       ### styles löschen (clean machen)
       neon = false;
 
-      menustyle = true;
+      menustyle = false; #farben nicht überschreiben
 
       mbalpha = 0.0; #linien umrandung um fenster entfernen
       dark-mbalpha = 0.0;
