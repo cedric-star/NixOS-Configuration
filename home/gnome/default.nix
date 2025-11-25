@@ -5,6 +5,6 @@
     ./extensions
     ./settings.nix
     #./setuppywal.nix
-    #./mytheme.nix
+    ./mytheme.nix
   ];
 }
