@@ -55,7 +55,6 @@ in
       vpad = 2.3;
 
 
-
 ### hintergründ
       mbgalpha = 0.55; #hintergrund transparent
       #mbgcolor = bg0;  # allgemeine hintergrundfarbe
