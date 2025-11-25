@@ -16,7 +16,7 @@
       mechatroner.rainbow-csv               #csv
       ms-toolsai.jupyter                    #jupyter
       ms-python.python                      #python
-      dlasagno.wal-theme                    #für pywal theming
+      dlasagno.waltheme                    #für pywal theming
     ];
   };
 }
