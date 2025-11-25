@@ -62,8 +62,8 @@ in
   
 
 ### buttons
-      #mhcolor = bg1; # über buttons hovern
-      #dark-mhcolor = bg1;
+      mhcolor = none; # über buttons hovern
+      dark-mhcolor = none;
       mhalpha = 0.10;
 
       #mscolor = bg2; #farbe von gedrückten buttons
