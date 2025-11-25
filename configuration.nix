@@ -10,6 +10,9 @@
   stylix.image = ./home/gnome/wallpapers/b1.png;
   stylix.base16Scheme = {
     base00 = "1a0f14"; # Default Background
+    base00-transparent = "1a0f1480"; # 50% transparent
+
+    
     base01 = "25181e"; # Lighter Background
     base02 = "302128"; # Selection Background
     base03 = "4a3a40"; # Comments
