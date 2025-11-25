@@ -8,5 +8,6 @@
 
   stylix.enable = true;
   stylix.image = ./home/gnome/wallpapers/b1.png;
+  stylix.polarity = "dark";
   
 }
