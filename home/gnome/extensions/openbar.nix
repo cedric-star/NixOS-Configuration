@@ -58,8 +58,8 @@ in
 ### candybar: in panel um jedes item ellipse
       candyalpha = 0.72;
       candybar = true;
-      candy1 = hexToRgb stylixColors.base00;
-      candy2 = hexToRgb stylixColors.base00;
+      candy1 = hexToRgbStrings stylixColors.base00;
+      candy2 = hexToRgbStrings stylixColors.base00;
       candy3 = stylixColors.base00;
       candy4 = stylixColors.base00;
       candy5 = stylixColors.base00;
