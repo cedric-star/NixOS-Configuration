@@ -12,7 +12,7 @@ palette:
   base06: "#e0a5c9"  # helles rosa;                        überschriften, wichtige textteile
   base07: "#e8c3d9"  # sehr helles rosa;                   cli-hintergrund, modale fenster
   base08: "#f0d1e4"  # weiß-rosa;                          variablen, xml-tags
-  base09: "#d400a1"  # klares pink;                        zahlen, boolean-werte
+  base09: "#c085c7"  # klares pink;                        zahlen, boolean-werte
   base0A: "#8a6dc7"  # gedämpftes lila;                    klassen, markup-elemente
   base0B: "#6b84d1"  # weiches blau;                       strings, vererbte klassen
   base0C: "#e8e45c"  # dezentes gelb;                      support, regex
