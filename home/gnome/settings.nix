@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 
 
 {
@@ -12,10 +12,14 @@
   ];
 
   ### Templates importieren
-  home.file."Templates" = {
+  home.file.".local/share/Templates" = {
     source = ./templates;
     recursive = true;
   };
+  myCopyTemplates = lib.hm.dag.entryAfter ["writeBoundary"] ''
+    cp $HOME/.local/share/Templates $HOME/Templates
+  '';
+
 
   dconf.settings = {
     "org/gnome/shell" = {
