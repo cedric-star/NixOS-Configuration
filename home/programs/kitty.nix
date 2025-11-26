@@ -15,7 +15,7 @@
     
     shellIntegration.enableFishIntegration = true;
     extraConfig = ''
-      shell ${pkgs.fish}/bin/fish
+      # shell ${pkgs.fish}/bin/fish
 
       copy_on_select yes
       
