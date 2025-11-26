@@ -12,7 +12,7 @@
   ];
 
   ### Hintergrundbild importieren
-  home.file.".Templates/".source = ./templates/;
+  home.file.".Templates".source = ./templates;
 
   dconf.settings = {
     "org/gnome/shell" = {
