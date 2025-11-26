@@ -27,10 +27,7 @@
   dconf.settings = {
     "org/gnome/shell" = {
       disabled-extensions = [#
-
-      
         "openbar@neuromorph"
-
       ];
       enabled-extensions = [#cli: 'gnome-extensions list'
         "blur-my-shell@aunetx"
