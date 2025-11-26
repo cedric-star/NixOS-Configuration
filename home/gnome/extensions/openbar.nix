@@ -14,7 +14,7 @@ let
       (builtins.div b 255.0)
     ];
 
-  stylixColors = hexToRgb config.lib.stylix.colors;
+  stylixColors = config.lib.stylix.colors;
 in 
 
 {
@@ -39,8 +39,8 @@ in
 ### candybar: in panel um jedes item ellipse
       candyalpha = 0.72;
       candybar = false;
-      candy1 = stylixColors.base00;
-      candy2 = stylixColors.base00;
+      candy1 = hexToRgb stylixColors.base00;
+      candy2 = hexToRgb stylixColors.base00;
       candy3 = stylixColors.base00;
       candy4 = stylixColors.base00;
       candy5 = stylixColors.base00;
