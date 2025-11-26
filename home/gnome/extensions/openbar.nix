@@ -5,17 +5,28 @@ let
   hexToRgb = hex:
     let
       cleanHex = lib.removePrefix "#" hex;
-      r = (builtins.substring 0 2 cleanHex);
-      g = (builtins.substring 2 2 cleanHex);
-      b = (builtins.substring 4 2 cleanHex);
-      
-
-    in [
-      (r / 255.0)
-      (g / 255.0)
-      (b / 255.0)
-    ];
-
+      hexToInt = s:
+        let 
+          chars = lib.stringToCharacters (lib.toLower s);
+            toDecimal = c:
+              if c == "a" then 10
+              else if c == "b" then 11
+              else if c == "c" then 12
+              else if c == "d" then 13
+              else if c == "e" then 14
+              else if c == "f" then 15
+              else lib.toInt c;
+        in
+          (toDecimal (lib.elemAt chars 0)) * 16 + (toDecimal (lib.elemAt chars 1));
+          
+          r = hexToInt (builtins.substring 0 2 cleanHex);
+          g = hexToInt (builtins.substring 2 2 cleanHex);
+          b = hexToInt (builtins.substring 4 2 cleanHex);
+        in [
+          (r / 255.0)
+          (g / 255.0)
+          (b / 255.0)
+        ];
   stylixColors = config.lib.stylix.colors;
 in 
 
