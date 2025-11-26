@@ -9,7 +9,7 @@
   stylix.fonts = {
     monospace = {
       package = pkgs.nerdfonts.override {fonts = ["JetBrainsmono"];};
-      name = "JetBrainsMono Nerd Font Mono Bold";
+      name = "JetBrainsMono Nerd Font Mono";
     };
   };
 
