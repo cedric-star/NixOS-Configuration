@@ -11,7 +11,7 @@
     #lxappearance
   ];
 
-  ### Hintergrundbild importieren
+  ### Templates importieren
   home.file."Templates" = {
     source = ./templates;
     recursive = true;
