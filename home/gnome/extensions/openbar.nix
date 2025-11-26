@@ -117,7 +117,7 @@ in
 
       mscolor = hexToRgbStrings sc.base0D; #farbe von gedrückten buttons
       dark-mscolor = hexToRgbStrings sc.base0D; #farbe von gedrückten buttons
-      msalpha = 0.55;
+      msalpha = 0.85;
 
 
       disize = 60; #icon größe dashdock
@@ -139,6 +139,7 @@ in
       dark-mbalpha = 0.0;
       
       autohg-menu = false; #für custom farbe beim hovern
+      autohg-bar = false; # hovern über panel buttons eigene farbe anschalten
       mshalpha = 0.0; #shadow hinter hintergrundfarbe wegmachen
 
 

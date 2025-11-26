@@ -3,19 +3,19 @@ name: "MyPink Theme"
 author: "cedric-star"
 variant: "dark"
 palette:
-  base00: "#170010"  # dunkelweinrot;                     main background
-  base01: "#250019"  # dunkelweinrot;                     sidebar, statusleiste
-  base02: "#470031"  # mittelweinrot;                     auswahl, hover-zustände
-  base03: "#da0098"  # pink;                              kommentare, deaktivierter code
-  base04: "#f513af"  # pink (hell);                       weniger wichtige syntax
-  base05: "#f551c2"  # rosa;                              primärer text, variablennamen
-  base06: "#f57dd0"  # sehr hellrosa;                     überschriften, wichtige textteile
-  base07: "#f5acde"  # sehr weißrosa;                     cli-hintergrund, modale fenster
-  base08: "#ffa6e5"  # weißrosa;                          variablen, xml-tags
-  base09: "#ff00c4"  # pink (intensiv);                   zahlen, boolean-werte
-  base0A: "#9640ec"  # lila;                              klassen, markup-elemente
-  base0B: "#5c77e7"  # blau;                              strings, vererbte klassen
-  base0C: "#f6ff6f"  # gelb;                              support, regex
-  base0D: "#ffdfbc"  # beige;                             methoden, funktionen
-  base0E: "#e2e2e2"  # hellgrau;                          schlüsselwörter, storage-typen
-  base0F: "#c4e0c0"  # hellgrün;                          veralteter code
+  base00: "#1a0a14"  # weich abgedunkeltes burgunder;      main background
+  base01: "#27121e"  # weiches burgunder;                  sidebar, statusleiste
+  base02: "#3d2434"  # gedämpftes burgunder;               auswahl, hover-zustände
+  base03: "#b13d8c"  # gedämpftes pink;                    kommentare, deaktivierter code
+  base04: "#c95ca0"  # weiches pink;                       weniger wichtige syntax
+  base05: "#d67db3"  # dezentes rosa;                      primärer text, variablennamen
+  base06: "#e0a5c9"  # helles rosa;                        überschriften, wichtige textteile
+  base07: "#e8c3d9"  # sehr helles rosa;                   cli-hintergrund, modale fenster
+  base08: "#f0d1e4"  # weiß-rosa;                          variablen, xml-tags
+  base09: "#d400a1"  # klares pink;                        zahlen, boolean-werte
+  base0A: "#8a6dc7"  # gedämpftes lila;                    klassen, markup-elemente
+  base0B: "#6b84d1"  # weiches blau;                       strings, vererbte klassen
+  base0C: "#e8e45c"  # dezentes gelb;                      support, regex
+  base0D: "#e8d2b8"  # warmes beige;                       methoden, funktionen
+  base0E: "#d1d1d1"  # neutrales grau;                     schlüsselwörter, storage-typen
+  base0F: "#b4d4af"  # weiches grün;                       veralteter code
