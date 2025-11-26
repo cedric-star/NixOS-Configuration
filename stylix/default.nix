@@ -28,5 +28,5 @@
   };
   stylix.polarity = "dark";
   
-  config.stylix.targets.firefox.profileNames = [ "default" ];
+  stylix.targets.firefox.profileNames = [ "default" ];
 }
