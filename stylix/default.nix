@@ -7,7 +7,6 @@
   stylix.polarity = "dark";
 
   stylix.fonts = {
-    enable = true;
     monospace = {
       package = pkgs.nerdfonts.override {fonts = ["JetBrainsmono"];};
       name = "JetBrainsMono Nerd Font Mono Bold";
