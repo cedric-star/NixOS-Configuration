@@ -27,7 +27,9 @@
     base0F = "d8a870"; # Brown
   };
   stylix.polarity = "dark";
-  
+  stylix.targets.firefox.colorTheme.enable = true;
+
+
   stylix.targets.firefox.profileNames = [ "default" ];
   
 }
