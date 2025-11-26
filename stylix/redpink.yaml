@@ -3,19 +3,19 @@ name: "MyPink Theme"
 author: "cedric-star"
 variant: "dark"
 palette:
-  base00: "#170010"  # Main Background - Dunkelrot (Editor-Hintergrund)
-  base01: "#250019"  # Lighter Background - Dunkelrot (Sidebar, Statusleiste)
-  base02: "#470031"  # Selection Background - Mittelrot (Auswahl, Hover-Zustände)
-  base03: "#da0098"  # Comments - pink (Kommentare, deaktivierter Code)
-  base04: "#f513af"  # Dark Foreground - pink (heller) ( weniger wichtige Syntax)
-  base05: "#f551c2"  # Default Foreground - rosa (Primärer Text, Variablennamen)
-  base06: "#f57dd0"  # Light Foreground - Sehr hellrosa (Überschriften, wichtige Textteile)
-  base07: "#f5acde"  # Light Background - Sehr weißrosa (CLI-Hintergrund, modale Fenster)
-  base08: "#ffa6e5"  # Variables, XML Tags - weißrosa (Variablen, XML-Tags)
-  base09: "#ff00c4"  # Integers, Boolean - Mittel (Zahlen, Boolean-Werte)
-  base0A: "#9640ec"  # Classes, Markup - Mittel (Klassen, Markup-Elemente)
-  base0B: "#5c77e7"  # Strings, Inherited Class - Mittel (Strings, vererbte Klassen)
-  base0C: "#f6ff6f"  # Support, Regex - Sehr Hell (Funktionen, Regex)
-  base0D: "#ffdfbc"  # Functions, Methods - Sehr Hell (Methoden, Funktionen)
-  base0E: "#e2e2e2"  # Keywords, Storage - Sehr Hell (Schlüsselwörter, Storage-Typen)
-  base0F: "#c4e0c0"  # Deprecated - Hell (Veralteter Code, eingebettete Sprachen)
+  base00: "#170010"  # dunkelweinrot;                     main background
+  base01: "#250019"  # dunkelweinrot;                     sidebar, statusleiste
+  base02: "#470031"  # mittelweinrot;                     auswahl, hover-zustände
+  base03: "#da0098"  # pink;                              kommentare, deaktivierter code
+  base04: "#f513af"  # pink (hell);                       weniger wichtige syntax
+  base05: "#f551c2"  # rosa;                              primärer text, variablennamen
+  base06: "#f57dd0"  # sehr hellrosa;                     überschriften, wichtige textteile
+  base07: "#f5acde"  # sehr weißrosa;                     cli-hintergrund, modale fenster
+  base08: "#ffa6e5"  # weißrosa;                          variablen, xml-tags
+  base09: "#ff00c4"  # pink (intensiv);                   zahlen, boolean-werte
+  base0A: "#9640ec"  # lila;                              klassen, markup-elemente
+  base0B: "#5c77e7"  # blau;                              strings, vererbte klassen
+  base0C: "#f6ff6f"  # gelb;                              support, regex
+  base0D: "#ffdfbc"  # beige;                             methoden, funktionen
+  base0E: "#e2e2e2"  # hellgrau;                          schlüsselwörter, storage-typen
+  base0F: "#c4e0c0"  # hellgrün;                          veralteter code

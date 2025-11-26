@@ -75,26 +75,26 @@ in
 ### candybar: in panel um jedes item ellipse
       candyalpha = 0.72;
       candybar = true;
-      candy1 = hexToRgbStrings sc.base00;
-      candy2 = hexToRgbStrings sc.base00;
-      candy3 = hexToRgbStrings sc.base00;
-      candy4 = hexToRgbStrings sc.base00;
-      candy5 = hexToRgbStrings sc.base00;
-      candy6 = hexToRgbStrings sc.base00;
-      dark-candy1 = hexToRgbStrings sc.base00;
-      dark-candy2 = hexToRgbStrings sc.base00;
-      dark-candy3 = hexToRgbStrings sc.base00;
-      dark-candy4 = hexToRgbStrings sc.base00;
-      dark-candy5 = hexToRgbStrings sc.base00;
-      dark-candy6 = hexToRgbStrings sc.base00;
+      candy1 = hexToRgbStrings sc.base01;
+      candy2 = hexToRgbStrings sc.base01;
+      candy3 = hexToRgbStrings sc.base01;
+      candy4 = hexToRgbStrings sc.base01;
+      candy5 = hexToRgbStrings sc.base01;
+      candy6 = hexToRgbStrings sc.base01;
+      dark-candy1 = hexToRgbStrings sc.base01;
+      dark-candy2 = hexToRgbStrings sc.base01;
+      dark-candy3 = hexToRgbStrings sc.base01;
+      dark-candy4 = hexToRgbStrings sc.base01;
+      dark-candy5 = hexToRgbStrings sc.base01;
+      dark-candy6 = hexToRgbStrings sc.base01;
 
 ### schrift
       fgalpha = 0.85;
-      fgcolor = hexToRgbStrings sc.base08; # schriftfarbe in panel
-      dark-fgcolor = hexToRgbStrings sc.base08;
+      fgcolor = hexToRgbStrings sc.base0D; # schriftfarbe in panel
+      dark-fgcolor = hexToRgbStrings sc.base0D;
 
-      mfgcolor = hexToRgbStrings sc.base08; # scriftfarbe in gnome boxen
-      dark-mfgcolor = hexToRgbStrings sc.base08;
+      mfgcolor = hexToRgbStrings sc.base0D; # scriftfarbe in gnome boxen
+      dark-mfgcolor = hexToRgbStrings sc.base0D;
       #font = "Adwaita Mono Bold 13";
 
       height = 30;
@@ -106,16 +106,17 @@ in
 
 ### hintergründ
       mbgalpha = 0.55; #hintergrund transparent
-      mbgcolor = hexToRgbStrings sc.base00;  # allgemeine hintergrundfarbe
-      dark-mbgcolor = hexToRgbStrings sc.base00;
+      mbgcolor = hexToRgbStrings sc.base01;  # allgemeine hintergrundfarbe
+      dark-mbgcolor = hexToRgbStrings sc.base01;
   
 
 ### buttons
-      mhcolor = hexToRgbStrings sc.base03; # über buttons hovern
-      dark-mhcolor = hexToRgbStrings sc.base03;
+      mhcolor = hexToRgbStrings sc.base0D; # über buttons hovern
+      dark-mhcolor = hexToRgbStrings sc.base0D;
       mhalpha = 0.10;
 
-      mscolor = hexToRgbStrings sc.base03; #farbe von gedrückten buttons
+      mscolor = hexToRgbStrings sc.base0D; #farbe von gedrückten buttons
+      dark-mscolor = hexToRgbStrings sc.base0D; #farbe von gedrückten buttons
       msalpha = 0.55;
 
 
