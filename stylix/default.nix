@@ -10,7 +10,7 @@
     
     base01 = "25181e"; # Lighter Background
     base02 = "302128"; # Selection Background
-    base03 = "4a3a40"; # Comments
+    base03 = "f0d8a8"; # Comments
     base04 = "655359"; # Dark Foreground
     base05 = "d8c8cf"; # Default Foreground
     base06 = "e3d8dd"; # Light Foreground
