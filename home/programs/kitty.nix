@@ -17,8 +17,6 @@
     extraConfig = ''
       shell ${pkgs.fish}/bin/fish
 
-
-      # Tastenkombinationen für Kopieren & Einfügen
       copy_on_select yes
       
       map ctrl+shift+c copy_to_clipboard
