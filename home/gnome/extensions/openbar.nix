@@ -66,8 +66,8 @@ in
 
       ### über candy items drüber hovern/anklicken
       halpha = 0.55;
-      #hcolor = bg1;
-      #dark-hcolor = bg1;
+      hcolor = hexToRgbStrings sc.base03;
+      dark-hcolor = hexToRgbStrings sc.base03;
       reloadstyle = false;
       trigger-reload = false;
 
@@ -90,11 +90,11 @@ in
 
 ### schrift
       fgalpha = 0.85;
-      #fgcolor = fg0; # schriftfarbe in panel
-      #dark-fgcolor = fg0;
+      fgcolor = hexToRgbStrings sc.base08; # schriftfarbe in panel
+      dark-fgcolor = hexToRgbStrings sc.base08;
 
-      #mfgcolor = fg0; # scriftfarbe in gnome boxen
-      #dark-mfgcolor = fg0;
+      mfgcolor = hexToRgbStrings sc.base08; # scriftfarbe in gnome boxen
+      dark-mfgcolor = hexToRgbStrings sc.base08;
       #font = "Adwaita Mono Bold 13";
 
       height = 30;
@@ -111,11 +111,11 @@ in
   
 
 ### buttons
-      #mhcolor = bg1; # über buttons hovern
-      #dark-mhcolor = bg1;
+      mhcolor = hexToRgbStrings sc.base03; # über buttons hovern
+      dark-mhcolor = hexToRgbStrings sc.base03;
       mhalpha = 0.10;
 
-      #mscolor = ; #farbe von gedrückten buttons
+      mscolor = hexToRgbStrings sc.base03; #farbe von gedrückten buttons
       msalpha = 0.55;
 
 
