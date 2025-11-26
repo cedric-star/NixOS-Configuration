@@ -17,7 +17,7 @@
     recursive = true;
   };
   home.activation.myCopyTemplates = lib.hm.dag.entryAfter ["writeBoundary"] ''
-    cp $HOME/.local/share/Templates $HOME/Templates
+    cp -r $HOME/.local/share/Templates $HOME/Templates
   '';
 
 
