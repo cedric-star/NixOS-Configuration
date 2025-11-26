@@ -11,9 +11,9 @@ let
       b = parseHex (builtins.substring 4 2 cleanHex);
       
       # Auf 3 Nachkommastellen runden
-  trunc = f: if f < 0 then builtins.ceil f else builtins.floor f;
-  pow = b: n: builtins.foldl' builtins.mul 1 (builtins.genList (_: b) n);
-  truncateFloat = f: p: trunc (f * pow 10 p) / pow 10.0 p;
+      trunc = f: if f < 0 then builtins.ceil f else builtins.floor f;
+      pow = b: n: builtins.foldl' builtins.mul 1 (builtins.genList (_: b) n);
+      truncateFloat = f: p: trunc (f * pow 10 p) / pow 10.0 p;
     in [
       (truncateFloat (r / 255.0))
       (truncateFloat (g / 255.0))
