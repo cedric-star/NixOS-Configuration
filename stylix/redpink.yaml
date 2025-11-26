@@ -1,0 +1,21 @@
+system: "base16"
+name: "MyPink Theme"
+author: "cedric-star"
+variant: "dark"
+palette:
+  base00: "#20201d" # Default Background
+  base01: "#292824" # Lighter Background
+  base02: "#6e6b5e" # Selection Background
+  base03: "#7d7a68" # Comments
+  base04: "#999580" # Dark Foreground
+  base05: "#a6a28c" # Default Foreground
+  base06: "#e8e4cf" # Light Foreground
+  base07: "#fefbec" # Light Background
+  base08: "#d73737" 
+  base09: "#b65611"
+  base0A: "#ae9513"
+  base0B: "#60ac39"
+  base0C: "#1fad83"
+  base0D: "#6684e1"
+  base0E: "#b854d4"
+  base0F: "#d43552"
