@@ -19,3 +19,15 @@ palette:
   base0D: "#d67db3"  # helles rosa                         methoden, funktionen
   base0E: "#d1d1d1"  # neutrales grau;                     schlüsselwörter, storage-typen
   base0F: "#b4d4af"  # weiches grün;                       veralteter code
+
+
+  ### von stylix:
+
+#    Default background: base00
+#    Alternate background: base01
+#    Selection background: base02
+#    Default text: base05
+#    Alternate text: base04
+#    Warning: base0A
+#    Urgent: base09
+#    Error: base08
