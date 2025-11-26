@@ -36,7 +36,7 @@
         "burn-my-windows@schneegans.github.com"
         "user-theme@gnome-shell-extensions.gcampax.github.com"
         "Vitals@CoreCoding.com"
-        "openbar@neuromorph"
+        #"openbar@neuromorph"
       ];
     };
   };
