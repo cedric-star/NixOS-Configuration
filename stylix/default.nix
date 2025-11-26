@@ -28,9 +28,6 @@
   };
   stylix.polarity = "dark";
   
-  stylix.targets = {
-    firefox.enable = true;
-    firefox.profileNames = [ "default" ];
-  };
+  stylix.targets.firefox.profileNames = [ "default" ];
   
 }
