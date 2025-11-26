@@ -5,7 +5,6 @@
   home.packages = with pkgs; [
     dconf-editor
     tela-icon-theme
-    qogir-theme
     gnome-tweaks
     gdm-settings
     #lxappearance

@@ -4,6 +4,5 @@
   imports = [
     ./extensions
     ./settings.nix
-    ./setuppywal.nix
   ];
 }
