@@ -66,10 +66,14 @@ in
 
       ### über candy items drüber hovern/anklicken
       halpha = 0.55;
-      hcolor = hexToRgbStrings sc.base03;
-      dark-hcolor = hexToRgbStrings sc.base03;
-      reloadstyle = false;
+      hcolor = hexToRgbStrings sc.base05;
+      dark-hcolor = hexToRgbStrings sc.base05;
+
       trigger-reload = false;
+      smbgoverride = true;
+      reloadstyle = true;
+      smbgcolor = hexToRgbStrings sc.base0D; # knöpfe bei buttons eigene normale farbe
+      dark-smbgcolor = hexToRgbStrings sc.base0D;
 
 
 ### candybar: in panel um jedes item ellipse
@@ -90,11 +94,11 @@ in
 
 ### schrift
       fgalpha = 0.85;
-      fgcolor = hexToRgbStrings sc.base0D; # schriftfarbe in panel
-      dark-fgcolor = hexToRgbStrings sc.base0D;
+      fgcolor = hexToRgbStrings sc.base05; # schriftfarbe in panel
+      dark-fgcolor = hexToRgbStrings sc.base05;
 
-      mfgcolor = hexToRgbStrings sc.base0D; # scriftfarbe in gnome boxen
-      dark-mfgcolor = hexToRgbStrings sc.base0D;
+      mfgcolor = hexToRgbStrings sc.base05; # scriftfarbe in gnome boxen
+      dark-mfgcolor = hexToRgbStrings sc.base05;
       #font = "Adwaita Mono Bold 13";
 
       height = 30;
@@ -111,12 +115,12 @@ in
   
 
 ### buttons
-      mhcolor = hexToRgbStrings sc.base0D; # über buttons hovern
-      dark-mhcolor = hexToRgbStrings sc.base0D;
+      mhcolor = hexToRgbStrings sc.base05; # über buttons hovern
+      dark-mhcolor = hexToRgbStrings sc.base05;
       mhalpha = 0.10;
 
-      mscolor = hexToRgbStrings sc.base0D; #farbe von gedrückten buttons
-      dark-mscolor = hexToRgbStrings sc.base0D; #farbe von gedrückten buttons
+      mscolor = hexToRgbStrings sc.base05; #farbe von gedrückten buttons
+      dark-mscolor = hexToRgbStrings sc.base05; #farbe von gedrückten buttons
       msalpha = 0.85;
 
 
