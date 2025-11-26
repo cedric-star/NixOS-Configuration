@@ -4,7 +4,7 @@
   imports = [
     ./firefox.nix
     ./vscodium.nix
-    #./kitty.nix
+    ./kitty.nix
     ./nvim.nix
   ];
    
