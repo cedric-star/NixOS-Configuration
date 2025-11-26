@@ -4,6 +4,6 @@
   imports = [
       ./hardware-configuration.nix
       ./system
-      ./stylix
+      #./stylix
   ];   
 }
