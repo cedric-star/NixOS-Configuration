@@ -6,16 +6,16 @@ palette:
   base00: "#1e0015" # Main Background - deep purple-black
   base01: "#2a001f" # Lighter Background - subtle elevated surfaces
   base02: "#360029" # Selection Background - highlighted areas
-  base03: "#420033" # Comments, Invisibles - dark pink-gray
-  base04: "#4e003d" # Dark Foreground - less important text
-  base05: "#fc59a9" # Default Foreground - primary text (normaler text)
-  base06: "#ff66b3" # Light Foreground - bright text
-  base07: "#ff80c1" # Light Background - very light pink
-  base08: "#ff0083" # Variables, XML Tags - vibrant pink (foreground)
-  base09: "#ff338c" # Integers, Boolean, Constants - slightly lighter pink
-  base0A: "#ff66b3" # Classes, Markup - medium pink
-  base0B: "#ff99cc" # Strings, Inherited Class - soft pink
-  base0C: "#ffcce6" # Support, Regular Expressions - very light pink
-  base0D: "#c30088" # Functions, Methods, Attribute IDs - deep magenta (zeilenzahlen)
-  base0E: "#e6007a" # Keywords, Storage - bright magenta
-  base0F: "#a8006b" # Deprecated, Opening/Closing Embedded Language Tags - dark magenta
+  base03: "#6d4a63" # Comments, Invisibles - lighter purple-pink (heller für bessere Lesbarkeit)
+  base04: "#8a5c7d" # Dark Foreground - medium pink for less important text
+  base05: "#ffcce6" # Default Foreground - very light pink (helles Rosa für Haupttext)
+  base06: "#ffe6f3" # Light Foreground - very bright pink (sehr hell für Akzente)
+  base07: "#fff0f8" # Light Background - almost white pink (für Hintergründe in CLI)
+  base08: "#ff4da6" # Variables, XML Tags - bright vibrant pink
+  base09: "#ff66b3" # Integers, Boolean, Constants - medium bright pink
+  base0A: "#ff80c1" # Classes, Markup - light pink
+  base0B: "#ff99cc" # Strings, Inherited Class - soft light pink
+  base0C: "#ffb3d9" # Support, Regular Expressions - very light pink
+  base0D: "#ff33a1" # Functions, Methods, Attribute IDs - bright magenta (heller für CLI)
+  base0E: "#ff1a99" # Keywords, Storage - vibrant magenta
+  base0F: "#ff0090" # Deprecated, Embedded Language Tags - pure pink
