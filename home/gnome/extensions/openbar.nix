@@ -1,6 +1,19 @@
 { config, pkgs, ... }:
 
 let 
+  # Funktion zur Konvertierung von Hex zu RGB (0-1)
+  hexToRgb = hex:
+    let
+      # cleanHex = lib.removePrefix "#" hex;
+      r = lib.fixedWidthNumber 2 (builtins.substring 0 2 cleanHex);
+      g = lib.fixedWidthNumber 2 (builtins.substring 2 2 cleanHex);
+      b = lib.fixedWidthNumber 2 (builtins.substring 4 2 cleanHex);
+    in [
+      (builtins.div r 255.0)
+      (builtins.div g 255.0)
+      (builtins.div b 255.0)
+    ];
+    
   stylixColors = config.lib.stylix.colors;
 in 
 
