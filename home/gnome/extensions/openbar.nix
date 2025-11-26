@@ -2,7 +2,7 @@
 
 let 
   # Funktion zur Konvertierung von Hex zu RGB (0-1)
-  hexToRgbStrings = hex:
+hexToRgbStrings = hex:
   let
     cleanHex = lib.removePrefix "#" hex;
     hexToInt = s:
@@ -23,7 +23,7 @@ let
     g = hexToInt (builtins.substring 2 2 cleanHex);
     b = hexToInt (builtins.substring 4 2 cleanHex);
     
-    # Auf 3 Nachkommastellen formatieren
+    # Auf 3 Nachkommastellen formatieren (ohne führende Nullen Problem)
     formatFloat = x: 
       let 
         scaled = builtins.floor (x * 1000 + 0.5);
@@ -37,7 +37,12 @@ let
           let 
             integer = lib.elemAt parts 0;
             decimal = lib.elemAt parts 1;
-            paddedDecimal = lib.fixedWidthNumber 3 (lib.toInt (lib.substring 0 3 (decimal + "000")));
+            # Vermeide toInt für führende Nullen
+            paddedDecimal = 
+              if lib.stringLength decimal >= 3 then
+                lib.substring 0 3 decimal
+              else
+                decimal + (lib.substring 0 (3 - (lib.stringLength decimal)) "000");
           in
             integer + "." + paddedDecimal;
   in [
