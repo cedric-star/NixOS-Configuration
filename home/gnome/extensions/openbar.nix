@@ -50,7 +50,7 @@ hexToRgbStrings = hex:
     (formatFloat (g / 255.0))
     (formatFloat (b / 255.0))
   ];
-  stylixColors = config.lib.stylix.colors;
+  sc = config.lib.stylix.colors;
 in 
 
 {
@@ -75,18 +75,18 @@ in
 ### candybar: in panel um jedes item ellipse
       candyalpha = 0.72;
       candybar = true;
-      candy1 = hexToRgbStrings stylixColors.base00;
-      candy2 = hexToRgbStrings stylixColors.base00;
-      candy3 = stylixColors.base00;
-      candy4 = stylixColors.base00;
-      candy5 = stylixColors.base00;
-      candy6 = stylixColors.base00;
-      dark-candy1 = stylixColors.base00;
-      dark-candy2 = stylixColors.base00;
-      dark-candy3 = stylixColors.base00;
-      dark-candy4 = stylixColors.base00;
-      dark-candy5 = stylixColors.base00;
-      dark-candy6 = stylixColors.base00;
+      candy1 = hexToRgbStrings sc.base00;
+      candy2 = hexToRgbStrings sc.base00;
+      candy3 = hexToRgbStrings sc.base00;
+      candy4 = hexToRgbStrings sc.base00;
+      candy5 = hexToRgbStrings sc.base00;
+      candy6 = hexToRgbStrings sc.base00;
+      dark-candy1 = hexToRgbStrings sc.base00;
+      dark-candy2 = hexToRgbStrings sc.base00;
+      dark-candy3 = hexToRgbStrings sc.base00;
+      dark-candy4 = hexToRgbStrings sc.base00;
+      dark-candy5 = hexToRgbStrings sc.base00;
+      dark-candy6 = hexToRgbStrings sc.base00;
 
 ### schrift
       fgalpha = 0.85;
@@ -106,8 +106,8 @@ in
 
 ### hintergründ
       mbgalpha = 0.55; #hintergrund transparent
-      #mbgcolor = bg0;  # allgemeine hintergrundfarbe
-      #dark-mbgcolor = bg0;
+      mbgcolor = hexToRgbStrings sc.base00;  # allgemeine hintergrundfarbe
+      dark-mbgcolor = hexToRgbStrings sc.base00;
   
 
 ### buttons
