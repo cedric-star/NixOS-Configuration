@@ -2,31 +2,37 @@
 
 let 
   # Funktion zur Konvertierung von Hex zu RGB (0-1)
-  hexToRgb = hex:
+  hexToRgbStrings = hex:
     let
       cleanHex = lib.removePrefix "#" hex;
-      hexToInt = s:
+      hexToInt = s: builtins.fromJSON ("0x" + s);
+    
+      r = hexToInt (builtins.substring 0 2 cleanHex);
+      g = hexToInt (builtins.substring 2 2 cleanHex);
+      b = hexToInt (builtins.substring 4 2 cleanHex);
+    
+    # Auf 3 Nachkommastellen formatieren
+      formatFloat = x: 
         let 
-          chars = lib.stringToCharacters (lib.toLower s);
-            toDecimal = c:
-              if c == "a" then 10
-              else if c == "b" then 11
-              else if c == "c" then 12
-              else if c == "d" then 13
-              else if c == "e" then 14
-              else if c == "f" then 15
-              else lib.toInt c;
+          scaled = builtins.floor (x * 1000 + 0.5);
+          rounded = scaled / 1000.0;
+          str = toString rounded;
+          parts = lib.splitString "." str;
         in
-          (toDecimal (lib.elemAt chars 0)) * 16 + (toDecimal (lib.elemAt chars 1));
-          
-          r = hexToInt (builtins.substring 0 2 cleanHex);
-          g = hexToInt (builtins.substring 2 2 cleanHex);
-          b = hexToInt (builtins.substring 4 2 cleanHex);
-        in [
-          (r / 255.0)
-          (g / 255.0)
-          (b / 255.0)
-        ];
+          if lib.length parts == 1 then
+            str + ".000"
+          else
+            let 
+              integer = lib.elemAt parts 0;
+              decimal = lib.elemAt parts 1;
+              paddedDecimal = lib.fixedWidthNumber 3 (lib.toInt (lib.substring 0 3 (decimal + "000")));
+            in
+              integer + "." + paddedDecimal;
+    in [
+      (formatFloat (r / 255.0))
+      (formatFloat (g / 255.0))
+      (formatFloat (b / 255.0))
+    ];
   stylixColors = config.lib.stylix.colors;
 in 
 
