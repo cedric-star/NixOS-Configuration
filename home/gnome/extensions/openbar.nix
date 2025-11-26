@@ -1,6 +1,6 @@
 { config, pkgs, lib, ... }:
 
-let 
+let #funktionieeeert!!!
   # Funktion zur Konvertierung von Hex zu RGB (0-1)
 hexToRgbStrings = hex:
   let
