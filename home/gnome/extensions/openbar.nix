@@ -5,10 +5,9 @@ let
   hexToRgb = hex:
     let
       cleanHex = lib.removePrefix "#" hex;
-      parseHex = s: builtins.fromJSON ("0x" + s);
-      r = parseHex (builtins.substring 0 2 cleanHex);
-      g = parseHex (builtins.substring 2 2 cleanHex);
-      b = parseHex (builtins.substring 4 2 cleanHex);
+      r = (builtins.substring 0 2 cleanHex);
+      g = (builtins.substring 2 2 cleanHex);
+      b = (builtins.substring 4 2 cleanHex);
       
 
     in [
