@@ -12,7 +12,7 @@
   ];
 
   ### Templates importieren
-  home.file.".local/share/Templates" = {
+  home.file."Templates" = {
     source = ./templates;
     recursive = true;
   };
