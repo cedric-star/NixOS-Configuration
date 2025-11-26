@@ -3,19 +3,19 @@ name: "MyPink Theme"
 author: "cedric-star"
 variant: "dark"
 palette:
-  base00: "#20201d" # Default Background
-  base01: "#292824" # Lighter Background
-  base02: "#6e6b5e" # Selection Background
-  base03: "#7d7a68" # Comments
-  base04: "#999580" # Dark Foreground
-  base05: "#a6a28c" # Default Foreground
-  base06: "#e8e4cf" # Light Foreground
-  base07: "#fefbec" # Light Background
-  base08: "#d73737" 
-  base09: "#b65611"
-  base0A: "#ae9513"
-  base0B: "#60ac39"
-  base0C: "#1fad83"
-  base0D: "#6684e1"
-  base0E: "#b854d4"
-  base0F: "#d43552"
+  base00: "#1e0015" # Main Background - deep purple-black
+  base01: "#2a001f" # Lighter Background - subtle elevated surfaces
+  base02: "#360029" # Selection Background - highlighted areas
+  base03: "#420033" # Comments, Invisibles - dark pink-gray
+  base04: "#4e003d" # Dark Foreground - less important text
+  base05: "#fc59a9" # Default Foreground - primary text (normaler text)
+  base06: "#ff66b3" # Light Foreground - bright text
+  base07: "#ff80c1" # Light Background - very light pink
+  base08: "#ff0083" # Variables, XML Tags - vibrant pink (foreground)
+  base09: "#ff338c" # Integers, Boolean, Constants - slightly lighter pink
+  base0A: "#ff66b3" # Classes, Markup - medium pink
+  base0B: "#ff99cc" # Strings, Inherited Class - soft pink
+  base0C: "#ffcce6" # Support, Regular Expressions - very light pink
+  base0D: "#c30088" # Functions, Methods, Attribute IDs - deep magenta (zeilenzahlen)
+  base0E: "#e6007a" # Keywords, Storage - bright magenta
+  base0F: "#a8006b" # Deprecated, Opening/Closing Embedded Language Tags - dark magenta
