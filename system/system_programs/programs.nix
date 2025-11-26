@@ -7,7 +7,7 @@
     wget                        # repos remote
     htop                        # systemressourcen anzeigen
     home-manager                # home Konfigurationen 
-    kitty                       # Terminal Emulator
+    #kitty                       # Terminal Emulator
     fish                        # geile Shell
     wine
     sass

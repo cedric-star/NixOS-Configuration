@@ -14,13 +14,13 @@
     
     
     shellIntegration.enableFishIntegration = true;
-    #extraConfig = ''
+    extraConfig = ''
       # shell ${pkgs.fish}/bin/fish
 
-      #copy_on_select yes
+      copy_on_select yes
       
-      #map ctrl+shift+c copy_to_clipboard
-      #map ctrl+shift+v paste_from_clipboard
-    #'';
+      map ctrl+shift+c copy_to_clipboard
+      map ctrl+shift+v paste_from_clipboard
+    '';
   };
 }

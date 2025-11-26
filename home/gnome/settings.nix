@@ -24,7 +24,7 @@
     "org/gnome/shell" = {
 
       favorite-apps = [
-        "kitty.desktop"
+        #"kitty.desktop"
         "firefox.desktop"
         "org.gnome.Geary.desktop"
         "org.gnome.Calendar.desktop"
