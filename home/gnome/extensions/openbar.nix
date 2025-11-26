@@ -14,7 +14,7 @@ let
       (builtins.div b 255.0)
     ];
 
-  stylixColors = config.lib.stylix.colors;
+  stylixColors = hexToRgb config.lib.stylix.colors;
 in 
 
 {
