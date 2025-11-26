@@ -5,13 +5,29 @@ let
   hexToRgb = hex:
     let
       cleanHex = lib.removePrefix "#" hex;
-      r = lib.fixedWidthNumber 2 (builtins.substring 0 2 cleanHex);
-      g = lib.fixedWidthNumber 2 (builtins.substring 2 2 cleanHex);
-      b = lib.fixedWidthNumber 2 (builtins.substring 4 2 cleanHex);
+      # Bessere Methode zur Hex-zu-Dezimal Konvertierung
+      hexToDecimal = s: 
+        let 
+          digits = lib.stringToCharacters (lib.toUpper s);
+          value = c: 
+            if c == "A" then 10
+            else if c == "B" then 11
+            else if c == "C" then 12
+            else if c == "D" then 13
+            else if c == "E" then 14
+            else if c == "F" then 15
+            else lib.toInt c;
+          values = map value digits;
+        in
+          (lib.foldl' (acc: v: acc * 16 + v) 0 values);
+      
+      r = hexToDecimal (builtins.substring 0 2 cleanHex);
+      g = hexToDecimal (builtins.substring 2 2 cleanHex);
+      b = hexToDecimal (builtins.substring 4 2 cleanHex);
     in [
-      (builtins.div r 255.0)
-      (builtins.div g 255.0)
-      (builtins.div b 255.0)
+      (r / 255.0)
+      (g / 255.0)
+      (b / 255.0)
     ];
 
   stylixColors = config.lib.stylix.colors;
