@@ -51,7 +51,7 @@ in
 
 ### candybar: in panel um jedes item ellipse
       candyalpha = 0.72;
-      candybar = false;
+      candybar = true;
       candy1 = hexToRgb stylixColors.base00;
       candy2 = hexToRgb stylixColors.base00;
       candy3 = stylixColors.base00;
