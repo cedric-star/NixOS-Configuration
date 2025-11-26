@@ -11,13 +11,14 @@ let
       b = parseHex (builtins.substring 4 2 cleanHex);
       
       # Auf 3 Nachkommastellen runden
-      trunc = f: if f < 0 then builtins.ceil f else builtins.floor f;
-      pow = b: n: builtins.foldl' builtins.mul 1 (builtins.genList (_: b) n);
-      truncateFloat = f: p: trunc (f * pow 10 p) / pow 10.0 p;
+      roundTo3 = x: 
+        let scaled = x * 1000;
+            rounded = builtins.floor (scaled + 0.5);
+        in rounded / 1000.0;
     in [
-      (truncateFloat (r / 255.0))
-      (truncateFloat (g / 255.0))
-      (truncateFloat (b / 255.0))
+      (roundTo3 (r / 255.0))
+      (roundTo3 (g / 255.0))
+      (roundTo3 (b / 255.0))
     ];
 
   stylixColors = config.lib.stylix.colors;
