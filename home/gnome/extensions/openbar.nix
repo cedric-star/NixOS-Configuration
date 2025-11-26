@@ -1,4 +1,4 @@
-{ config, pkgs, ... }:
+{ config, pkgs, lib, ... }:
 
 let 
   # Funktion zur Konvertierung von Hex zu RGB (0-1)
@@ -13,7 +13,7 @@ let
       (builtins.div g 255.0)
       (builtins.div b 255.0)
     ];
-    
+
   stylixColors = config.lib.stylix.colors;
 in 
 
