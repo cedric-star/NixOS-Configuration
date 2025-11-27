@@ -24,7 +24,7 @@ in {
 
   stylix.cursor = {
     package = myCursor;
-    name = "Bibata Original Classic";
+    name = "Bibata-Original-Classic";
     size = 24;
   };
 
