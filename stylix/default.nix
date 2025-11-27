@@ -7,12 +7,12 @@
   stylix.polarity = "dark";
 
 
-    stylix.fonts = {
-      monospace = {
-        package = pkgs.nerdfonts.override {fonts = ["JetBrainsMono"];};
-        name = "JetBrainsMono Nerd Font Mono";
-      };
-    };
+  stylix.opacity = {
+    applications = 0.5;
+    terminal = 0.5;
+    desktop = 0.5;
+    popups = 0.5;
+  }
 }
 
 
