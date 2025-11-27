@@ -8,6 +8,7 @@
 # Hindweise
 - für skripte ausführen immer von ./scripts aus ausführen
 - (außer cleanup script)
+- niemals kommentare außer vorhandene in ./stylix/redpink.yaml!!!!!!!!! sonst crashout
 
 # nützlches
 - https://mynixos.com/ oder 
