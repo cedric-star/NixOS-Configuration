@@ -13,6 +13,10 @@
     desktop = 0.85;
     popups = 0.85;
   };
+
+  stylix.cursor.package = pkgs.bibata-cursors;
+  stylix.cursor.name = "Bibata-Modern-Ice";
+
 }
 
 
