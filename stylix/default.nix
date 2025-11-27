@@ -1,14 +1,6 @@
 { pkgs, lib, config, inputs, ... }:
 
-let 
-  myCursor = pkgs.fetchFromGitHub {
-    owner = "ful1e5";
-    repo = "Bibata_Cursor";
-    rev = "main";
-    sha256 = "kIKidw1vditpuxO1gVuZeUPdWBzkiksO/q2R/+DUdEc=";
-
-  };
-in {
+{
   stylix.enable = true;
   stylix.image = ./wallpapers/b1.png;
   stylix.base16Scheme = ./redpink.yaml;
@@ -23,7 +15,7 @@ in {
   };
 
   stylix.cursor = {
-    package = myCursor;
+    package = pkgs.bibata-cursors-translucent;
     name = "Bibata-Original-Classic";
     size = 24;
   };
