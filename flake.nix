@@ -8,10 +8,10 @@
       inputs.nixpkgs.follows = "nixpkgs";
     }; 
      
-    #stylix = {
-    #  url = "github:nix-community/stylix/release-25.05";
-    #  inputs.nixpkgs.follows = "nixpkgs";
-    #};
+    stylix = {
+      url = "github:nix-community/stylix/release-25.05";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
   
   outputs = {self, nixpkgs, home-manager, ... }@inputs: {
@@ -30,7 +30,7 @@
           home-manager.backupFileExtension = "backup";
         }
 
-        #inputs.stylix.nixosModules.stylix
+        inputs.stylix.nixosModules.stylix
 
       ];
     };
