@@ -8,7 +8,7 @@
     ./blurmyshell.nix
     ./logomenu.nix
     ./clipboardindicator.nix
-    #./openbar.nix
+    ./openbar.nix
   ];
 
 
@@ -22,6 +22,7 @@
     gnomeExtensions.open-bar
     gnomeExtensions.vitals
   ];
+
 
 
   dconf.settings = {
