@@ -7,5 +7,8 @@
       enable = true;
       opacity = 70; # Noch transparenter während Bewegung
     };
+    
   };
 }
+
+
