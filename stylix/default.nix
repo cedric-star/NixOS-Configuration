@@ -22,8 +22,11 @@ in {
     popups = 0.85;
   };
 
-  stylix.cursor.package = myCursor;
-  stylix.cursor.name = "Bibata Original Classic";
+  stylix.cursor = {
+    package = myCursor;
+    name = "Bibata Original Classic";
+    size = 24;
+  };
 
 }
 
