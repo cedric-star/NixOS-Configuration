@@ -13,7 +13,7 @@
     sass
     pywal
     imagemagick
-    bibata-cursors-translucent
+    bibata-cursors
 
 ### Theming
 
