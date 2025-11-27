@@ -6,7 +6,6 @@
   stylix.base16Scheme = ./redpink.yaml;
   stylix.polarity = "dark";
 
-  stylix.icons.enable = true;
 
   stylix.opacity = {
     applications = 0.5;
