@@ -4,7 +4,7 @@
 
   # home.file.".config/kitty/b1.png".source = ../gnome/wallpapers/b1.png;
   programs.kitty = {
-    enable = false;
+    enable = true;
  
     
     settings = {
