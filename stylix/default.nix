@@ -5,7 +5,7 @@ let
     owner = "ful1e5";
     repo = "Bibata_Cursor";
     rev = "main";
-    sha256 = "iQU1Rv7Q0BFdsIX9c7mxDhhYaWemuaNRYs+sR1DF0Rc=";
+    sha256 = "kIKidw1vditpuxO1gVuZeUPdWBzkiksO/q2R/+DUdEc=";
 
   };
 in {
