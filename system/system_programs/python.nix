@@ -8,6 +8,7 @@
       matplotlib
       plotly
       numpy
+      dtw-python
       
       jupyter
     ]))# pakete in python direkt einbinden
