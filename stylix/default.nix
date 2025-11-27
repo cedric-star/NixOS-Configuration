@@ -6,7 +6,7 @@
   stylix.base16Scheme = ./redpink.yaml;
   stylix.polarity = "dark";
 
-
+  stylix.targets.firefox.enable = true;
   stylix.opacity = {
     applications = 0.5;
     terminal = 0.5;
