@@ -119,9 +119,15 @@ in
       dark-mhcolor = hexToRgbStrings sc.base05;
       mhalpha = 0.10;
 
-      mscolor = hexToRgbStrings sc.base0B; #farbe von gedrückten buttons
-      dark-mscolor = hexToRgbStrings sc.base0B; #farbe von gedrückten buttons
+      mscolor = hexToRgbStrings sc.base09; #farbe von gedrückten buttons
+      dark-mscolor = hexToRgbStrings sc.base09; #farbe von gedrückten buttons
       msalpha = 1;
+
+###linien umrandung um fenster entfernen
+      mbalpha = 1; 
+      mbcolor = hexToRgbStrings sc.base05;
+      dark-mbcolor = hexToRgbStrings sc.base05;
+
 
 
       disize = 60; #icon größe dashdock
@@ -136,15 +142,16 @@ in
 
       ### styles löschen (clean machen)
       neon = false;
+      autofg-menu = false; #dass schriftfarbe geändert werden kann
 
       menustyle = true; #farben nicht überschreiben
 
       mbalpha = 0.0; #linien umrandung um fenster entfernen
-      dark-mbalpha = 0.0;
       
       autohg-menu = false; #für custom farbe beim hovern
       autohg-bar = false; # hovern über panel buttons eigene farbe anschalten
       mshalpha = 0.0; #shadow hinter hintergrundfarbe wegmachen
+      mshcolor = hexToRgbStrings sc.base00;
 
 
       dashdock-style = "Custom";
