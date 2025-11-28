@@ -17,7 +17,7 @@
   stylix.cursor = {
     package = pkgs.lyra-cursors;
     name = "LyraF-cursors";
-    size = 24;
+    size = 26;
   };
 
 }
