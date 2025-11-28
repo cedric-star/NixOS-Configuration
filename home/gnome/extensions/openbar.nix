@@ -65,7 +65,7 @@ in
       bwidth = 0.0;
 
       ### über candy items drüber hovern/anklicken
-      halpha = 0.55;
+      halpha = 1;
       hcolor = hexToRgbStrings sc.base05;
       dark-hcolor = hexToRgbStrings sc.base05;
 
@@ -77,7 +77,7 @@ in
 
 
 ### candybar: in panel um jedes item ellipse
-      candyalpha = 0.72;
+      candyalpha = 1;
       candybar = true;
       candy1 = hexToRgbStrings sc.base01;
       candy2 = hexToRgbStrings sc.base01;
@@ -93,7 +93,7 @@ in
       dark-candy6 = hexToRgbStrings sc.base01;
 
 ### schrift
-      fgalpha = 0.85;
+      fgalpha = 1;
       fgcolor = hexToRgbStrings sc.base05; # schriftfarbe in panel
       dark-fgcolor = hexToRgbStrings sc.base05;
 
@@ -109,9 +109,9 @@ in
 
 
 ### hintergründ
-      mbgalpha = 0.55; #hintergrund transparent
-      mbgcolor = hexToRgbStrings sc.base01;  # allgemeine hintergrundfarbe
-      dark-mbgcolor = hexToRgbStrings sc.base01;
+      mbgalpha = 1; #hintergrund transparent
+      mbgcolor = hexToRgbStrings sc.base00;  # allgemeine hintergrundfarbe
+      dark-mbgcolor = hexToRgbStrings sc.base00;
   
 
 ### buttons
@@ -119,9 +119,9 @@ in
       dark-mhcolor = hexToRgbStrings sc.base05;
       mhalpha = 0.10;
 
-      mscolor = hexToRgbStrings sc.base05; #farbe von gedrückten buttons
-      dark-mscolor = hexToRgbStrings sc.base05; #farbe von gedrückten buttons
-      msalpha = 0.85;
+      mscolor = hexToRgbStrings sc.base0B; #farbe von gedrückten buttons
+      dark-mscolor = hexToRgbStrings sc.base0B; #farbe von gedrückten buttons
+      msalpha = 1;
 
 
       disize = 60; #icon größe dashdock
