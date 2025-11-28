@@ -61,7 +61,7 @@ in
 ### panel
       autofg-bar = false;
       bgalpha = 0.0;
-      bradius = 20;
+      bradius = 0;
       bwidth = 0.0;
 
       ### über candy items drüber hovern/anklicken
