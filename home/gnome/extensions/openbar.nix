@@ -70,9 +70,8 @@ in
       dark-hcolor = hexToRgbStrings sc.base05;
 
       trigger-reload = false;
-      smbgoverride = true;
+      smbgoverride = false;#ob smbg farbe von buttons geändert werden soll
       reloadstyle = true;
-      smbgalpha = 0;
       smbgcolor = hexToRgbStrings sc.base0D; # knöpfe bei buttons eigene normale farbe
       dark-smbgcolor = hexToRgbStrings sc.base0D;
 
