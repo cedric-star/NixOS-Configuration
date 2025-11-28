@@ -70,10 +70,10 @@ in
       dark-hcolor = hexToRgbStrings sc.base05;
 
       trigger-reload = false;
-      smbgoverride = false;#ob smbg farbe von buttons geändert werden soll
+      smbgoverride = true;
       reloadstyle = true;
-      smbgcolor = hexToRgbStrings sc.base0D; # knöpfe bei buttons eigene normale farbe
-      dark-smbgcolor = hexToRgbStrings sc.base0D;
+      smbgcolor = hexToRgbStrings sc.base01; # knöpfe bei buttons eigene normale farbe
+      dark-smbgcolor = hexToRgbStrings sc.base01;
 
 
 ### candybar: in panel um jedes item ellipse
