@@ -145,8 +145,6 @@ in
       autofg-menu = false; #dass schriftfarbe geändert werden kann
 
       menustyle = true; #farben nicht überschreiben
-
-      mbalpha = 0.0; #linien umrandung um fenster entfernen
       
       autohg-menu = false; #für custom farbe beim hovern
       autohg-bar = false; # hovern über panel buttons eigene farbe anschalten
