@@ -71,7 +71,7 @@ in
 
       trigger-reload = false;
       smbgoverride = true;
-      reloadstyle = true;
+      reloadstyle = false;
       smbgcolor = hexToRgbStrings sc.base01; # knöpfe bei buttons eigene normale farbe
       dark-smbgcolor = hexToRgbStrings sc.base01;
 
