@@ -15,7 +15,7 @@
   };
 
   stylix.cursor = {
-    package = pkgs.bibata-cursors;
+    package = pkgs.bibata-cursors-trans;
     name = "Bibata-Original-Classic";
     size = 24;
   };

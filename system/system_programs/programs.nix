@@ -14,6 +14,7 @@
     pywal
     imagemagick
     bibata-cursors
+    lyra-cursors
 
 ### Theming
 
