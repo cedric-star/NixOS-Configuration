@@ -15,6 +15,7 @@
     imagemagick
     bibata-cursors
     lyra-cursors
+    i3
 
 ### Theming
 

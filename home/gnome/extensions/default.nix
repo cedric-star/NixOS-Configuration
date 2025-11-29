@@ -21,6 +21,7 @@
     gnomeExtensions.burn-my-windows
     gnomeExtensions.open-bar
     gnomeExtensions.vitals
+    gnomeExtensions.forge
   ];
 
 
