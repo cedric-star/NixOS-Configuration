@@ -85,6 +85,7 @@
     mangohud                    # overlay mit fps, ...
     prism                       # minecraft
     heroic                      # epic games
+    minecraft
   ];
 
   # Install firefox.
