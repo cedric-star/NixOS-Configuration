@@ -9,6 +9,7 @@
     ./logomenu.nix
     ./clipboardindicator.nix
     ./openbar.nix
+    ./roundedcorners.nix
   ];
 
 
@@ -39,7 +40,7 @@
         "transparent-window-moving@noobsai.github.com" 
         "burn-my-windows@schneegans.github.com"
         "user-theme@gnome-shell-extensions.gcampax.github.com"
-        "Vitals@CoreCoding.com"
+        "Vitals@CoreCoding.com" 
         "forge@jmmaranan.com"
         "rounded-window-corners@fxgn"
         #"openbar@neuromorph"
