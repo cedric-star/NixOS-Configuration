@@ -22,6 +22,7 @@
     gnomeExtensions.open-bar
     gnomeExtensions.vitals
     gnomeExtensions.forge
+    gnomeExtensions.rounded-window-corners-reborn
   ];
 
 
