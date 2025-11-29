@@ -10,6 +10,8 @@
     #lxappearance
   ];
 
+  home-manager.backupFileExtension = "backup";
+
   ### Templates importieren
   home.file.".local/share/Templates" = {
     source = ./templates;
