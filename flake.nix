@@ -31,7 +31,6 @@
         }
 
         inputs.stylix.nixosModules.stylix
-
       ];
     };
   };
