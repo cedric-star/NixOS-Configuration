@@ -4,10 +4,10 @@
 {
   dconf.settings = {
     "org/gnome/desktop/wm/keybindings" = {
-      show-desktop = ["<Alt>F2"]; # alle fenster minimieren
-      panel-run-dialog = ['<Alt>F2']; # gnome run fenster öffnen
+      show-desktop = ["<Alt>F1"]; # alle fenster minimieren
+      panel-run-dialog = ["<Alt>F2"]; # gnome run fenster öffnen
       
-      close = ['<Alt>F4']; # schließen
+      close = ["<Alt>F4"]; # schließen
       
       
 ### move to specific workspace
