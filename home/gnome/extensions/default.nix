@@ -10,6 +10,7 @@
     ./clipboardindicator.nix
     ./openbar.nix
     ./roundedcorners.nix
+    ./forge.nix
   ];
 
 
