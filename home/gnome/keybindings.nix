@@ -90,7 +90,7 @@
       unmaximize = [];
     };
 
-    "org/gnome/desktop/shell/keybindings" = {
+    "org/gnome/shell/keybindings" = {
 ### bildschirm aufnehmen
       screenshot = ["<Shift>Print"];
       screenshot-window = ["<Alt>Print"];
