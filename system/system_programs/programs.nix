@@ -16,6 +16,7 @@
     bibata-cursors
     lyra-cursors
     i3
+    woeusb
 
 ### Theming
 
