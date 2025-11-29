@@ -33,6 +33,8 @@
     "org/gnome/shell" = {
       disabled-extensions = [#
         "openbar@neuromorph"
+        "forge@jmmaranan.com"
+        "rounded-window-corners@fxgn"
       ];
       enabled-extensions = [#cli: 'gnome-extensions list'
         "blur-my-shell@aunetx"
@@ -42,8 +44,7 @@
         "burn-my-windows@schneegans.github.com"
         "user-theme@gnome-shell-extensions.gcampax.github.com"
         "Vitals@CoreCoding.com" 
-        "forge@jmmaranan.com"
-        "rounded-window-corners@fxgn"
+        
         #"openbar@neuromorph"
       ];
     };
