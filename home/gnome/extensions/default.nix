@@ -10,7 +10,7 @@
     ./clipboardindicator.nix
     ./openbar.nix
     ./roundedcorners.nix
-    ./forge.nix
+    #./forge.nix
   ];
 
 
@@ -23,7 +23,7 @@
     gnomeExtensions.burn-my-windows
     gnomeExtensions.open-bar
     gnomeExtensions.vitals
-    gnomeExtensions.forge
+    #gnomeExtensions.forge
     gnomeExtensions.rounded-window-corners-reborn
   ];
 
@@ -41,7 +41,7 @@
         "burn-my-windows@schneegans.github.com"
         "user-theme@gnome-shell-extensions.gcampax.github.com"
         "Vitals@CoreCoding.com" 
-        "forge@jmmaranan.com"
+        #"forge@jmmaranan.com"
         "rounded-window-corners@fxgn"
         #"openbar@neuromorph"
       ];
