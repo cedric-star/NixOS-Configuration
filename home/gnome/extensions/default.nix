@@ -41,6 +41,7 @@
         "user-theme@gnome-shell-extensions.gcampax.github.com"
         "Vitals@CoreCoding.com"
         "forge@jmmaranan.com"
+        "rounded-window-corners@fxgn"
         #"openbar@neuromorph"
       ];
     };
