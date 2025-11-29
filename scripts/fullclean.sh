@@ -3,9 +3,6 @@
 echo "=== NixOS System-Reinigung ==="
 echo "Beginn Freier Speicher:"
 df -h / | tail -1
-# Alte Generationen löschen (älter als 7 Tage)
-echo "Lösche alte Generationen..."
-sudo nix-collect-garbage -d
 
 # Garbage Collection im Nix Store
 echo "Führe Garbage Collection aus..."
