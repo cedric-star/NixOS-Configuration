@@ -17,6 +17,7 @@
     lyra-cursors
     i3
     woeusb-ng
+    ntfs3g
 
 ### Theming
 
