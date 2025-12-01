@@ -14,8 +14,10 @@
 
   programs.git = {
     enable = true;
-    userName = "cedric-star";
-    userEmail = "cdrc.wnsch@gmail.com";
+    settings.user = {
+      name = "cedric-star";
+      email = "cdrc.wnsch@gmail.com";
+    };
   };
 
   programs.fish.enable = true;
