@@ -4,7 +4,7 @@
   services.libinput.enable = true;
   services.touchegg.enable = true;
   
-  services = {
+  services.xserver = {
  
     desktopManager.gnome.enable = true;
     displayManager.gdm = {
