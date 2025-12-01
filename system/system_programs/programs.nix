@@ -16,7 +16,7 @@
     bibata-cursors
     lyra-cursors
     i3
-    woeFusb-ng
+    woeusb-ng
     ntfs3g
 
 ### Theming
