@@ -29,7 +29,7 @@
   #  targets.qt.platform = lib.mkForce "qtct";  # Konflikt auflösen
     # oder alternativ:
     # targets.qt.platform = lib.mkDefault "qtct";
-  };
+  #};
 
 }
 
