@@ -11,10 +11,10 @@
       enable = true;
       wayland = true;
     };
-    xkb = {
-      layout = "de";
-      variant = "";
-    };
+    #xkb = {
+    #  layout = "de";
+    #  variant = "";
+    #};
   };
 
   # Enable CUPS to print documents.
