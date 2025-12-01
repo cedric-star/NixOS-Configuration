@@ -48,10 +48,10 @@
 
 
      
-  qt = {
-    enable = true;
-    platformTheme = "gnome";  # statt "gnome" (deprecated)
-    style = "adwaita";
-  };
+  #qt = {
+  #  enable = true;
+  #  platformTheme = "gnome";  # statt "gnome" (deprecated)
+  #  style = "adwaita";
+  #};
 
 }
