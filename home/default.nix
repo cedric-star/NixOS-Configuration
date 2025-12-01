@@ -14,9 +14,9 @@
 
   programs.git = {
     enable = true;
-    settings.user = {
-      name = "cedric-star";
-      email = "cdrc.wnsch@gmail.com";
+    settings = {
+      userName = "cedric-star";
+      userEmail = "cdrc.wnsch@gmail.com";
     };
   };
 
