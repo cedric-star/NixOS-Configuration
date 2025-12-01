@@ -50,7 +50,7 @@
      
   qt = {
     enable = lib.mkForce false;
-    platformTheme = "adwaita^";  # statt "gnome" (deprecated)
+    platformTheme.name = "adwaita";  # statt "gnome" (deprecated)
     style = lib.mkForce "adwaita";
   };
 
