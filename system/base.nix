@@ -40,4 +40,19 @@
   programs.nix-ld.enable = true;
 
   system.stateVersion = "25.11";
+
+  nixpkgs.config = {
+    # Temporär qtwebengine als broken markieren
+    allowBroken = true;
+    
+    # Qtwebengine aus dem Build ausschließen
+    qt5 = {
+      enable = false;
+    };
+    
+    # Oder alternativ:
+    qtwebengine = {
+      enable = false;
+    };
+  };
 }
