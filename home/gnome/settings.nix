@@ -45,6 +45,12 @@
     "org/gnome/desktop/interface" = {
       show-battery-percentage = true;
     };
+
+    qt = {
+      enable = true;
+      platformTheme = "adwaita"; # statt "gnome"
+      style = "adwaita";
+    };
   };
 
   

@@ -20,6 +20,12 @@
     size = 26;
   };
 
+  stylix = {
+    targets.qt.platform = "qtct"; # statt "gnome"
+    # oder alternativ:
+    # targets.qt.enable = false;
+  };
+
 }
 
 
