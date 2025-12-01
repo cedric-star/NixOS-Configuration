@@ -20,10 +20,15 @@
     size = 26;
   };
 
+
+
+  # Stylix Einstellungen anpassen
   stylix = {
-    targets.qt.platform = "qtct"; # statt "gnome"
+    autoEnable = true;
+    targets.qt.enable = true;
+    targets.qt.platform = lib.mkForce "qtct";  # Konflikt auflösen
     # oder alternativ:
-    # targets.qt.enable = false;
+    # targets.qt.platform = lib.mkDefault "qtct";
   };
 
 }

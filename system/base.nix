@@ -41,4 +41,17 @@
 
   system.stateVersion = "25.11";
 
+
+
+
+
+
+
+     
+  qt = {
+    enable = true;
+    platformTheme = "adwaita";  # statt "gnome" (deprecated)
+    style = "adwaita";
+  };
+
 }
