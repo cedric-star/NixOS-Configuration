@@ -1,4 +1,4 @@
-{ config, pkgs, libm, ...}:
+{ config, pkgs, lib, ...}:
 
 {
   services.libinput.enable = true;
