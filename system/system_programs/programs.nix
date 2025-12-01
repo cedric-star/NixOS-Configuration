@@ -22,7 +22,6 @@
 
 ### Theming
 
-
 ### Compiler ###                
     swi-prolog                  # prolog
     gcc                         # c lang
