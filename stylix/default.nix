@@ -19,8 +19,6 @@
     name = "LyraF-cursors";
     size = 26;
   };
-
-
 }
 
 
