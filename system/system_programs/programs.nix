@@ -41,12 +41,11 @@
 
 
 ### IDE's ###
-    #jetbrains.webstorm
-    #jetbrains.idea-community
-    #jetbrains.pycharm-community
-    #jetbrains.clion
-    #jetbrains.datagrip
-
+    jetbrains.webstorm
+    jetbrains.idea-community
+    jetbrains.pycharm-community
+    jetbrains.clion
+    jetbrains.datagrip
 
 ### Kommunikations ###
     #discord
