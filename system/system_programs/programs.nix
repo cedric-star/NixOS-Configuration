@@ -50,7 +50,7 @@
 ### Kommunikations ###
     discord
     signal-desktop
-    whatsie
+    #whatsie #qtengine problem
 
 
 ### Dev Tools ###
@@ -71,8 +71,8 @@
 ### inf programme ###
     gftp
     gns3-gui
-    #kicad
-    #virtualbox
+    kicad
+    virtualbox
     virt-manager
     dosbox
     dosbox-x
