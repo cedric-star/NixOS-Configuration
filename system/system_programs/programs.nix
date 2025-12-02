@@ -50,7 +50,7 @@
 ### Kommunikations ###
     discord
     signal-desktop
-    #whatsie
+    whatsie
 
 
 ### Dev Tools ###
