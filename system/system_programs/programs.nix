@@ -19,6 +19,8 @@
     woeusb-ng
     ntfs3g
 
+    qt6.full
+
 ### Theming
 
 ### Compiler ###                
@@ -39,17 +41,17 @@
 
 
 ### IDE's ###
-    jetbrains.webstorm
-    jetbrains.idea-community
-    jetbrains.pycharm-community
-    jetbrains.clion
-    jetbrains.datagrip
+    #jetbrains.webstorm
+    #jetbrains.idea-community
+    #jetbrains.pycharm-community
+    #jetbrains.clion
+    #jetbrains.datagrip
 
 
 ### Kommunikations ###
-    discord
-    signal-desktop
-    whatsie
+    #discord
+    #signal-desktop
+    #whatsie
 
 
 ### Dev Tools ###
@@ -70,7 +72,7 @@
 ### inf programme ###
     gftp
     gns3-gui
-    kicad
+    #kicad
     #virtualbox
     virt-manager
     dosbox
