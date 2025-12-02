@@ -10,7 +10,7 @@
     ./clipboardindicator.nix
     ./openbar.nix
     ./roundedcorners.nix
-    ./forge.nix
+    ./popshell.nix
   ];
 
 
@@ -23,7 +23,6 @@
     gnomeExtensions.burn-my-windows
     gnomeExtensions.open-bar
     gnomeExtensions.vitals
-    gnomeExtensions.forge
     gnomeExtensions.rounded-window-corners-reborn
     gnomeExtensions.pop-shell
   ];
@@ -34,7 +33,6 @@
       disabled-extensions = [#
         "openbar@neuromorph"
         "rounded-window-corners@fxgn"
-        "forge@jmmaranan.com"
       ];
       enabled-extensions = [#cli: 'gnome-extensions list'
         "blur-my-shell@aunetx"
@@ -44,6 +42,7 @@
         "burn-my-windows@schneegans.github.com"
         "user-theme@gnome-shell-extensions.gcampax.github.com"
         "Vitals@CoreCoding.com" 
+        "pop-shell@system76.com"
       ];
     };
   };
