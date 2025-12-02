@@ -49,7 +49,7 @@
 
 ### Kommunikations ###
     #discord
-    #signal-desktop
+    signal-desktop
     #whatsie
 
 
