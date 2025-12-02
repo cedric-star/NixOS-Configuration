@@ -19,7 +19,7 @@
     woeusb-ng
     ntfs3g
 
-    #qt6.full
+    #   qt6.full
 
 ### Theming
 
@@ -38,6 +38,7 @@
     #vscode                     # nur für copilot (brauch ich doch eigntlich nicht hihi)
     vim                         # vim halt
     neovim                      # nvim halt
+
 
 
 ### IDE's ###
