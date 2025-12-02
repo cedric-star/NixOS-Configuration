@@ -28,7 +28,7 @@
   home.file.".jdks/jdk21".source = "${pkgs.openjdk21}/lib/openjdk";
   home.sessionVariables.JAVA_HOME = "$HOME/.jdks/jdk21";
 
-  home.stateVersion = "25.05"; # Please read the comment before changing.
+  home.stateVersion = "25.11"; # Please read the comment before changing.
 
   home.file = { };
 
