@@ -50,7 +50,7 @@
 ### Kommunikations ###
     discord
     signal-desktop
-    #whatsie #qtengine problem
+    karere#whatsie #qtengine problem
 
 
 ### Dev Tools ###
