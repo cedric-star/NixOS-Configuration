@@ -48,7 +48,7 @@
     jetbrains.datagrip
 
 ### Kommunikations ###
-    #discord
+    discord
     signal-desktop
     #whatsie
 
