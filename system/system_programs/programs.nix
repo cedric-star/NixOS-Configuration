@@ -19,7 +19,7 @@
     woeusb-ng
     ntfs3g
 
-    qt6.full
+    #qt6.full
 
 ### Theming
 
