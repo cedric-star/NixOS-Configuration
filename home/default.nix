@@ -29,6 +29,7 @@
   home.sessionVariables.JAVA_HOME = "$HOME/.jdks/jdk21";
 
   home.stateVersion = "25.11"; # Please read the comment before changing.
+  home.enableNixpkgsReleaseCheck = false;
 
   home.file = { };
 

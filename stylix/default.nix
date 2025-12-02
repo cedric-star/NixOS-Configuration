@@ -1,6 +1,8 @@
 { pkgs, lib, config, inputs, ... }:
 
 {
+  stylix.enableReleaseChecks = false;
+
   stylix.enable = true;
   stylix.image = ./wallpapers/b1.png;
   stylix.base16Scheme = ./redpink.yaml;
