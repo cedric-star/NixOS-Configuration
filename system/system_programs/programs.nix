@@ -33,6 +33,8 @@
     python3
     fastfetch
     ventoy
+    parted
+    gparted
 
 
 ### Code Editoren ###
