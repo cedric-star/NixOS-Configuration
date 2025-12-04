@@ -35,6 +35,7 @@
     #ventoy
     parted
     gparted
+    ncurses
 
 
 ### Code Editoren ###
