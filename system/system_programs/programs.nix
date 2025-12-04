@@ -31,6 +31,8 @@
     openjdk21
     jetbrains.jdk
     python3
+    fastfetch
+    ventoy
 
 
 ### Code Editoren ###
