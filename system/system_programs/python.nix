@@ -9,6 +9,7 @@
       plotly
       numpy
       dtw-python
+      sklearn-compat
       
       jupyter
     ]))# pakete in python direkt einbinden
