@@ -32,7 +32,7 @@
     jetbrains.jdk
     python3
     fastfetch
-    ventoy
+    #ventoy
     parted
     gparted
 
