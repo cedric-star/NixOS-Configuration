@@ -36,6 +36,7 @@
     parted
     gparted
     ncurses
+    ollama
 
 
 ### Code Editoren ###
