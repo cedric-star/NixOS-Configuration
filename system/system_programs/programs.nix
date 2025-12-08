@@ -77,7 +77,7 @@
 ### inf programme ###
     gftp
     gns3-gui
-    #kicad
+    kicad
     virtualbox
     virt-manager
     dosbox
