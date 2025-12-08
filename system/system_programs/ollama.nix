@@ -3,6 +3,6 @@
 {
   services.ollama = {
     enable = true;
-    #loadModels = [ "llama3.2:1b" ];
+    loadModels = [ "llama3.2:1b" ];
   };
 }
