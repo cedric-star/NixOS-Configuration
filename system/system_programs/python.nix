@@ -11,6 +11,14 @@
       dtw-python
       sklearn-compat
       
+   # PyRIT Abhängigkeiten
+      pip
+      virtualenv
+      python-dotenv
+      requests
+      openai
+      tiktoken
+
       jupyter
     ]))# pakete in python direkt einbinden
 
