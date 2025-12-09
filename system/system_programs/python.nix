@@ -12,6 +12,7 @@
       sklearn-compat
 
       pip
+      setuptools
       
 
       jupyter
