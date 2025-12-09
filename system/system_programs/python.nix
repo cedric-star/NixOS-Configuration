@@ -10,6 +10,8 @@
       numpy
       dtw-python
       sklearn-compat
+
+      pip
       
 
       jupyter
