@@ -37,7 +37,7 @@
     gparted
     ncurses
     ollama
-
+    sl
 
 ### Code Editoren ###
     vscodium                    # codium
