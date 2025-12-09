@@ -2,6 +2,7 @@
 
 {
   stylix.enableReleaseChecks = false;
+  stylix.autoEnable = true;
 
   stylix.enable = true;
   stylix.image = ./wallpapers/b1.png;
