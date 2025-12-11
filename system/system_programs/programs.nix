@@ -39,6 +39,8 @@
     ollama
     sl
     flatpak
+    zip
+    unzip
 
 ### Code Editoren ###
     vscodium                    # codium

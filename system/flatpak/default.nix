@@ -1,6 +1,13 @@
 { lib, config, pkgs, ... }:
 {
-  services.flatpak.enable = true;
+  services.flatpak = {
+    enable = true;
+    packages = [
+
+    ];
+
+
+  };
   systemd.services.flatpak-repo = {
     wantedBy = [ "multi-user.target" ];
     path = [ pkgs.flatpak ];
