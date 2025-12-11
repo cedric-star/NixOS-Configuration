@@ -2,9 +2,7 @@
 {
   services.flatpak = {
     enable = true;
-    packages = [
-
-    ];
+    #packages = [ ];
 
 
   };
