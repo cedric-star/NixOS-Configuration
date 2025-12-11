@@ -3,6 +3,7 @@
   
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-25.11";
+    
     home-manager = {
       url = "github:nix-community/home-manager/release-25.11";
       inputs.nixpkgs.follows = "nixpkgs";
@@ -12,6 +13,12 @@
       url = "github:nix-community/stylix/release-25.11";
       inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    nix-flatpak = {
+      url = "github:gmodena/nix-flatpak/?ref=latest"; # always latest stable
+    };
+
+
   };
   
   outputs = {self, nixpkgs, home-manager, ... }@inputs: {
@@ -31,6 +38,8 @@
         }
 
         inputs.stylix.nixosModules.stylix
+
+        inputs.nix-flatpak.nixosModules.nix-flatpak
       ];
     };
   };
