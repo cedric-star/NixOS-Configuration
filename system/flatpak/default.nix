@@ -2,7 +2,10 @@
 {
   services.flatpak = {
     enable = true;
-    packages = [ "io.mgba.mGBA" ];
+    packages = [ 
+      "io.mgba.mGBA" 
+      "io.github.aandrew_me.ytdn"
+    ];
 
 
   };
