@@ -2,7 +2,7 @@
 {
   services.flatpak = {
     enable = true;
-    #packages = [ ];
+    packages = [ "io.mgba.mGBA" ];
 
 
   };
