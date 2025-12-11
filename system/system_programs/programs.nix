@@ -38,6 +38,7 @@
     ncurses
     ollama
     sl
+    flatpak
 
 ### Code Editoren ###
     vscodium                    # codium
