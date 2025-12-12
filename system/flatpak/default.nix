@@ -5,7 +5,7 @@
     packages = [ 
       "io.mgba.mGBA" 
       "io.github.aandrew_me.ytdn"
-      "us.zoom.Zoom"
+      "net.werwolv.ImHex"
     ];
 
 
