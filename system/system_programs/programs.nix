@@ -41,6 +41,7 @@
     flatpak
     zip
     unzip
+    zoom-us
 
 ### Code Editoren ###
     vscodium                    # codium
