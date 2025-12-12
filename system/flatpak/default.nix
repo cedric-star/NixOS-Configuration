@@ -3,9 +3,10 @@
   services.flatpak = {
     enable = true;
     packages = [ 
-      "io.mgba.mGBA" 
-      "io.github.aandrew_me.ytdn"
-      "net.werwolv.ImHex"
+      "io.mgba.mGBA"                # gameboy advance
+      "io.github.aandrew_me.ytdn"   # youtube downloader
+      "net.werwolv.ImHex"           # hex editor (besser als wilhelm lol)
+      "org.vinegarhq.Sober"         # roblox
     ];
 
 
