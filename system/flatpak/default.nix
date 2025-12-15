@@ -7,7 +7,9 @@
       "io.github.aandrew_me.ytdn"   # youtube downloader
       "net.werwolv.ImHex"           # hex editor (besser als wilhelm lol)
       "org.vinegarhq.Sober"         # roblox
-      "com.adilhanney.ricochlime"
+      "com.adilhanney.ricochlime"   # shooter game
+      "io.github.mlm_games.free-the-bugs" # java bug game
+      "com.gitlab.tipp10.tipp10"    # tippen lernen
     ];
 
 
