@@ -7,6 +7,7 @@
       "io.github.aandrew_me.ytdn"   # youtube downloader
       "net.werwolv.ImHex"           # hex editor (besser als wilhelm lol)
       "org.vinegarhq.Sober"         # roblox
+      "com.adilhanney.ricochlime"
     ];
 
 
