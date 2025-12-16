@@ -42,6 +42,8 @@
     zip
     unzip
     zoom-us
+    syncthing
+    libqalculate
 
 ### Code Editoren ###
     vscodium                    # codium
