@@ -6,7 +6,7 @@
 
   stylix.enable = true;
   stylix.image = ./wallpapers/kirby.png;
-  #stylix.base16Scheme = ./redpink.yaml;
+  stylix.base16Scheme = ./redpink.yaml;
   stylix.polarity = "dark";
 
 
