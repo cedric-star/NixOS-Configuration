@@ -5,6 +5,7 @@
     ./programs.nix
     ./python.nix
     ./steam.nix
+    ./syncthing.nix
   ];
 
 
