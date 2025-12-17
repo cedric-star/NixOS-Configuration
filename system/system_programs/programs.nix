@@ -42,7 +42,7 @@
     zip
     unzip
     zoom-us
-    #syncthing
+    syncthing
     libqalculate
     tailscale
 
