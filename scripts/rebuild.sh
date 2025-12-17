@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/run/current-system/sw/bin/sh
 
 
 commit_message="$1"
