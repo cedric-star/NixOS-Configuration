@@ -3,8 +3,8 @@
 {
   services.syncthing = {
     enable = true;
-    group = "conradklugkist";
-    user = "conradklugkist";
+    group = "cedric";
+    user = "cedric";
   };
 
 
