@@ -2,7 +2,7 @@
 
 {
   services.syncthing = {
-    enable = disable;
+    enable = false;
     group = "cedric";
     user = "cedric";
   };
