@@ -44,6 +44,7 @@
     zoom-us
     syncthing
     libqalculate
+    tailscale
 
 ### Code Editoren ###
     vscodium                    # codium
