@@ -8,9 +8,10 @@
  
     desktopManager.gnome.enable = true;
     displayManager.gdm = {
-      enable = true;
+      enable = false;
       wayland = true;
     };
+    displayManager.sddm.enable = true;
     #xkb = {
     #  layout = "de";
     #  variant = "";
