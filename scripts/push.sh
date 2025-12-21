@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/run/current-system/sw/bin/sh
 
 echo "copy token:"
 cat gittoken

@@ -18,4 +18,7 @@
  - configoptionen nachlesen
 - nixos-rebuild switch --rollback
  - wenn was wirklich schief läuft zurückgehen
+- für ausführbare dateien:
+ - command am anfang: #!/...
+ - dann für pfad: command -v sh (anders unter nixos)
  

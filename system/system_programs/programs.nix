@@ -102,6 +102,7 @@
     prism                       # minecraft
     heroic                      # epic games
     prismlauncher
+    nexusmods-app
   ];
 
   # Install firefox.
