@@ -13,7 +13,7 @@
     };
     displayManager.sddm = {
       enable = true;
-      wayland = true;
+      wayland.enable = true;
     };
     #xkb = {
     #  layout = "de";
