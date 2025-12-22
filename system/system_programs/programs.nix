@@ -56,7 +56,7 @@
 ### IDE's ###
     jetbrains.webstorm
     jetbrains.idea
-    jetbrains.idea-community
+    #jetbrains.idea-community
     jetbrains.pycharm-community
     jetbrains.clion
     jetbrains.datagrip
