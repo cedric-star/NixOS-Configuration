@@ -7,6 +7,7 @@
   services = {
  
     desktopManager.gnome.enable = true;
+    programs.hyprland.enable = true;
     displayManager.gdm = {
       enable = false;
       wayland = true;
