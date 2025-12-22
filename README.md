@@ -22,3 +22,10 @@
  - command am anfang: #!/...
  - dann für pfad: command -v sh (anders unter nixos)
  
+# Rebuild Erklärung
+- [A, B, C]
+- A = fertig gebaut
+- im Bau
+- gesamtzahl zu bauen
+
+-
