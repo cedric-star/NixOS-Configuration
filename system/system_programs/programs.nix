@@ -56,6 +56,7 @@
 ### IDE's ###
     jetbrains.webstorm
     jetbrains.idea
+    
     #jetbrains.idea-community
     jetbrains.pycharm-community
     jetbrains.clion
