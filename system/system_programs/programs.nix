@@ -45,6 +45,7 @@
     syncthing
     libqalculate
     tailscale
+    kid3
 
 ### Code Editoren ###
     vscodium                    # codium
