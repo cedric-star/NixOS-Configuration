@@ -85,12 +85,16 @@ in
       candy4 = hexToRgbStrings sc.base01;
       candy5 = hexToRgbStrings sc.base01;
       candy6 = hexToRgbStrings sc.base01;
+      candy7 = hexToRgbStrings sc.base01;
+      candy8 = hexToRgbStrings sc.base01;
       dark-candy1 = hexToRgbStrings sc.base01;
       dark-candy2 = hexToRgbStrings sc.base01;
       dark-candy3 = hexToRgbStrings sc.base01;
       dark-candy4 = hexToRgbStrings sc.base01;
       dark-candy5 = hexToRgbStrings sc.base01;
       dark-candy6 = hexToRgbStrings sc.base01;
+      dark-candy7 = hexToRgbStrings sc.base01;
+      dark-candy8 = hexToRgbStrings sc.base01;
 
 ### schrift
       fgalpha = 1;
@@ -144,7 +148,7 @@ in
       neon = false;
       autofg-menu = false; #dass schriftfarbe geändert werden kann
 
-      menustyle = true; #farben nicht überschreiben
+      menustyle = false; #farben nicht überschreiben
       
       autohg-menu = false; #für custom farbe beim hovern
       autohg-bar = false; # hovern über panel buttons eigene farbe anschalten
