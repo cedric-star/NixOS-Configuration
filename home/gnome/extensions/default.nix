@@ -27,7 +27,6 @@
     gnomeExtensions.pop-shell
   ];
 
-
   dconf.settings = {
     "org/gnome/shell" = {
       disabled-extensions = [#
