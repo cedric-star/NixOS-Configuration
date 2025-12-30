@@ -5,6 +5,7 @@
       ./hardware-configuration.nix
       ./system
       ./stylix
+      ./noctalia
   ];   
 
 }

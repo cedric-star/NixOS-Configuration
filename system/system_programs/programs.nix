@@ -1,4 +1,4 @@
-{ config, pkgs, ...}: 
+{ config, pkgs, inputs, ...}: 
 
 {
   environment.systemPackages = with pkgs; [
@@ -18,7 +18,7 @@
     i3
     woeusb-ng
     ntfs3g
-
+    inputs.noctalia.packages.${system}.default
 
 
 ### Theming
