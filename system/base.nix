@@ -14,6 +14,10 @@
       wayland = true;
     };
     displayManager.sddm = {
+      enable = false;
+      wayland.enable = true;
+    };
+    displayManager.ly = {
       enable = true;
       wayland.enable = true;
     };

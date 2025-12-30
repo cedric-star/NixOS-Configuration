@@ -30,7 +30,7 @@
   dconf.settings = {
     "org/gnome/shell" = {
       disabled-extensions = [#
-        #"openbar@neuromorph"
+        "openbar@neuromorph"
         "rounded-window-corners@fxgn"
       ];
       enabled-extensions = [#cli: 'gnome-extensions list'
@@ -42,7 +42,7 @@
         "user-theme@gnome-shell-extensions.gcampax.github.com"
         "Vitals@CoreCoding.com" 
         "pop-shell@system76.com"
-        "openbar@neuromorph"
+        #"openbar@neuromorph"
       ];
     };
   };
