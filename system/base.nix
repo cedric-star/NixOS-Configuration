@@ -5,6 +5,7 @@
   services.touchegg.enable = true;
   
   programs.hyprland.enable = true;
+  programs.niri.enable = true;
   services = {
  
     desktopManager.gnome.enable = true;
