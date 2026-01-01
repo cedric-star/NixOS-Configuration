@@ -33,6 +33,7 @@
     };
   };
   hardware.xpadneo.enable = true;
+  hardware.xone.enable = true;
 
   services.tailscale.enable = true;
 }
