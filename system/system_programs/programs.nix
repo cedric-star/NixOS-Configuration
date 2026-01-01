@@ -19,6 +19,7 @@
     woeusb-ng
     ntfs3g
     inputs.noctalia.packages.${system}.default
+    xow_dongle-firmware
 
 
 ### Theming
