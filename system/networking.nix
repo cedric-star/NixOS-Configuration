@@ -11,29 +11,37 @@
   # Enable networking
   networking.networkmanager.enable = true;
 
-  hardware.bluetooth = {
+    hardware.bluetooth = {
     enable = true;
     powerOnBoot = true;
+    
+    # WICHTIG: Nur EINEN Xbox-Treiber aktivieren, nicht beide!
+    # Entweder xpadneo ODER xone, nicht beides!
+    
     settings = {
       General = {
-        # Shows battery charge of connected devices on supported
-        # Bluetooth adapters. Defaults to 'false'.
+        Enable = "Source,Sink,Media,Socket";
         Experimental = true;
-        # When enabled other devices can connect faster to us, however
-        # the tradeoff is increased power consumption. Defaults to
-        # 'false'.
         FastConnectable = true;
+        # Diese Zeile hinzufügen:
+        ControllerMode = "bredr";
       };
       Policy = {
-        # Enable all controllers when they are found. This includes
-        # adapters present on start as well as adapters that are plugged
-        # in later on. Defaults to 'true'.
         AutoEnable = true;
+        # Diese Zeile hinzufügen:
+        ReconnectAttempts = 7;
       };
     };
   };
+  
+  # NUR EINEN VON BEIDEN AKTIVIEREN:
+  # Entferne eine der beiden Zeilen:
+  
+  # Für Xbox One/Series Controller:
   hardware.xpadneo.enable = true;
-  hardware.xone.enable = true;
+  
+  # ODER für ältere Xbox Controller:
+  # hardware.xone.enable = true;
 
   services.tailscale.enable = true;
 }
