@@ -8,6 +8,7 @@
     htop                        # systemressourcen anzeigen
     home-manager                # home Konfigurationen 
     kitty                       # Terminal Emulator
+    alac
     fish                        # geile Shell
     wine
     sass
@@ -21,9 +22,8 @@
     inputs.noctalia.packages.${system}.default
     xow_dongle-firmware
     blueman
-
-
-### Theming
+    fuzzel
+    alacritty
 
 ### Compiler ###                
     swi-prolog                  # prolog
@@ -59,7 +59,6 @@
 ### IDE's ###
     jetbrains.webstorm
     jetbrains.idea-ultimate
-    
     jetbrains.idea-community
     jetbrains.pycharm-community
     jetbrains.clion
