@@ -107,6 +107,7 @@
     heroic                      # epic games
     prismlauncher
     nexusmods-app
+    antimicrox
   ];
 
   # Install firefox.
