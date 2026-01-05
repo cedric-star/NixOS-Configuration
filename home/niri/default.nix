@@ -12,4 +12,10 @@
   home.file.".config/niri/config.kdl" = {
     source = ./config.kdl;
   };
+
+  programs.waybar = {
+    enable = true;
+    systemd.enable = false; 
+    package = pkgs.waybar;
+  }
 }
