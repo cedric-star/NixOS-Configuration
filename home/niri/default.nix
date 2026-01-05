@@ -7,11 +7,10 @@
     libnotify
     pamixer
     wl-clipboard-rs
+    waybar
   ];
 
-  home.file.".config/niri/config.kdl" = {
-    source = ./config.kdl;
-  };
+  home.file.".config/niri/config.kdl".source = ./config.kdl;
 
   programs.waybar = {
     enable = true;
