@@ -401,10 +401,10 @@ binds {
 
     Mod+Q repeat=false { close-window; }
 
-    Mod+Left  { focus-column-left; }
-    Mod+Down  { focus-window-down; }
-    Mod+Up    { focus-window-up; }
-    Mod+Right { focus-column-right; }
+    // Mod+Left  { focus-column-left; }
+    // Mod+Down  { focus-window-down; }
+    // Mod+Up    { focus-window-up; }
+    // Mod+Right { focus-column-right; }
     Mod+J     { focus-column-left; }
     // Mod+K     { focus-window-down; }
     // Mod+L     { focus-window-up; }
@@ -576,12 +576,12 @@ binds {
     // * adjust width as a percentage of screen width: "-10%" or "+10%"
     // Pixel sizes use logical, or scaled, pixels. I.e. on an output with scale 2.0,
     // set-column-width "100" will make the column occupy 200 physical screen pixels.
-    Mod+Minus { set-column-width "-10%"; }
-    Mod+Equal { set-column-width "+10%"; }
+    Mod+Left { set-column-width "-10%"; }
+    Mod+Right { set-column-width "+10%"; }
 
     // Finer height adjustments when in column with other windows.
-    Mod+Shift+Minus { set-window-height "-10%"; }
-    Mod+Shift+Equal { set-window-height "+10%"; }
+    Mod+Up { set-window-height "-10%"; }
+    Mod+Down { set-window-height "+10%"; }
 
     // Move the focused window between the floating and the tiling layout.
     Mod+V       { toggle-window-floating; }
