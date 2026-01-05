@@ -410,14 +410,14 @@ binds {
     // Mod+L     { focus-window-up; }
     Mod+odiaeresis     { focus-column-right; }
 
-    Mod+Ctrl+Left  { move-column-left; }
-    Mod+Ctrl+Down  { move-window-down; }
-    Mod+Ctrl+Up    { move-window-up; }
-    Mod+Ctrl+Right { move-column-right; }
-    Mod+Ctrl+J     { move-column-left; }
+    Alt+Left  { move-column-left; }
+    Alt+Down  { move-window-down; }
+    Alt+Up    { move-window-up; }
+    Alt+odiaeresis { move-column-right; }
+    Alt+J     { move-column-left; }
     // Mod+Ctrl+K     { move-window-down; }
     // Mod+Ctrl+L     { move-window-up; }
-    Mod+Ctrl+odiaeresis     { move-column-right; }
+    // Mod+Ctrl+odiaeresis     { move-column-right; }
 
     // Alternative commands that move across workspaces when reaching
     // the first or last window in a column.
