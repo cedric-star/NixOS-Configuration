@@ -11,6 +11,7 @@
   ];
 
   home.file.".config/niri/config.kdl".source = ./config.kdl;
+  home.file.".config/niri/b1.png".source = ../../stylix/wallpapers/b1.png;
 
   programs.waybar = {
     enable = true;
