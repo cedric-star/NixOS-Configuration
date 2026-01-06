@@ -8,6 +8,7 @@
     pamixer
     wl-clipboard-rs
     waybar
+    swww
   ];
 
   home.file.".config/niri/config.kdl".source = ./config.kdl;
