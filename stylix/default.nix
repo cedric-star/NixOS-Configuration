@@ -11,10 +11,10 @@
 
 
   stylix.opacity = {
-    applications = 0.85;
-    terminal = 0.85;
-    desktop = 0.85;
-    popups = 0.85;
+    applications = 1;
+    terminal = 1;
+    desktop = 1;
+    popups = 1;
   };
 
   stylix.cursor = {
