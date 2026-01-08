@@ -15,9 +15,8 @@
       jebbs.plantuml                        #puml
       mechatroner.rainbow-csv               #csv
       ms-toolsai.jupyter                    #jupyter
-      ms-python.python 
-      kdl-org.kdl                     #python
-      #wal-theme                    #für pywal theming
+      ms-python.python                      #python
+      kdl-org.kdl-v1
     ];
   };
 }
