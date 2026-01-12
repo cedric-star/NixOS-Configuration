@@ -5,6 +5,6 @@
     enable = true;
     systemd.enable = false; 
     package = pkgs.waybar;
-    style = ./style.css
+    style = ./style.css;
   };
 }
