@@ -23,6 +23,7 @@
     blueman
     fuzzel
     alacritty
+    quickshell
 
 ### Compiler ###                
     swi-prolog                  # prolog
