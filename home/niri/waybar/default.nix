@@ -1,5 +1,10 @@
 {config, lib, pkgs, ...}:
  
 {
-  home.file.".config/waybar/style.css".source = ./style.css; 
+  programs.waybar = {
+    enable = true;
+    systemd.enable = false; 
+    package = pkgs.waybar;
+    style = ./style.css
+  };
 }
