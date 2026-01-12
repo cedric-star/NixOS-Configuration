@@ -2,6 +2,7 @@
 { config, lib, pkgs, inputs, ... }:
 
 let
+  system = "x86_64-linux";
   quickshell-with-niri = inputs.qml-niri.packages.${system}.quickshell;
   qml-niri-plugin = inputs.qml-niri.packages.${system}.default;
 in
