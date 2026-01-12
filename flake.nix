@@ -58,7 +58,7 @@
 
         inputs.nix-flatpak.nixosModules.nix-flatpak
 
-        inputs.quickshell 
+        inputs.quickshell.nixosModules.default
 
         #inputs.qml-niri
       ];
