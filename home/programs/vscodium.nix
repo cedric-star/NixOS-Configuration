@@ -16,7 +16,7 @@
       mechatroner.rainbow-csv               #csv
       ms-toolsai.jupyter                    #jupyter
       ms-python.python                      #python
-      theqtcompany.qt-qml
+      #theqtcompany.qt-qml
       #kdl-org.kdl-v1
     ];
   };
