@@ -9,6 +9,7 @@
     wl-clipboard-rs
     waybar
     swww
+    wofi
   ];
 
   home.file.".config/niri/config.kdl".source = ./config.kdl;

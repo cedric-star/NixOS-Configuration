@@ -20,7 +20,7 @@
   stylix.cursor = {
     package = pkgs.bibata-cursors;
     name = "Bibata-Original-Ice-Right";
-    size = 36;
+    size = 30;
   };
 }
 
