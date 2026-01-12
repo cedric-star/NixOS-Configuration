@@ -14,6 +14,12 @@
     waybar
     swww
     wofi
+
+    # Quickshell Paket
+    inputs.quickshell.packages.${pkgs.system}.default
+    
+    # QML-Niri Paket
+    inputs.qml-niri.packages.${pkgs.system}.default
   ];
 
   home.file.".config/niri/config.kdl".source = ./config.kdl;
