@@ -1,49 +1,32 @@
-# home.nix
-{ config, lib, pkgs, inputs, ... }:
+{config, lib, pkgs, inputs, ...}:
 
-let
+let {
   system = "x86_64-linux";
-  quickshell-with-niri = inputs.qml-niri.packages.${system}.quickshell;
-  qml-niri-plugin = inputs.qml-niri.packages.${system}.default;
-in
-{
+}
+
+in {
   imports = [
-  
+    ./quickshell
   ];
 
   home.packages = with pkgs; [
-    # Quickshell mit qml-niri Plugin
-    quickshell-with-niri
-    
-    # QML-Niri Plugin (falls separat benötigt)
-    qml-niri-plugin
-    
-    # Niri und Wayland
-    niri
-    niri-effects
-    
-    # Qt für QML/Quickshell
-    qt6.full
-    qt6.qtwayland
-    qt6.qtdeclarative
-    qt6.qtsvg
-    qt6.qttools
-    
-    # Wayland Tools
     xwayland-satellite
-    waybar
-    swww
-    wofi
-    
-    # Utilities
     swaybg
     libnotify
     pamixer
     wl-clipboard-rs
+    waybar
+    swww
+    wofi
+    qml-niri.packages.<system>.quickshell
 
+    # Quickshell Paket
+    inputs.quickshell.packages.${pkgs.system}.default
+    
+    # QML-Niri Paket
+    inputs.qml-niri.packages.${pkgs.system}.default
   ];
 
-  # Niri Konfiguration
   home.file.".config/niri/config.kdl".source = ./config.kdl;
   home.file.".config/niri/b1.png".source = ../../stylix/wallpapers/b1.png;
 
