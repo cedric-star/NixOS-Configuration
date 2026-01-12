@@ -3,7 +3,7 @@
 {
   imports = [
     ./waybar
-  ]
+  ];
 
   home.packages = with pkgs; [
     xwayland-satellite
