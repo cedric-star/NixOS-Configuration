@@ -17,7 +17,7 @@ in {
     waybar
     swww
     wofi
-    qml-niri.packages.<system>.quickshell
+    qml-niri.packages.${system}.quickshell
 
     # Quickshell Paket
     inputs.quickshell.packages.${pkgs.system}.default
