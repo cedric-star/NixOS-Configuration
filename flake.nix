@@ -57,6 +57,10 @@
         inputs.stylix.nixosModules.stylix
 
         inputs.nix-flatpak.nixosModules.nix-flatpak
+
+        inputs.quickshell 
+
+        inputs.qml-niri
       ];
     };
   };
