@@ -1,8 +1,7 @@
 {config, lib, pkgs, inputs, ...}:
 
-let {
+let 
   system = "x86_64-linux";
-}
 
 in {
   imports = [
