@@ -60,7 +60,7 @@
 
         inputs.quickshell 
 
-        inputs.qml-niri
+        #inputs.qml-niri
       ];
     };
   };
