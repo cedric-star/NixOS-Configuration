@@ -1,11 +1,21 @@
-{config, lib, pkgs, inputs, ...}:
+{ config, lib, pkgs, inputs, ... }:
 
+let
+  # Pakete aus den Inputs extrahieren
+  quickshell-pkg = inputs.quickshell.packages.${pkgs.system}.default;
+  qml-niri-pkg = inputs.qml-niri.packages.${pkgs.system}.default;
+in
 {
-  imports = [
-    ./quickshell
-  ];
-
   home.packages = with pkgs; [
+    # Über Inputs importierte Pakete
+    quickshell-pkg
+    qml-niri-pkg
+    
+    # Systempakete
+    niri
+    qt6.qtdeclarative
+    qt6.qtwayland
+    qt6.qtsvg
     xwayland-satellite
     swaybg
     libnotify
@@ -14,12 +24,6 @@
     waybar
     swww
     wofi
-
-    # Quickshell Paket
-    inputs.quickshell.packages.${pkgs.system}.default
-    
-    # QML-Niri Paket
-    inputs.qml-niri.packages.${pkgs.system}.default
   ];
 
   home.file.".config/niri/config.kdl".source = ./config.kdl;
