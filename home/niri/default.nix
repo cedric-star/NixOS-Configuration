@@ -17,13 +17,13 @@ in {
     waybar
     swww
     wofi
-    inputs.qml-niri.packages.${system}.default
+    #inputs.qml-niri.packages.${system}.default
 
     # Quickshell Paket
-    inputs.quickshell.packages.${pkgs.system}.default
+    #inputs.quickshell.packages.${pkgs.system}.default
     
     # QML-Niri Paket
-    inputs.qml-niri.packages.${pkgs.system}.default
+    #inputs.qml-niri.packages.${pkgs.system}.default
   ];
 
   home.file.".config/niri/config.kdl".source = ./config.kdl;
