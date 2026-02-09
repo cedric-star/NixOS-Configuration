@@ -8,6 +8,7 @@ pkgs.mkShell {
     gcc
     glibc.dev 
     stdenv.cc.libc
+    raylib
 
   ];
 
