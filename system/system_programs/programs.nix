@@ -30,6 +30,7 @@
     gcc                         # c lang
     glibc.dev                   # c header
     stdenv.cc.libc              # c libraries
+    raylib
     openjdk21
     jetbrains.jdk
     python3
