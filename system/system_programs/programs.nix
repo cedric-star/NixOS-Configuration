@@ -26,6 +26,7 @@
     networkmanager
     #quickshell
 
+
 ### Compiler ###                
     swi-prolog                  # prolog
     gcc                         # c lang
