@@ -23,6 +23,7 @@
     blueman
     fuzzel
     alacritty
+    networkmanager
     #quickshell
 
 ### Compiler ###                
