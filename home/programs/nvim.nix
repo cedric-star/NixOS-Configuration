@@ -80,122 +80,130 @@ in
 
     # Wichtig: Wir nutzen extraLuaConfig statt extraConfig (Vimscript)
     extraLuaConfig = ''
-      ${customKeymaps}
-      
-      -- ==========================================
-      -- PLUGIN SETUP (ohne lazy.nvim, direkt via Nix)
-      -- ==========================================
-      
-      -- LSP Configuration
-      local lspconfig = vim.lsp.config
-      local cmp = require('cmp')
-      local capabilities = require('cmp_nvim_lsp').default_capabilities()
-      
-      -- Autocomplete Setup
-      cmp.setup({
-        snippet = {
-          expand = function(args)
-            require('luasnip').lsp_expand(args.body)
-          end,
-        },
-        mapping = cmp.mapping.preset.insert({
-          ['<C-Space>'] = cmp.mapping.complete(),
-          ['<CR>'] = cmp.mapping.confirm({ select = true }),
-          ['<Tab>'] = cmp.mapping.select_next_item(),
-          ['<S-Tab>'] = cmp.mapping.select_prev_item(),
-        }),
-        sources = cmp.config.sources({
-          { name = 'nvim_lsp' },
-          { name = 'luasnip' },
-          { name = 'buffer' },
-          { name = 'path' },
-        })
-      })
-      
-      -- JAVA LSP (jdtls)
-      lspconfig.jdtls.setup({
-        cmd = { 'jdt-language-server' },
-        root_dir = lspconfig.util.root_pattern('pom.xml', 'build.gradle', '.git', '.classpath'),
-        capabilities = capabilities,
-        settings = {
-          java = {
-            configuration = {
-              runtimes = {
-                { name = "JavaSE-17", path = "${pkgs.jdk17}/lib/openjdk" },
-                { name = "JavaSE-21", path = "${pkgs.jdk21}/lib/openjdk" },
-              }
-            }
+  ${customKeymaps}
+  
+  -- ==========================================
+  -- PLUGIN SETUP
+  -- ==========================================
+  
+  -- Autocomplete Setup
+  local cmp = require('cmp')
+  local capabilities = require('cmp_nvim_lsp').default_capabilities()
+  
+  cmp.setup({
+    snippet = {
+      expand = function(args)
+        require('luasnip').lsp_expand(args.body)
+      end,
+    },
+    mapping = cmp.mapping.preset.insert({
+      ['<C-Space>'] = cmp.mapping.complete(),
+      ['<CR>'] = cmp.mapping.confirm({ select = true }),
+      ['<Tab>'] = cmp.mapping.select_next_item(),
+      ['<S-Tab>'] = cmp.mapping.select_prev_item(),
+    }),
+    sources = cmp.config.sources({
+      { name = 'nvim_lsp' },
+      { name = 'luasnip' },
+      { name = 'buffer' },
+      { name = 'path' },
+    })
+  })
+  
+  -- ==========================================
+  -- LSP CONFIGURATION (Neovim 0.11+ native API)
+  -- ==========================================
+  
+  -- JAVA LSP (jdtls)
+  vim.lsp.config('jdtls', {
+    cmd = { 'jdt-language-server' },
+    root_markers = { 'pom.xml', 'build.gradle', '.git', '.classpath' },
+    capabilities = capabilities,
+    settings = {
+      java = {
+        configuration = {
+          runtimes = {
+            { name = "JavaSE-17", path = "${pkgs.jdk17}/lib/openjdk" },
+            { name = "JavaSE-21", path = "${pkgs.jdk21}/lib/openjdk" },
           }
         }
-      })
-      
-      -- C/C++ LSP (clangd)
-      lspconfig.clangd.setup({
-        capabilities = capabilities,
-        cmd = { 'clangd', '--background-index', '--clang-tidy', '--header-insertion=iwyu' },
-      })
-      
-      -- Treesitter
-      require('nvim-treesitter.configs').setup({
-        highlight = { enable = true },
-        indent = { enable = true },
-      })
-      
-      -- Telescope
-      require('telescope').setup({
-        defaults = {
-          mappings = {
-            i = {
-              ['<C-j>'] = require('telescope.actions').move_selection_next,
-              ['<C-k>'] = require('telescope.actions').move_selection_previous,
-            },
-          },
+      }
+    }
+  })
+  
+  vim.lsp.enable('jdtls')
+  
+  -- C/C++ LSP (clangd)
+  vim.lsp.config('clangd', {
+    cmd = { 'clangd', '--background-index', '--clang-tidy', '--header-insertion=iwyu' },
+    root_markers = { '.clangd', '.clang-tidy', '.clang-format', 'compile_commands.json', '.git' },
+    capabilities = capabilities,
+    filetypes = { 'c', 'cpp', 'objc', 'objcpp' }
+  })
+  
+  vim.lsp.enable('clangd')
+  
+  -- Treesitter
+  require('nvim-treesitter.configs').setup({
+    highlight = { enable = true },
+    indent = { enable = true },
+  })
+  
+  -- Telescope
+  require('telescope').setup({
+    defaults = {
+      mappings = {
+        i = {
+          ['<C-j>'] = require('telescope.actions').move_selection_next,
+          ['<C-k>'] = require('telescope.actions').move_selection_previous,
         },
-      })
-      
-      -- Neo-tree
-      require('neo-tree').setup({
-        filesystem = {
-          filtered_items = {
-            visible = true,
-            hide_dotfiles = false,
-          },
-        },
-      })
-      
-      -- Lualine
-      require('lualine').setup({
-        options = {
-          theme = 'auto',
-          icons_enabled = true,
-        },
-      })
-      
-      -- Bufferline
-      require('bufferline').setup({
-        options = {
-          mode = 'buffers',
-          separator_style = 'slant',
-        },
-      })
-      
-      -- Gitsigns
-      require('gitsigns').setup()
-      
-      -- ==========================================
-      -- LSP KEYMAPS (Leader-basiert)
-      -- ==========================================
-      
-      vim.keymap.set('n', 'gd', vim.lsp.buf.definition, { desc = 'Go to Definition' })
-      vim.keymap.set('n', 'gr', vim.lsp.buf.references, { desc = 'References' })
-      vim.keymap.set('n', 'K', vim.lsp.buf.hover, { desc = 'Hover Documentation' })
-      vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, { desc = 'Rename Symbol' })
-      vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, { desc = 'Code Action' })
-      vim.keymap.set('n', '<leader>ff', require('telescope.builtin').find_files, { desc = 'Find Files' })
-      vim.keymap.set('n', '<leader>fg', require('telescope.builtin').live_grep, { desc = 'Live Grep' })
-      vim.keymap.set('n', '<leader>fb', require('telescope.builtin').buffers, { desc = 'Find Buffers' })
-      vim.keymap.set('n', '<leader>e', ':Neotree toggle<CR>', { desc = 'Toggle Explorer' })
-    '';
+      },
+    },
+  })
+  
+  -- Neo-tree
+  require('neo-tree').setup({
+    filesystem = {
+      filtered_items = {
+        visible = true,
+        hide_dotfiles = false,
+      },
+    },
+  })
+  
+  -- Lualine
+  require('lualine').setup({
+    options = {
+      theme = 'auto',
+      icons_enabled = true,
+    },
+  })
+  
+  -- Bufferline
+  require('bufferline').setup({
+    options = {
+      mode = 'buffers',
+      separator_style = 'slant',
+    },
+  })
+  
+  -- Gitsigns
+  require('gitsigns').setup()
+  
+  -- ==========================================
+  -- LSP KEYMAPS (Leader-basiert)
+  -- ==========================================
+  
+  vim.keymap.set('n', 'gd', vim.lsp.buf.definition, { desc = 'Go to Definition' })
+  vim.keymap.set('n', 'gr', vim.lsp.buf.references, { desc = 'References' })
+  vim.keymap.set('n', 'K', vim.lsp.buf.hover, { desc = 'Hover Documentation' })
+  vim.keymap.set('n', '<leader>rn', vim.lsp.buf.rename, { desc = 'Rename Symbol' })
+  vim.keymap.set('n', '<leader>ca', vim.lsp.buf.code_action, { desc = 'Code Action' })
+  vim.keymap.set('n', '<leader>ff', require('telescope.builtin').find_files, { desc = 'Find Files' })
+  vim.keymap.set('n', '<leader>fg', require('telescope.builtin').live_grep, { desc = 'Live Grep' })
+  vim.keymap.set('n', '<leader>fb', require('telescope.builtin').buffers, { desc = 'Find Buffers' })
+  vim.keymap.set('n', '<leader>e', ':Neotree toggle<CR>', { desc = 'Toggle Explorer' })
+'';
 
     plugins = with pkgs.vimPlugins; [
       # LSP & Completion
