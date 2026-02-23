@@ -5,7 +5,7 @@ let
 
 in {
   imports = [
-    ./quickshell
+    ./waybar
   ];
 
   home.packages = with pkgs; [
@@ -65,6 +65,4 @@ in {
     ];
     configPackages = [ pkgs.niri ];
   };
-
-
 }
