@@ -1,30 +1,32 @@
 { pkgs, lib, ... }:
 
 {
-  vim = {
-    theme = {
-      enable = false;
+  programs.nvf = {
+    enable = true;
+    
+    settings.vim = {
+      theme = {
+        enable = false;
+      };
+
+      statusline.lualine.enable = true;
+      telescope.enable = true;
+      autocomplete.nvim-cmp.enable = true;
+
+      languages = {
+        enableLSP = true;
+        enableTreesitter = true;
+
+        nix.enable = true;
+        sql.enable = true;
+        clang.enable = true;
+        ts.enable = true;
+        python.enable = true;
+        bash.enable = true;
+        css.enable = true;
+        typst.enable = true;
+        yaml.enable = true;
+      };
     };
-
-    statusline.lualine.enable = true;
-    telescope.enable = true;
-    autocomplete.nvim-cmp.enable = true;
-
-    languages = {
-      enableLSP = true;
-      enableTreesitter = true;
-
-      nix.enable = true;
-      sql.enable = true;
-      clang.enable = true;
-      ts.enable = true;
-      python.enable = true;
-      bash.enable = true;
-      css.enable = true;
-      typst.enable = true;
-      yaml.enable = true;
-
-    };
-
   };
 }
