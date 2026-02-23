@@ -16,7 +16,7 @@
 
       "niri/workspaces" = {
         all-output = true;
-        format = "{index}"
+        format = "{index}";
       };
 
       modules-right = [
