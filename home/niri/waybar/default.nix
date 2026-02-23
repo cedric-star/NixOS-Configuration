@@ -8,7 +8,7 @@
     settings = [{
       height = 30;
       layer = top;
-      position = top;
+      #position = top;
       tray = { spacing = 10; };
 
       modules-center = [  ];
