@@ -27,7 +27,6 @@
         java = {
           lsp = {
             enable = true;
-            package = ["jdt-language-server" "-data" "~/.cache/jdtls/workspace"];
           };
         };
       };
