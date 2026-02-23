@@ -24,6 +24,12 @@
         css.enable = true;
         typst.enable = true;
         yaml.enable = true;
+        java = {
+          lsp = {
+            enable = true;
+            package = ["jdt-language-server" "-data" "~/.cache/jdtls/workspace"];
+          };
+        };
       };
     };
   };
