@@ -47,7 +47,7 @@
         format = "CPU: {usage}%";
         tooltip = false;
       };
-      memory = { format = "{}% "; };
+      memory = { format = "RAM: {}%"; };
       network = {
         interval = 1;
         format-alt = "{ifname}: {ipaddr}/{cidr}";
@@ -57,12 +57,10 @@
         format-wifi = "{essid} ({signalStrength}%) ";
       };
       pulseaudio = {
-        format = "Adio: {volume}% {icon} {format_source}";
-        format-bluetooth = "Adio: {volume}% {icon} {format_source}";
+        format = "Adio: {volume}%";
+        format-bluetooth = "ᚼᛒ : {volume}%";
         
-        format-muted = "Adio:  {format_source} (muted)";
-        format-source = "Adio: {volume}% (muted)";
-        format-source-muted = "";
+        format-muted = "Muted:  {format_source}";
         on-click = "pavucontrol";
       };
 
