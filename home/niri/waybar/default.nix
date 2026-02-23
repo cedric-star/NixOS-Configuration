@@ -9,29 +9,15 @@
       * {
           font-family: "JetBrains Mono Nerd Font";
           font-size: 13px;
-          color: #ffffff;
-          background: transparent;
+          color: #e8d2b8;
+          background: #1a0a14;
       }
       
       #waybar {
-          background: rgba(0, 0, 0, 0.0);
+          background-color: rgba(0, 0, 0, 0.0);
       }
       
-      #workspaces button {
-          padding: 0 10px;
-          color: #ffffff;
-          background: transparent;
-      }
       
-      #workspaces button.active {
-          border-bottom: 2px solid #ffffff;
-      }
-      
-      #clock, #battery, #cpu, #memory, #temperature, #network, #pulseaudio {
-          padding: 0 10px;
-          margin: 0 4px;
-          color: #ffffff;
-      }
     '';
 
     settings = [{
