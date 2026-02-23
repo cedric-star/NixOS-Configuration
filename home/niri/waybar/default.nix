@@ -14,7 +14,7 @@
       modules-center = [  ];
       modules-left = [ "niri/workspaces" ];
 
-      "niri/workspaces": {
+      "niri/workspaces" = {
         format = "{icon}";
         format-icons = {
           
