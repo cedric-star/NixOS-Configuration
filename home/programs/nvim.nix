@@ -87,7 +87,7 @@ in
       -- ==========================================
       
       -- LSP Configuration
-      local lspconfig = require('lspconfig')
+      local lspconfig = vim.lsp.config
       local cmp = require('cmp')
       local capabilities = require('cmp_nvim_lsp').default_capabilities()
       
