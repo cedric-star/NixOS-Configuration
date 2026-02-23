@@ -17,13 +17,9 @@
       "niri/workspaces" = {
         format = "{icon}";
         format-icons = {
-          
-          browser = "";
-          discord = "";
-          chat = "<b></b>";
 
           active = "";
-          default = "";
+          default = "${index}";
         };
       };
 
