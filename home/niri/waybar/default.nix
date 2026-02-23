@@ -11,7 +11,7 @@
       position = "top";
       tray = { spacing = 10; };
 
-      modules-center = [  ];
+      modules-center = [ "clock" ];
       modules-left = [ "niri/workspaces" ];
 
       "niri/workspaces" = {
@@ -26,7 +26,6 @@
         "memory"
         "temperature"
         "battery"
-        "clock"
       ];
 
       battery = {
@@ -45,7 +44,7 @@
         tooltip-format = "{:%Y-%m-%d | %H:%M}";
       };
       cpu = {
-        format = "CPU: {usage}% ";
+        format = "CPU: {usage}%";
         tooltip = false;
       };
       memory = { format = "{}% "; };
@@ -58,28 +57,18 @@
         format-wifi = "{essid} ({signalStrength}%) ";
       };
       pulseaudio = {
-        format = "{volume}% {icon} {format_source}";
-        format-bluetooth = "{volume}% {icon} {format_source}";
-        format-bluetooth-muted = " {icon} {format_source}";
-        format-icons = {
-          car = "";
-          default = [ "" "" "" ];
-          handsfree = "";
-          headphones = "";
-          headset = "";
-          phone = "";
-          portable = "";
-        };
-        format-muted = " {format_source}";
-        format-source = "{volume}% ";
+        format = "Adio: {volume}% {icon} {format_source}";
+        format-bluetooth = "Adio: {volume}% {icon} {format_source}";
+        
+        format-muted = "Adio:  {format_source} (muted)";
+        format-source = "Adio: {volume}% (muted)";
         format-source-muted = "";
         on-click = "pavucontrol";
       };
-      "sway/mode" = { format = ''<span style="italic">{}</span>''; };
+
       temperature = {
         critical-threshold = 80;
-        format = "{temperatureC}°C {icon}";
-        format-icons = [ "" "" "" ];
+        format = "Temperatur: {temperatureC}°C";
       };
     }];
   };

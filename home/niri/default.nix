@@ -23,6 +23,7 @@ in {
     swww                # Wallpaper daemon (alternativ zu swaybg)
     wofi                # App launcher (oder fuzzel als Alternative)
     fuzzel              # Alternative launcher, besser integriert
+    pavucontrol         # Audio
     
     # Portale für Screen Sharing, File Picker etc.
     xdg-desktop-portal-gtk
