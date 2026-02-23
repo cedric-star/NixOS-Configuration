@@ -12,7 +12,21 @@
       tray = { spacing = 10; };
 
       modules-center = [  ];
-      modules-left = [  ];
+      modules-left = [ "niri/workspaces" ];
+
+      "niri/workspaces": {
+        format = "{icon}";
+        format-icons = {
+          
+          browser = "";
+          discord = "";
+          chat = "<b></b>";
+
+          active = "";
+          default = "";
+        };
+      };
+
       modules-right = [
         "pulseaudio"
         "network"
@@ -21,7 +35,6 @@
         "temperature"
         "battery"
         "clock"
-        "tray"
       ];
 
       battery = {
