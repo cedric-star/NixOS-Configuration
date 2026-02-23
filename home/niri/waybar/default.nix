@@ -57,10 +57,9 @@
         format-wifi = "{essid} ({signalStrength}%) ";
       };
       pulseaudio = {
-        format = "Adio: {volume}%";
+        format = "Audio: {volume}%";
         format-bluetooth = "ᚼᛒ : {volume}%";
-        
-        format-muted = "Muted:  {format_source}";
+        format-muted = "Audio Muted";
         on-click = "pavucontrol";
       };
 
@@ -69,5 +68,7 @@
         format = "Temperatur: {temperatureC}°C";
       };
     }];
+
+    style = ./style.css;
   };
 }
