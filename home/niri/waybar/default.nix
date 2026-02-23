@@ -10,10 +10,10 @@
           font-family: "JetBrains Mono Nerd Font";
           font-size: 13px;
           color: #e8d2b8;
-          background: #1a0a14;
+          background-color: #1a0a14;
       }
       
-      #waybar {
+      window#waybar {
           background-color: rgba(0, 0, 0, 0.0);
       }
       
