@@ -69,10 +69,5 @@
       };
     }];
 
-    style = ''
-#waybar {
-background: rgba (0,0,0,0);
-}
-    '';
   };
 }
