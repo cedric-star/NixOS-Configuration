@@ -18,33 +18,21 @@
       url = "github:gmodena/nix-flatpak/?ref=latest"; # always latest stable
     };
 
-    quickshell = {
-      url = "github:outfoxxed/quickshell";
-      inputs.nixpkgs.follows = "nixpkgs";
+    nvf = {
+      url = "github:notashelf/nvf";
     };
-
-    qml-niri = {
-      url = "github:imiric/qml-niri/main";
-      inputs.nixpkgs.follows = "nixpkgs";
-      inputs.quickshell.follows = "quickshell";
-    };
-
-
-/*
-    noctalia = {
-      url = "github:noctalia-dev/noctalia-shell";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };*/
 
   };
   
-  outputs = {self, nixpkgs, home-manager, ... }@inputs: {
+  outputs = {self, nvf, nixpkgs, home-manager, ... }@inputs: {
     nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
       system = "x86_64-linux";
 
       specialArgs = {inherit inputs;};
       modules = [
         ./configuration.nix
+
+        nvf.nixosModules.default
         
         home-manager.nixosModules.default
         {
