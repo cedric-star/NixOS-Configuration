@@ -18,8 +18,8 @@
         format = "{icon}";
         format-icons = {
 
-          active = "";
-          default = "${index}";
+          active = "{index}";
+          default = "{index}";
         };
       };
 
