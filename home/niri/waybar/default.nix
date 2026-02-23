@@ -15,12 +15,8 @@
       modules-left = [ "niri/workspaces" ];
 
       "niri/workspaces" = {
-        format = "{icon}";
-        format-icons = {
-
-          active = "{index}";
-          default = "{index}";
-        };
+        all-output = true;
+        format = "{index}"
       };
 
       modules-right = [
