@@ -5,9 +5,7 @@
     enable = true;
     
     settings.vim = {
-      theme = {
-        enable = false;
-      };
+
 
       statusline.lualine.enable = true;
       telescope.enable = true;
