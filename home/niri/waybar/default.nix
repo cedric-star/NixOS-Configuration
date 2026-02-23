@@ -30,7 +30,7 @@
       ];
 
       battery = {
-        format = "{capacity}% {icon}";
+        format = "Akku: {capacity}%";
         format-alt = "{time} {icon}";
         format-charging = "{capacity}% ";
         format-icons = [ "" "" "" "" "" ];
@@ -45,7 +45,7 @@
         tooltip-format = "{:%Y-%m-%d | %H:%M}";
       };
       cpu = {
-        format = "{usage}% ";
+        format = "CPU: {usage}% ";
         tooltip = false;
       };
       memory = { format = "{}% "; };
