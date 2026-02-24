@@ -4,21 +4,12 @@
     font-family: Roboto, Helvetica, Arial, sans-serif;
     font-size: 13px;
     box-shadow: none;
+    color: #e8d2b8;
     background: transparent;
 }
 
 window#waybar {
-    background: rgba(43, 48, 59, 0.0);
-    border-bottom: 3px solid rgba(100, 114, 125, 0.5);
-    color: white;
-}
-
-tooltip {
-  background: rgba(43, 48, 59, 0.5);
-  border: 1px solid rgba(100, 114, 125, 0.5);
-}
-tooltip label {
-  color: white;
+    background: rgba(0, 0, 0, 0.0);
 }
 
 #workspaces button {
@@ -44,6 +35,5 @@ tooltip label {
     background-color: #27121e;
     padding: 0px;
     margin: 4px;
-    color: #e8d2b8;
     border-radius: 2px;
 }
