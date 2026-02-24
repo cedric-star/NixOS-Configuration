@@ -15,7 +15,7 @@ window#waybar {
     border-image: linear-gradient(90deg, #b13d8c 0%, #6b84d1 50%, #b13d8c 100%) 1;
 }
 
-#custom-animation {
+#custom-logo {
     background-image: url("./nixos.svg");
     background-size: contain;
     background-repeat: no-repeat;
