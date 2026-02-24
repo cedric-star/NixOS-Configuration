@@ -17,7 +17,7 @@
 
         nix.enable = true;
         sql.enable = true;
-        clang.enable = isMaximal;
+        clang.enable = true;
         ts.enable = true;
         python.enable = true;
         bash.enable = true;
