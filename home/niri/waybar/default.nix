@@ -12,6 +12,12 @@
     font-family: Roboto, Helvetica, Arial, sans-serif;
     font-size: 13px;
     min-height: 0;
+    
+    /* WICHTIG: Entfernt eventuelle Schatten, die Opazität stören könnten */
+    box-shadow: none;
+    
+    /* WICHTIG: Keine zusätzlichen Hintergründe durch Vererbung */
+    background: transparent;
 }
 
 window#waybar {
