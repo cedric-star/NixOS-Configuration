@@ -14,17 +14,23 @@ window#waybar {
 }
 
 #workspaces button {
-   min-width: 20px;           /* Startbreite */
-   transition: min-width 1s ease;  /* Sanfte Animation */
+    min-width: 20px;
+    animation: shrink 0.3s ease forwards;
 }
 
 #workspaces button.focused {
-   background: #27121e;
-   min-width: 60px;           /* Endbreite - breiter */
+    background: #27121e;
+    animation: expand 0.3s ease forwards;
 }
 
-#workspaces button:hover {
-   background-color: #3d2434;
+@keyframes expand {
+    from { min-width: 20px; }
+    to   { min-width: 50px; }
+}
+
+@keyframes shrink {
+    from { min-width: 50px; }
+    to   { min-width: 20px; }
 }
 
 #workspaces button,
