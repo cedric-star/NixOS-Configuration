@@ -2,7 +2,8 @@
     border: none;
     border-radius: 0;
     font-family: Roboto, Helvetica, Arial, sans-serif;
-    font-size: 13px;
+    font-size: 14px;
+    font-weight: bold;
     box-shadow: none;
     color: #e8d2b8;
     background: transparent;
@@ -20,8 +21,11 @@ window#waybar {
 }
 
 #workspaces button.focused {
-    background: #64727D;
-    border-bottom: 3px solid white;
+    background: #27121e80;
+}
+
+#workspaces button:hover {
+    background-color: #3d243440;
 }
 
 #mode,
@@ -32,8 +36,8 @@ window#waybar {
 #network,
 #pulseaudio,
 #temperature {
-    background-color: #27121e;
-    padding: 0px;
-    margin: 4px;
-    border-radius: 2px;
+    background-color: #27121e80;
+    padding: 3px;
+    margin: 6px;
+    border-radius: 3px;
 }
