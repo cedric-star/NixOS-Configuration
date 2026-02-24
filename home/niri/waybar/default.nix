@@ -17,10 +17,10 @@
       modules-left = [ "custom/logo" "niri/workspaces" ];
 
       "custom/logo" = {
-        "format":"<U+F44E>",
-        "format":"    ",
-        "tooltip": false,
-        "on-click": "exec kitty",
+        format = "<U+F44E>";
+        format = "    ";
+        tooltip = false;
+        on-click = "exec kitty";
      };
 
       "niri/workspaces" = {
