@@ -18,7 +18,7 @@
 
       "custom/logo" = {
 
-      }
+      };
 
       "niri/workspaces" = {
         all-output = true;
