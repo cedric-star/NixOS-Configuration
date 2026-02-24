@@ -11,7 +11,6 @@
 
 window#waybar {
     background: rgba(0, 0, 0, 0.0);
-    max-height: fit-content;
 }
 
 #workspaces button.focused {
@@ -32,7 +31,7 @@ window#waybar {
 #pulseaudio,
 #temperature {
     background-color: #27121e;
-    padding: 3px;
-    margin: 6px;
+    padding: 0 6px;          /* ✅ NUR horizontal: 0 oben/unten, 6px links/rechts */
+    margin: 0 3px;           /* ✅ NUR horizontal: 0 oben/unten, 3px links/rechts */
     border-radius: 3px;
 }
