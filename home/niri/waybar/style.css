@@ -42,6 +42,8 @@ tooltip label {
 #pulseaudio,
 #temperature {
     background-color: #27121e;
-    padding: 4px;
+    padding: 0px;
+    margin: 4px;
     color: #e8d2b8;
+    border-radius: 2px;
 }
