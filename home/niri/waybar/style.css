@@ -16,16 +16,15 @@ window#waybar {
 #workspaces button {
     padding: 0 5px;
     background: transparent;
-    color: white;
     border-bottom: 3px solid transparent;
 }
 
 #workspaces button.focused {
-    background: #27121e80;
+    background: #27121e;
 }
 
 #workspaces button:hover {
-    background-color: #3d243440;
+    background-color: #3d2434;
 }
 
 #mode,
@@ -36,7 +35,7 @@ window#waybar {
 #network,
 #pulseaudio,
 #temperature {
-    background-color: #27121e80;
+    background-color: #27121e;
     padding: 3px;
     margin: 6px;
     border-radius: 3px;
