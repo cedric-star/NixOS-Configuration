@@ -11,12 +11,7 @@
 
 window#waybar {
     background: rgba(0, 0, 0, 0.0);
-}
-
-#workspaces button {
-    padding: 0 5px;
-    background: transparent;
-    border-bottom: 3px solid transparent;
+    max-height: fit-content;
 }
 
 #workspaces button.focused {
@@ -27,6 +22,7 @@ window#waybar {
     background-color: #3d2434;
 }
 
+#workspaces button,
 #mode,
 #clock,
 #battery,
