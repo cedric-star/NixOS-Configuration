@@ -32,7 +32,7 @@ window#waybar {
 #temperature {
     background-color: #27121e;
     padding: 0 6px;          /* ✅ NUR horizontal: 0 oben/unten, 6px links/rechts */
-    margin: 0 3px;           /* ✅ NUR horizontal: 0 oben/unten, 3px links/rechts */
-    margin-top: 2px;
+    margin: 2 3px;           /* ✅ NUR horizontal: 0 oben/unten, 3px links/rechts */
+
     border-radius: 3px;
 }
