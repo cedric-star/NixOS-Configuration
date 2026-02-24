@@ -13,12 +13,18 @@ window#waybar {
     background: rgba(0, 0, 0, 0.0);
 }
 
+#workspaces button {
+   min-width: 20px;           /* Startbreite */
+   transition: min-width 0.3s ease;  /* Sanfte Animation */
+}
+
 #workspaces button.focused {
-    background: #27121e;
+   background: #27121e;
+   min-width: 60px;           /* Endbreite - breiter */
 }
 
 #workspaces button:hover {
-    background-color: #3d2434;
+   background-color: #3d2434;
 }
 
 #workspaces button,
