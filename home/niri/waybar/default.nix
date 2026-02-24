@@ -11,17 +11,12 @@
     border-radius: 0;
     font-family: Roboto, Helvetica, Arial, sans-serif;
     font-size: 13px;
-    min-height: 0;
-    
-    /* WICHTIG: Entfernt eventuelle Schatten, die Opazität stören könnten */
     box-shadow: none;
-    
-    /* WICHTIG: Keine zusätzlichen Hintergründe durch Vererbung */
     background: transparent;
 }
 
 window#waybar {
-    background: rgba(43, 48, 59, 0.5);
+    background: rgba(43, 48, 59, 0.0);
     border-bottom: 3px solid rgba(100, 114, 125, 0.5);
     color: white;
 }
@@ -46,44 +41,17 @@ tooltip label {
     border-bottom: 3px solid white;
 }
 
-#mode, #clock, #battery {
-    padding: 0 10px;
-}
-
-#mode {
-    background: #64727D;
-    border-bottom: 3px solid white;
-}
-
-#clock {
-    background-color: #64727D;
-}
-
-#battery {
-    background-color: #ffffff;
-    color: black;
-}
-
-#battery.charging {
-    color: white;
-    background-color: #26A65B;
-}
-
-@keyframes blink {
-    to {
-        background-color: #ffffff;
-        color: black;
-    }
-}
-
-#battery.warning:not(.charging) {
-    background: #f53c3c;
-    color: white;
-    animation-name: blink;
-    animation-duration: 0.5s;
-    animation-timing-function: steps(12);
-    animation-iteration-count: infinite;
-    animation-direction: alternate;
+#mode,
+#clock,
+#battery,
+#cpu,
+#memory,
+#network,
+#pulseaudio,
+#temperature {
+    background-color: #27121e;
+    padding: 4p;
+    color: #e8d2b8;
 }
       
       
