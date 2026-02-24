@@ -17,18 +17,15 @@
 
         nix.enable = true;
         sql.enable = true;
-        clang.enable = true;
+        clang.enable = isMaximal;
         ts.enable = true;
         python.enable = true;
         bash.enable = true;
         css.enable = true;
         typst.enable = true;
         yaml.enable = true;
-        java = {
-          lsp = {
-            enable = true;
-          };
-        };
+        java.enable = true;
+
       };
     };
   };
