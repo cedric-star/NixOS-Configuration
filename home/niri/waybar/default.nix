@@ -5,7 +5,7 @@
   
     enable = true;
 
-    style = builtins.readFile ./style.css;
+    style = builtins.readFile ./style3.css;
 
     settings = [{
       height = 30;
@@ -15,6 +15,10 @@
 
       modules-center = [ "clock" ];
       modules-left = [ "niri/workspaces" ];
+
+      "custom/logo" = {
+
+      }
 
       "niri/workspaces" = {
         all-output = true;

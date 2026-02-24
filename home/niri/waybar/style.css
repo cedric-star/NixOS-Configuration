@@ -1,6 +1,6 @@
 * {
     border: none;
-    border-radius: 0;
+    border-radius: 0px;
     font-family: Roboto, Helvetica, Arial, sans-serif;
     font-size: 14px;
     font-weight: bold;
@@ -14,24 +14,13 @@ window#waybar {
 }
 
 #workspaces button {
-    min-width: 20px;
-    animation: shrink 0.3s ease forwards;
-}
+    padding: 0px 10px;
+    transition: padding 0.9s cubic-bezier(0.34, 1.56, 0.64, 1);}
 
 #workspaces button.focused {
-    background: #27121e;
-    animation: expand 0.3s ease forwards;
+    padding: 0px 20px;
 }
 
-@keyframes expand {
-    from { min-width: 20px; }
-    to   { min-width: 50px; }
-}
-
-@keyframes shrink {
-    from { min-width: 50px; }
-    to   { min-width: 20px; }
-}
 
 #workspaces button,
 #mode,
@@ -43,8 +32,10 @@ window#waybar {
 #pulseaudio,
 #temperature {
     background-color: #27121e;
-    padding: 0 6px;          /* ✅ NUR horizontal: 0 oben/unten, 6px links/rechts */
-    margin: 2 3px;           /* ✅ NUR horizontal: 0 oben/unten, 3px links/rechts */
-
-    border-radius: 3px;
+    padding: 0px 14px;          /* ✅ NUR horizontal: 0 oben/unten, 6px links/rechts */
+    margin-top: 4px;
+    margin-bottom: 0px;
+    margin-left: 3px;
+    margin-right: 3px;
+    border-radius: 30px;
 }
