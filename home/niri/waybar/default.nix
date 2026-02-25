@@ -55,12 +55,13 @@
         format = "CPU: {usage}%";
         tooltip = false;
       };
+      
       memory = { format = "RAM: {}%"; };
       network = {
         interval = 1;
         format-alt = "{ifname}: {ipaddr}/{cidr}";
         format-disconnected = "Disconnected";
-        format-ethernet = "{ifname}: {ipaddr}/{cidr}   up: {bandwidthUpBits} down: {bandwidthDownBits}";
+        format-ethernet = "{ifname}: {ipaddr}/{cidr}";
         format-linked = "{ifname} (No IP) ";
         format-wifi = "{essid} ({signalStrength}%)";
         on-click = "nmtui";
