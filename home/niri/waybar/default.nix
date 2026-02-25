@@ -63,6 +63,7 @@
         format-ethernet = "{ifname}: {ipaddr}/{cidr}   up: {bandwidthUpBits} down: {bandwidthDownBits}";
         format-linked = "{ifname} (No IP) ";
         format-wifi = "{essid} ({signalStrength}%)";
+        on-click = "nmtui";
       };
       pulseaudio = {
         format = "Audio: {volume}%";
