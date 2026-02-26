@@ -20,9 +20,22 @@
 
       "custom/logo" = {
         format = "    ";
-        tooltip = false;
+        tooltip = true;
+        tooltip-format = "fastfetch";
         on-click = "exec kitty";
      };
+     "custom/hotkeys" = {
+        format = "hotkeys";
+        tooltip = true;
+        tooltip-format = "
+        MOD + 1, 2, ... (move to workspace)
+        MOD + J K L Ö   (vim move to window)
+        ALT + J Ö       (move windows on current workspace)
+        ALT + 1, 2, ... (move window to workspace)
+        MOD + D         (Applauncher)
+        MOD + T         (kitty)
+        "
+     }
 
       "niri/workspaces" = {
         all-output = true;
