@@ -16,7 +16,7 @@
       tray = { spacing = 10; };
 
       modules-center = [ "clock" ];
-      modules-left = [ "custom/logo" "niri/workspaces" ];
+      modules-left = [ "custom/logo" "niri/workspaces" "custom/hotkeys"];
 
       "custom/logo" = {
         format = "    ";
