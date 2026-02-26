@@ -35,7 +35,7 @@
         MOD + D         (Applauncher)
         MOD + T         (kitty)
         "
-     }
+     };
 
       "niri/workspaces" = {
         all-output = true;
