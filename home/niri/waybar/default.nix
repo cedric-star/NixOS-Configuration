@@ -10,7 +10,7 @@
     style = builtins.readFile ./style3.css;
 
     settings = [{
-      height = 30;
+      height = 24;
       layer = "top";
       position = "top";
       tray = { spacing = 10; };
