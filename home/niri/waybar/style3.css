@@ -16,9 +16,9 @@ window#waybar {
 }
 
 #tooltip {
-    background-color: #1a0a14;
+    background-color: rgba(0, 0, 0, 1);
     color: #e8d2b8;
-    border-color: #e8d2b8;
+    border: 1px solid #e8d2b8;
 }
 
 #custom-logo {
