@@ -34,7 +34,7 @@
         ALT + 1, 2, ... (move window to workspace)
         MOD + D         (Applauncher)
         MOD + T         (kitty)
-        "
+        ";
      };
 
       "niri/workspaces" = {
