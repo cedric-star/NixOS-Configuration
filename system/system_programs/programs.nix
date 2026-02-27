@@ -1,6 +1,9 @@
 { config, pkgs, inputs, ...}: 
 
 {
+  fonts.packages = with pkgs; [
+    nerd-fonts.jetbrains-mono
+  ];
   environment.systemPackages = with pkgs; [
 ### System Tools
     neofetch                    # logo anzeigen    
