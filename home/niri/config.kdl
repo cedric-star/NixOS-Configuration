@@ -410,6 +410,8 @@ binds {
     Alt+Up    { move-window-up; }
     Alt+odiaeresis { move-column-right; }
     Alt+J     { move-column-left; }
+    Alt+K   { move-window-down; }
+    Alt+L   { move-windows-up; }
     // Mod+Ctrl+K     { move-window-down; }
     // Mod+Ctrl+L     { move-window-up; }
     // Mod+Ctrl+odiaeresis     { move-column-right; }
