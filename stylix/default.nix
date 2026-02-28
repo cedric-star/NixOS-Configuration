@@ -22,6 +22,14 @@
     name = "Bibata-Original-Ice-Right";
     size = 30;
   };
+
+  stylix.fonts = {
+    monospace = {
+      package = pkgs.nerd-fonts.jetbrains-mono;
+      name = "JetBrainsMono Nerd Font";
+    };
+  };
+
 }
 
 
