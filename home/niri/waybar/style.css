@@ -266,8 +266,8 @@ window#waybar {
 }
 
 #pulseaudio-slider slider {
-    min-height: 20px;
-    min-width: 20px;
+    min-height: 10px;
+    min-width: 10px;
     margin: -5px 0 0 0;
     border-radius: 50%;
     background-color: @base05;
@@ -278,8 +278,6 @@ window#waybar {
 
 #pulseaudio-slider slider:hover {
     background-color: @base07;
-    min-height: 22px;
-    min-width: 22px;
     margin: -6px 0 0 0;
     border-color: @base0D;
 }
@@ -351,8 +349,8 @@ window#waybar {
 }
 
 #backlight-slider slider {
-    min-height: 20px;
-    min-width: 20px;
+    min-height: 10px;
+    min-width: 10px;
     margin: -5px 0 0 0;
     border-radius: 50%;
     background-color: @base05;
@@ -363,8 +361,6 @@ window#waybar {
 
 #backlight-slider slider:hover {
     background-color: @base07;
-    min-height: 22px;
-    min-width: 22px;
     margin: -6px 0 0 0;
     border-color: @base06;
 }
@@ -380,12 +376,7 @@ window#waybar {
     margin-right: 4px;
 }
 
-/* Drawer open state - ensure sliders are visible when revealed */
-drawer.revealed #pulseaudio-slider,
-drawer.revealed #backlight-slider {
-    opacity: 1;
-    visibility: visible;
-}
+
 
 /* Ensure drawer contents are properly positioned */
 drawer {
