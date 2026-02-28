@@ -8,7 +8,7 @@
   
     enable = true;
 
-    style = builtins.readFile ./style3.css;
+    style = builtins.readFile ./style.css;
 
   };
 }
