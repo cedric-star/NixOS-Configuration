@@ -2,6 +2,7 @@
   "height": 30,
   "layer": "top",
   "position": "top",
+  "rolead_style_on_change": true,
   "tray": {
     "spacing": 10
   },
@@ -11,19 +12,29 @@
     "format": "    ",
     "tooltip": true,
     "tooltip-format": "fastfetch",
-    "on-click": "exec kitty"
+    "on-click": "kitty --hold \"fastfetch\""
   },
   "custom/hotkeys": {
-    "format": "hotkeys",
+    "format": "    ",
     "tooltip": true,
-    "tooltip-format": "MOD + 1, 2, ... (move to workspace)\nMOD + J K L Ö   (vim move to window)\nALT + J Ö       (move windows on current workspace)\nALT + 1, 2, ... (move window to workspace)\nMOD + D         (Applauncher)\nMOD + T         (kitty)"
+    "tooltip-format": "MOD + 1, 2, ... (move to workspace)
+MOD + J K L Ö   (vim move to window)
+ALT + J Ö       (move windows on current workspace)
+ALT + 1, 2, ... (move window to workspace)
+MOD + D         (Applauncher)
+MOD + T         (kitty)
+MOD +       (resize window in direction)
+Print           (screenshot)
+Ctrl + Print    (screenshot-screen)
+Alt + Print     (screenshot-window)"
   },
   "niri/workspaces": {
     "all-output": true,
     "format": "{index}"
   },
   "modules-right": [
-    "pulseaudio",
+    "group/audiogroup",
+    "group/lightgroup",
     "network",
     "cpu",
     "memory",
@@ -31,7 +42,7 @@
     "battery"
   ],
   "battery": {
-    "format": "Akku: {capacity}%",
+    "format": "{icon} {capacity}%",
     "format-alt": "{time} {icon}",
     "format-charging": "{capacity}% ",
     "format-icons": ["", "", "", "", ""],
@@ -42,33 +53,76 @@
     }
   },
   "clock": {
-    "format-alt": "{:%Y-%m-%d}",
+    "format-alt": "  {:%Y-%m-%d}  ",
     "tooltip-format": "{:%Y-%m-%d | %H:%M}"
   },
   "cpu": {
-    "format": "CPU: {usage}%",
+    "format": " {usage}%",
     "tooltip": false
   },
   "memory": {
-    "format": "RAM: {}%"
+    "format": " {}%"
   },
   "network": {
     "interval": 1,
-    "format-alt": "{ifname}: {ipaddr}/{cidr}",
-    "format-disconnected": "Disconnected",
-    "format-ethernet": "{ifname}: {ipaddr}/{cidr}",
-    "format-linked": "{ifname} (No IP) ",
-    "format-wifi": "{essid} ({signalStrength}%)",
+    "format-alt": "󱂇 {ifname}: {ipaddr}/{cidr}",
+    "format-disconnected": "󱂇 Disconnected",
+    "format-ethernet": "󱂇 {ifname}: {ipaddr}/{cidr}",
+    "format-linked": "󱂇 {ifname} (No IP) ",
+    "format-wifi": "󱂇 {essid} ({signalStrength}%)",
     "on-click": "kitty \"nmtui\""
   },
+  "group/audiogroup": {
+		"orientation": "horizontal",
+    "click-to-reveal": true,
+		"modules": [
+			"pulseaudio",
+			"pulseaudio/slider"
+		],
+    "drawer": {
+      "click-to-reveal": false,
+      "transition-duration": 600,
+      "transition-left-to-right": true,
+      "children-class": "audio_children_class"
+    }
+	},
   "pulseaudio": {
-    "format": "Audio: {volume}%",
-    "format-bluetooth": "ᚼᛒ : {volume}%",
-    "format-muted": "Audio Muted",
-    "on-click": "pavucontrol"
+      "format": " {volume}%",
+      "format-bluetooth": "󰂯 {volume}%",
+      "format-muted": "󰟎 Audio Muted",
+      "on-click": "pavucontrol"
+  },
+  "pulseaudio/slider": {
+      "min": 0,
+      "max": 100,
+      "orientation": "horizontal"
+  },
+  "group/lightgroup": {
+		"orientation": "horizontal",
+    "click-to-reveal": true,
+		"modules": [
+			"backlight",
+			"backlight/slider"
+		],
+    "drawer": {
+      "click-to-reveal": false,
+      "transition-duration": 600,
+      "transition-left-to-right": true,
+      "children-class": "audio_children_class"
+    }
+	},
+  "backlight": {
+    "format": "{percent}% {icon}",
+    "format-icons": ["󱩎", "󱩐", "󱩑", "󱩒","󱩒", "󱩓", "󱩔", "󱩕", "󱩖", "󰛨"]
+  },
+  "backlight/slider": {
+      "min": 1,
+      "max": 100,
+      "orientation": "horizontal"
   },
   "temperature": {
     "critical-threshold": 80,
-    "format": "Temperatur: {temperatureC}°C"
+    "format": "{icon}: {temperatureC}°C",
+    "format-icons": ["", "", "", "", ""]
   }
 }

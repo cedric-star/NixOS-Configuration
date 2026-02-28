@@ -5,11 +5,11 @@
 
   programs.waybar = {
   
-    enable = false;
+    enable = true;
 
-    #style = builtins.readFile ./style3.css;
+    style = builtins.readFile ./style3.css;
 
-    #settings = builtins.readFile ./config.jsonc;
+    settings = builtins.readFile ./config.jsonc;
 
   };
 }

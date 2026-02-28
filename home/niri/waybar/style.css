@@ -1,41 +1,371 @@
+/* Define colors - Base16 scheme */
+@define-color base00 #1a0a14; /* Very dark purple, almost black */
+@define-color base01 #27121e; /* Dark purple-brown */
+@define-color base02 #3d2434; /* Dark muted purple */
+@define-color base03 #b13d8c; /* Bright pink/magenta */
+@define-color base04 #c95ca0; /* Light pink */
+@define-color base05 #e8d2b8; /* Warm cream/beige */
+@define-color base06 #e0a5c9; /* Soft pink */
+@define-color base07 #e8c3d9; /* Light pastel pink */
+@define-color base08 #f0d1e4; /* Very light pink/white */
+@define-color base09 #c085c7; /* Lavender purple */
+@define-color base0A #8a6dc7; /* Medium purple */
+@define-color base0B #6b84d1; /* Soft blue */
+@define-color base0C #e8e45c; /* Bright yellow-green */
+@define-color base0D #d67db3; /* Warm pink */
+@define-color base0E #d1d1d1; /* Light gray */
+@define-color base0F #b4d4af; /* Soft mint green */
+
 * {
-    border: none;
-    border-radius: 0px;
-    font-family: Roboto, Helvetica, Arial, sans-serif;
+    font-family: "JetBrainsMono Nerd Font";
     font-size: 14px;
     font-weight: bold;
+    border: none;
+    border-radius: 0px;
     box-shadow: none;
-    color: #e8d2b8;
+    color: @base05;
     background: transparent;
 }
 
+window#waybar, tooltip {
+    background: alpha(@base00, 1.000000);
+    color: @base05;
+}
+
+tooltip {
+    border-color: @base0D;
+}
+
+tooltip label {
+    color: @base05;
+}
+
+/* Module padding - unified for all modules */
+#wireplumber,
+#pulseaudio,
+#sndio,
+#wireplumber.muted,
+#pulseaudio.muted,
+#sndio.muted,
+#upower,
+#battery,
+#upower.charging,
+#battery.charging,
+#network,
+#network.disconnected,
+#user,
+#clock,
+#backlight,
+#disk,
+#idle_inhibitor,
+#temperature,
+#mpd,
+#language,
+#keyboard-state,
+#memory,
+#window,
+#bluetooth,
+#bluetooth.disabled {
+    padding: 0 5px;
+}
+
+/* Main Waybar */
 window#waybar {
-    background: rgba(0, 0, 0, 0.0);
+    background: @base00;
+    border-bottom: 2px solid transparent;
+}
+
+#tooltip {
+    background-color: rgba(0, 0, 0, 1);
+    color: @base05;
+    border-radius: 20px;
+    border: 2px solid @base05;
+}
+
+#custom-logo {
+    background-image: url("./nixos.svg");
+    background-size: 30px 30px;
+    background-repeat: no-repeat;
+    background-position: center;
+    min-width: 24px;
+    min-height: 24px;
+    padding: 0 5px;
+}
+
+/* Workspaces */
+#workspaces {
+    background: transparent;
+    margin: 0 8px;
 }
 
 #workspaces button {
-    padding: 0px 10px;
-    transition: padding 0.9s cubic-bezier(0.34, 1.56, 0.64, 1);}
-
-#workspaces button.focused {
-    padding: 0px 20px;
+    padding: 8px 10px;
+    margin: 4px 2px;
+    background: transparent;
+    border-bottom: 2px solid transparent;
+    border-radius: 4px 4px 0 0;
+    transition: all 0.3s ease;
+    color: @base03;
 }
 
+#workspaces button.focused {
+    background: linear-gradient(180deg, transparent 0%, @base01 100%);
+    border-bottom: 2px solid @base05;
+    color: @base08;
+}
 
-#workspaces button,
-#mode,
+#workspaces button:hover {
+    background: @base01;
+    color: @base06;
+}
+
+/* Mode indicator */
+#mode {
+    background: linear-gradient(180deg, @base03 0%, @base01 100%);
+    color: @base08;
+    padding: 8px 16px;
+    margin: 4px 4px 0 4px;
+    border-radius: 8px;
+    border-bottom: 2px solid @base07;
+}
+
+/* Module containers */
+.modules-left,
+.modules-center,
+.modules-right {
+    background: transparent;
+}
+
+/* Base styles for all modules - unified */
 #clock,
 #battery,
 #cpu,
 #memory,
 #network,
 #pulseaudio,
+#temperature,
+#group-audiogroup #pulseaudio,
+#group-lightgroup #backlight,
+#backlight {
+    background: @base01;
+    padding: 8px 16px;
+    margin: 4px 2px 0 2px;
+    border-radius: 8px;
+}
+
+/* Individual module colors */
+#clock {
+    color: @base07;
+}
+
+#battery {
+    color: @base0F;
+}
+
+#battery.critical {
+    background: @base03;
+    color: @base00;
+}
+
+#battery.charging {
+    color: @base0C;
+}
+
+#cpu {
+    color: @base0A;
+}
+
+#memory {
+    color: @base0B;
+}
+
+#network {
+    color: @base09;
+}
+
+#network.disconnected {
+    color: @base02;
+}
+
+#pulseaudio {
+    color: @base0D;
+}
+
+#pulseaudio.muted {
+    color: @base02;
+}
+
 #temperature {
-    background-color: #27121e;
-    padding: 0px 14px;          /* ✅ NUR horizontal: 0 oben/unten, 6px links/rechts */
-    margin-top: 4px;
-    margin-bottom: 0px;
-    margin-left: 3px;
-    margin-right: 3px;
-    border-radius: 30px;
+    color: @base06;
+}
+
+#temperature.critical {
+    background: @base03;
+    color: @base00;
+}
+
+#backlight {
+    color: @base0C; /* Bright yellow-green for sun icon */
+}
+
+/* Audio Group Styling - Click to reveal drawer */
+#group-audiogroup {
+    background: transparent;
+    margin: 0 2px;
+}
+
+#group-audiogroup #pulseaudio {
+    color: @base0D;
+    min-width: 70px;
+    transition: all 0.3s ease;
+}
+
+#group-audiogroup #pulseaudio.muted {
+    color: @base02;
+}
+
+/* Drawer styling for slider */
+#group-audiogroup drawer {
+    background: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+#group-audiogroup drawer .audio_children_class {
+    background: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+#group-audiogroup #pulseaudio-slider {
+    background: @base01;
+    padding: 8px 16px;
+    margin: 4px 0 0 0;
+    border-radius: 8px;
+    min-width: 150px;
+    transition: all 0.6s ease;
+}
+
+/* PulseAudio Slider Inner Elements */
+#pulseaudio-slider trough {
+    min-height: 8px;
+    min-width: 120px;
+    border-radius: 4px;
+    background-color: @base02;
+}
+
+#pulseaudio-slider highlight {
+    min-width: 8px;
+    border-radius: 4px;
+    background-color: @base0D;
+    transition: all 0.2s ease;
+}
+
+#pulseaudio-slider slider {
+    min-height: 16px;
+    min-width: 16px;
+    margin: -4px 0 0 0;
+    border-radius: 50%;
+    background-color: @base05;
+    border: none;
+    box-shadow: none;
+    transition: all 0.2s ease;
+}
+
+#pulseaudio-slider slider:hover {
+    background-color: @base07;
+    min-height: 18px;
+    min-width: 18px;
+    margin: -5px 0 0 0;
+}
+
+/* Muted state for the slider */
+#pulseaudio.muted + #pulseaudio-slider highlight,
+#pulseaudio.muted ~ #pulseaudio-slider highlight {
+    background-color: @base02;
+}
+
+/* Hover effect for audio group */
+#group-audiogroup #pulseaudio:hover {
+    background: @base02;
+    color: @base06;
+}
+
+/* Light Group Styling - Click to reveal drawer */
+#group-lightgroup {
+    background: transparent;
+    margin: 0 2px;
+}
+
+#group-lightgroup #backlight {
+    color: @base0C; /* Bright yellow-green for sun icon */
+    min-width: 70px;
+    transition: all 0.3s ease;
+    background: @base01; /* Ensure background is set */
+}
+
+/* Drawer styling for light slider */
+#group-lightgroup drawer {
+    background: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+#group-lightgroup drawer .audio_children_class {
+    background: transparent;
+    margin: 0;
+    padding: 0;
+}
+
+#group-lightgroup #backlight-slider {
+    background: @base01;
+    padding: 8px 16px;
+    margin: 4px 0 0 0;
+    border-radius: 8px;
+    min-width: 150px;
+    transition: all 0.6s ease;
+}
+
+/* Backlight Slider Inner Elements */
+#backlight-slider trough {
+    min-height: 8px;
+    min-width: 120px;
+    border-radius: 4px;
+    background-color: @base02;
+}
+
+#backlight-slider highlight {
+    min-width: 8px;
+    border-radius: 4px;
+    background-color: @base0C; /* Bright yellow-green for light */
+    transition: all 0.2s ease;
+}
+
+#backlight-slider slider {
+    min-height: 16px;
+    min-width: 16px;
+    margin: -4px 0 0 0;
+    border-radius: 50%;
+    background-color: @base05;
+    border: none;
+    box-shadow: none;
+    transition: all 0.2s ease;
+}
+
+#backlight-slider slider:hover {
+    background-color: @base07;
+    min-height: 18px;
+    min-width: 18px;
+    margin: -5px 0 0 0;
+}
+
+/* Hover effect for light group */
+#group-lightgroup #backlight:hover {
+    background: @base02;
+    color: @base06;
+}
+
+/* Format icons styling */
+#backlight .icon {
+    margin-right: 4px;
 }
