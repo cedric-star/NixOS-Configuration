@@ -384,3 +384,21 @@ drawer {
     padding: 0;
     background: transparent;
 }
+
+#pulseaudio-slider slider {
+    opacity: 0;
+    min-height: 0;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+#backlight-slider slider {
+    opacity: 0;
+    min-height: 0;
+    min-width: 0;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
