@@ -40,54 +40,130 @@
 
       # Alle Keymaps hier
       keymaps = [
-        # Kern-Navigation (bleibt)
-        { key = "j"; mode = ["n" "v" "o"]; action = "h"; }
-        { key = "k"; mode = ["n" "v" "o"]; action = "j"; }
-        { key = "l"; mode = ["n" "v" "o"]; action = "k"; }
-        { key = "ö"; mode = ["n" "v" "o"]; action = "l"; }
+        # ==========================================
+        # NAVIGATION (Colemak/Custom Layout)
+        # ==========================================
+        { key = "j"; mode = ["n" "v" "o"]; action = "h"; noremap = true; }
+        { key = "ö"; mode = ["n" "v" "o"]; action = "l"; noremap = true; }
+        { key = "k"; mode = ["n" "v" "o"]; action = "j"; noremap = true; }
+        { key = "l"; mode = ["n" "v" "o"]; action = "k"; noremap = true; }
 
-        # Escape (bleibt)
-        { key = "nn"; mode = "i"; action = "<Esc>"; }
+        # ==========================================
+        # MODUS-WECHSEL
+        # ==========================================
+        { key = "nn"; mode = "i"; action = "<Esc>"; noremap = true; }
+        { key = "ii"; mode = "n"; action = "i"; noremap = true; }
+        { key = "m"; mode = "n"; action = "v"; noremap = true; }
 
-        # === NEU: Modifier auf Home-Row (Colemak-optimiert) ===
-        # h/n/e/i sind auf Colemak-Home-Row und frei geworden!
+        # ==========================================
+        # CLIPBOARD-OPERATIONEN
+        # ==========================================
+        { key = "c"; mode = ["n" "v"]; action = "y"; noremap = true; }    # Yank
+        { key = "x"; mode = ["n" "v"]; action = "d"; noremap = true; }    # Delete
+        { key = "v"; mode = ["n" "v"]; action = "p"; noremap = true; }    # Paste
+        { key = "V"; mode = ["n" "v"]; action = "P"; noremap = true; }    # Paste before
 
-        # h = "here" → Insert (statt i)
-        { key = "h"; mode = "n"; action = "i"; }
+        # ==========================================
+        # UNDO/REDO
+        # ==========================================
+        { key = "<C-z>"; mode = "n"; action = "u"; noremap = true; }
+        { key = "<C-z>"; mode = "i"; action = "<C-o>u"; noremap = true; }
+        { key = "<C-y>"; mode = "n"; action = "<C-r>"; noremap = true; }
+        { key = "<C-y>"; mode = "i"; action = "<C-o><C-r>"; noremap = true; }
 
-        # n = "next"/"new" → Append (statt a) 
-        { key = "n"; mode = "n"; action = "a"; }
-        { key = "N"; mode = "n"; action = "A"; }
+        # ==========================================
+        # NORMAL MODE - DEAKTIVIERTE TASTEN
+        # ==========================================
+        { key = "h"; mode = "n"; action = "<Nop>"; noremap = true; }
+        { key = ";"; mode = "n"; action = "<Nop>"; noremap = true; }
+        { key = ","; mode = "n"; action = "<Nop>"; noremap = true; }
+        { key = "w"; mode = "n"; action = "<Nop>"; noremap = true; }
+        { key = "b"; mode = "n"; action = "<Nop>"; noremap = true; }
+        { key = "e"; mode = "n"; action = "<Nop>"; noremap = true; }
+        { key = "$"; mode = "n"; action = "<Nop>"; noremap = true; }
+        { key = "0"; mode = "n"; action = "<Nop>"; noremap = true; }
+        { key = "^"; mode = "n"; action = "<Nop>"; noremap = true; }
+        { key = "G"; mode = "n"; action = "<Nop>"; noremap = true; }
+        { key = "gg"; mode = "n"; action = "<Nop>"; noremap = true; }
+        { key = "s"; mode = "n"; action = "<Nop>"; noremap = true; }
+        { key = "/"; mode = "n"; action = "<Nop>"; noremap = true; }
+        { key = "?"; mode = "n"; action = "<Nop>"; noremap = true; }
+        { key = "n"; mode = "n"; action = "<Nop>"; noremap = true; }
+        { key = "N"; mode = "n"; action = "<Nop>"; noremap = true; }
+        { key = "*"; mode = "n"; action = "<Nop>"; noremap = true; }
+        { key = "#"; mode = "n"; action = "<Nop>"; noremap = true; }
+        { key = "y"; mode = "n"; action = "<Nop>"; noremap = true; }
+        { key = "d"; mode = "n"; action = "<Nop>"; noremap = true; }
+        { key = "p"; mode = "n"; action = "<Nop>"; noremap = true; }
+        { key = "P"; mode = "n"; action = "<Nop>"; noremap = true; }
+        { key = "a"; mode = "n"; action = "<Nop>"; noremap = true; }
+        { key = "A"; mode = "n"; action = "<Nop>"; noremap = true; }
+        { key = "i"; mode = "n"; action = "<Nop>"; noremap = true; }  # Achtung: "ii" ist oben definiert!
+        { key = "I"; mode = "n"; action = "<Nop>"; noremap = true; }
+        { key = "o"; mode = "n"; action = "<Nop>"; noremap = true; }
+        { key = "O"; mode = "n"; action = "<Nop>"; noremap = true; }
+        { key = "u"; mode = "n"; action = "<Nop>"; noremap = true; }  # Achtung: <C-z> ist oben definiert!
+        { key = "<C-r>"; mode = "n"; action = "<Nop>"; noremap = true; }
+        { key = "r"; mode = "n"; action = "<Nop>"; noremap = true; }
+        { key = "R"; mode = "n"; action = "<Nop>"; noremap = true; }
+        { key = "<C-d>"; mode = "n"; action = "<Nop>"; noremap = true; }
+        { key = "<C-u>"; mode = "n"; action = "<Nop>"; noremap = true; }
+        { key = "<C-f>"; mode = "n"; action = "<Nop>"; noremap = true; }
+        { key = "<C-b>"; mode = "n"; action = "<Nop>"; noremap = true; }
+        { key = "<C-o>"; mode = "n"; action = "<Nop>"; noremap = true; }
+        { key = "<C-i>"; mode = "n"; action = "<Nop>"; noremap = true; }
+        { key = "<F1>"; mode = "n"; action = "<Nop>"; noremap = true; }
+        { key = "<F2>"; mode = "n"; action = "<Nop>"; noremap = true; }
+        { key = "<F3>"; mode = "n"; action = "<Nop>"; noremap = true; }
+        { key = "<F4>"; mode = "n"; action = "<Nop>"; noremap = true; }
+        { key = "<F5>"; mode = "n"; action = "<Nop>"; noremap = true; }
+        { key = "<F6>"; mode = "n"; action = "<Nop>"; noremap = true; }
+        { key = "<F7>"; mode = "n"; action = "<Nop>"; noremap = true; }
+        { key = "<F8>"; mode = "n"; action = "<Nop>"; noremap = true; }
+        { key = "<F9>"; mode = "n"; action = "<Nop>"; noremap = true; }
+        { key = "<F10>"; mode = "n"; action = "<Nop>"; noremap = true; }
+        { key = "<F11>"; mode = "n"; action = "<Nop>"; noremap = true; }
+        { key = "<F12>"; mode = "n"; action = "<Nop>"; noremap = true; }
 
-        # e = "end" / "enter" → Open line (statt o)
-        { key = "e"; mode = "n"; action = "o"; }
-        { key = "E"; mode = "n"; action = "O"; }
+        # ==========================================
+        # VISUAL MODE - DEAKTIVIERTE TASTEN
+        # ==========================================
+        { key = "y"; mode = "v"; action = "<Nop>"; noremap = true; }
+        { key = "d"; mode = "v"; action = "<Nop>"; noremap = true; }
+        { key = "p"; mode = "v"; action = "<Nop>"; noremap = true; }
+        { key = "P"; mode = "v"; action = "<Nop>"; noremap = true; }
+        { key = "<"; mode = "v"; action = "<Nop>"; noremap = true; }
+        { key = ">"; mode = "v"; action = "<Nop>"; noremap = true; }
 
-        # i = "in" → Inside text-objects (statt v für visual)
-        { key = "i"; mode = "n"; action = "v"; }
-        { key = "I"; mode = "n"; action = "V"; }
+        # ==========================================
+        # INSERT MODE - DEAKTIVIERTE TASTEN
+        # ==========================================
+        { key = "<C-c>"; mode = "i"; action = "<Nop>"; noremap = true; }
+        { key = "<C-[>"; mode = "i"; action = "<Nop>"; noremap = true; }
+        { key = "<Up>"; mode = "i"; action = "<Nop>"; noremap = true; }
+        { key = "<Down>"; mode = "i"; action = "<Nop>"; noremap = true; }
+        { key = "<Left>"; mode = "i"; action = "<Nop>"; noremap = true; }
+        { key = "<Right>"; mode = "i"; action = "<Nop>"; noremap = true; }
+        { key = "<Home>"; mode = "i"; action = "<Nop>"; noremap = true; }
+        { key = "<End>"; mode = "i"; action = "<Nop>"; noremap = true; }
 
-        # === Vim-Grammatik reparieren ===
-        # y/d/p bleiben yank/delete/put! Stattdessen:
+        # ==========================================
+        # OPERATOR-PENDING MODE - DEAKTIVIERTE TASTEN
+        # ==========================================
+        { key = "aw"; mode = "o"; action = "<Nop>"; noremap = true; }
+        { key = "iw"; mode = "o"; action = "<Nop>"; noremap = true; }
+        { key = "a\""; mode = "o"; action = "<Nop>"; noremap = true; }
+        { key = "i\""; mode = "o"; action = "<Nop>"; noremap = true; }
+        { key = "a'"; mode = "o"; action = "<Nop>"; noremap = true; }
+        { key = "i'"; mode = "o"; action = "<Nop>"; noremap = true; }
 
-        # c = change (Vim-Standard), aber du willst copy
-        # Lösung: Leader+c für copy, oder:
-        { key = "c"; mode = ["n" "v"]; action = "y"; }  # Deine Wahl, aber...
-        # Besser: behalte c=change, nutze y für yank, und:
-        { key = "<leader>y"; mode = ["n" "v"]; action = "\"+y"; }  # System-clipboard
-        { key = "<leader>p"; mode = ["n" "v"]; action = "\"+p"; }  # System-paste
-
-        # x = cut (dein Layout), aber Vim: x = delete char
-        # Kompromiss: X (Shift+x) für cut?
-        { key = "x"; mode = ["n" "v"]; action = "d"; }  # Deine Wahl
-        { key = "X"; mode = ["n" "v"]; action = "\"+d"; }  # Cut to system
-
-        # v = paste bei dir, aber v = visual (ESSENZIELL)
-        # Lösung: behalte v=visual, nutze p für paste:
-        # (p ist bei dir frei, da du P→<Nop> gemacht hast)
-        { key = "p"; mode = ["n" "v"]; action = "p"; }  # Standard wiederherstellen
-        { key = "P"; mode = ["n" "v"]; action = "P"; }
-        # Oder: Leader+v für paste?
+        # ==========================================
+        # COMMAND MODE - DEAKTIVIERTE TASTEN
+        # ==========================================
+        { key = "<C-a>"; mode = "c"; action = "<Nop>"; noremap = true; }
+        { key = "<C-e>"; mode = "c"; action = "<Nop>"; noremap = true; }
+        { key = "<C-f>"; mode = "c"; action = "<Nop>"; noremap = true; }
+        { key = "<C-b>"; mode = "c"; action = "<Nop>"; noremap = true; }
       ];
     };
   };
