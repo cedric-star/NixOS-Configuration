@@ -38,6 +38,31 @@
         java.enable = true;
       };
 
+      filetree.oil = {
+        enable = true;
+        
+        setupOpts = {
+          default_file_explorer = true;
+          
+          keymaps = {
+            ["j"] = "actions.parent";           # hoch
+            ["k"] = "actions.select";           # runter/rein
+            ["l"] = "actions.open_cwd";         # ?
+            ["ö"] = "actions.select";           # rein
+            ["c"] = "actions.copy";             # kopieren
+            ["x"] = "actions.move";             # verschieben
+            ["d"] = "actions.delete";           # löschen
+            ["v"] = "actions.paste";            # einfügen
+            ["q"] = "actions.close";            # schließen
+            ["<CR>"] = "actions.select";
+          };
+          
+          view_options = {
+            show_hidden = true;
+          };
+        };
+      };
+
       # Alle Keymaps hier
       keymaps = [
         # ==========================================
@@ -140,10 +165,10 @@
         # ==========================================
         { key = "<C-c>"; mode = "i"; action = "<Nop>"; noremap = true; }
         { key = "<C-[>"; mode = "i"; action = "<Nop>"; noremap = true; }
-        { key = "<Up>"; mode = "i"; action = "<Nop>"; noremap = true; }
-        { key = "<Down>"; mode = "i"; action = "<Nop>"; noremap = true; }
-        { key = "<Left>"; mode = "i"; action = "<Nop>"; noremap = true; }
-        { key = "<Right>"; mode = "i"; action = "<Nop>"; noremap = true; }
+        #{ key = "<Up>"; mode = "i"; action = "<Nop>"; noremap = true; }
+        #{ key = "<Down>"; mode = "i"; action = "<Nop>"; noremap = true; }
+        #{ key = "<Left>"; mode = "i"; action = "<Nop>"; noremap = true; }
+        #{ key = "<Right>"; mode = "i"; action = "<Nop>"; noremap = true; }
         { key = "<Home>"; mode = "i"; action = "<Nop>"; noremap = true; }
         { key = "<End>"; mode = "i"; action = "<Nop>"; noremap = true; }
 
