@@ -168,7 +168,7 @@ layout {
         // - CSS-like notation: "rgb(255, 127, 0)", rgba(), hsl() and a few others.
 
         // Color of the ring on the active monitor.
-        active-color "#e8e45c"
+        active-color "#8a6dc7"
 
         // Color of the ring on inactive monitors.
         //
@@ -311,6 +311,8 @@ window-rule {
     // You can get away with just app-id="wezterm" if you want.
     match app-id=r#"^org\.wezfurlong\.wezterm$"#
     default-column-width {}
+
+    draw-border-with-background false //for transparent windows
 }
 
 // Open the Firefox picture-in-picture player as floating by default.
