@@ -25,8 +25,8 @@
       map ctrl+shift+v paste_from_clipboard
 
 
-      map ctrl+shift+j neighboring_window left
-      map ctrl+shift+odiaeresis neighboring_window right
+      map ctrl+shift+j previous_tab
+      map ctrl+shift+odiaeresis next_tab
     '';
   };
 }
