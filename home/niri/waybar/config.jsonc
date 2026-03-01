@@ -17,16 +17,19 @@
   "custom/hotkeys": {
     "format": "    ",
     "tooltip": true,
-    "tooltip-format": "MOD + 1, 2, ... (move to workspace)
-MOD + J K L Ö   (vim move to window)
-ALT + J Ö       (move windows on current workspace)
-ALT + 1, 2, ... (move window to workspace)
-MOD + D         (Applauncher)
-MOD + T         (kitty)
-MOD +       (resize window in direction)
-Print           (screenshot)
-Ctrl + Print    (screenshot-screen)
-Alt + Print     (screenshot-window)"
+    "tooltip-format": "MOD + 1, 2, ...   (move to workspace)
+MOD + J K L Ö     (vim move to window)
+ALT + J Ö         (move windows on current workspace)
+ALT + 1, 2, ...   (move window to workspace)
+MOD + D           (Applauncher)
+MOD + T           (kitty)
+MOD +         (resize window in direction)
+Print             (screenshot)
+Ctrl + Print      (screenshot-screen)
+Alt + Print       (screenshot-window)
+Ctrl + Shift + T  (kitty new tab)
+Ctrl + Shift + Ö  (kitty next tab)
+Ctrl + Shift + J  (kitty previous tab)"
   },
   "niri/workspaces": {
     "all-output": true,
