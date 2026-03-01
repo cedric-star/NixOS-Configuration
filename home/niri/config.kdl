@@ -299,9 +299,16 @@ animations {
     // slowdown 3.0
 }
 
+
+
 // Window rules let you adjust behavior for individual windows.
 // Find more information on the wiki:
 // https://yalter.github.io/niri/Configuration:-Window-Rules
+
+window-rule {
+    draw-border-with-background false //for transparent windows
+
+}
 
 // Work around WezTerm's initial configure bug
 // by setting an empty default-column-width.
@@ -312,7 +319,6 @@ window-rule {
     match app-id=r#"^org\.wezfurlong\.wezterm$"#
     default-column-width {}
 
-    draw-border-with-background false //for transparent windows
 }
 
 // Open the Firefox picture-in-picture player as floating by default.
