@@ -17,8 +17,14 @@
   "custom/nvim": {
     "format": "    ",
     "tooltip": true,
-    "tooltip-format": "nn                (move to workspace)
-MOD + J K L Ö     (vim move to window)-"
+    "tooltip-format": "J K L Ö     (move)
+ii          (to insert mode)
+nn          (to normal mode)
+m (normal)  (to visual/select mode)
+c (visual)  (copy)
+x (visual)  (cut: copy + delete)
+ctrl + z    (undo)
+ctrl + y    (redo)"
   },
   "custom/hotkeys": {
     "format": "    ",
