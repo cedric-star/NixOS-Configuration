@@ -261,6 +261,7 @@ layout {
         // top 64
         // bottom 64
     }
+    background-color "transparent"
 }
 
 spawn-at-startup "waybar"
