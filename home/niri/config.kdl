@@ -112,7 +112,7 @@ output "eDP-1" {
 // https://yalter.github.io/niri/Configuration:-Layout
 layout {
     // Set gaps around windows in logical pixels.
-    gaps 8
+    gaps 6
 
     // When to center a column when changing focus, options are:
     // - "never", default behavior, focusing an off-screen column will keep at the left
@@ -160,7 +160,7 @@ layout {
         // off
 
         // How many logical pixels the ring extends out from the windows.
-        width 4
+        width 3
 
         // Colors can be set in a variety of ways:
         // - CSS named colors: "red"
@@ -198,7 +198,7 @@ layout {
         // If you enable the border, you probably want to disable the focus ring.
         off
 
-        width 4
+        width 3
         active-color "#ffc87f"
         inactive-color "#505050"
 
@@ -264,10 +264,17 @@ layout {
 }
 
 spawn-at-startup "waybar"
+spawn-at-startup "fuzzel"
+
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
 spawn-sh-at-startup "swww-daemon & swww img /etc/nixos/stylix/wallpapers/b1.png"
+layer-rule {
+    match namespace="^swww-daemon$"
+    place-within-backdrop true
+}
+
 
 hotkey-overlay {
     skip-at-startup
@@ -346,9 +353,7 @@ window-rule {
 // (This example rule is commented out with a "/-" in front.)
 /-window-rule {
     geometry-corner-radius 12
-    clip-to-geometry true
-}
-
+    clip-to-geometry tfuzzel
 binds {
     // Keys consist of modifiers separated by + signs, followed by an XKB key name
     // in the end. To find an XKB name for a particular key, you may use a program
