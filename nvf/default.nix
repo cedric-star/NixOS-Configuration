@@ -38,29 +38,10 @@
         java.enable = true;
       };
 
-      filetree.oil = {
+      filetree.nvimTree = {
         enable = true;
         
-        setupOpts = {
-          default_file_explorer = true;
-          
-          keymaps = {
-            ["j"] = "actions.parent";           # hoch
-            ["k"] = "actions.select";           # runter/rein
-            ["l"] = "actions.open_cwd";         # ?
-            ["ö"] = "actions.select";           # rein
-            ["c"] = "actions.copy";             # kopieren
-            ["x"] = "actions.move";             # verschieben
-            ["d"] = "actions.delete";           # löschen
-            ["v"] = "actions.paste";            # einfügen
-            ["q"] = "actions.close";            # schließen
-            ["<CR>"] = "actions.select";
-          };
-          
-          view_options = {
-            show_hidden = true;
-          };
-        };
+        
       };
 
       # Alle Keymaps hier
