@@ -270,9 +270,21 @@ spawn-at-startup "fuzzel"
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
 spawn-sh-at-startup "swww-daemon & swww img /etc/nixos/stylix/wallpapers/b1.png"
+// Layer-Rule für statisches Wallpaper
 layer-rule {
     match namespace="^swww-daemon$"
     place-within-backdrop true
+}
+
+// Transparenten Hintergrund setzen, damit das Wallpaper durchscheint
+layout {
+    background-color "transparent"
+}
+
+overview {
+    workspace-shadow {
+        off
+    }
 }
 
 
@@ -339,7 +351,7 @@ window-rule {
 
 // Example: block out two password managers from screen capture.
 // (This example rule is commented out with a "/-" in front.)
-/-window-rule {
+window-rule {
     match app-id=r#"^org\.keepassxc\.KeePassXC$"#
     match app-id=r#"^org\.gnome\.World\.Secrets$"#
 
