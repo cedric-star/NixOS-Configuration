@@ -26,7 +26,7 @@
 
 
       map ctrl+shift+j previous_tab
-      map ctrl0xf66 next_tab
+      map ctrl+shift+0xf6 next_tab
     '';
   };
 }
