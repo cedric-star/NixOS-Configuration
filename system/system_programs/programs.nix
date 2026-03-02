@@ -27,7 +27,7 @@
     fuzzel
     alacritty
     networkmanager
-    #quickshell
+    cmatrix
 
 
 ### Compiler ###                
