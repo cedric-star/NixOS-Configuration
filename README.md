@@ -1,9 +1,14 @@
-# ToDo:
-- nvim config (lazyvim evtl.)
-- kompatibilitäten überprüfen:
- - screensharing (hdmi, ...)
- - drucken/scannen
-- gtk2/3 ricing
+# MyNixos Setup
+(BasisThreadFrame580Dong)
+## Customized Shit
+-> NiriWM
+-> GnomeDE
+-> kitty
+-> nvim
+-> styling with stylix
+-> waybar
+-> fuzzel
+-> ...
 
 # Hindweise
 - für skripte ausführen immer von ./scripts aus ausführen
@@ -13,9 +18,6 @@
 # nützlches
 - https://mynixos.com/ oder 
 - https://rycee.gitlab.io/home-manager/options.xhtml
- - für verschiedene pakete
- - und systemsachen
- - configoptionen nachlesen
 - nixos-rebuild switch --rollback
  - wenn was wirklich schief läuft zurückgehen
 - für ausführbare dateien:
@@ -27,5 +29,3 @@
 - A = fertig gebaut
 - im Bau
 - gesamtzahl zu bauen
-
--
