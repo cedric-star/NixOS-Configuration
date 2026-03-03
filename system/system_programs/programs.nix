@@ -82,7 +82,7 @@
     ihaskell
     docker
     docker-compose
-
+    postgresql
     
 ### Multimedia ###
     lmms
