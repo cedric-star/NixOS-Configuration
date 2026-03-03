@@ -1,14 +1,22 @@
 # MyNixos Setup
 (BasisThreadFrame580Dong)
 ## Customized Shit
--> NiriWM
--> GnomeDE
--> kitty
--> nvim
--> styling with stylix
--> waybar
--> fuzzel
--> ...
+- NiriWM
+- GnomeDE
+- kitty
+- nvim
+- styling with stylix
+- waybar
+- fuzzel
+- ...
+
+## Screenshots
+![neofetch](./images/Screenshot%20from%202026-03-02%2019-54-34.png)
+![htop,cmatrix](./images/Screenshot%20from%202026-03-02%2019-53-38.png)
+![fuzzel](./images/Screenshot%20from%202026-03-02%2020-02-08.png)
+![overview 1](./images/Screenshot%20from%202026-03-02%2019-53-04.png)
+![nvim](./images/Screenshot%20from%202026-03-02%2019-53-26.png)
+![overview 2](./images/Screenshot%20from%202026-03-02%2019-56-30.png)
 
 # Hindweise
 - für skripte ausführen immer von ./scripts aus ausführen
@@ -29,3 +37,4 @@
 - A = fertig gebaut
 - im Bau
 - gesamtzahl zu bauen
+
