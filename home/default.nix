@@ -4,7 +4,6 @@
   imports = [
     ./programs
     ./gnome  
-    ./hyprland
     ./niri
   ];  
 
