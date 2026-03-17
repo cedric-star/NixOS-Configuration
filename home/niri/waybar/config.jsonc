@@ -59,13 +59,15 @@ Ctrl + Shift + J  (kitty previous tab)"
     "temperature",
     "battery"
   ],
+
   "battery": {
     "format": "{capacity}% {icon}",
+    "format-charging": " {capacity}% {icon} p",
+    "format-plugged": " {capacity}% {icon} c",
     "format-alt": "{time} {icon}",
-    "format-charging": "{capacity}% ",
-        "format-icons": {
-        "default": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
-        "charging": ["󰢟", "󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"]
+    "format-icons": {
+      "default": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+      "charging": ["󰢟", "󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"]
     },
     "states": {
       "critical": 15,
