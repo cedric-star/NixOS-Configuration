@@ -150,6 +150,7 @@ Ctrl + Shift + J  (kitty previous tab)"
     "format-icons": ["", "", "", "", ""]
   },
   "custom/power": {
-    "format": "  ⏻  "
+    "format": "  ⏻  ",
+    "on-click": "wlogout"
   }
 }
