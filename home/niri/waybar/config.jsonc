@@ -25,7 +25,7 @@ c (visual)  (copy)
 x (visual)  (cut: copy + delete)
 ctrl + z    (undo)
 ctrl + y    (redo)
-:/<text>    (search for <text>)
+:/    (search for text)
 :q          (quit without save)
 :w          (save/write)"
   },
