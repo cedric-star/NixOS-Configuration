@@ -57,7 +57,7 @@ Ctrl + Shift + J  (kitty previous tab)"
     "cpu",
     "memory",
     "temperature",
-    "battery"
+    "battery",
     "custom/power"
   ],
 
