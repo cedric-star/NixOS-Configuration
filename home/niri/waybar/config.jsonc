@@ -153,4 +153,5 @@ Ctrl + Shift + J  (kitty previous tab)"
     "format": "  ⏻  ",
     "on-click": "wlogout"
   }
+  
 }
