@@ -60,11 +60,13 @@ Ctrl + Shift + J  (kitty previous tab)"
     "battery"
   ],
   "battery": {
-    "format": "{icon} {capacity}%",
+    "format": "{capacity}% {icon}",
     "format-alt": "{time} {icon}",
     "format-charging": "{capacity}% ",
-    "format-icons": ["", "", "", "", ""],
-    "format-plugged": "{capacity}% ",
+        "format-icons": {
+        "default": ["󰂎", "󰁺", "󰁻", "󰁼", "󰁽", "󰁾", "󰁿", "󰂀", "󰂁", "󰂂", "󰁹"],
+        "charging": ["󰢟", "󰢜", "󰂆", "󰂇", "󰂈", "󰢝", "󰂉", "󰢞", "󰂊", "󰂋", "󰂅"]
+    },
     "states": {
       "critical": 15,
       "warning": 30
@@ -75,19 +77,19 @@ Ctrl + Shift + J  (kitty previous tab)"
     "tooltip-format": "{:%Y-%m-%d | %H:%M}"
   },
   "cpu": {
-    "format": " {usage}%",
+    "format": "{usage}% ",
     "tooltip": false
   },
   "memory": {
-    "format": " {}%"
+    "format": "{}% "
   },
   "network": {
     "interval": 1,
-    "format-alt": "󱂇 {ifname}: {ipaddr}/{cidr}",
-    "format-disconnected": "󱂇 Disconnected",
-    "format-ethernet": "󱂇 {ifname}: {ipaddr}/{cidr}",
-    "format-linked": "󱂇 {ifname} (No IP) ",
-    "format-wifi": "󱂇 {essid} ({signalStrength}%)",
+    "format-alt": "{essid} ({signalStrength}%) 󱂇",
+    "format-disconnected": "Disconnected 󱂇",
+    "format-ethernet": "{essid} ({signalStrength}%) 󱂇",
+    "format-linked": "{essid} ({signalStrength}%) 󱂇",
+    "format-wifi": "{essid} ({signalStrength}%) 󱂇",
     "on-click": "kitty \"nmtui\""
   },
   "group/audiogroup": {
@@ -105,9 +107,9 @@ Ctrl + Shift + J  (kitty previous tab)"
     }
 	},
   "pulseaudio": {
-      "format": " {volume}%",
-      "format-bluetooth": "󰂯 {volume}%",
-      "format-muted": "󰟎 Audio Muted",
+      "format": "{volume}% ",
+      "format-bluetooth": "{volume}% 󰂯",
+      "format-muted": "Audio Muted 󰟎",
       "on-click": "pavucontrol"
   },
   "pulseaudio/slider": {
@@ -140,7 +142,7 @@ Ctrl + Shift + J  (kitty previous tab)"
   },
   "temperature": {
     "critical-threshold": 80,
-    "format": "{icon}: {temperatureC}°C",
+    "format": "{temperatureC}°C {icon}",
     "format-icons": ["", "", "", "", ""]
   }
 }
