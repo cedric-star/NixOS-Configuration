@@ -6,6 +6,8 @@ let
 in {
   imports = [
     ./waybar
+    ./fuzzel
+    ./wlogout
   ];
 
   home.packages = with pkgs; [

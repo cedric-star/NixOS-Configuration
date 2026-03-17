@@ -28,7 +28,7 @@
     alacritty
     networkmanager
     cmatrix
-
+    wlogout
 
 ### Compiler ###                
     swi-prolog                  # prolog
