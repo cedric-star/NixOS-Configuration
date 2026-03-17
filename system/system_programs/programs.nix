@@ -29,6 +29,7 @@
     networkmanager
     cmatrix
     wlogout
+    qgis
 
 ### Compiler ###                
     swi-prolog                  # prolog

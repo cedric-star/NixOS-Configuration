@@ -58,6 +58,7 @@ Ctrl + Shift + J  (kitty previous tab)"
     "memory",
     "temperature",
     "battery"
+    "custom/power"
   ],
 
   "battery": {
@@ -147,5 +148,8 @@ Ctrl + Shift + J  (kitty previous tab)"
     "critical-threshold": 80,
     "format": "{temperatureC}°C {icon}",
     "format-icons": ["", "", "", "", ""]
+  }
+  "custom/power": {
+    "format": "  ⏻  "
   }
 }
