@@ -91,6 +91,8 @@
     spotify
     gimp
     hypnotix                    # tv streaming               
+    blender
+    davinci-resolve
 
 
 ### inf programme ###
