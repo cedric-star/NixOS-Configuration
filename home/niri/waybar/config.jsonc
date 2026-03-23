@@ -44,7 +44,9 @@ Ctrl + Print      (screenshot-screen)
 Alt + Print       (screenshot-window)
 Ctrl + Shift + T  (kitty new tab)
 Ctrl + Shift + Ö  (kitty next tab)
-Ctrl + Shift + J  (kitty previous tab)"
+Ctrl + Shift + J  (kitty previous tab)
+Ctrl + Shift + 󰐕  (font bigger)
+Ctrl + Shift + 󰍴  (font smaller)"
   },
   "niri/workspaces": {
     "all-output": true,
@@ -153,5 +155,5 @@ Ctrl + Shift + J  (kitty previous tab)"
     "format": "  ⏻  ",
     "on-click": "wlogout"
   }
-  
+
 }

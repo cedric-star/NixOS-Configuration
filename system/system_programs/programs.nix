@@ -84,6 +84,7 @@
     docker
     docker-compose
     postgresql
+    insomnia
     
 ### Multimedia ###
     lmms
