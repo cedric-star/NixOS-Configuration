@@ -117,7 +117,7 @@
     prism                       # minecraft
     heroic                      # epic games
     prismlauncher
-    nexusmods-app
+    #nexusmods-app # outdated
     antimicrox
   ];
 
