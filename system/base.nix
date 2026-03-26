@@ -4,11 +4,11 @@
   services.libinput.enable = true;
   services.touchegg.enable = true;
   
-  programs.hyprland.enable = true;
+  programs.hyprland.enable = false;
   programs.niri.enable = true;
   services = {
  
-    desktopManager.gnome.enable = true;
+    desktopManager.gnome.enable = false;
     
     displayManager.gdm = {
       enable = false;
