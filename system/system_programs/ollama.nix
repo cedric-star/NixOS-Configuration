@@ -5,4 +5,5 @@
     enable = true;
     loadModels = [ "llama3.2:1b" ];
   };
+  
 }
