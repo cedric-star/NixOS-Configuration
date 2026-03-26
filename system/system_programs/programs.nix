@@ -70,6 +70,7 @@
     jetbrains.pycharm-community
     jetbrains.clion
     jetbrains.datagrip
+    arduino-ide
 
 ### Kommunikations ###
     discord
