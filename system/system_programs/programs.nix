@@ -74,7 +74,7 @@
 ### Kommunikations ###
     discord
     signal-desktop
-    karere#whatsie #qtengine problem
+    karere                      #whatsie #qtengine problem
 
 
 ### Dev Tools ###
