@@ -65,8 +65,8 @@
 
 ### IDE's ###
     jetbrains.webstorm
-    jetbrains.idea
-    jetbrains.pycharm
+    jetbrains.idea-oss
+    jetbrains.pycharm-oss
     jetbrains.clion
     jetbrains.datagrip
     arduino-ide
