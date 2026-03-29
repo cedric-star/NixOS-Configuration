@@ -36,6 +36,8 @@ in {
     swaylock            # Screen locker
     swayidle            # Idle management
     udiskie             # USB auto-mount
+
+    noctalia-shell
   ];
 
   home.file.".config/niri/config.kdl".source = ./config.kdl;
