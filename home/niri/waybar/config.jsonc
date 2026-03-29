@@ -32,20 +32,21 @@ ctrl + y    (redo)
   "custom/hotkeys": {
     "format": "    ",
     "tooltip": true,
-    "tooltip-format": "MOD + 1, 2, ...   (move to workspace)
-MOD + J K L Ö     (vim move to window)
-ALT + J Ö         (move windows on current workspace)
-ALT + 1, 2, ...   (move window to workspace)
-MOD + D           (Applauncher)
-MOD + T           (kitty)
-MOD +         (resize window in direction)
-Print             (screenshot)
-Ctrl + Print      (screenshot-screen)
-Alt + Print       (screenshot-window)
-Ctrl + Shift + T  (kitty new tab)
-Ctrl + Shift + Ö  (kitty next tab)
-Ctrl + Shift + J  (kitty previous tab)
-Ctrl + Shift + 󰐕  (font bigger)
+    "tooltip-format": "MOD + 1, 2, ...   (move to workspace)\n
+MOD + J K L Ö     (vim move to window)\n
+ALT + J Ö         (move windows on current workspace)\n
+ALT + 1, 2, ...   (move window to workspace)\n
+MOD + D           (Applauncher)\n
+MOD + T           (kitty)\n
+MOD + V           (floating window)\n
+MOD +         (resize window in direction)\n
+Print             (screenshot)\n
+Ctrl + Print      (screenshot-screen)\n
+Alt + Print       (screenshot-window)\n
+Ctrl + Shift + T  (kitty new tab)\n
+Ctrl + Shift + Ö  (kitty next tab)\n
+Ctrl + Shift + J  (kitty previous tab)\n
+Ctrl + Shift + 󰐕  (font bigger)\n
 Ctrl + Shift + 󰍴  (font smaller)"
   },
   "niri/workspaces": {
