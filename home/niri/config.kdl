@@ -264,7 +264,8 @@ layout {
     background-color "transparent"
 }
 
-spawn-at-startup "waybar"
+// spawn-at-startup "waybar"
+spawn-at-startup "qs" "-c" "noctalia-shell"
 spawn-at-startup "fuzzel"
 
 
