@@ -22,7 +22,7 @@
     i3
     woeusb-ng
     ntfs3g
-    xow_dongle-firmware
+    xone-dongle-firmware
     blueman
     fuzzel
     alacritty
