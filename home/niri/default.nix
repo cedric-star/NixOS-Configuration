@@ -5,9 +5,9 @@ let
 
 in {
   imports = [
-    ./waybar
-    ./fuzzel
-    ./wlogout
+    #./waybar
+    #./fuzzel
+    #./wlogout
   ];
 
   home.packages = with pkgs; [
@@ -55,7 +55,7 @@ in {
     NIXOS_OZONE_WL = "1";
     
     # Java Wayland
-    JAVA_TOOL_OPTIONS = "-Dsun.java2d.uiScale=2";
+    #JAVA_TOOL_OPTIONS = "-Dsun.java2d.uiScale=2";
   };
 
   # xdg-desktop-portal für Screen Sharing, File Dialoge etc.
