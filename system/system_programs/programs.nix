@@ -124,7 +124,7 @@
   # Install firefox.
   programs.firefox.enable = true;
   programs.steam.enable = true;
-  programs.noctalia-shell.enable = true;
+  #programs.noctalia-shell.enable = true;
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
