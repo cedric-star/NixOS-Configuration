@@ -5,6 +5,7 @@
     ./programs
     ./gnome  
     ./niri
+    inputs.noctalia.homeModules.default
   ];  
 
   programs.home-manager.enable = true;

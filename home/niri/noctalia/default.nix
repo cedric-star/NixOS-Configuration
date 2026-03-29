@@ -3,5 +3,5 @@
 {
 
 
-  #programs.noctalia-qs.enable = true;
+  programs.noctalia-shell.enable = true;
 }
