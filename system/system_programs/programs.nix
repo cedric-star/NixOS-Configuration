@@ -119,6 +119,7 @@
     prismlauncher
     #nexusmods-app # outdated
     antimicrox
+    noctalia-qs
   ];
 
   # Install firefox.
