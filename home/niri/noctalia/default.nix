@@ -5,5 +5,5 @@
     enable = true;
   }
 
-  programs.quickshell.enable = true;
+  programs.noctalia-qs.enable = true;
 }
