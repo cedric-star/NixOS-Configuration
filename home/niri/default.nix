@@ -8,6 +8,7 @@ in {
     #./waybar
     #./fuzzel
     #./wlogout
+    ./noctalia
   ];
 
   home.packages = with pkgs; [
