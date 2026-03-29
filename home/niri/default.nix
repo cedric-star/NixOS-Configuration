@@ -38,7 +38,7 @@ in {
     udiskie             # USB auto-mount
 
     #noctalia-shell
-    noctalia-qs
+    #noctalia-qs
   ];
 
   home.file.".config/niri/config.kdl".source = ./config.kdl;

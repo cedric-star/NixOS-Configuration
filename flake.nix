@@ -23,6 +23,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    noctalia = {
+      url = "github:noctalia-dev/noctalia-shell";
+      noctalia.inputs.nixpkgs.follows = "nixpkgs-unstable";
+    };
+
   };
   
   outputs = {self, nvf, nixpkgs, home-manager, ... }@inputs: {
