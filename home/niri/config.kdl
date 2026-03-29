@@ -401,7 +401,7 @@ binds {
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+T hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
     Mod+D hotkey-overlay-title="Run an Application: fuzzel" { spawn "noctalia-shell ipc call launcher toggle"; }
-    Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
+    //Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
 
     // Use spawn-sh to run a shell command. Do this if you need pipes, multiple commands, etc.
     // Note: the entire command goes as a single argument. It's passed verbatim to `sh -c`.
@@ -452,8 +452,8 @@ binds {
     Alt+Up    { move-window-up; }
     Alt+odiaeresis { move-column-right; }
     Alt+J     { move-column-left; }
-    Alt+K   { move-window-down; }
-    Alt+L   { move-window-up; }
+    Alt+K   { move-window-down-or-to-workspace-down; }
+    Alt+L   { move-window-up-or-to-workspace-up; }
     // Mod+Ctrl+K     { move-window-down; }
     // Mod+Ctrl+L     { move-window-up; }
     // Mod+Ctrl+odiaeresis     { move-column-right; }
@@ -500,7 +500,7 @@ binds {
     Mod+Page_Up        { focus-workspace-up; }
     Mod+U              { focus-workspace-down; }
     Mod+I              { focus-workspace-up; }
-    Mod+Ctrl+Page_Down { move-column-to-workspace-down; }
+    ModPage_Down+Ctrl+ { move-column-to-workspace-down; }
     Mod+Ctrl+Page_Up   { move-column-to-workspace-up; }
     Mod+Ctrl+U         { move-column-to-workspace-down; }
     Mod+Ctrl+I         { move-column-to-workspace-up; }
