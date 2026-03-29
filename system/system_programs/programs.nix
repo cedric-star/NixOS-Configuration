@@ -5,7 +5,7 @@
     nerd-fonts.jetbrains-mono
   ];
   environment.systemPackages = with pkgs; [
-    inputs.noctalia.packages.${pkgs.stdenv.hostPlatform.system}.default
+    noctalia-shell
 ### System Tools
     #neofetch                    # logo anzeigen    
     wget                        # repos remote
