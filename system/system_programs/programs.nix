@@ -6,7 +6,7 @@
   ];
   environment.systemPackages = with pkgs; [
 ### System Tools
-    neofetch                    # logo anzeigen    
+    #neofetch                    # logo anzeigen    
     wget                        # repos remote
     htop                        # systemressourcen anzeigen
     home-manager                # home Konfigurationen 
