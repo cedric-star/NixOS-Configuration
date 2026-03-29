@@ -56,6 +56,7 @@
     libqalculate
     tailscale
     kid3
+    nemo
 
 ### Code Editoren ###
     vscodium                    # codium
