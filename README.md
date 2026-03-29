@@ -38,6 +38,7 @@
 - im Bau
 - gesamtzahl zu bauen
 
+
 # updaten
 - `nix flake update ` updated flake.lock datei
 - git add. 
