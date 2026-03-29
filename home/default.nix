@@ -8,7 +8,7 @@
   ];  
 
   programs.home-manager.enable = true;
-  home.gtk.gtk4.theme = config.gtk.theme;
+  gtk.gtk4.theme = config.gtk.theme;
   # Home Manager needs a bit of information about you and the paths it should
 
   # manage.
