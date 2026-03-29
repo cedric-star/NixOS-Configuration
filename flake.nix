@@ -46,7 +46,7 @@
           home-manager.useUserPackages = true;
           home-manager.users.cedric = import ./home;
           home-manager.backupFileExtension = "backup";
-          home-manager.extraSpecialArgs = { inherit inputs; };  # ← DAS FEHLT!
+          home-manager.extraSpecialArgs = { inherit inputs; };
         }
 
         inputs.stylix.nixosModules.stylix
