@@ -37,7 +37,7 @@ in {
     swayidle            # Idle management
     udiskie             # USB auto-mount
 
-    noctalia-shell
+    #noctalia-shell
     noctalia-qs
   ];
 
