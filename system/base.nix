@@ -31,6 +31,9 @@
   # Enable CUPS to print documents.
   services.printing.enable = true;
 
+  services.power-profiles-daemon.enable;
+  services.upower.enable;
+
   services.pulseaudio.enable = false;
   security.rtkit.enable = true;
   services.pipewire = {

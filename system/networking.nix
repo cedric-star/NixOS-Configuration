@@ -11,7 +11,7 @@
   # Enable networking
   networking.networkmanager.enable = true;
 
-    hardware.bluetooth = {
+  hardware.bluetooth = {
     enable = true;
     powerOnBoot = true;
     
