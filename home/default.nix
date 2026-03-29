@@ -24,7 +24,6 @@
   };
 
   programs.fish.enable = true;
- 
 
   #programs.java.enable = true;
   home.file.".jdks/jdk21".source = "${pkgs.openjdk21}/lib/openjdk";
