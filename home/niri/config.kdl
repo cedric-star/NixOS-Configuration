@@ -285,7 +285,6 @@ debug {
 }
 spawn-sh-at-startup "noctalia-shell"
 
-
 //spawn-at-startup "fuzzel"
 
 
