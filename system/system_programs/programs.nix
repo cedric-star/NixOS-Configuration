@@ -42,7 +42,6 @@
     jetbrains.jdk
     python3
     fastfetch
-    #ventoy
     parted
     gparted
     ncurses
@@ -60,7 +59,6 @@
 
 ### Code Editoren ###
     vscodium                    # codium
-    #vscode                     # nur für copilot (brauch ich doch eigntlich nicht hihi)
     vim                         # vim halt
     neovim                      # nvim halt
 
@@ -75,7 +73,7 @@
 
 ### Kommunikations ###
     discord
-    signal-desktop
+    #signal-desktop
     karere                      #whatsie #qtengine problem
 
 
@@ -118,7 +116,6 @@
     prism                       # minecraft
     heroic                      # epic games
     prismlauncher
-    #nexusmods-app # outdated
     antimicrox
     noctalia-qs
   ];

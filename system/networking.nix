@@ -39,7 +39,7 @@
   # Entferne eine der beiden Zeilen:
   
   # Für Xbox One/Series Controller:
-  hardware.xpadneo.enable = true;
+  hardware.xpadneo.enable = false;
   
   # ODER für ältere Xbox Controller:
   # hardware.xone.enable = true;
