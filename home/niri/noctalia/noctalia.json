@@ -297,7 +297,7 @@
   },
   "wallpaper": {
     "enabled": true,
-    "overviewEnabled": false,
+    "overviewEnabled": true,
     "directory": "/home/cedric/Pictures/Wallpapers",
     "monitorDirectories": [],
     "enableMultiMonitorDirectories": false,
