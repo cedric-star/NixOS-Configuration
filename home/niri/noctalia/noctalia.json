@@ -42,7 +42,7 @@
           "showApplications": false,
           "showApplicationsHover": false,
           "showBadge": true,
-          "showLabelsOnlyWhenOccupied": true,
+          "showLabelsOnlyWhenOccupied": true
         },
 
 
