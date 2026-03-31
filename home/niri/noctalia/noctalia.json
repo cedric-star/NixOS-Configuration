@@ -49,21 +49,21 @@
           "unfocusedIconsOpacity": 1
         },
         {
-          "colorizeDistroLogo": false,
-          "colorizeSystemIcon": "none",
-          "customIconPath": "",
-          "enableColorization": false,
-          "icon": "noctalia",
-          "id": "ControlCenter",
-          "useDistroLogo": false
-        },
-        {
           "colorizeSystemIcon": "none",
           "customIconPath": "",
           "enableColorization": false,
           "icon": "rocket",
           "iconColor": "none",
           "id": "Launcher",
+          "useDistroLogo": false
+        },
+        {
+          "colorizeDistroLogo": false,
+          "colorizeSystemIcon": "none",
+          "customIconPath": "",
+          "enableColorization": false,
+          "icon": "noctalia",
+          "id": "ControlCenter",
           "useDistroLogo": false
         },
         {
@@ -96,38 +96,6 @@
           "textColor": "none",
           "useMonospaceFont": true,
           "usePadding": false
-        },
-        {
-          "compactMode": false,
-          "hideMode": "hidden",
-          "hideWhenIdle": false,
-          "id": "MediaMini",
-          "maxWidth": 145,
-          "panelShowAlbumArt": true,
-          "scrollingMode": "hover",
-          "showAlbumArt": true,
-          "showArtistFirst": true,
-          "showProgressRing": true,
-          "showVisualizer": false,
-          "textColor": "none",
-          "useFixedWidth": false,
-          "visualizerType": "linear"
-        },
-        {
-          "compactMode": false,
-          "hideMode": "hidden",
-          "hideWhenIdle": false,
-          "id": "MediaMini",
-          "maxWidth": 145,
-          "panelShowAlbumArt": true,
-          "scrollingMode": "hover",
-          "showAlbumArt": true,
-          "showArtistFirst": true,
-          "showProgressRing": true,
-          "showVisualizer": false,
-          "textColor": "none",
-          "useFixedWidth": false,
-          "visualizerType": "linear"
         }
       ],
       "center": [
@@ -180,6 +148,26 @@
           "displayMode": "onhover",
           "iconColor": "none",
           "id": "Brightness",
+          "textColor": "none"
+        },
+        {
+          "displayMode": "onhover",
+          "iconColor": "none",
+          "id": "Bluetooth",
+          "textColor": "none"
+        },
+        {
+          "iconColor": "none",
+          "id": "PowerProfile"
+        },
+        {
+          "iconColor": "none",
+          "id": "NightLight"
+        },
+        {
+          "displayMode": "onhover",
+          "iconColor": "none",
+          "id": "Network",
           "textColor": "none"
         },
         {
@@ -264,10 +252,10 @@
     "smoothScrollEnabled": true
   },
   "ui": {
-    "fontDefault": "JetBrainsMono NF ExtraBold",
-    "fontFixed": "JetBrainsMono NFM ExtraLight",
-    "fontDefaultScale": 1.1400000000000001,
-    "fontFixedScale": 1,
+    "fontDefault": "JetBrainsMono NF ExtraLight",
+    "fontFixed": "JetBrainsMono Nerd Font",
+    "fontDefaultScale": 1.1,
+    "fontFixedScale": 1.1,
     "tooltipsEnabled": true,
     "scrollbarAlwaysVisible": true,
     "boxBorderEnabled": false,
@@ -278,7 +266,7 @@
     "settingsPanelSideBarCardStyle": false
   },
   "location": {
-    "name": "Tokyo",
+    "name": "Berlin",
     "weatherEnabled": true,
     "weatherShowEffects": true,
     "useFahrenheit": false,
@@ -500,7 +488,6 @@
     "indicatorOpacity": 0.6
   },
   "network": {
-    "airplaneModeEnabled": false,
     "bluetoothRssiPollingEnabled": false,
     "bluetoothRssiPollIntervalMs": 60000,
     "networkPanelView": "wifi",
@@ -512,7 +499,7 @@
   },
   "sessionMenu": {
     "enableCountdown": false,
-    "countdownDuration": 10000,
+    "countdownDuration": 1000,
     "position": "top_right",
     "showHeader": true,
     "showKeybinds": false,
