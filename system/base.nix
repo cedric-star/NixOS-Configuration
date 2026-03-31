@@ -47,7 +47,7 @@
   users.users.cedric = {
     isNormalUser = true;
     description = "cedric";
-    extraGroups = [ "networkmanager" "wheel" "input" "docker" "vboxusers"];
+    extraGroups = [ "networkmanager" "wheel" "input" "docker" "vboxusers" "dialout"];
     shell = pkgs.fish;
   };
 
