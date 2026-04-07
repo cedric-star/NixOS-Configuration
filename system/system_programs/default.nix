@@ -6,6 +6,7 @@
     ./python.nix
     ./steam.nix
     ./syncthing.nix
+    ./mosquitto.nix
   ];
 
 

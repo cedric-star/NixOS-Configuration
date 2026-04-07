@@ -106,6 +106,7 @@
     notes
 #    wineWowPackages.stable # oder wineWowPackages.wayland für wine
     eduvpn-client
+    node-red
 
 
 ### Spiele/Launcher ###
