@@ -80,6 +80,7 @@
     gnome-boxes
     geary
     gnome-online-accounts
+    polkit_gnome
 
 ### Dev Tools ###
     git
