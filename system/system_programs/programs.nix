@@ -75,7 +75,8 @@
     discord
     signal-desktop
     karere                      #whatsie #qtengine problem
-
+    gnome-calendar
+    gnome-notes
 
 ### Dev Tools ###
     git
