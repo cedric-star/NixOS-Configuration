@@ -77,6 +77,8 @@
     karere                      #whatsie #qtengine problem
     gnome-calendar
     gnome-notes
+    gnome-boxes
+    geary
 
 ### Dev Tools ###
     git
