@@ -107,6 +107,7 @@
 #    wineWowPackages.stable # oder wineWowPackages.wayland für wine
     eduvpn-client
     node-red
+    mosquitto
 
 
 ### Spiele/Launcher ###
