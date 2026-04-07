@@ -79,6 +79,7 @@
     gnome-notes
     gnome-boxes
     geary
+    gnome-online-accounts
 
 ### Dev Tools ###
     git
