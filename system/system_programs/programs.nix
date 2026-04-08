@@ -113,7 +113,8 @@
     eduvpn-client
     node-red
     mosquitto
-
+    nmap
+    
 
 ### Spiele/Launcher ###
     steam
