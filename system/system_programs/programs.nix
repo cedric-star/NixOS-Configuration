@@ -31,7 +31,8 @@
     cmatrix
     wlogout
     qgis-ltr
-
+    nautilus
+    
 ### Compiler ###                
     swi-prolog                  # prolog
     gcc                         # c lang
