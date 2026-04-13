@@ -9,6 +9,11 @@
   services = {
  
     desktopManager.gnome.enable = false;
+    # Ermöglicht die sichere Speicherung von Passwörtern (wird für Gmail benötigt)
+    services.gnome.gnome-keyring.enable = true;
+
+    # Polkit wird oft für Berechtigungsdialoge benötigt
+    security.polkit.enable = true;
     
     displayManager.gdm = {
       enable = false;
