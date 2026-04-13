@@ -6,14 +6,11 @@
   
   programs.hyprland.enable = false;
   programs.niri.enable = true;
+
+
   services = {
  
     desktopManager.gnome.enable = false;
-    # Ermöglicht die sichere Speicherung von Passwörtern (wird für Gmail benötigt)
-    services.gnome.gnome-keyring.enable = true;
-
-    # Polkit wird oft für Berechtigungsdialoge benötigt
-    security.polkit.enable = true;
     
     displayManager.gdm = {
       enable = false;
@@ -60,4 +57,11 @@
 
   system.stateVersion = "25.05";
   #nixpkgs.config.permittedInsecurePackages = [ "qtwebengine-5.15.19" ];
+
+    # Ermöglicht die sichere Speicherung von Passwörtern (wird für Gmail benötigt)
+  services.gnome.gnome-keyring.enable = true;
+
+  # Polkit wird oft für Berechtigungsdialoge benötigt
+  security.polkit.enable = true;
+
 }
