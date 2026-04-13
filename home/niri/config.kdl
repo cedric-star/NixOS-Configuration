@@ -290,10 +290,10 @@ spawn-sh-at-startup "noctalia-shell"
 
 // To run a shell command (with variables, pipes, etc.), use spawn-sh-at-startup:
 // spawn-sh-at-startup "qs -c ~/source/qs/MyAwesomeShell"
-spawn-sh-at-startup "swww-daemon & swww img /etc/nixos/stylix/wallpapers/b1.png"
+spawn-sh-at-startup "awww-daemon & awww img /etc/nixos/stylix/wallpapers/b1.png"
 // Layer-Rule für statisches Wallpaper
 layer-rule {
-    match namespace="^swww-daemon$"
+    match namespace="^awww-daemon$"
     place-within-backdrop true
 }
 

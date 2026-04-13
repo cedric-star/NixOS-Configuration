@@ -23,7 +23,7 @@ in {
     
     # UI/Apps
     waybar              # Status bar (optional wenn du Quickshell nutzt)
-    swww                # Wallpaper daemon (alternativ zu swaybg)
+    awww                # Wallpaper daemon (alternativ zu swaybg)
     fuzzel              # Alternative launcher, besser integriert
     pavucontrol         # Audio
     
