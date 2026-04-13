@@ -56,7 +56,7 @@
     libqalculate
     tailscale
     kid3
-    nemo
+    gnome-calculator
 
 ### Code Editoren ###
     vscodium                    # codium
