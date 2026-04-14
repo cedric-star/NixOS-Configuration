@@ -275,7 +275,7 @@ window-rule {
   // Clips window contents to the rounded corner boundaries.
   clip-to-geometry true
 
-  opacity 0.94
+  opacity 0.96
 }
 layer-rule {
   match namespace="^noctalia-overview*"
