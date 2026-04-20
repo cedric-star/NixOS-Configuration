@@ -19,7 +19,7 @@
         Enable = "Source,Sink,Media,Socket";
         Experimental = true;
         FastConnectable = true;
-        ControllerMode = "bredr";         # ✅ You already have this
+        ControllerMode = "le";         # ✅ You already have this
       };
       Policy = {
         AutoEnable = true;
