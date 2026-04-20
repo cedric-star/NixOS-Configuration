@@ -2,7 +2,7 @@
 
 {
   services.mosquitto = {
-    enable = true;
+    enable = false;
     listeners = [
       {
         # Erlaubt allen Zugriff auf alle Topics (für Testzwecke)
