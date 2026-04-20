@@ -38,6 +38,7 @@
     gcc                         # c lang
     glibc.dev                   # c header
     stdenv.cc.libc              # c libraries
+    gnumake
     raylib
     openjdk21
     jetbrains.jdk
