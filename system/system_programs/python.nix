@@ -20,14 +20,7 @@
     ]))# pakete in python direkt einbinden
 
 
-    (python311.withPackages (ps: with ps; [
-      pyserial-asyncio
-
-
-      
-
-      jupyter
-    ]))
+    python311
   ];
 }
 
