@@ -21,16 +21,9 @@
 
 
     (python311.withPackages (ps: with ps; [
-      pandas
-      matplotlib
-      plotly
-      numpy
-      dtw-python
-      sklearn-compat
       pyserial-asyncio
 
-      pip
-      setuptools
+
       
 
       jupyter
