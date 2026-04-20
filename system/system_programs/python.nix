@@ -10,7 +10,7 @@
       numpy
       dtw-python
       sklearn-compat
-      python313Packages.pyserial-asyncio
+      pyserial-asyncio
 
       pip
       setuptools
