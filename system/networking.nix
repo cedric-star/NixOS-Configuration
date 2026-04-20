@@ -44,5 +44,6 @@
   # ODER für ältere Xbox Controller:
   # hardware.xone.enable = true;
 
-  services.tailscale.enable = true;
+  services.tailscale.enable = false;
+  services.blueman.enable = true;
 }
