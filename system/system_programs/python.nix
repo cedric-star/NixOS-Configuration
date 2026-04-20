@@ -20,7 +20,7 @@
     ]))# pakete in python direkt einbinden
 
 
-    python311
+    
   ];
 }
 

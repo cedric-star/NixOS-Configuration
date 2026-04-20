@@ -14,25 +14,34 @@
   hardware.bluetooth = {
     enable = true;
     powerOnBoot = true;
-    
-    # WICHTIG: Nur EINEN Xbox-Treiber aktivieren, nicht beide!
-    # Entweder xpadneo ODER xone, nicht beides!
-    
     settings = {
       General = {
         Enable = "Source,Sink,Media,Socket";
         Experimental = true;
         FastConnectable = true;
-        # Diese Zeile hinzufügen:
-        ControllerMode = "bredr";
+        ControllerMode = "bredr";         # ✅ You already have this
       };
       Policy = {
         AutoEnable = true;
-        # Diese Zeile hinzufügen:
-        ReconnectAttempts = 7;
+        ReconnectAttempts = 7;            # ✅ You already have this
+      };
+      # ✅ NEW: Force active LE scanning (helps with device discovery)
+      LE = {
+        EnableAdvMonInterleaveScan = "1"; # Crucial for slow scans
       };
     };
   };
+
+  # ✅ NEW: Force-load Bluetooth kernel modules at boot
+  boot.kernelModules = [ "btusb" "bluetooth" ];
+
+  # ✅ NEW: Extra Wi-Fi/Bluetooth coexistence parameters (especially for Intel cards)
+  boot.extraModprobeConfig = ''
+    # Keep Bluetooth coexistence disabled for better BT scan performance
+    options iwlwifi bt_coex_active=0
+    # Disable power saving on Wi-Fi to reduce radio interference
+    options iwlwifi power_save=0
+  '';
 
 
   # NUR EINEN VON BEIDEN AKTIVIEREN:
