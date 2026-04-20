@@ -100,6 +100,7 @@
     hypnotix                    # tv streaming               
     blender
     davinci-resolve
+    chromium
 
 
 ### inf programme ###
