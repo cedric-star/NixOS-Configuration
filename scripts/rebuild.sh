@@ -1,6 +1,7 @@
 #!/run/current-system/sw/bin/sh
 
 
+
 commit_message="$1"
 
 if [ -z "$commit_message" ]; then
