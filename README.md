@@ -46,5 +46,11 @@
 - system rebuild
 
 # suche nach wort in config
-
 - grep -r "xow_dongle" ./
+
+# screensharing
+- ´niri msg outputs´ --> eDP-1 oder HDMI-A-1 
+- `niri msg output DP-2 mode 1024x768@60.004` umd korekten modus zu setzen
+- `wl-mirror --fullscreen-output fremdermonitorHDMI-1 eDP-1` --> startet screenshare
+    - wichtig: nch -output in wl-mirror befehl: zuerst fremder monitor, dann eigener eDP-1 monitor
+- `pkill wl-mirror` --> beendet sharing
