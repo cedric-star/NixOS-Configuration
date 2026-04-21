@@ -70,7 +70,7 @@
     jetbrains.webstorm
     jetbrains.idea-oss
     jetbrains.pycharm-oss
-    #jetbrains.clion
+    jetbrains.clion
     jetbrains.datagrip
     arduino-ide
 
