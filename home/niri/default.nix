@@ -37,6 +37,8 @@ in {
     swayidle            # Idle management
     udiskie             # USB auto-mount
 
+    wl-mirror
+
     #noctalia-shell
     #noctalia-qs
   ];
