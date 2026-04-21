@@ -101,7 +101,7 @@
     blender
     davinci-resolve
     chromium
-
+    wdisplays
 
 ### inf programme ###
     gftp
