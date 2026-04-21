@@ -38,7 +38,7 @@ in {
     udiskie             # USB auto-mount
 
     wl-mirror
-    cliphist:           # Clipboard history backend (required)
+    cliphist            # Clipboard history backend (required)
     wl-clipboard        # Wayland clipboard utilities (required)
 
     #noctalia-shell
