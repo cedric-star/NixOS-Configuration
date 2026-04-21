@@ -32,6 +32,7 @@
     wlogout
     qgis-ltr
     nautilus
+    gtksourceview
     
 ### Compiler ###                
     swi-prolog                  # prolog
@@ -66,11 +67,11 @@
 
 
 ### IDE's ###
-    jetbrains.webstorm
-    jetbrains.idea-oss
-    jetbrains.pycharm-oss
-    jetbrains.clion
-    jetbrains.datagrip
+    #jetbrains.webstorm
+    #jetbrains.idea-oss
+    #jetbrains.pycharm-oss
+    #jetbrains.clion
+    #jetbrains.datagrip
     arduino-ide
 
 ### Kommunikations ###

@@ -29,7 +29,7 @@
         nix.enable = true;
         sql.enable = true;
         clang.enable = true;
-        ts.enable = true;
+        typescript.enable = true;
         python.enable = true;
         bash.enable = true;
         css.enable = true;
