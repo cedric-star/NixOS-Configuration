@@ -102,6 +102,7 @@
     davinci-resolve
     chromium
     wdisplays
+    inkscape
 
 ### inf programme ###
     gftp
