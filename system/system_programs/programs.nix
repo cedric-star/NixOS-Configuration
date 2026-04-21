@@ -71,7 +71,7 @@
     jetbrains.idea-oss
     jetbrains.pycharm-oss
     #jetbrains.clion
-    #jetbrains.datagrip
+    jetbrains.datagrip
     arduino-ide
 
 ### Kommunikations ###
