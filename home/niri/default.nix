@@ -39,7 +39,6 @@ in {
 
     wl-mirror
     cliphist            # Clipboard history backend (required)
-    wl-clipboard        # Wayland clipboard utilities (required)
 
     #noctalia-shell
     #noctalia-qs
