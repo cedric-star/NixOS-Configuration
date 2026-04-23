@@ -65,4 +65,13 @@
   # Polkit wird oft für Berechtigungsdialoge benötigt
   security.polkit.enable = true;
 
+  #für clipboard
+  services.cliphist = {
+    enable = true;
+    allowImages = true;
+    extraOptions = [
+      "-max-items" "20" 
+    ];
+  };
+
 }
