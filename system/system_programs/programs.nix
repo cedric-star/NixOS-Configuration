@@ -34,6 +34,7 @@
     nautilus
     gtksourceview
     
+    
 ### Compiler ###                
     swi-prolog                  # prolog
     gcc                         # c lang
