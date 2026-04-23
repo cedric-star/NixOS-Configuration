@@ -102,6 +102,7 @@
     davinci-resolve
     chromium
     wdisplays
+    cliphist
     #inkscape
 
 ### inf programme ###
