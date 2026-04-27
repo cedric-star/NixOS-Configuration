@@ -3,6 +3,8 @@
 {
 
   environment.systemPackages = with pkgs; [
+    python311
+    
     (python3.withPackages (ps: with ps; [
       pandas
       matplotlib
