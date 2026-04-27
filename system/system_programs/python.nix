@@ -3,7 +3,7 @@
 {
 
   environment.systemPackages = with pkgs; [
-    python312
+    #python312
 
     (python3.withPackages (ps: with ps; [
       pandas
