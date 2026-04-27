@@ -16,31 +16,34 @@
     powerOnBoot = true;
     settings = {
       General = {
-        Enable = "Source,Sink,Media,Socket";
+        # ✅ Entfernt: Enable = "Source,Sink,Media,Socket";
         Experimental = true;
         FastConnectable = true;
-        ControllerMode = "le";         # ✅ You already have this
+        ControllerMode = "dual";
+        # ✅ Optional: Erhöht das Scan-Intervall für schnellere Erkennung
+        DiscoverableTimeout = 0;
+        # ✅ Optional: Minimum und Maximum für Verbindungsparameter
+        MinConnectionInterval = 6;
+        MaxConnectionInterval = 9;
       };
       Policy = {
         AutoEnable = true;
-        ReconnectAttempts = 7;            # ✅ You already have this
-      };
-      # ✅ NEW: Force active LE scanning (helps with device discovery)
-      LE = {
-        EnableAdvMonInterleaveScan = "1"; # Crucial for slow scans
+        ReconnectAttempts = 7;
+        # ✅ Neue nützliche Policy: Automatisches Reconnect aktivieren
+        AutoConnect = true;
       };
     };
   };
 
-  # ✅ NEW: Force-load Bluetooth kernel modules at boot
+  # ✅ Kernel-Module
   boot.kernelModules = [ "btusb" "bluetooth" ];
 
-  # ✅ NEW: Extra Wi-Fi/Bluetooth coexistence parameters (especially for Intel cards)
+  # ✅ WLAN/Bluetooth Koexistenz
   boot.extraModprobeConfig = ''
-    # Keep Bluetooth coexistence disabled for better BT scan performance
     options iwlwifi bt_coex_active=0
-    # Disable power saving on Wi-Fi to reduce radio interference
     options iwlwifi power_save=0
+    # ✅ USB Autosuspend deaktivieren (kann das Scannen beschleunigen)
+    options usbcore autosuspend=-1
   '';
 
 
