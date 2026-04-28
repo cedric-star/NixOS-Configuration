@@ -16,7 +16,6 @@
 
       pip
       setuptools
-      
 
       jupyter
     ]))# pakete in python direkt einbinden
