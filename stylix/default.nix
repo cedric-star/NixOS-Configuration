@@ -24,7 +24,7 @@
     };
   };
 
-  programs.vscodium.enable = true;
+  stylix.targets.vscodium.enable = true;
 
 }
 
