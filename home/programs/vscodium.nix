@@ -3,8 +3,6 @@
 {
   programs.vscodium = {
     enable = true;
-    enableExtensionUpdateCheck = true;
-    enableUpdateCheck = false;
 
     #profiles.default.extensions = with pkgs.vscode-extensions; [
     extensions = [
