@@ -16,7 +16,7 @@
     extensions = [
   # hier identifier in extension eintragen
       #vscjava.vscode-java-pack              #java
-      ms-vscode.cpptools-extension-pack     #c/c++
+      #ms-vscode.cpptools-extension-pack     #c/c++
       myriad-dreamin.tinymist               #typst
       haskell.haskell                       #haskell
       jnoortheen.nix-ide                    #nix
