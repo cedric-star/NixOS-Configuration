@@ -39,6 +39,11 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    myvim = {
+      url = "github:cedric-star/MyVim";
+      inputs.nixpkgs.follows = "nixpkgs";
+    }
+
   };
   
   outputs = {self, nvf, nixpkgs, home-manager, ... }@inputs: {

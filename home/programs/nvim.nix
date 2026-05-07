@@ -72,7 +72,7 @@ in
   # NEOVIM KONFIGURATION
   # ==========================================
   programs.neovim = {
-    enable = true;
+    enable = false;
     defaultEditor = true;
     viAlias = true;
     vimAlias = true;

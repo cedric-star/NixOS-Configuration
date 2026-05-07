@@ -2,7 +2,7 @@
 
 {
   programs.nvf = {
-    enable = true;
+    enable = false;
     
     settings.vim = {
       # Leader muss als separates Attribut gesetzt werden
