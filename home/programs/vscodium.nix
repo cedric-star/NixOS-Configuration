@@ -1,10 +1,12 @@
 { config, lib, pkgs, ... }:
 
-{
-  programs.vscodium = {
-    enable = true;
 
-    #profiles.default.extensions = with pkgs.vscode-extensions; [
+{
+  programs.vscode = {
+    enable = true;
+    enableExtensionUpdateCheck = true;
+    enableUpdateCheck = false;
+    package = pkgs.vscodium;
     profiles.default = {
       extensions = [
         #vscjava.vscode-java-pack              #java
