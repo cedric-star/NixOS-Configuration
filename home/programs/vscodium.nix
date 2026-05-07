@@ -27,11 +27,13 @@
       #theqtcompany.qt-qml
       #kdl-org.kdl-v1
     ];
+
+    userSettings = {
+      "files.autoSave" = "on";
+    };
   };
 
-  userSettings = {
-    "files.autoSave" = "on";
-  };
+
 
 
 }
