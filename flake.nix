@@ -56,8 +56,8 @@
       modules = [
         ./configuration.nix
 
-        myvim.homeManagerModules.default  # <-- so, nicht einfach `myvim`
-        
+        inputs.myvim.homeManagerModules.default  # <-- so, nicht einfach `myvim`
+
         nvf.nixosModules.default
         
         home-manager.nixosModules.default
