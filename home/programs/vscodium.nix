@@ -5,7 +5,6 @@
     enable = true;
     package = pkgs.vscodium;
 
-
     profiles.default.extensions = with pkgs.vscode-extensions; [
   # hier identifier in extension eintragen
       vscjava.vscode-java-pack              #java
