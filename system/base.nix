@@ -4,7 +4,6 @@
   services.libinput.enable = true;
   services.touchegg.enable = true;
   
-  programs.hyprland.enable = false;
   programs.niri.enable = true;
 
 
@@ -12,14 +11,6 @@
  
     desktopManager.gnome.enable = false;
     
-    displayManager.gdm = {
-      enable = false;
-      wayland = true;
-    };
-    displayManager.sddm = {
-      enable = false;
-      wayland.enable = true;
-    };
     displayManager.ly = {
       enable = true;
       #wayland.enable = true;
@@ -60,7 +51,25 @@
   #nixpkgs.config.permittedInsecurePackages = [ "qtwebengine-5.15.19" ];
 
     # Ermöglicht die sichere Speicherung von Passwörtern (wird für Gmail benötigt)
-  services.gnome.gnome-keyring.enable = true;
+  services.gnome = {
+    gnome-keyring.enable = true;
+    gnome-online-accounts.enable = true;
+    evolution-data-server.enable = true;
+    tracker-miners.enable = true;
+    tracker.enable = true;
+  };
+  
+
+  security.pam.services.login.enableGnomeKeyring = true;
+  
+  # GVFS – nötig für Nautilus (Netzlaufwerke, Papierkorb, MTP …)
+  services.gvfs.enable = true;
+
+  # Tumbler – Thumbnail-Dienst für Nautilus
+  services.tumbler.enable = true;
+
+
+  
 
   # Polkit wird oft für Berechtigungsdialoge benötigt
   security.polkit.enable = true;

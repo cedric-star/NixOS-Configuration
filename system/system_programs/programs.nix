@@ -31,7 +31,6 @@
     cmatrix
     wlogout
     qgis-ltr
-    nautilus
     gtksourceview
     
     
@@ -78,12 +77,6 @@
     discord
     signal-desktop
     karere                      #whatsie #qtengine problem
-    gnome-calendar
-    gnome-notes
-    gnome-boxes
-    geary
-    gnome-online-accounts
-    polkit_gnome
 
 ### Dev Tools ###
     git
@@ -132,6 +125,20 @@
     prismlauncher
     antimicrox
     noctalia-qs
+
+### Gnome
+    nautilus                  # File Manager
+    gnome-keyring
+    gnome-online-accounts     # GOA-Einstellungspanel
+    seahorse                  # Keyring-GUI (optional aber praktisch)
+    gnome-calendar            # Kalender
+    gnome-contacts            # Kontakte
+    evolution                 # Mail + Kalender (vollständig)
+    geary                   # leichterer Mail-Client
+    gnome-control-center      # Einstellungen (Accounts, WLAN, …)
+    polkit_gnome              # Polkit-Authentifizierungsagent
+    gnome-notes
+    gnome-boxes
   ];
 
   # Install firefox.
