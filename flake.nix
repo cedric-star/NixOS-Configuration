@@ -56,6 +56,8 @@
       modules = [
         ./configuration.nix
 
+        myvim
+
         nvf.nixosModules.default
         
         home-manager.nixosModules.default
