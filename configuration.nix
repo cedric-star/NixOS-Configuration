@@ -8,4 +8,6 @@
       ./nvf
   ];   
 
+  myvim.enable = true;
+
 }
