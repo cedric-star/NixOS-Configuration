@@ -5,7 +5,7 @@
     enable = true;
 
     #profiles.default.extensions = with pkgs.vscode-extensions; [
-    profiles."default" = {
+    profiles.default = {
       extensions = [
         #vscjava.vscode-java-pack              #java
         #ms-vscode.cpptools-extension-pack     #c/c++
