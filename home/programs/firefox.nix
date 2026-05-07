@@ -3,7 +3,7 @@
 {
   programs.firefox = {
     enable = true;
-    #configPath = "${config.xdg.configHome}/.mozilla/firefox";
+    configPath = "${config.home.homeDirectory}/.mozilla/firefox";
     languagePacks = [ "de" "en-US" ];
     profiles = {
       default = {
