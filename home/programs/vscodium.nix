@@ -3,9 +3,17 @@
 {
   programs.vscode = {
     enable = true;
+    enableExtensionUpdateCheck = true;
+    enableUpdateCheck = false;
     package = pkgs.vscodium;
 
-    profiles.default.extensions = with pkgs.vscode-extensions; [
+    haskell = {
+      enable = true;
+      hie.enable = true;
+    };
+
+    #profiles.default.extensions = with pkgs.vscode-extensions; [
+    extensions = [
   # hier identifier in extension eintragen
       vscjava.vscode-java-pack              #java
       ms-vscode.cpptools-extension-pack     #c/c++
@@ -19,5 +27,15 @@
       #theqtcompany.qt-qml
       #kdl-org.kdl-v1
     ];
+  };
+
+  userSettings = {
+    "files.autoSave" = "on";
+  };
+
+  stylix.targets.vscode = {
+    enable = true;
+    # Das ist der kritische Teil - du musst das Profil angeben
+    profiles = [ "default" ];  # Oder der Name deines Profils
   };
 }
