@@ -56,7 +56,7 @@
       modules = [
         ./configuration.nix
 
-        myvim
+        myvimnixosModules.default
 
         nvf.nixosModules.default
         
