@@ -34,10 +34,5 @@
   };
 
 
-  stylix.targets.vscode = {
-    enable = true;
-    # Das ist der kritische Teil - du musst das Profil angeben
-    profiles = [ "default" ];  # Oder der Name deines Profils
-  };
 }
 
