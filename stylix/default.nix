@@ -24,6 +24,8 @@
     };
   };
 
+  programs.vscodium.enable = true;
+
 }
 
 
