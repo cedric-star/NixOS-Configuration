@@ -7,11 +7,6 @@
     enableUpdateCheck = false;
     package = pkgs.vscodium;
 
-    haskell = {
-      enable = true;
-      hie.enable = true;
-    };
-
     #profiles.default.extensions = with pkgs.vscode-extensions; [
     extensions = [
   # hier identifier in extension eintragen
