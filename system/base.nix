@@ -55,8 +55,8 @@
     gnome-keyring.enable = true;
     gnome-online-accounts.enable = true;
     evolution-data-server.enable = true;
-    tracker-miners.enable = true;
-    tracker.enable = true;
+    localsearch.enable = true;
+    tinysparql.enable = true;
   };
   
 

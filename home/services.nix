@@ -3,6 +3,18 @@
 {
   # ─── Autostart via systemd user units ────────────────────────────
 
+  home.packages = [
+    (pkgs.symlinkJoin {
+      name = "gnome-control-center";
+      paths = [ pkgs.gnome-control-center ];
+      buildInputs = [ pkgs.makeWrapper ];
+      postBuild = ''
+        wrapProgram $out/bin/gnome-control-center \
+          --set XDG_CURRENT_DESKTOP GNOME
+      '';
+    })
+  ];
+
   systemd.user.services.polkit-gnome = {
     Unit.Description = "GNOME Polkit Authentication Agent";
     Unit.After = [ "graphical-session.target" ];
@@ -54,3 +66,5 @@
     DBUS_SESSION_BUS_ADDRESS = "unix:path=/run/user/1000/bus";
   };
 }
+
+
