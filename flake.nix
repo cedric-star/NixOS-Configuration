@@ -41,7 +41,7 @@
 
     myvim = {
       url = "github:cedric-star/MyVim";
-      inputs.nixpkgs.follows = "nixpkgs";
+      #inputs.nixpkgs.follows = "nixpkgs";
     };
 
   };
