@@ -7,7 +7,4 @@
       ./stylix
       ./nvf
   ];   
-
-  programs.myvim.enable = true;
-
 }
