@@ -70,7 +70,6 @@
         }
 
         inputs.stylix.nixosModules.stylix
-
         inputs.nix-flatpak.nixosModules.nix-flatpak
       ];
     };
