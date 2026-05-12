@@ -36,4 +36,6 @@
 
   home.file = { };
 
+  programs.hellvim.enable = true;
+
 }

@@ -66,7 +66,8 @@
           home-manager.users.cedric = import ./home;
           home-manager.backupFileExtension = "backup";
           home-manager.extraSpecialArgs = { inherit inputs; };
-        }
+
+          home-manager.sharedModules = [ inputs.myvim.homeManagerModules.default ];        }
 
         inputs.stylix.nixosModules.stylix
         inputs.nix-flatpak.nixosModules.nix-flatpak
