@@ -1,4 +1,4 @@
-{
+{# niri: win plus punkt und komma shortcut
   description = "mynixflake";
 
   nixConfig = {
