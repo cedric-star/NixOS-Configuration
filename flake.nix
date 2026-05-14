@@ -63,7 +63,7 @@
 
         {
           environment.systemPackages = [
-            ap-visual-sorting.x86_64-linux.default
+            inputs.ap-visual-sorting.x86_64-linux.default
           ];
         }
 
