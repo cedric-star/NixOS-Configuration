@@ -344,11 +344,11 @@
         "nixvim": "nixvim"
       },
       "locked": {
-        "lastModified": 1778706471,
-        "narHash": "sha256-EovrRdnhERLBpRoRadwo38W+hkU7NiY87XfJc5R7dv8=",
+        "lastModified": 1778751423,
+        "narHash": "sha256-OvvlI+Nz2M03C/c7vMeWWh9xkiSpehnuwZBGmE7O8zg=",
         "owner": "cedric-star",
         "repo": "MyVim",
-        "rev": "93631e5ecc8d1b03d4424f5099155948c48dbfc7",
+        "rev": "0ab8cceab3a2cc9a70159854e53d73205819fbdb",
         "type": "github"
       },
       "original": {
