@@ -7,13 +7,11 @@
     "density": "default",
     "showOutline": false,
     "showCapsule": true,
-    "capsuleOpacity": 1,
     "capsuleColorKey": "none",
     "widgetSpacing": 6,
     "contentPadding": 2,
     "fontScale": 1,
     "enableExclusionZoneInset": true,
-    "useSeparateOpacity": false,
     "marginVertical": 4,
     "marginHorizontal": 4,
     "frameThickness": 8,
@@ -34,7 +32,6 @@
           "focusedColor": "primary",
           "followFocusedScreen": false,
           "fontWeight": "bold",
-          "groupedBorderOpacity": 1,
           "hideUnoccupied": false,
           "iconScale": 0.8,
           "id": "Workspace",
@@ -44,8 +41,7 @@
           "showApplications": false,
           "showApplicationsHover": false,
           "showBadge": true,
-          "showLabelsOnlyWhenOccupied": true,
-          "unfocusedIconsOpacity": 1
+          "showLabelsOnlyWhenOccupied": true
         },
         {
           "colorizeSystemIcon": "none",
