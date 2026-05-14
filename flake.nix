@@ -61,6 +61,12 @@
       modules = [
         ./configuration.nix
 
+        {
+          environment.systemPackages = [
+            ap-visual-sorting.x86_64-linux.default
+          ];
+        }
+
 
         nvf.nixosModules.default
         
