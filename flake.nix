@@ -41,8 +41,13 @@
 
     myvim = {
       url = "github:cedric-star/MyVim";
-      #inputs.nixpkgs.follows = "nixpkgs";
     };
+
+    ap-visual-sorting = {
+      url = "github:cedric-star/ap-visual-sorting";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
+
 
   };
   
@@ -67,7 +72,8 @@
           home-manager.backupFileExtension = "backup";
           home-manager.extraSpecialArgs = { inherit inputs; };
 
-          home-manager.sharedModules = [ inputs.myvim.homeManagerModules.default ];        }
+          home-manager.sharedModules = [ inputs.myvim.homeManagerModules.default ];       
+        }
 
         inputs.stylix.nixosModules.stylix
         inputs.nix-flatpak.nixosModules.nix-flatpak

@@ -139,6 +139,8 @@
     polkit_gnome              # Polkit-Authentifizierungsagent
     gnome-notes
     gnome-boxes
+    
+    inputs.ap-visual-sorting.packages.${pkgs.system}.default
   ];
 
   # Install firefox.
