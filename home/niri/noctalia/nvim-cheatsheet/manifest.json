@@ -1,0 +1,24 @@
+{
+  "id": "nvim-cheatsheet",
+  "name": "Nvim Cheatsheet",
+  "version": "1.0.0",
+  "minNoctaliaVersion": "3.6.0",
+  "author": "du",
+  "license": "MIT",
+  "repository": "",
+  "description": "Neovim keybind cheatsheet als Panel",
+  "tags": [
+    "Bar",
+    "Panel"
+  ],
+  "entryPoints": {
+    "barWidget": "BarWidget.qml",
+    "panel": "Panel.qml"
+  },
+  "dependencies": {
+    "plugins": []
+  },
+  "metadata": {
+    "defaultSettings": {}
+  }
+}
