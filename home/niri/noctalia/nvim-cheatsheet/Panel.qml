@@ -36,7 +36,7 @@ Item {
     ]
 
     Rectangle {
-      id: Panel
+      id: panel
       anchors.fill: parent
       color: "transparent"
 
