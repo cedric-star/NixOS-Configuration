@@ -1,34 +1,42 @@
 import QtQuick
+import QtQuick.Layouts
+import Quickshell
+import qs.Commons
+import qs.Widgets
 
 Rectangle {
-    id: root
-    property var pluginApi
-    property var screen
+  id: root
 
-    width: 60
-    height: 28
-    color: "#2d2d2d"  // dunkles Graz statt rot
-    radius: 6
+  // Plugin API (injected by PluginService)
+  property var pluginApi: null
 
-    Text {
-        id: buttonText
-        anchors.centerIn: parent
-        text: "Nvim"
-        color: "#ffffff"
-        font.pixelSize: 12
-        font.family: "monospace"
-        font.bold: true
+  // Required properties for bar widgets
+  property ShellScreen screen
+  property string widgetId: ""
+  property string section: ""
+  property int sectionWidgetIndex: -1
+  property int sectionWidgetsCount: 0
+
+  implicitWidth: row.implicitWidth + Style.marginM * 2
+  implicitHeight: Style.barHeight
+
+  color: Style.capsuleColor
+  radius: Style.radiusM
+
+  RowLayout {
+    id: row
+    anchors.centerIn: parent
+    spacing: Style.marginS
+
+    NIcon {
+      icon: "heart"
+      color: Color.mPrimary
     }
 
-    MouseArea {
-        anchors.fill: parent
-        hoverEnabled: true
-        onClicked: {
-            if (pluginApi) {
-                pluginApi.togglePanel(root.screen, root)
-            }
-        }
-        onEntered: parent.color = "#3d3d3d"
-        onExited: parent.color = "#2d2d2d"
+    NText {
+      text: "My Plugin"
+      color: Color.mOnSurface
+      pointSize: Style.fontSizeS
     }
+  }
 }

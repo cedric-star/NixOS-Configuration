@@ -3,9 +3,9 @@
   "name": "Nvim Cheatsheet",
   "version": "1.0.0",
   "minNoctaliaVersion": "3.6.0",
-  "author": "du",
+  "author": "cedric-star",
   "license": "MIT",
-  "repository": "",
+  "repository": "https://github.com/cedric-star/NixOS-Configuration",
   "description": "Neovim keybind cheatsheet als Panel",
   "tags": [
     "Bar",

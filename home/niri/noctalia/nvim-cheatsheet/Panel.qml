@@ -1,13 +1,24 @@
 import QtQuick
 import QtQuick.Layouts
+import qs.Commons
+import qs.Widgets
 
-Rectangle {
+Item {
     id: root
     property var pluginApi
 
-    width: 500
-    height: 600
-    color: "#1e1e1e"
+    property real contentPreferredWidth: 680 * Style.uiScaleRatio
+    property real contentPreferredHeight: 540 * Style.uiScaleRatio
+
+    // SmartPanel properties (required for panel behavior)
+    readonly property var geometryPlaceholder: panelContainer
+    readonly property bool allowAttach: true
+
+    // Preferred dimensions
+    property real contentPreferredWidth: 680 * Style.uiScaleRatio
+    property real contentPreferredHeight: 540 * Style.uiScaleRatio
+
+    anchors.fill: parent
 
     // Daten direkt hier definiert
     readonly property var rows: [
@@ -27,107 +38,24 @@ Rectangle {
         ["normal",  ":w",   "Speichern"]
     ]
 
-    ColumnLayout {
+    Rectangle {
+      id: Panel
+      anchors.fill: parent
+      color: "transparent"
+
+      ColumnLaylout {
         anchors {
-            fill: parent
-            margins: 15
+          fill: parent
+          margins: Style.marginL
         }
-        spacing: 10
+        spacing: Style.marginL
 
-        // Titel
-        Text {
-            text: "Neovim Cheatsheet"
-            color: "#ffffff"
-            font.pixelSize: 18
-            font.bold: true
-            Layout.fillWidth: true
-            horizontalAlignment: Text.AlignHCenter
+        NText {
+          text: "hallo welt!"
+          pointSize: Style.fontSizeL
+          font.weight: Font.Bold
+          color: Color.mOnSurface
         }
-
-        Rectangle {
-            height: 1
-            color: "#3d3d3d"
-            Layout.fillWidth: true
-        }
-
-        // Scrollbare Tabelle
-        ScrollView {
-            Layout.fillWidth: true
-            Layout.fillHeight: true
-            clip: true
-
-            ColumnLayout {
-                width: parent.width
-                spacing: 8
-
-                // Kopfzeile
-                RowLayout {
-                    Layout.fillWidth: true
-                    spacing: 10
-
-                    Rectangle { width: 70; height: 30; color: "#2d2d2d"; radius: 4
-                        Text { anchors.centerIn: parent; text: "Modus"; color: "#aaa"; font.pixelSize: 11; font.bold: true }
-                    }
-                    Rectangle { width: 100; height: 30; color: "#2d2d2d"; radius: 4
-                        Text { anchors.centerIn: parent; text: "Kürzel"; color: "#aaa"; font.pixelSize: 11; font.bold: true }
-                    }
-                    Rectangle { Layout.fillWidth: true; height: 30; color: "#2d2d2d"; radius: 4
-                        Text { anchors.centerIn: parent; text: "Beschreibung"; color: "#aaa"; font.pixelSize: 11; font.bold: true }
-                    }
-                }
-
-                // Datenzeilen
-                Repeater {
-                    model: rows
-                    delegate: Item {
-                        Layout.fillWidth: true
-                        height: rowData[0] === "" ? 30 : 25
-
-                        // Abschnittsüberschrift
-                        Text {
-                            visible: rowData[0] === ""
-                            anchors.left: parent.left
-                            anchors.verticalCenter: parent.verticalCenter
-                            text: rowData[2]
-                            color: "#8bc34a"  // grünlich
-                            font.pixelSize: 11
-                            font.bold: true
-                        }
-
-                        // Normale Zeile
-                        RowLayout {
-                            visible: rowData[0] !== ""
-                            anchors.fill: parent
-                            spacing: 10
-
-                            Text {
-                                width: 70
-                                text: rowData[0]
-                                color: "#81a1c1"
-                                font.pixelSize: 10
-                                font.family: "monospace"
-                            }
-
-                            Text {
-                                width: 100
-                                text: rowData[1]
-                                color: "#88c0d0"
-                                font.pixelSize: 11
-                                font.family: "monospace"
-                                font.bold: true
-                            }
-
-                            Text {
-                                Layout.fillWidth: true
-                                text: rowData[2]
-                                color: "#d8dee9"
-                                font.pixelSize: 11
-                                elide: Text.ElideRight
-                            }
-                        }
-                    }
-                }
-            }
-        }
+      }
     }
 }
