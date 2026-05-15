@@ -1,147 +1,129 @@
 import QtQuick
 import QtQuick.Layouts
 
-Item {
+Rectangle {
     id: root
     property var pluginApi
 
-    // Daten: [Modus, Kürzel, Beschreibung]
+    width: 500
+    height: 600
+    color: "#1e1e1e"
+
+    // Daten direkt hier definiert
     readonly property var rows: [
-        ["",        "",              "── MODI ──────────────────────"],
-        ["insert",  "ii",            "Normal → Insert"],
-        ["normal",  "nn",            "Insert → Normal"],
-        ["normal",  "m",             "Normal → Visual"],
-        ["visual",  "esc",           "Visual → Normal"],
-        ["",        "",              "── NAVIGATION ────────────────"],
-        ["n/v/o",   "j k l ö",       "← → ↓ ↑"],
-        ["normal",  "Ctrl ←→↓↑",    "Fenster wechseln"],
-        ["",        "",              "── CLIPBOARD ─────────────────"],
-        ["n/v",     "c",             "Kopieren  (= y)"],
-        ["n/v",     "x",             "Ausschneiden  (= d)"],
-        ["n/v",     "v",             "Einfügen nach Cursor  (= p)"],
-        ["",        "",              "── SUCHEN & ERSETZEN ─────────"],
-        ["command", "s/alt/neu/",    "Ersetzen in aktueller Zeile"],
-        ["command", "%s/alt/neu/",   "Ersetzen in gesamter Datei"],
-        ["command", ":%s/a/n/gc",    "Ersetzen mit Bestätigung"],
-        ["",        "",              "── SPRINGEN ──────────────────"],
-        ["command", ":42",           "Zu Zeile 42 springen"],
-        ["normal",  "10k / 10l",     "10 Zeilen runter / hoch"],
-        ["",        "",              "── ALLGEMEIN ─────────────────"],
-        ["n/i",     "Ctrl z",        "Undo"],
-        ["n/i",     "Ctrl y",        "Redo"],
-        ["n/i",     "Ctrl s",        "Datei speichern"],
-        ["normal",  "Space qq",      "Alle Fenster schließen"],
-        ["normal",  "Space wd",      "Aktuelles Fenster schließen"],
-        ["normal",  "Space -",       "Fenster horizontal teilen"],
-        ["normal",  "Space |",       "Fenster vertikal teilen"],
+        ["insert",  "ii",   "Normal → Insert"],
+        ["normal",  "nn",   "Insert → Normal"],
+        ["normal",  "m",    "Normal → Visual"],
+        ["visual",  "esc",  "Visual → Normal"],
+        ["",        "",     "── NAVIGATION ──"],
+        ["n/v/o",   "hjkl", "Bewegung"],
+        ["",        "",     "── CLIPBOARD ──"],
+        ["n/v",     "y",    "Kopieren"],
+        ["n/v",     "d",    "Ausschneiden"],
+        ["n/v",     "p",    "Einfügen"],
+        ["",        "",     "── ALLGEMEIN ──"],
+        ["n/i",     "Ctrl+z","Undo"],
+        ["n/i",     "Ctrl+y","Redo"],
+        ["normal",  ":w",   "Speichern"]
     ]
 
-    Rectangle {
-        anchors.fill: parent
-        color: Color.mSurface
-        radius: Style.radiusL
+    ColumnLayout {
+        anchors {
+            fill: parent
+            margins: 15
+        }
+        spacing: 10
 
-        ColumnLayout {
-            anchors { fill: parent; margins: Style.marginL }
-            spacing: 0
+        // Titel
+        Text {
+            text: "Neovim Cheatsheet"
+            color: "#ffffff"
+            font.pixelSize: 18
+            font.bold: true
+            Layout.fillWidth: true
+            horizontalAlignment: Text.AlignHCenter
+        }
 
-            NText {
-                text: "Neovim Cheatsheet"
-                font.pixelSize: Style.fontSizeL
-                font.bold: true
-                color: Color.mOnSurface
-                Layout.bottomMargin: Style.marginM
-            }
+        Rectangle {
+            height: 1
+            color: "#3d3d3d"
+            Layout.fillWidth: true
+        }
 
-            // Tabellenkopf
-            RowLayout {
-                spacing: 0
-                Layout.fillWidth: true
+        // Scrollbare Tabelle
+        ScrollView {
+            Layout.fillWidth: true
+            Layout.fillHeight: true
+            clip: true
 
-                Rectangle {
-                    width: 70;  height: 24
-                    color: Color.mSurfaceVariant; radius: 4
-                    NText { anchors.centerIn: parent; text: "Modus"
-                            color: Color.mOnSurfaceVariant; font.pixelSize: Style.fontSizeS }
-                }
-                Item { width: Style.marginS }
-                Rectangle {
-                    width: 130; height: 24
-                    color: Color.mSurfaceVariant; radius: 4
-                    NText { anchors.centerIn: parent; text: "Kürzel"
-                            color: Color.mOnSurfaceVariant; font.pixelSize: Style.fontSizeS }
-                }
-                Item { width: Style.marginS }
-                Rectangle {
-                    Layout.fillWidth: true; height: 24
-                    color: Color.mSurfaceVariant; radius: 4
-                    NText { anchors { left: parent.left; leftMargin: 8; verticalCenter: parent.verticalCenter }
-                            text: "Beschreibung"
-                            color: Color.mOnSurfaceVariant; font.pixelSize: Style.fontSizeS }
-                }
-            }
+            ColumnLayout {
+                width: parent.width
+                spacing: 8
 
-            Item { height: Style.marginS }
-
-            // Zeilen
-            Repeater {
-                model: root.rows
-                delegate: Item {
+                // Kopfzeile
+                RowLayout {
                     Layout.fillWidth: true
-                    height: modelData[0] === "" ? 28 : 24
+                    spacing: 10
 
-                    // Trennzeile / Abschnittsüberschrift
-                    NText {
-                        visible: modelData[0] === ""
-                        anchors { left: parent.left; verticalCenter: parent.verticalCenter }
-                        text: modelData[2]
-                        color: Color.mPrimary
-                        font.pixelSize: Style.fontSizeS
-                        font.bold: true
+                    Rectangle { width: 70; height: 30; color: "#2d2d2d"; radius: 4
+                        Text { anchors.centerIn: parent; text: "Modus"; color: "#aaa"; font.pixelSize: 11; font.bold: true }
                     }
+                    Rectangle { width: 100; height: 30; color: "#2d2d2d"; radius: 4
+                        Text { anchors.centerIn: parent; text: "Kürzel"; color: "#aaa"; font.pixelSize: 11; font.bold: true }
+                    }
+                    Rectangle { Layout.fillWidth: true; height: 30; color: "#2d2d2d"; radius: 4
+                        Text { anchors.centerIn: parent; text: "Beschreibung"; color: "#aaa"; font.pixelSize: 11; font.bold: true }
+                    }
+                }
 
-                    // Normale Zeile
-                    RowLayout {
-                        visible: modelData[0] !== ""
-                        anchors.fill: parent
-                        spacing: 0
+                // Datenzeilen
+                Repeater {
+                    model: rows
+                    delegate: Item {
+                        Layout.fillWidth: true
+                        height: rowData[0] === "" ? 30 : 25
 
-                        // Modus-Badge
-                        Rectangle {
-                            width: 70; height: 20
-                            color: Color.mSecondaryContainer; radius: 4
-                            NText {
-                                anchors.centerIn: parent
-                                text: modelData[0]
-                                color: Color.mOnSecondaryContainer
-                                font.pixelSize: Style.fontSizeXS
+                        // Abschnittsüberschrift
+                        Text {
+                            visible: rowData[0] === ""
+                            anchors.left: parent.left
+                            anchors.verticalCenter: parent.verticalCenter
+                            text: rowData[2]
+                            color: "#8bc34a"  // grünlich
+                            font.pixelSize: 11
+                            font.bold: true
+                        }
+
+                        // Normale Zeile
+                        RowLayout {
+                            visible: rowData[0] !== ""
+                            anchors.fill: parent
+                            spacing: 10
+
+                            Text {
+                                width: 70
+                                text: rowData[0]
+                                color: "#81a1c1"
+                                font.pixelSize: 10
                                 font.family: "monospace"
                             }
-                        }
-                        Item { width: Style.marginS }
 
-                        // Kürzel
-                        Rectangle {
-                            width: 130; height: 20
-                            color: Color.mSurfaceContainer; radius: 4
-                            NText {
-                                anchors { left: parent.left; leftMargin: 6; verticalCenter: parent.verticalCenter }
-                                text: modelData[1]
-                                color: Color.mOnSurface
-                                font.pixelSize: Style.fontSizeS
+                            Text {
+                                width: 100
+                                text: rowData[1]
+                                color: "#88c0d0"
+                                font.pixelSize: 11
                                 font.family: "monospace"
                                 font.bold: true
                             }
-                        }
-                        Item { width: Style.marginS }
 
-                        // Beschreibung
-                        NText {
-                            Layout.fillWidth: true
-                            text: modelData[2]
-                            color: Color.mOnSurfaceVariant
-                            font.pixelSize: Style.fontSizeS
-                            elide: Text.ElideRight
+                            Text {
+                                Layout.fillWidth: true
+                                text: rowData[2]
+                                color: "#d8dee9"
+                                font.pixelSize: 11
+                                elide: Text.ElideRight
+                            }
                         }
                     }
                 }
