@@ -28,9 +28,12 @@ Rectangle {
     anchors.centerIn: parent
     spacing: Style.marginS
 
-    NIcon {
-      icon: "heart"
-      color: Color.mPrimary
+    MouseArea {
+      anchors.fill: parent
+      cursorShape: Qt.PointingHandCursor
+      onClicked: {
+        pluginApi.openPanel(root.screen, root)
+      }
     }
 
     NText {
