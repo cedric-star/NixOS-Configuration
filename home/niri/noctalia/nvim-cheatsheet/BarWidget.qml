@@ -37,7 +37,7 @@ Rectangle {
     }
 
     NText {
-      text: "My Plugin"
+      text: "My Plugin 2"
       color: Color.mOnSurface
       pointSize: Style.fontSizeS
     }
