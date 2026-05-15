@@ -15,9 +15,6 @@ Item {
     readonly property bool allowAttach: true
 
     // Preferred dimensions
-    property real contentPreferredWidth: 680 * Style.uiScaleRatio
-    property real contentPreferredHeight: 540 * Style.uiScaleRatio
-
     anchors.fill: parent
 
     // Daten direkt hier definiert
