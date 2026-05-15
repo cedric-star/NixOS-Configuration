@@ -45,36 +45,48 @@ Item {
         NScrollView {
           anchors.fill: parent
 
-          ListView {
+          ColumnLayout {
             width: parent.width
-            model: itemsModel
-            spacing: Style.marginS
+            spacing: 0
 
-            delegate: Rectangle {
-              width: ListView.view.width - Style.marginL * 2
-              height: 60
-              x: Style.margin
-              radius: Style.radiusM
+            // Header-Zeile
+            GridLayout {
+              Layout.fillWidth: true
+              Layout.leftMargin: Style.marginL
+              Layout.rightMargin: Style.marginL
+              Layout.topMargin: Style.marginM
+              Layout.bottomMargin: Style.marginM
+              columns: 3
+              columnSpacing: Style.marginM
 
-              RowLayout {
-                anchors {
-                  fill: parent
-                  margins: Style.marginM
-                }
-                spacing: Style.marginM
+              NText { Layout.preferredWidth: 100; text: "Mode";    font.weight: Font.Bold; color: Color.mOnSurfaceVariant; pointSize: Style.fontSizeS }
+              NText { Layout.preferredWidth: 160; text: "Keymap";  font.weight: Font.Bold; color: Color.mOnSurfaceVariant; pointSize: Style.fontSizeS }
+              NText { Layout.fillWidth: true;     text: "Function"; font.weight: Font.Bold; color: Color.mOnSurfaceVariant; pointSize: Style.fontSizeS }
+            }
 
-                ColumnLayout {
-                  Layout.fillWidth: true
-                  spacing: Style.marginXS
+            // Trennlinie
+            Rectangle {
+              Layout.fillWidth: true
+              height: 1
+              color: Color.mOutlineVariant
+            }
 
-                  NText {
-                    text: model.mode + " " + model.key + " " + model.fun
-                    pointSize: Style.fontSizeM
-                    font.weight: Font.Medium
-                    color: Color.mOnSurface
-                  }
+            // Daten-Zeilen
+            Repeater {
+              model: itemsModel
 
-                }
+              delegate: GridLayout {
+                Layout.fillWidth: true
+                Layout.leftMargin: Style.marginL
+                Layout.rightMargin: Style.marginL
+                Layout.topMargin: Style.marginS
+                Layout.bottomMargin: Style.marginS
+                columns: 3
+                columnSpacing: Style.marginM
+
+                NText { Layout.preferredWidth: 100; text: model.mode; color: Color.mOnSurfaceVariant; pointSize: Style.fontSizeS }
+                NText { Layout.preferredWidth: 160; text: model.map;  color: Color.mOnSurface;        pointSize: Style.fontSizeS; font.family: "monospace" }
+                NText { Layout.fillWidth: true;     text: model.fun;  color: Color.mOnSurface;        pointSize: Style.fontSizeS }
               }
             }
           }
@@ -82,5 +94,4 @@ Item {
       }
     }
   }
-
 }
