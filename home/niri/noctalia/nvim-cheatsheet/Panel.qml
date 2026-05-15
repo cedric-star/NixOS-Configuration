@@ -40,7 +40,7 @@ Item {
       anchors.fill: parent
       color: "transparent"
 
-      ColumnLaylout {
+      ColumnLayout {
         anchors {
           fill: parent
           margins: Style.marginL
