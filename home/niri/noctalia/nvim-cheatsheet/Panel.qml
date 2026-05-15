@@ -18,23 +18,11 @@ Item {
     anchors.fill: parent
 
     // Daten direkt hier definiert
-    readonly property var rows: [
-        ["insert",  "ii",   "Normal → Insert"],
-        ["normal",  "nn",   "Insert → Normal"],
-        ["normal",  "m",    "Normal → Visual"],
-        ["visual",  "esc",  "Visual → Normal"],
-        ["",        "",     "── NAVIGATION ──"],
-        ["n/v/o",   "hjkl", "Bewegung"],
-        ["",        "",     "── CLIPBOARD ──"],
-        ["n/v",     "y",    "Kopieren"],
-        ["n/v",     "d",    "Ausschneiden"],
-        ["n/v",     "p",    "Einfügen"],
-        ["",        "",     "── ALLGEMEIN ──"],
-        ["n/i",     "Ctrl+z","Undo"],
-        ["n/i",     "Ctrl+y","Redo"],
-        ["normal",  ":w",   "Speichern"]
-    ]
-
+    ListModel {
+      id: itemsModel
+      ListElement { mode: "Mode"; map: "Keymap"; fun: "Function" }
+      ListElement { mode: "normal"; map: "ss s"; fun: "nix alla" }
+    }
     Rectangle {
       id: panel
       anchors.fill: parent
@@ -47,33 +35,51 @@ Item {
         }
         spacing: Style.marginL
 
-        NText {
-          text: "hallo welt!"
-          pointSize: Style.fontSizeL
-          font.weight: Font.Bold
-          color: Color.mOnSurface
-        }
+        Rectangle {
+          Layout.fillWidth: true
+          Layout.fillHeight: true
+          color: Color.mSurfaceVariant
+          radius: Style.radiusL
 
-        Column {
-          anchors {
-            fill: parent
-            margins: Style.marginL
-          }
+          NScrollView {
+            anchors.fill: parent
 
-          spacing: Style.marginL
+            ListView {
+              model: itemsModel
+              spacing: Style.marginS
 
-          Repeater {
-            model: rows
+              delegate: Rectangle {
+                width: ListView.view.width - Style.marginL * 2
+                height: 60
+                x: Style.marginL
+                color: Color.mSurface
+                radius: Style.radiusM
 
-            delegate: NText {
-              required property var modelData
+                RowLayout {
+                  anchors {
+                    fill: parent
+                    margins: Style.marginM
+                  }
+                  spacing: Style.marginM
 
-              text: modelData[1]
+                  ColumnLayout {
+                    Layout.fillWidth: true
+                    spacing: Style.marginXS
 
-              pointSize: Style.fontSizeL
-              font.weight: Font.Bold
-              color: Color.mOnSurface
-
+                    NText {
+                      text: model.mode
+                      pointSize: Style.fontSizeM
+                      font.weight: Font.Medium
+                      color: Color.mOnSurface
+                    }
+                    NText {
+                      text: model.map
+                      pointSize: Style.fontSizeS
+                      color: Color.mOnSurfaceVariant
+                    }
+                  }
+                }
+              }
             }
           }
         }
