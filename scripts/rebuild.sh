@@ -18,5 +18,4 @@ sudo cp -r ./* /etc/nixos/ &&
 cd /etc/nixos
 sudo git add . &&
 sudo git commit -m "$commit_message" &&
-
 sudo nixos-rebuild switch
