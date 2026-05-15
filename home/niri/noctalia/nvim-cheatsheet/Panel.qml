@@ -22,6 +22,7 @@ Item {
     id: itemsModel
     ListElement { mode: "Mode"; map: "Keymap"; fun: "Function" }
     ListElement { mode: "normal"; map: "ss s"; fun: "nix alla" }
+    ListElement { mode: "normal"; map: "ss s"; fun: "nix alla" }
   }
   Rectangle {
     id: panel
@@ -52,8 +53,7 @@ Item {
             delegate: Rectangle {
               width: ListView.view.width - Style.marginL * 2
               height: 60
-              x: Style.marginL
-              color: Color.mSurface
+              x: Style.margin
               radius: Style.radiusM
 
               RowLayout {
@@ -68,22 +68,12 @@ Item {
                   spacing: Style.marginXS
 
                   NText {
-                    text: model.mode
+                    text: model.mode + " " + model.key + " " + model.fun
                     pointSize: Style.fontSizeM
                     font.weight: Font.Medium
                     color: Color.mOnSurface
                   }
-                  NText {
-                    text: model.map
-                    pointSize: Style.fontSizeS
-                    color: Color.mOnSurfaceVariant
-                  }
 
-                  NText {
-                    text: model.fun
-                    pointSize: Style.fontSizeS
-                    color: Color.mOnSurfaceVariant
-                  }
                 }
               }
             }
