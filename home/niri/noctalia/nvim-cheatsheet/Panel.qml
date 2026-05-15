@@ -55,8 +55,13 @@ Item {
         }
 
         Column {
-          spacing: 2
-          Layout.fillWidth: true
+          anchors {
+            fill: parent
+            margins: Style.marginL
+          }
+
+          spacing: Style.marginL
+
           Repeater {
             model: rows
 
