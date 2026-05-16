@@ -43,7 +43,7 @@ Item {
     ListElement { mode: "normal"; map: "Space wd"; fun: "Aktuelles Fenster schließen" }
     ListElement { mode: "normal"; map: "Space -"; fun: "Fenster horizontal teilen (split below)" }
     ListElement { mode: "normal"; map: "Space |"; fun: "Fenster vertikal teilen (split right)" }
-} }
+  }
   Rectangle {
     id: panel
     anchors.fill: parent
