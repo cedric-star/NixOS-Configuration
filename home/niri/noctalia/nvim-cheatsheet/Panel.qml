@@ -8,7 +8,7 @@ Item {
   property var pluginApi
 
   property real contentPreferredWidth: 680 * Style.uiScaleRatio
-  property real contentPreferredHeight: 540 * Style.uiScaleRatio
+  property real contentPreferredHeight: 840 * Style.uiScaleRatio
 
   // SmartPanel properties (required for panel behavior)
   readonly property var geometryPlaceholder: panel
@@ -20,7 +20,6 @@ Item {
   // Daten direkt hier definiert
   ListModel {
     id: itemsModel
-    ListElement { mode: "Mode"; map: "Keymap"; fun: "Function" }
     ListElement { mode: "insert"; map: "ii"; fun: "Normal → Insert" }
     ListElement { mode: "normal"; map: "nn"; fun: "Insert → Normal" }
     ListElement { mode: "normal"; map: "m"; fun: "Normal → Visual" }
