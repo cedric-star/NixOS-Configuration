@@ -6,19 +6,12 @@
   
   programs.niri.enable = true;
 
-
   services = {
- 
     desktopManager.gnome.enable = false;
     
     displayManager.ly = {
       enable = true;
-      #wayland.enable = true;
     };
-    #xkb = {
-    #  layout = "de";
-    #  variant = "";
-    #};
   };
 
   # Enable CUPS to print documents.
@@ -47,7 +40,6 @@
 
   programs.nix-ld.enable = true;
 
-  system.stateVersion = "25.05";
   #nixpkgs.config.permittedInsecurePackages = [ "qtwebengine-5.15.19" ];
 
     # Ermöglicht die sichere Speicherung von Passwörtern (wird für Gmail benötigt)
@@ -68,11 +60,6 @@
   # Tumbler – Thumbnail-Dienst für Nautilus
   services.tumbler.enable = true;
 
-
-  
-
   # Polkit wird oft für Berechtigungsdialoge benötigt
   security.polkit.enable = true;
-
-
 }
