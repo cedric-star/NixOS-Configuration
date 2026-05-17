@@ -65,7 +65,6 @@
     vim                         # vim halt
     #neovim                      # nvim halt durch flake da
 
-
 ### IDE's ###
     jetbrains.webstorm
     jetbrains.idea-oss
