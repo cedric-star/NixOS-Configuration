@@ -4,8 +4,7 @@
   imports = [
       ./hardware-configuration.nix
       ./boot.nix
-      ../../modules/system
-      ../../modules/stylix
+      ../../modules
   ];  
 
   networking.hostName = "hp-buch"; # Define your hostname.
