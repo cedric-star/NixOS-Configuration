@@ -45,7 +45,7 @@ in {
   ];
 
   home.file.".config/niri/config.kdl".source = ./config.kdl;
-  home.file.".config/niri/b1.png".source = ../../stylix/wallpapers/b1.png;
+  home.file.".config/niri/b1.png".source = ../../../stylix/wallpapers/b1.png;
  # WICHTIG: Environment-Variablen für Wayland-Apps
   # (Niri setzt DISPLAY automatisch für X11-Apps seit 25.08!)
   home.sessionVariables = {
