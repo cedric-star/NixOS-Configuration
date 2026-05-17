@@ -14,8 +14,4 @@
     dates = [ "daily" ];
   };
 
-### Boot Generations
-
-
-
 }
