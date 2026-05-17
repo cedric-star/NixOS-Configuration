@@ -65,7 +65,7 @@
 
         modules = [
           ./hosts/my-tower/configuration.nix
-        ]
+        ];
       };
 
       nixosConfigurations.hp-buch = nixpkgs.lib.nixosSystem {
@@ -73,7 +73,7 @@
 
         specialArgs = { inherit inputs; };
         modules = [
-          ./hosts/configuration.nix
+          ./hosts/hp-buch/configuration.nix
 
           {
             environment.systemPackages = [
@@ -97,4 +97,5 @@
         ];
       };
     };
+  
 }
