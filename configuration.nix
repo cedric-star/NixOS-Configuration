@@ -5,6 +5,5 @@
       ./hardware-configuration.nix
       ./system
       ./stylix
-      ./nvf
   ];   
 }
