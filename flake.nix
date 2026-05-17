@@ -54,26 +54,32 @@
   outputs =
     {
       self,
-      nvf,
       nixpkgs,
       home-manager,
       ...
     }@inputs:
     {
-      nixosConfigurations.nixos = nixpkgs.lib.nixosSystem {
+      nixosConfigurations.my-tower = nixpkgs.lib.nixosSystem {
+        system = "x86_64-linux";
+        specialArgs = { inherit inputs; };
+
+        modules = [
+          ./hosts/my-tower/configuration.nix
+        ]
+      };
+
+      nixosConfigurations.hp-buch = nixpkgs.lib.nixosSystem {
         system = "x86_64-linux";
 
         specialArgs = { inherit inputs; };
         modules = [
-          ./configuration.nix
+          ./hosts/configuration.nix
 
           {
             environment.systemPackages = [
               inputs.ap-visual-sorting.packages.x86_64-linux.default
             ];
           }
-
-          nvf.nixosModules.default
 
           home-manager.nixosModules.default
           {

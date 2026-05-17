@@ -3,7 +3,7 @@
 {
   imports = [
       ./hardware-configuration.nix
-      ./system
-      ./stylix
+      ../../modules/system
+      ../../modules/stylix
   ];   
 }

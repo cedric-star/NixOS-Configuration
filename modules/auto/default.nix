@@ -3,6 +3,6 @@
 {
   imports = [
     #./updater.nix
-    #./cleaner.nix
+    ./cleaner.nix
   ];
 }
