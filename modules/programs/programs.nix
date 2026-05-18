@@ -65,7 +65,7 @@
     vscodium                    # codium
     vim                         # vim halt
     #neovim                      # nvim halt durch flake da
-f
+
 ### IDE's ###
     jetbrains.webstorm
     jetbrains.idea-oss
