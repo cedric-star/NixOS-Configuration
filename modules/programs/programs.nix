@@ -113,6 +113,7 @@
     node-red
     mosquitto
     nmap
+    appimage-run
     
 
 ### Spiele/Launcher ###
