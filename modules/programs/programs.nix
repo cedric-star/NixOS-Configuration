@@ -59,6 +59,7 @@
     tailscale
     kid3
     gnome-calculator
+    libreoffice
 
 ### Code Editoren ###
     vscodium                    # codium
