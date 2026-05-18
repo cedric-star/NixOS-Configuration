@@ -115,7 +115,6 @@
     nmap
     appimage-run
     
-
 ### Spiele/Launcher ###
     steam
     steam-run                   # nötig für steam (RE)
