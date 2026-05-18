@@ -114,6 +114,7 @@
     mosquitto
     nmap
     appimage-run
+    cheese 
     
 ### Spiele/Launcher ###
     steam
