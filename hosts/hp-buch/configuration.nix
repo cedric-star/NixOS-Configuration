@@ -9,7 +9,7 @@
 
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
-  networking.hostName = "hp-buch"; # Define your hostname.
+  networking.hostName = "hp-buch";
   system.stateVersion = "25.05"; 
 
 
