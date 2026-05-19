@@ -17,37 +17,12 @@
   "custom/nvim": {
     "format": "    ",
     "tooltip": true,
-    "tooltip-format": "J K L Ö     (move)
-ii          (to insert mode)
-nn          (to normal mode)
-m (normal)  (to visual/select mode)
-c (visual)  (copy)
-x (visual)  (cut: copy + delete)
-ctrl + z    (undo)
-ctrl + y    (redo)
-:/    (search for text)
-:q          (quit without save)
-:w          (save/write)"
+    "tooltip-format": "J K L Ö     (move)\nii          (to insert mode)\nnn          (to normal mode)\nm (normal)  (to visual/select mode)\nc (visual)  (copy)\nx (visual)  (cut: copy + delete)\nctrl + z    (undo)\nctrl + y    (redo)\n:/    (search for text)\n:q          (quit without save)\n:w          (save/write)"
   },
   "custom/hotkeys": {
     "format": "    ",
     "tooltip": true,
-    "tooltip-format": "MOD + 1, 2, ...   (move to workspace)
-MOD + J K L Ö     (vim move to window)
-ALT + J Ö         (move windows on current workspace)
-ALT + 1, 2, ...   (move window to workspace)
-MOD + D           (Applauncher)
-MOD + T           (kitty)
-MOD + V           (floating window)
-MOD +         (resize window in direction)
-Print             (screenshot)
-Ctrl + Print      (screenshot-screen)
-Alt + Print       (screenshot-window)
-Ctrl + Shift + T  (kitty new tab)
-Ctrl + Shift + Ö  (kitty next tab)
-Ctrl + Shift + J  (kitty previous tab)
-Ctrl + Shift + 󰐕  (font bigger)
-Ctrl + Shift + 󰍴  (font smaller)"
+    "tooltip-format": "MOD + 1, 2, ...   (move to workspace)\nMOD + J K L Ö     (vim move to window)\nALT + J Ö         (move windows on current workspace)\nALT + 1, 2, ...   (move window to workspace)\nMOD + D           (Applauncher)\nMOD + T           (kitty)\nMOD + V           (floating window)\nMOD +         (resize window in direction)\nPrint             (screenshot)\nCtrl + Print      (screenshot-screen)\nAlt + Print       (screenshot-window)\nCtrl + Shift + T  (kitty new tab)\nCtrl + Shift + Ö  (kitty next tab)\nCtrl + Shift + J  (kitty previous tab)\nCtrl + Shift + 󰐕  (font bigger)\nCtrl + Shift + 󰍴  (font smaller)"
   },
   "niri/workspaces": {
     "all-output": true,
