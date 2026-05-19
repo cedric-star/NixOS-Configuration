@@ -8,7 +8,7 @@
       enableExtensionUpdateCheck = true;
       enableUpdateCheck = false;
 
-      extensions = with pkgs.vscode-extension; [
+      extensions = with pkgs.vscode-extensions; [
         vscjava.vscode-java-pack              #java
         ms-vscode.cpptools-extension-pack     #c/c++
         myriad-dreamin.tinymist               #typst
