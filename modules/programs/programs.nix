@@ -141,6 +141,7 @@
     polkit_gnome              # Polkit-Authentifizierungsagent
     gnome-notes
     gnome-boxes
+    baobab                    # disk analyzer
     
     inputs.ap-visual-sorting.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
