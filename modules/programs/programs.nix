@@ -141,7 +141,7 @@
     gnome-notes
     gnome-boxes
     
-    inputs.ap-visual-sorting.packages.${pkgs.system}.default
+    inputs.ap-visual-sorting.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 
   # Install firefox.
