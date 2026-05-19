@@ -115,7 +115,7 @@
     nmap
     appimage-run
     cheese 
-    
+
 ### Spiele/Launcher ###
     steam
     steam-run                   # nötig für steam (RE)
@@ -153,4 +153,6 @@
   nixpkgs.config.allowUnfree = true;
   
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
+
+  
 }
