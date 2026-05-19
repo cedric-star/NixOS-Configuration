@@ -97,6 +97,7 @@
     chromium
     wdisplays
     cliphist
+    vlc
     #inkscape
 
 ### inf programme ###
@@ -142,6 +143,7 @@
     gnome-notes
     gnome-boxes
     baobab                    # disk analyzer
+    gnome-photos
     
     inputs.ap-visual-sorting.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
