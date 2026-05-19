@@ -7,9 +7,6 @@
     ./steam.nix
     ./syncthing.nix
     ./mosquitto.nix
-    ./fuzzel
-    ./wlogout
-    ./waybar
   ];
 
 
