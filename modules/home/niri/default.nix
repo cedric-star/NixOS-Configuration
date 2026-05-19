@@ -5,9 +5,6 @@ let
 
 in {
   imports = [
-    #./waybar
-    #./fuzzel
-    #./wlogout
     ./noctalia
   ];
 
