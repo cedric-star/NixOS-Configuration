@@ -117,6 +117,7 @@
     appimage-run
     cheese 
     yazi
+    btop
 
 ### Spiele/Launcher ###
     steam
