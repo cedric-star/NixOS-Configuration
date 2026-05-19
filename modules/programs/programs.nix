@@ -115,6 +115,7 @@
     nmap
     appimage-run
     cheese 
+    yazi
 
 ### Spiele/Launcher ###
     steam
