@@ -5,6 +5,7 @@
     ./programs
     ./gnome  
     ./niri
+    ./home_programs
     ./services.nix
     #inputs.noctalia.homeModules.default
   ];  
