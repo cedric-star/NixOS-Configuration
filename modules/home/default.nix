@@ -7,6 +7,7 @@
     ./niri
     ./home_programs
     ./services.nix
+    ./desktop-entries
     #inputs.noctalia.homeModules.default
   ];  
 
