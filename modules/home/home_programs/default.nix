@@ -5,5 +5,9 @@
     ./fuzzel
     ./wlogout
     ./waybar
+    ./firefox.nix
+    ./vscodium.nix
+    ./kitty.nix
+    ./git.nix
   ];
 }

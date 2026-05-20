@@ -1,9 +1,6 @@
 {config, lib, pkgs, inputs, ...}:
 
-let 
-  system = "x86_64-linux";
-
-in {
+{
   imports = [
     ./noctalia
   ];
@@ -24,10 +21,6 @@ in {
     fuzzel              # Alternative launcher, besser integriert
     pavucontrol         # Audio
     
-    # Portale für Screen Sharing, File Picker etc.
-    xdg-desktop-portal-gtk
-    xdg-desktop-portal-gnome  # Für screencasting
-    
     # Weitere Essentials
     mako                # Notification daemon (falls nicht in Quickshell)
     swaylock            # Screen locker
@@ -35,10 +28,6 @@ in {
     udiskie             # USB auto-mount
 
     wl-mirror
-    
-
-    #noctalia-shell
-    #noctalia-qs
   ];
 
   home.file.".config/niri/config.kdl".source = ./config.kdl;
@@ -57,16 +46,5 @@ in {
     
     # Electron/Chromium Wayland
     NIXOS_OZONE_WL = "1";
-  };
-
-  # xdg-desktop-portal für Screen Sharing, File Dialoge etc.
-  xdg.portal = {
-    enable = true;
-    extraPortals = with pkgs; [
-      xdg-desktop-portal-gtk
-      xdg-desktop-portal-gnome
-    ];
-    config.common.default = "gnome";
-    configPackages = [ pkgs.niri ];
   };
 }

@@ -18,6 +18,13 @@
 
 
 {
+  home.packages = with pkgs; [
+    # Portale für Screen Sharing, File Picker etc.
+    xdg-desktop-portal-gtk
+    xdg-desktop-portal-gnome  # Für screencasting
+  ];
+
+  
   xdg.desktopEntries = {
     uxplay = {
       categories = [
@@ -33,6 +40,16 @@
     };
   };
 
+  # xdg-desktop-portal für Screen Sharing, File Dialoge etc.
+  xdg.portal = {
+    enable = true;
+    extraPortals = with pkgs; [
+      xdg-desktop-portal-gtk
+      xdg-desktop-portal-gnome
+    ];
+    config.common.default = "gnome";
+    configPackages = [ pkgs.niri ];
+  };
 
   xdg.mimeApps = {
     enable = true;
