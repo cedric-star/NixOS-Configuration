@@ -7,6 +7,7 @@
     ./steam.nix
     ./syncthing.nix
     ./mosquitto.nix
+    ./uxplay.nix
     #./rust.nix
   ];
 
