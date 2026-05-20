@@ -57,9 +57,6 @@ in {
     
     # Electron/Chromium Wayland
     NIXOS_OZONE_WL = "1";
-    
-    # Java Wayland
-    #JAVA_TOOL_OPTIONS = "-Dsun.java2d.uiScale=2";
   };
 
   # xdg-desktop-portal für Screen Sharing, File Dialoge etc.

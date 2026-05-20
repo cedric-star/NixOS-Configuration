@@ -7,7 +7,7 @@
     ./steam.nix
     ./syncthing.nix
     ./mosquitto.nix
-    ./rust.nix
+    #./rust.nix
   ];
 
 
