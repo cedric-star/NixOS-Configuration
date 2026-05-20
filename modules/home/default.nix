@@ -11,23 +11,12 @@
 
   programs.home-manager.enable = true;
   gtk.gtk4.theme = config.gtk.theme;
-  # Home Manager needs a bit of information about you and the paths it should
 
-  # manage.
   home.username = "cedric";
   home.homeDirectory = "/home/cedric";
 
-  programs.git = {
-    enable = true;
-    #settings = {
-    #  userName = "cedric-star";
-    #  userEmail = "cdrc.wnsch@gmail.com";
-    #};
-  };
-
   programs.fish.enable = true;
 
-  #programs.java.enable = true;
   home.file.".jdks/jdk21".source = "${pkgs.openjdk21}/lib/openjdk";
   home.sessionVariables.JAVA_HOME = "$HOME/.jdks/jdk21";
 
