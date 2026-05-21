@@ -145,6 +145,7 @@
     gnome-boxes
     baobab                    # disk analyzer
     gnome-photos
+    eog
     
     inputs.ap-visual-sorting.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];

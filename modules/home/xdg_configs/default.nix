@@ -38,6 +38,16 @@
       terminal = false;
       icon = ./icons/airplay.svg;
     };
+
+    "my.gnome.Photos" = {
+      name = "Photos";
+      exec = "gnome-photos %U";
+      icon = "org.gnome.Photos";
+      type = "Application";
+      categories = [ "Graphics" "Photography" ];
+      terminal = false; # optional (ist Standard)
+      
+    };
   };
 
   # xdg-desktop-portal für Screen Sharing, File Dialoge etc.
@@ -57,14 +67,14 @@
     # Standardanwendungen für verschiedene MIME-Typen
     defaultApplications = {
       # Bilddateien - GNOME Photos
-      "image/jpeg" = "org.gnome.Photos.desktop";        # korrigiert: org.gnome.Photos.desktop
-      "image/jpg" = "org.gnome.Photos.desktop";
-      "image/png" = "org.gnome.Photos.desktop";
-      "image/gif" = "org.gnome.Photos.desktop";
-      "image/webp" = "org.gnome.Photos.desktop";
-      "image/svg+xml" = "org.gnome.Photos.desktop";
-      "image/bmp" = "org.gnome.Photos.desktop";
-      "image/tiff" = "org.gnome.Photos.desktop";
+      "image/jpeg" = "org.gnome.eog.desktop";        # korrigiert: org.gnome.Photos.desktop
+      "image/jpg" = "org.gnome.eog.desktop";
+      "image/png" = "org.gnome.eog.desktop";
+      "image/gif" = "org.gnome.eog.desktop";
+      "image/webp" = "org.gnome.eog.desktop";
+      "image/svg+xml" = "org.gnome.eog.desktop";
+      "image/bmp" = "org.gnome.eog.desktop";
+      "image/tiff" = "org.gnome.eog.desktop";
       
       # Videodateien - VLC
       "video/mp4" = "vlc.desktop";
