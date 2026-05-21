@@ -8,6 +8,6 @@
     ./syncthing.nix
     ./mosquitto.nix
     ./uxplay.nix
-    #./rust.nix
+    ./rust.nix
   ];
 }
