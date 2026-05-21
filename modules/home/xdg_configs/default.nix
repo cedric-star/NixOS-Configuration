@@ -57,14 +57,14 @@
     # Standardanwendungen für verschiedene MIME-Typen
     defaultApplications = {
       # Bilddateien - GNOME Photos
-      "image/jpeg" = "org.gnome.Loupe.desktop";        # oder "org.gnome.Photos.desktop"
-      "image/jpg" = "org.gnome.Loupe.desktop";
-      "image/png" = "org.gnome.Loupe.desktop";
-      "image/gif" = "org.gnome.Loupe.desktop";
-      "image/webp" = "org.gnome.Loupe.desktop";
-      "image/svg+xml" = "org.gnome.Loupe.desktop";
-      "image/bmp" = "org.gnome.Loupe.desktop";
-      "image/tiff" = "org.gnome.Loupe.desktop";
+      "image/jpeg" = "org.gnome.Photos.desktop";        # korrigiert: org.gnome.Photos.desktop
+      "image/jpg" = "org.gnome.Photos.desktop";
+      "image/png" = "org.gnome.Photos.desktop";
+      "image/gif" = "org.gnome.Photos.desktop";
+      "image/webp" = "org.gnome.Photos.desktop";
+      "image/svg+xml" = "org.gnome.Photos.desktop";
+      "image/bmp" = "org.gnome.Photos.desktop";
+      "image/tiff" = "org.gnome.Photos.desktop";
       
       # Videodateien - VLC
       "video/mp4" = "vlc.desktop";
@@ -78,7 +78,7 @@
       # PDF - Firefox
       "application/pdf" = "firefox.desktop";
       
-      # Quelltextdateien - VSCodium
+      # Quelltextdateien - VSCodium (codium.desktop existiert)
       "text/plain" = "codium.desktop";              # Allgemeine Textdateien
       "text/x-python" = "codium.desktop";           # Python
       "text/x-haskell" = "codium.desktop";          # Haskell
@@ -91,17 +91,17 @@
       "text/x-script.sh" = "codium.desktop";
       
       # Office-Dateien - LibreOffice
-      "application/msword" = "libreoffice-writer.desktop";                 # .doc
-      "application/vnd.openxmlformats-officedocument.wordprocessingml.document" = "libreoffice-writer.desktop";  # .docx
-      "application/vnd.ms-excel" = "libreoffice-calc.desktop";             # .xls
-      "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" = "libreoffice-calc.desktop";        # .xlsx
-      "application/vnd.ms-powerpoint" = "libreoffice-impress.desktop";     # .ppt
-      "application/vnd.openxmlformats-officedocument.presentationml.presentation" = "libreoffice-impress.desktop";  # .pptx
-      "application/vnd.oasis.opendocument.text" = "libreoffice-writer.desktop";      # .odt
-      "application/vnd.oasis.opendocument.spreadsheet" = "libreoffice-calc.desktop"; # .ods
-      "application/vnd.oasis.opendocument.presentation" = "libreoffice-impress.desktop";  # .odp
+      "application/msword" = "writer.desktop";                 # korrigiert: .doc
+      "application/vnd.openxmlformats-officedocument.wordprocessingml.document" = "writer.desktop";  # korrigiert: .docx
+      "application/vnd.ms-excel" = "calc.desktop";             # korrigiert: .xls
+      "application/vnd.openxmlformats-officedocument.spreadsheetml.sheet" = "calc.desktop";        # korrigiert: .xlsx
+      "application/vnd.ms-powerpoint" = "impress.desktop";     # korrigiert: .ppt
+      "application/vnd.openxmlformats-officedocument.presentationml.presentation" = "impress.desktop";  # korrigiert: .pptx
+      "application/vnd.oasis.opendocument.text" = "writer.desktop";      # .odt
+      "application/vnd.oasis.opendocument.spreadsheet" = "calc.desktop"; # .ods
+      "application/vnd.oasis.opendocument.presentation" = "impress.desktop";  # .odp
       
-      # BLEND-Dateien - Blender
+      # BLEND-Dateien - Blender (blender.desktop existiert)
       "application/x-blender" = "blender.desktop";
       
       # ===== Weitere sinnvolle Ergänzungen =====
