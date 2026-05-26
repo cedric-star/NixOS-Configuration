@@ -62,6 +62,7 @@
     libreoffice
 
 ### Code Editoren ###
+    bat
     vscodium                    # codium
     vim                         # vim halt
     #neovim                      # nvim halt durch flake da

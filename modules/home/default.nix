@@ -7,6 +7,7 @@
     ./home_programs
     ./services.nix
     ./xdg_configs
+    ./aliases.nix
   ];  
 
   programs.home-manager.enable = true;
