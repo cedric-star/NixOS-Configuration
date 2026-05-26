@@ -1,4 +1,9 @@
-{ config, pkgs, inputs, ...}: 
+{
+  config,
+  pkgs,
+  inputs,
+  ...
+}:
 
 {
   fonts.packages = with pkgs; [
@@ -6,14 +11,14 @@
   ];
   environment.systemPackages = with pkgs; [
     noctalia-shell
-### System Tools
-    #neofetch                    # logo anzeigen    
-    wget                        # repos remote
-    htop                        # systemressourcen anzeigen
-    home-manager                # home Konfigurationen 
-    kitty                       # Terminal Emulator
+    ### System Tools
+    #neofetch                    # logo anzeigen
+    wget # repos remote
+    htop # systemressourcen anzeigen
+    home-manager # home Konfigurationen
+    kitty # Terminal Emulator
     alac
-    fish                        # geile Shell
+    fish # geile Shell
     wine
     sass
     pywal
@@ -32,13 +37,12 @@
     wlogout
     qgis-ltr
     gtksourceview
-    
-    
-### Compiler ###                
-    swi-prolog                  # prolog
-    gcc                         # c lang
-    glibc.dev                   # c header
-    stdenv.cc.libc              # c libraries
+
+    ### Compiler ###
+    swi-prolog # prolog
+    gcc # c lang
+    glibc.dev # c header
+    stdenv.cc.libc # c libraries
     gnumake
     raylib
     openjdk21
@@ -61,25 +65,25 @@
     gnome-calculator
     libreoffice
 
-### Code Editoren ###
+    ### Code Editoren ###
     bat
-    vscodium                    # codium
-    vim                         # vim halt
+    vscodium # codium
+    vim # vim halt
     #neovim                      # nvim halt durch flake da
 
-### IDE's ###
+    ### IDE's ###
     jetbrains.webstorm
     jetbrains.idea-oss
     jetbrains.pycharm-oss
     jetbrains.datagrip
     arduino-ide
 
-### Kommunikations ###
+    ### Kommunikations ###
     discord
     signal-desktop
-    karere                      #whatsie #qtengine problem
+    karere # whatsie #qtengine problem
 
-### Dev Tools ###
+    ### Dev Tools ###
     git
     nodejs_24
     ihaskell
@@ -87,21 +91,21 @@
     docker-compose
     postgresql
     insomnia
-    
-### Multimedia ###
+
+    ### Multimedia ###
     lmms
     spotify
     gimp
-    hypnotix                    # tv streaming               
+    hypnotix # tv streaming
     blender
     davinci-resolve
     chromium
     wdisplays
     cliphist
     vlc
-    #inkscape
+    inkscape
 
-### inf programme ###
+    ### inf programme ###
     gftp
     gns3-gui
     kicad
@@ -110,44 +114,44 @@
     dosbox
     dosbox-x
     notes
-#    wineWowPackages.stable # oder wineWowPackages.wayland für wine
+    #    wineWowPackages.stable # oder wineWowPackages.wayland für wine
     eduvpn-client
     node-red
     mosquitto
     nmap
     appimage-run
-    cheese 
+    cheese
     yazi
     btop
 
-### Spiele/Launcher ###
+    ### Spiele/Launcher ###
     steam
-    steam-run                   # nötig für steam (RE)
-    protonup-ng                 # proton GE in compatibility für ein spiel auswählen
-    mangohud                    # overlay mit fps, ...
-    prism                       # minecraft
-    heroic                      # epic games
+    steam-run # nötig für steam (RE)
+    protonup-ng # proton GE in compatibility für ein spiel auswählen
+    mangohud # overlay mit fps, ...
+    prism # minecraft
+    heroic # epic games
     prismlauncher
     antimicrox
     noctalia-qs
 
-### Gnome
-    nautilus                  # File Manager
+    ### Gnome
+    nautilus # File Manager
     gnome-keyring
-    gnome-online-accounts     # GOA-Einstellungspanel
-    seahorse                  # Keyring-GUI (optional aber praktisch)
-    gnome-calendar            # Kalender
-    gnome-contacts            # Kontakte
-    evolution                 # Mail + Kalender (vollständig)
-    geary                   # leichterer Mail-Client
-    gnome-control-center      # Einstellungen (Accounts, WLAN, …)
-    polkit_gnome              # Polkit-Authentifizierungsagent
+    gnome-online-accounts # GOA-Einstellungspanel
+    seahorse # Keyring-GUI (optional aber praktisch)
+    gnome-calendar # Kalender
+    gnome-contacts # Kontakte
+    evolution # Mail + Kalender (vollständig)
+    geary # leichterer Mail-Client
+    gnome-control-center # Einstellungen (Accounts, WLAN, …)
+    polkit_gnome # Polkit-Authentifizierungsagent
     gnome-notes
     gnome-boxes
-    baobab                    # disk analyzer
+    baobab # disk analyzer
     gnome-photos
     eog
-    
+
     inputs.ap-visual-sorting.packages.${pkgs.stdenv.hostPlatform.system}.default
   ];
 
@@ -158,8 +162,10 @@
 
   # Allow unfree packages
   nixpkgs.config.allowUnfree = true;
-  
-  nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
-  
+  nix.settings.experimental-features = [
+    "nix-command"
+    "flakes"
+  ];
+
 }
