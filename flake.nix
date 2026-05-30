@@ -49,6 +49,15 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    matugen = {
+      url = "github:InioX/Matugen";
+    };
+
+
+    nur = {
+      url = "github:nix-community/NUR";
+      inputs.nixpkgs.follows = "nixpkgs";
+    };
   };
 
   outputs =
@@ -56,6 +65,7 @@
       self,
       nixpkgs,
       home-manager,
+      nur,
       ...
     }@inputs:
     {

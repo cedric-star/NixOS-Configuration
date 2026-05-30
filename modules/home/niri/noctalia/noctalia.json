@@ -7,11 +7,14 @@
     "density": "default",
     "showOutline": false,
     "showCapsule": true,
+    "capsuleOpacity": 1,
     "capsuleColorKey": "none",
     "widgetSpacing": 6,
     "contentPadding": 2,
     "fontScale": 1,
     "enableExclusionZoneInset": true,
+    "backgroundOpacity": 1,
+    "useSeparateOpacity": false,
     "marginVertical": 4,
     "marginHorizontal": 4,
     "frameThickness": 8,
@@ -95,41 +98,6 @@
           "usePadding": false
         },
         {
-          "colorizeSystemIcon": "none",
-          "colorizeSystemText": "none",
-          "generalTooltipText": "insert   | ii            | Normal → Insert                                     \nnormal   | nn            | Insert → Normal                                    \nnormal   | m             | Normal → Visual                                    \nvisual   | esc           | Visual → Normal                                    \n---------|---------------|----------------------------------------------------\nn/v/o    | j k l ö       | ← → ↓ ↑                                            \nnormal   | Ctrl ← → ↓ ↑  | Fenster wechseln: links rechts hoch runter         \n---------|---------------|----------------------------------------------------\nn/v      | c             | Kopieren (= y / yank)                              \nn/v      | x             | Ausschneiden (= d / delete)                        \nn/v      | v             | Einfügen nach Cursor (= p)                         \n---------|---------------|----------------------------------------------------\ncommand  | s/alt/neu/    | Ersetzen in aktueller Zeile                        \ncommand  | %s/alt/neu/   | Ersetzen in gesamter Datei                         \ncommand  | :%s/alt/neu/gc| Ersetzen mit Bestätigung pro Treffer               \n---------|---------------|----------------------------------------------------\ncommand  | :42           | Zu Zeile 42 springen (absolut)                     \nnormal   | 10k           | 10 Zeilen runter (ohne command)                    \nnormal   | 10l           | 10 Zeilen hoch (ohne command)                      \n---------|---------------|----------------------------------------------------\nn/i      | Ctrl z        | Undo                                               \nn/i      | Ctrl y        | Redo                                               \n---------|---------------|----------------------------------------------------\nn/i      | Ctrl s        | Datei speichern                                    \nnormal   | Space qq      | Alle Fenster schließen (quit all)                  \nnormal   | Space wd      | Aktuelles Fenster schließen                        \nnormal   | Space -       | Fenster horizontal teilen (split below)            \nnormal   | Space \\|      | Fenster vertikal teilen (split right)              \ntest",
-          "hideMode": "alwaysExpanded",
-          "icon": "brand-vimeo-filled",
-          "iconPosition": "left",
-          "id": "CustomButton",
-          "ipcIdentifier": "",
-          "leftClickExec": "",
-          "leftClickUpdateText": true,
-          "maxTextLength": {
-            "horizontal": 10,
-            "vertical": 10
-          },
-          "middleClickExec": "",
-          "middleClickUpdateText": false,
-          "parseJson": false,
-          "rightClickExec": "",
-          "rightClickUpdateText": false,
-          "showExecTooltip": true,
-          "showIcon": true,
-          "showTextTooltip": true,
-          "textCollapse": "",
-          "textCommand": "",
-          "textIntervalMs": 3000,
-          "textStream": false,
-          "wheelDownExec": "",
-          "wheelDownUpdateText": false,
-          "wheelExec": "",
-          "wheelMode": "unified",
-          "wheelUpExec": "",
-          "wheelUpUpdateText": false,
-          "wheelUpdateText": false
-        },
-        {
           "id": "plugin:nvim-cheatsheet"
         }
       ],
@@ -153,6 +121,10 @@
           "hidePassive": false,
           "id": "Tray",
           "pinned": []
+        },
+        {
+          "iconColor": "none",
+          "id": "WallpaperSelector"
         },
         {
           "hideWhenZero": false,
@@ -294,6 +266,7 @@
     "tooltipsEnabled": true,
     "scrollbarAlwaysVisible": true,
     "boxBorderEnabled": false,
+    "panelBackgroundOpacity": 1,
     "translucentWidgets": false,
     "panelsAttachedToBar": true,
     "settingsPanelMode": "attached",
@@ -334,11 +307,11 @@
   "wallpaper": {
     "enabled": true,
     "overviewEnabled": true,
-    "directory": "/home/cedric/Pictures/Wallpapers",
+    "directory": "/etc/nixos/modules/stylix/wallpapers",
     "monitorDirectories": [],
     "enableMultiMonitorDirectories": false,
     "showHiddenFiles": false,
-    "viewMode": "single",
+    "viewMode": "browse",
     "setWallpaperOnAllMonitors": true,
     "linkLightAndDarkWallpapers": true,
     "fillMode": "crop",
@@ -497,6 +470,7 @@
     "position": "bottom",
     "displayMode": "auto_hide",
     "dockType": "floating",
+    "backgroundOpacity": 1,
     "floatingRatio": 1,
     "size": 1,
     "onlySameOutput": true,
@@ -606,6 +580,7 @@
     "monitors": [],
     "location": "top_right",
     "overlayLayer": true,
+    "backgroundOpacity": 1,
     "respectExpireTimeout": false,
     "lowUrgencyDuration": 3,
     "normalUrgencyDuration": 8,
@@ -634,6 +609,7 @@
     "location": "top_right",
     "autoHideMs": 2000,
     "overlayLayer": true,
+    "backgroundOpacity": 1,
     "enabledTypes": [
       0,
       1,
@@ -659,13 +635,13 @@
     "backlightDeviceMappings": []
   },
   "colorSchemes": {
-    "useWallpaperColors": false,
+    "useWallpaperColors": true,
     "predefinedScheme": "Noctalia (default)",
     "darkMode": true,
     "schedulingMode": "off",
     "manualSunrise": "06:30",
     "manualSunset": "18:30",
-    "generationMethod": "tonal-spot",
+    "generationMethod": "vibrant",
     "monitorForColors": "",
     "syncGsettings": true
   },

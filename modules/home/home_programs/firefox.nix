@@ -7,7 +7,8 @@
     languagePacks = [ "de" "en-US" ];
     profiles = {
       default = {
-        extensions.force = true;
+        #extensions.force = true;
+        #extensions = with pkgs.nur.repos.rycee.firefox-addons; [ pywalfox ];
         settings = {
           "browser.search.regions" = "DE";
           "identity.fxaccounts.account.device.name" = "nixos";
@@ -24,8 +25,4 @@
       };
     };    
   };
-  stylix.targets.firefox.profileNames = [ "default" ];
-  stylix.targets.firefox.colorTheme.enable = true;
-  stylix.targets.firefox.enable = true;
-  
 }

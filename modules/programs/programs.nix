@@ -37,6 +37,11 @@
     wlogout
     qgis-ltr
     gtksourceview
+    
+    wallust
+    imagemagick  # für Formatkonvertierung falls nötig
+    matugen
+
 
     ### Compiler ###
     swi-prolog # prolog

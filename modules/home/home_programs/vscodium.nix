@@ -8,7 +8,7 @@
       enableExtensionUpdateCheck = true;
       enableUpdateCheck = false;
 
-      extensions = with pkgs.vscode-extensions; [
+      extensions = (with pkgs.vscode-extensions; [
         vscjava.vscode-java-pack              #java
         ms-vscode.cpptools-extension-pack     #c/c++
         myriad-dreamin.tinymist               #typst
@@ -18,14 +18,20 @@
         mechatroner.rainbow-csv               #csv
         ms-toolsai.jupyter                    #jupyter
         ms-python.python                      #python
-      ];
+      ]) ++ (pkgs.vscode-utils.extensionsFromVscodeMarketplace [
+        {
+          name = "noctaliatheme";
+          publisher = "Noctalia";
+          version = "0.0.5";
+          sha256 = "sha256-aTSk3yYkBw5GrD0CbRL2wo3SlBffzBTDe1pZoZa1URQ=";
+        }
+      ]);
 
       userSettings = {
         "files.autoSave" = "on";
+        "workbench.colorTheme" = "Noctalia";
       };
     };
   };
-
-  stylix.targets.vscode.enable = true;
 }
 

@@ -7,5 +7,6 @@
     ./system
     ./programs
     ./flatpak
+    ./theming
   ];
 }
