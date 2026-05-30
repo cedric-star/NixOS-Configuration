@@ -41,6 +41,7 @@
     wallust
     imagemagick  # für Formatkonvertierung falls nötig
     matugen
+    pywal
 
 
     ### Compiler ###
@@ -85,6 +86,7 @@
 
     ### Kommunikations ###
     discord
+    vesktop
     signal-desktop
     karere # whatsie #qtengine problem
 

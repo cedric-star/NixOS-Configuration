@@ -7,7 +7,6 @@
     ./waybar
     ./fastfetch
     ./firefox.nix
-    ./vscodium.nix
     ./kitty.nix
     ./git.nix
   ];

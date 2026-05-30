@@ -35,6 +35,7 @@
           "focusedColor": "primary",
           "followFocusedScreen": false,
           "fontWeight": "bold",
+          "groupedBorderOpacity": 1,
           "hideUnoccupied": false,
           "iconScale": 0.8,
           "id": "Workspace",
@@ -44,7 +45,8 @@
           "showApplications": false,
           "showApplicationsHover": false,
           "showBadge": true,
-          "showLabelsOnlyWhenOccupied": true
+          "showLabelsOnlyWhenOccupied": true,
+          "unfocusedIconsOpacity": 1
         },
         {
           "colorizeSystemIcon": "none",
@@ -65,15 +67,6 @@
           "icon": "noctalia",
           "id": "ControlCenter",
           "useDistroLogo": false
-        },
-        {
-          "defaultSettings": {
-            "enableTodoIntegration": false,
-            "notecardsEnabled": true,
-            "pincardsEnabled": true,
-            "showCloseButton": true
-          },
-          "id": "plugin:clipper"
         },
         {
           "compactMode": true,
@@ -98,6 +91,7 @@
           "usePadding": false
         },
         {
+          "defaultSettings": {},
           "id": "plugin:nvim-cheatsheet"
         }
       ],
@@ -313,7 +307,7 @@
     "showHiddenFiles": false,
     "viewMode": "browse",
     "setWallpaperOnAllMonitors": true,
-    "linkLightAndDarkWallpapers": true,
+    "linkLightAndDarkWallpapers": false,
     "fillMode": "crop",
     "fillColor": "#000000",
     "useSolidColor": false,
@@ -637,7 +631,7 @@
   "colorSchemes": {
     "useWallpaperColors": true,
     "predefinedScheme": "Noctalia (default)",
-    "darkMode": true,
+    "darkMode": false,
     "schedulingMode": "off",
     "manualSunrise": "06:30",
     "manualSunset": "18:30",
@@ -646,7 +640,24 @@
     "syncGsettings": true
   },
   "templates": {
-    "activeTemplates": [],
+    "activeTemplates": [
+      {
+        "enabled": true,
+        "id": "pywalfox"
+      },
+      {
+        "enabled": true,
+        "id": "gtk"
+      },
+      {
+        "enabled": true,
+        "id": "code"
+      },
+      {
+        "enabled": true,
+        "id": "discord"
+      }
+    ],
     "enableUserTheming": false
   },
   "nightLight": {

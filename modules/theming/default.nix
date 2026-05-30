@@ -4,6 +4,8 @@
     adw-gtk3
     nwg-look
     glib
+    pywal
+    pywalfox-native
   ];
 
   environment.sessionVariables = {
