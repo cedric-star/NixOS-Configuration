@@ -631,7 +631,7 @@
   "colorSchemes": {
     "useWallpaperColors": true,
     "predefinedScheme": "Noctalia (default)",
-    "darkMode": false,
+    "darkMode": true,
     "schedulingMode": "off",
     "manualSunrise": "06:30",
     "manualSunset": "18:30",
@@ -656,6 +656,34 @@
       {
         "enabled": true,
         "id": "discord"
+      },
+      {
+        "enabled": true,
+        "id": "kitty"
+      },
+      {
+        "enabled": true,
+        "id": "steam"
+      },
+      {
+        "enabled": true,
+        "id": "qt"
+      },
+      {
+        "enabled": true,
+        "id": "btop"
+      },
+      {
+        "enabled": true,
+        "id": "yazi"
+      },
+      {
+        "enabled": true,
+        "id": "niri"
+      },
+      {
+        "enabled": true,
+        "id": "kcolorscheme"
       }
     ],
     "enableUserTheming": false

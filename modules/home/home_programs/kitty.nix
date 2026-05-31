@@ -25,6 +25,7 @@
       map ctrl+shift+v paste_from_clipboard
 
 
+      include themes/noctalia.conf
       map ctrl+shift+j previous_tab
       map ctrl+shift+0xf6 next_tab
     '';
