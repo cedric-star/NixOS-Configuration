@@ -7,6 +7,7 @@
     pywal
     pywalfox-native
     gsettings-desktop-schemas
+    wallust
   ];
 
   environment.pathsToLink = [

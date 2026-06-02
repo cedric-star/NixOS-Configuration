@@ -9,6 +9,6 @@
     ./mosquitto.nix
     ./uxplay.nix
     ./rust.nix
-    ./vscodium.nix
+    
   ];
 }

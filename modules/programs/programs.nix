@@ -98,6 +98,7 @@
     docker-compose
     postgresql
     insomnia
+    uv
 
     ### Multimedia ###
     lmms

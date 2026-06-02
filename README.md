@@ -72,3 +72,4 @@
 # nicht deklarativ (nachinstallation nötig)
 
 - pywalfox (bzw. alle firefox extensions)
+- noctaliatheme vscode extension (damit theme aus home, nicht aus store ausgelesen wird)
