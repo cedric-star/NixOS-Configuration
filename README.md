@@ -16,7 +16,7 @@
 - ...
 
 ## Screenshots
-
+(deprecated)
 ![neofetch](./other/images/Screenshot%20from%202026-03-02%2019-54-34.png)
 ![htop,cmatrix](./other/images/Screenshot%20from%202026-03-02%2019-53-38.png)
 ![fuzzel](./other/images/Screenshot%20from%202026-03-02%2020-02-08.png)
@@ -30,6 +30,9 @@
 - (außer cleanup script)
 - niemals kommentare außer vorhandene in ./stylix/redpink.yaml!!!!!!!!! sonst
   crashout
+
+- repo MUSS in /hoe/{user} liegen
+- repo MUSS ordnernamen "NixOS-Configuration" haben
 
 # nützlches
 

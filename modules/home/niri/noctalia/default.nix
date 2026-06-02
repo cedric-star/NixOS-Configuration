@@ -4,6 +4,19 @@
   inputs,
   ...
 }:
+
+let 
+  noctaliaSettings =
+    (builtins.fromJSON (builtins.readFile ./noctalia.json))
+    // {
+      wallpaper =
+        ((builtins.fromJSON (builtins.readFile ./noctalia.json)).wallpaper or { })
+        // {
+          directory =
+            "${config.home.homeDirectory}/NixOS-Configuration/modules/theming/backgrounds";
+        };
+    };
+in
 {
   imports = [
     inputs.noctalia.homeModules.default
@@ -30,7 +43,7 @@
       version = 2;
     };
 
-    settings = (builtins.fromJSON (builtins.readFile ./noctalia.json));
+    settings = noctaliaSettings;
   };
 }
 
