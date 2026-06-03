@@ -24,6 +24,7 @@
     xdg-desktop-portal-gnome  # Für screencasting
   ];
 
+  xdg.configFile."gtk-4.0/gtk.css".force = true; # wegen themes muss überschrieben werden
   
   xdg.desktopEntries = {
     uxplay = {

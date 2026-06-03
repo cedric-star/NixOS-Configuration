@@ -10,5 +10,6 @@
     ./kitty.nix
     ./git.nix
     ./vscodium.nix
+    ./yazi.nix
   ];
 }

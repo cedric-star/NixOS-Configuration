@@ -24,12 +24,7 @@
         ms-python.python
       ] ++ pkgs.vscode-utils.extensionsFromVscodeMarketplace [
         # unique id = publisher.name
-        { 
-          name      = "qt-qml";
-          publisher = "theqtcompany";
-          version   = "1.14.0";
-          sha256    = "5Hx9Y73osV3Kd795q4i8sQWTtecRlM0YNxwMJQQ8nxE=";
-        }
+
         {
           name      = "kdl";
           publisher = "kdl-org";
@@ -37,8 +32,6 @@
           sha256    = "Jssmb5owrgNWlmLFSKCgqMJKp3sPpOrlEUBwzZSSpbM=";
         }
       ];
-
-    
     };
   };
 }

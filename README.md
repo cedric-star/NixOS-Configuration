@@ -71,8 +71,13 @@
   - wichtig: nch -output in wl-mirror befehl: zuerst fremder monitor, dann
     eigener eDP-1 monitor
 - `pkill wl-mirror` --> beendet sharing
-
+- oder displays
 # nicht deklarativ (nachinstallation nötig)
 
 - pywalfox (bzw. alle firefox extensions)
 - noctaliatheme vscode extension (damit theme aus home, nicht aus store ausgelesen wird)
+
+
+# toto
+- theming: spotify, steam, discord
+- yazi: kopieren, einfügen, rename
