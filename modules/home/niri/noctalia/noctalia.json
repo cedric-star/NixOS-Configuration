@@ -72,9 +72,6 @@
           "id": "plugin:clipper"
         },
         {
-          "id": "plugin:mini-docker"
-        },
-        {
           "compactMode": true,
           "diskPath": "/",
           "iconColor": "none",
@@ -97,6 +94,7 @@
           "usePadding": false
         },
         {
+          "defaultSettings": {},
           "id": "plugin:nvim-cheatsheet"
         }
       ],
@@ -124,9 +122,6 @@
         {
           "iconColor": "none",
           "id": "WallpaperSelector"
-        },
-        {
-          "id": "plugin:mirror-mirror"
         },
         {
           "colorizeSystemIcon": "none",
@@ -162,6 +157,9 @@
           "wheelUpExec": "",
           "wheelUpUpdateText": false,
           "wheelUpdateText": false
+        },
+        {
+          "id": "plugin:mirror-mirror"
         },
         {
           "hideWhenZero": false,

@@ -5,17 +5,12 @@
   ...
 }:
 
-let 
-  noctaliaSettings =
-    (builtins.fromJSON (builtins.readFile ./noctalia.json))
-    // {
-      wallpaper =
-        ((builtins.fromJSON (builtins.readFile ./noctalia.json)).wallpaper or { })
-        // {
-          directory =
-            "${config.home.homeDirectory}/NixOS-Configuration/modules/theming/backgrounds";
-        };
+let
+  noctaliaSettings = (builtins.fromJSON (builtins.readFile ./noctalia.json)) // {
+    wallpaper = ((builtins.fromJSON (builtins.readFile ./noctalia.json)).wallpaper or { }) // {
+      directory = "${config.home.homeDirectory}/NixOS-Configuration/modules/theming/backgrounds";
     };
+  };
 in
 {
   imports = [
@@ -38,11 +33,25 @@ in
 
     # Plugin aktivieren
     plugins = {
-      sources = [ ]; # keine externen Quellen nötig
+      sources = [
+        {
+          enabled = true;
+          name = "Official Noctalia Plugins";
+          url = "https://github.com/noctalia-dev/noctalia-plugins";
+        }
+      ]; # keine externen Quellen nötig
       states = {
         nvim-cheatsheet = {
           enabled = true;
           sourceUrl = ""; # leer = lokales Plugin
+        };
+        clipper = {
+          enabled = true;
+          sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
+        };
+        mirror-mirror = {
+          enabled = true;
+          sourceUrl = "https://github.com/noctalia-dev/noctalia-plugins";
         };
       };
       version = 2;
@@ -51,4 +60,3 @@ in
     settings = noctaliaSettings;
   };
 }
-
