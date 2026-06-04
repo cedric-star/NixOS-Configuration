@@ -133,7 +133,7 @@
     btop
 
     ### Spiele/Launcher ###
-    steam
+    #steam
     steam-run # nötig für steam (RE)
     protonup-ng # proton GE in compatibility für ein spiel auswählen
     mangohud # overlay mit fps, ...
@@ -165,7 +165,6 @@
 
   # Install firefox.
   programs.firefox.enable = true;
-  programs.steam.enable = true;
   #programs.noctalia-shell.enable = true;
 
   # Allow unfree packages

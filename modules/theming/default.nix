@@ -9,6 +9,7 @@
     gsettings-desktop-schemas
     wallust
     spicetify-cli
+
   ];
 
   environment.pathsToLink = [

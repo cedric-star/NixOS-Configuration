@@ -53,10 +53,13 @@
       url = "github:InioX/Matugen";
     };
 
-
     nur = {
       url = "github:nix-community/NUR";
       inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    millennium = {
+      url = "github:SteamClientHomebrew/Millennium?dir=packages/nix";
     };
   };
 
@@ -104,6 +107,11 @@
 
           inputs.stylix.nixosModules.stylix
           inputs.nix-flatpak.nixosModules.nix-flatpak
+
+
+          {
+            nixpkgs.overlays = [ inputs.millennium.overlays.default ];
+          }
         ];
       };
     };

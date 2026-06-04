@@ -28,6 +28,11 @@ in
     recursive = true;
   };
 
+  #für steam theming
+  home.file.".steam/steam/millennium/themes/Material-Theme/css/main/colors/matugen.css" = {
+    source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/.steam/steam/steamui/skins/Material-Theme/css/main/colors/matugen.css";
+  };
+
   programs.noctalia-shell = {
     enable = true;
 

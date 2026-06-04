@@ -69,6 +69,12 @@
           "useDistroLogo": false
         },
         {
+          "id": "plugin:clipper"
+        },
+        {
+          "id": "plugin:mini-docker"
+        },
+        {
           "compactMode": true,
           "diskPath": "/",
           "iconColor": "none",
@@ -91,7 +97,6 @@
           "usePadding": false
         },
         {
-          "defaultSettings": {},
           "id": "plugin:nvim-cheatsheet"
         }
       ],
@@ -119,6 +124,44 @@
         {
           "iconColor": "none",
           "id": "WallpaperSelector"
+        },
+        {
+          "id": "plugin:mirror-mirror"
+        },
+        {
+          "colorizeSystemIcon": "none",
+          "colorizeSystemText": "none",
+          "generalTooltipText": "open wdisplays for managing multiple screens",
+          "hideMode": "alwaysExpanded",
+          "icon": "device-desktop",
+          "iconPosition": "left",
+          "id": "CustomButton",
+          "ipcIdentifier": "",
+          "leftClickExec": "wdisplays",
+          "leftClickUpdateText": true,
+          "maxTextLength": {
+            "horizontal": 10,
+            "vertical": 10
+          },
+          "middleClickExec": "",
+          "middleClickUpdateText": false,
+          "parseJson": false,
+          "rightClickExec": "",
+          "rightClickUpdateText": false,
+          "showExecTooltip": false,
+          "showIcon": true,
+          "showTextTooltip": true,
+          "textCollapse": "",
+          "textCommand": "",
+          "textIntervalMs": 3000,
+          "textStream": false,
+          "wheelDownExec": "",
+          "wheelDownUpdateText": false,
+          "wheelExec": "",
+          "wheelMode": "unified",
+          "wheelUpExec": "",
+          "wheelUpUpdateText": false,
+          "wheelUpdateText": false
         },
         {
           "hideWhenZero": false,
@@ -301,7 +344,7 @@
   "wallpaper": {
     "enabled": true,
     "overviewEnabled": true,
-    "directory": "/etc/nixos/modules/stylix/wallpapers",
+    "directory": "/home/cedric/NixOS-Configuration/modules/theming/backgrounds",
     "monitorDirectories": [],
     "enableMultiMonitorDirectories": false,
     "showHiddenFiles": false,

@@ -27,7 +27,10 @@
     udiskie             # USB auto-mount
 
     wl-mirror
+    cliphist
   ];
+
+  services.cliphist.enable = true;
 
   home.file.".config/niri/config.kdl".source = ./config.kdl;
  # WICHTIG: Environment-Variablen für Wayland-Apps
