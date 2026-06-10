@@ -323,7 +323,7 @@ ui_scale = 1.0
     blacklist = []
 
     [shell.panel]
-    borders = true
+    borders = false
     clipboard_placement = "attached"
     control_center_placement = "attached"
     launcher_categories = true

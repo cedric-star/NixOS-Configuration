@@ -78,6 +78,7 @@ settings_show_advanced = true
     speed = 0.90000001341104507
 
     [shell.panel]
+    borders = false
     clipboard_placement = "attached"
     open_near_click_clipboard = true
     open_near_click_control_center = true
@@ -138,13 +139,13 @@ transition = [ "disc", "fade", "honeycomb", "stripes", "wipe", "zoom" ]
 transition_duration = 100
 
     [wallpaper.default]
-    path = "/home/cedric/NixOS-Configuration/modules/theming/backgrounds/ruffy_kaido.png"
+    path = "/home/cedric/NixOS-Configuration/modules/theming/backgrounds/itachi.png"
 
     [wallpaper.last]
-    path = "/home/cedric/NixOS-Configuration/modules/theming/backgrounds/ruffy_kaido.png"
+    path = "/home/cedric/NixOS-Configuration/modules/theming/backgrounds/itachi.png"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/cedric/NixOS-Configuration/modules/theming/backgrounds/ruffy_kaido.png"
+    path = "/home/cedric/NixOS-Configuration/modules/theming/backgrounds/itachi.png"
 
 [widget.clipboard]
 anchor = true
