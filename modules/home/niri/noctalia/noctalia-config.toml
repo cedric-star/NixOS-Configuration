@@ -1,21 +1,24 @@
 [backdrop]
-blur_intensity = 0.40999999083578587
-tint_intensity = 0.0
+blur_intensity = 0.1699999962002039
+enabled = true
+tint_intensity = 0.15999999642372131
 
 [bar.default]
-background_opacity = 0.20999999530613422
+background_opacity = 0.21999999508261681
 border = "hover"
 end = [
+    "group:g1",
+    "temp",
     "brightness",
     "audio_visualizer",
     "battery",
-    "bluetooth",
-    "network",
+    "volume",
     "power_profile",
-    "cpu",
-    "network_rx",
-    "network_tx",
-    "nightlight"
+    "bluetooth",
+    "nightlight",
+    "notifications",
+    "network",
+    "session"
 ]
 font_weight = 600
 margin_edge = 0
@@ -23,9 +26,23 @@ margin_ends = 0
 panel_overlap = 0
 radius = 0
 shadow = false
-start = [ "custom_button_2", "workspaces", "clipboard" ]
+start = [ "custom_button_2", "workspaces", "clipboard", "control-center", "launcher", "wallpaper", "theme_mode" ]
 thickness = 28
-widget_spacing = 13
+widget_spacing = 10
+
+    [[bar.default.capsule_group]]
+    fill = "surface"
+    id = "g1"
+    members = [ "cpu", "ram" ]
+    opacity = 0.0
+    padding = 6.0
+
+[control_center]
+sidebar = "full"
+sidebar_section = "full"
+
+[location]
+auto_locate = true
 
 [lockscreen_widgets]
 enabled = false
@@ -50,14 +67,24 @@ widget_order = [ "lockscreen-login-box@eDP-1" ]
 background_opacity = 0.88999998010694981
 
 [shell]
+app_icon_color = "primary"
 app_icon_colorize = true
-corner_radius_scale = 1.0500000156462193
-font_family = "JetBrainsMono NF"
+corner_radius_scale = 2.0
+font_family = "JetBrainsMono NF ExtraBold"
+niri_overview_type_to_launch_enabled = true
 settings_show_advanced = true
 
+    [shell.animation]
+    speed = 0.90000001341104507
+
     [shell.panel]
+    clipboard_placement = "attached"
+    open_near_click_clipboard = true
+    open_near_click_control_center = true
+    open_near_click_session = true
+    open_near_click_wallpaper = true
     shadow = false
-    transparency_mode = "glass"
+    transparency_mode = "soft"
 
     [shell.screen_corners]
     enabled = true
@@ -66,10 +93,36 @@ settings_show_advanced = true
     [shell.screenshot]
     directory = "/home/cedric/Pictures/Screenshots"
 
+    [[shell.session.actions]]
+    action = "lock"
+    enabled = true
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "logout"
+    enabled = true
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "lock_and_suspend"
+    enabled = true
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "reboot"
+    enabled = true
+    variant = "default"
+
+    [[shell.session.actions]]
+    action = "shutdown"
+    enabled = true
+    variant = "destructive"
+
     [shell.shadow]
     alpha = 0.0
 
 [theme]
+mode = "dark"
 source = "wallpaper"
 wallpaper_scheme = "vibrant"
 
@@ -81,22 +134,26 @@ wallpaper_scheme = "vibrant"
 directory = "/home/cedric/NixOS-Configuration/modules/theming/backgrounds"
 edge_smoothness = 0.47999998927116394
 fill_mode = "stretch"
+transition = [ "disc", "fade", "honeycomb", "stripes", "wipe", "zoom" ]
 transition_duration = 100
 
     [wallpaper.default]
-    path = "/home/cedric/NixOS-Configuration/modules/theming/backgrounds/ruffy_universum.png"
+    path = "/home/cedric/NixOS-Configuration/modules/theming/backgrounds/ruffy_kaido.png"
 
     [wallpaper.last]
-    path = "/home/cedric/NixOS-Configuration/modules/theming/backgrounds/ruffy_universum.png"
+    path = "/home/cedric/NixOS-Configuration/modules/theming/backgrounds/ruffy_kaido.png"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/cedric/NixOS-Configuration/modules/theming/backgrounds/ruffy_universum.png"
+    path = "/home/cedric/NixOS-Configuration/modules/theming/backgrounds/ruffy_kaido.png"
 
 [widget.clipboard]
 anchor = true
 
 [widget.clock]
 format = "{:%H:%M %d.%m. 20%y}"
+
+[widget.cpu]
+label_min_width = 14
 
 [widget.custom_button_2]
 command = "kitty --hold fastfetch"
@@ -105,3 +162,16 @@ type = "custom_button"
 
 [widget.network]
 show_label = false
+
+[widget.network_rx]
+label_min_width = 40
+
+[widget.network_tx]
+display = "text"
+label_min_width = 40
+
+[widget.ram]
+label_min_width = 14
+
+[widget.temp]
+display = "text"
