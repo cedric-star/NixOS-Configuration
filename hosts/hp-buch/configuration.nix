@@ -7,7 +7,7 @@
       ../../modules
   ];  
 
-  boot.kernelPackages = pkgs.linuxPackages_latest;
+  #boot.kernelPackages = pkgs.cachyosKernels.linuxPackages-cachyos-latest;
 
   networking.hostName = "hp-buch";
   system.stateVersion = "25.05"; 

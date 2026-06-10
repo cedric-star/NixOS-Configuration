@@ -15,6 +15,7 @@ in
 {
   imports = [
     inputs.noctalia.homeModules.default
+    inputs.noctalia-v5.homeModules.default
   ];
 
   # Plugin-Dateien ins richtige Verzeichnis symlinken
@@ -58,5 +59,10 @@ in
     };
 
     settings = noctaliaSettings;
+  };
+
+  programs.noctalia = {
+    enable = true;
+    settings = ./noctalia-config.toml;
   };
 }

@@ -270,7 +270,7 @@ layout {
 //für noctalia:
 window-rule {
   // Rounded corners for a modern look.
-  geometry-corner-radius 20
+  geometry-corner-radius 14
 
   // Clips window contents to the rounded corner boundaries.
   clip-to-geometry true
@@ -278,14 +278,21 @@ window-rule {
   opacity 0.96
 }
 layer-rule {
-  match namespace="^noctalia-overview*"
+  match namespace="^noctalia-backdrop"
   place-within-backdrop true
+  
 }
 debug {
   // Allows notification actions and window activation from Noctalia.
   honor-xdg-activation-with-invalid-serial
 }
-spawn-sh-at-startup "noctalia-shell"
+window-rule {
+  match app-id="dev.noctalia.Noctalia.Settings"
+  open-floating true
+  default-column-width { fixed 1080; }
+  default-window-height { fixed 920; }
+}
+spawn-sh-at-startup "noctalia"
 
 //spawn-at-startup "fuzzel"
 
@@ -400,7 +407,8 @@ binds {
 
     // Suggested binds for running programs: terminal, app launcher, screen locker.
     Mod+T hotkey-overlay-title="Open a Terminal: kitty" { spawn "kitty"; }
-    Mod+D hotkey-overlay-title="Run an Application: fuzzel" { spawn-sh "noctalia-shell ipc call launcher toggle"; }
+    Mod+D { spawn-sh "noctalia msg panel-toggle launcher"; }
+    //Mod+D hotkey-overlay-title="Run an Application: fuzzel" { spawn-sh "noctalia-shell ipc call launcher toggle"; }
     //Super+Alt+L hotkey-overlay-title="Lock the Screen: swaylock" { spawn "swaylock"; }
 
     // Use spawn-sh to run a shell command. Do this if you need pipes, multiple commands, etc.

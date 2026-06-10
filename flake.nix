@@ -6,10 +6,12 @@
     extra-substituters = [
       "https://noctalia.cachix.org"
       "https://cache.nixos.org"
+      "https://attic.xuyh0120.win/lantian"
     ];
     extra-trusted-public-keys = [
       "noctalia.cachix.org-1:pCOR47nnMEo5thcxNDtzWpOxNFQsBRglJzxWPp3dkU4="
       "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
+      "lantian:EeAUQ+W+6r7EtwnmYjeVwx5kOGEBpjlBfPlzGlTNvHc="
     ];
   };
 
@@ -36,8 +38,12 @@
     };
 
     noctalia = {
-      url = "github:noctalia-dev/noctalia-shell";
+      url = "github:noctalia-dev/noctalia/legacy-v4";
       inputs.nixpkgs.follows = "nixpkgs";
+    };
+
+    noctalia-v5 = {
+      url = "github:noctalia-dev/noctalia";
     };
 
     myvim = {
@@ -61,6 +67,8 @@
     millennium = {
       url = "github:SteamClientHomebrew/Millennium?dir=packages/nix";
     };
+
+    nix-cachyos-kernel.url = "github:xddxdd/nix-cachyos-kernel";
   };
 
   outputs =
@@ -88,6 +96,14 @@
         modules = [
           ./hosts/hp-buch/configuration.nix
 
+          ({ pkgs, ... }: {
+            nixpkgs.overlays = [
+              inputs.nix-cachyos-kernel.overlays.pinned  # binary cache hits
+              inputs.millennium.overlays.default         # dein bisheriges overlay
+            ];
+            boot.kernelPackages = pkgs.cachyosKernels.linuxPackages-cachyos-latest;
+          })
+
           {
             environment.systemPackages = [
               inputs.ap-visual-sorting.packages.x86_64-linux.default
@@ -107,11 +123,6 @@
 
           inputs.stylix.nixosModules.stylix
           inputs.nix-flatpak.nixosModules.nix-flatpak
-
-
-          {
-            nixpkgs.overlays = [ inputs.millennium.overlays.default ];
-          }
         ];
       };
     };

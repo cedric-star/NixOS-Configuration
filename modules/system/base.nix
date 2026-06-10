@@ -62,4 +62,18 @@
 
   # Polkit wird oft für Berechtigungsdialoge benötigt
   security.polkit.enable = true;
+
+  nix.settings = {
+    substituters = [
+      "https://noctalia.cachix.org"
+      "https://cache.nixos.org"
+      "https://attic.xuyh0120.win/lantian"
+    ];
+    trusted-public-keys = [
+      "noctalia.cachix.org-1:pCOR47nnMEo5thcxNDtzWpOxNFQsBRglJzxWPp3dkU4="
+      "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
+      "lantian:EeAUQ+W+6r7EtwnmYjeVwx5kOGEBpjlBfPlzGlTNvHc="
+    ];
+    trusted-users = [ "root" "cedric" ];
+  };
 }

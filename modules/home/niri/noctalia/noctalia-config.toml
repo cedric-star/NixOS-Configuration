@@ -1,0 +1,107 @@
+[backdrop]
+blur_intensity = 0.40999999083578587
+tint_intensity = 0.0
+
+[bar.default]
+background_opacity = 0.20999999530613422
+border = "hover"
+end = [
+    "brightness",
+    "audio_visualizer",
+    "battery",
+    "bluetooth",
+    "network",
+    "power_profile",
+    "cpu",
+    "network_rx",
+    "network_tx",
+    "nightlight"
+]
+font_weight = 600
+margin_edge = 0
+margin_ends = 0
+panel_overlap = 0
+radius = 0
+shadow = false
+start = [ "custom_button_2", "workspaces", "clipboard" ]
+thickness = 28
+widget_spacing = 13
+
+[lockscreen_widgets]
+enabled = false
+schema_version = 2
+widget_order = [ "lockscreen-login-box@eDP-1" ]
+
+    [lockscreen_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [lockscreen_widgets.widget."lockscreen-login-box@eDP-1"]
+    box_height = 0.0
+    box_width = 0.0
+    cx = 960.0
+    cy = 957.0
+    output = "eDP-1"
+    rotation = 0.0
+    type = "login_box"
+
+[osd]
+background_opacity = 0.88999998010694981
+
+[shell]
+app_icon_colorize = true
+corner_radius_scale = 1.0500000156462193
+font_family = "JetBrainsMono NF"
+settings_show_advanced = true
+
+    [shell.panel]
+    shadow = false
+    transparency_mode = "glass"
+
+    [shell.screen_corners]
+    enabled = true
+    size = 21
+
+    [shell.screenshot]
+    directory = "/home/cedric/Pictures/Screenshots"
+
+    [shell.shadow]
+    alpha = 0.0
+
+[theme]
+source = "wallpaper"
+wallpaper_scheme = "vibrant"
+
+    [theme.templates]
+    builtin_ids = [ "btop", "gtk3", "gtk4", "kcolorscheme", "kitty", "niri", "qt" ]
+    community_ids = [ "pywalfox", "neovim", "obsidian", "vscode", "fuzzel", "discord", "steam", "yazi" ]
+
+[wallpaper]
+directory = "/home/cedric/NixOS-Configuration/modules/theming/backgrounds"
+edge_smoothness = 0.47999998927116394
+fill_mode = "stretch"
+transition_duration = 100
+
+    [wallpaper.default]
+    path = "/home/cedric/NixOS-Configuration/modules/theming/backgrounds/ruffy_universum.png"
+
+    [wallpaper.last]
+    path = "/home/cedric/NixOS-Configuration/modules/theming/backgrounds/ruffy_universum.png"
+
+    [wallpaper.monitors.eDP-1]
+    path = "/home/cedric/NixOS-Configuration/modules/theming/backgrounds/ruffy_universum.png"
+
+[widget.clipboard]
+anchor = true
+
+[widget.clock]
+format = "{:%H:%M %d.%m. 20%y}"
+
+[widget.custom_button_2]
+command = "kitty --hold fastfetch"
+glyph = "snowflake"
+type = "custom_button"
+
+[widget.network]
+show_label = false
