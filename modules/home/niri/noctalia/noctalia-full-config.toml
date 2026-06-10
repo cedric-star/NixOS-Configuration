@@ -288,6 +288,7 @@ enabled = []
     name = "community"
 
 [shell]
+app_icon_color = "primary"
 app_icon_colorize = true
 avatar_path = ""
 clipboard_auto_paste = "auto"
