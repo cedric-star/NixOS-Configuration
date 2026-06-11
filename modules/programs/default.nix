@@ -9,6 +9,7 @@
     ./mosquitto.nix
     ./uxplay.nix
     ./rust.nix
+    ./kdeconnect.nix
     
   ];
 }

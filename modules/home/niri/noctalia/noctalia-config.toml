@@ -41,6 +41,32 @@ widget_spacing = 10
 sidebar = "full"
 sidebar_section = "full"
 
+[desktop_widgets]
+schema_version = 2
+widget_order = [ "desktop-widget-0000000000000001" ]
+
+    [desktop_widgets.grid]
+    cell_size = 16
+    major_interval = 4
+    visible = true
+
+    [desktop_widgets.widget.desktop-widget-0000000000000001]
+    box_height = 304.0
+    box_width = 640.0
+    cx = 960.0
+    cy = 932.0
+    output = "eDP-1"
+    rotation = 0.0
+    type = "audio_visualizer"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000001.settings]
+        aspect_ratio = 2.1000000000000001
+        background = false
+        bands = 48.0
+        centered = false
+        mirrored = true
+        show_when_idle = true
+
 [location]
 auto_locate = true
 
@@ -179,13 +205,13 @@ transition = [ "disc", "fade", "honeycomb", "stripes", "wipe", "zoom" ]
 transition_duration = 100
 
     [wallpaper.default]
-    path = "/home/cedric/NixOS-Configuration/modules/theming/backgrounds/haku_zabuza.png"
+    path = "/home/cedric/NixOS-Configuration/modules/theming/backgrounds/kirby.png"
 
     [wallpaper.last]
-    path = "/home/cedric/NixOS-Configuration/modules/theming/backgrounds/haku_zabuza.png"
+    path = "/home/cedric/NixOS-Configuration/modules/theming/backgrounds/kirby.png"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/cedric/NixOS-Configuration/modules/theming/backgrounds/haku_zabuza.png"
+    path = "/home/cedric/NixOS-Configuration/modules/theming/backgrounds/kirby.png"
 
 [widget.clipboard]
 anchor = true
@@ -198,7 +224,14 @@ label_min_width = 0
 
 [widget.custom_button_2]
 command = "kitty --hold fastfetch"
-glyph = "snowflake"
+glyph = ""
+label = "󱄅"
+scale = 1.8500000000000001
+type = "custom_button"
+
+[widget.custom_button_3]
+glyph = ""
+label = "󱄅"
 type = "custom_button"
 
 [widget.network]

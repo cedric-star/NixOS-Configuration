@@ -101,11 +101,30 @@ sidebar_section = "full"
 [desktop_widgets]
 enabled = true
 schema_version = 2
+widget_order = [ "desktop-widget-0000000000000001" ]
 
     [desktop_widgets.grid]
     cell_size = 16
     major_interval = 4
     visible = true
+
+    [desktop_widgets.widget.desktop-widget-0000000000000001]
+    box_height = 304.0
+    box_width = 640.0
+    cx = 960.0
+    cy = 932.0
+    enabled = true
+    output = "eDP-1"
+    rotation = 0.0
+    type = "audio_visualizer"
+
+        [desktop_widgets.widget.desktop-widget-0000000000000001.settings]
+        aspect_ratio = 2.1000000000000001
+        background = false
+        bands = 48.0
+        centered = false
+        mirrored = true
+        show_when_idle = true
 
 [dock]
 active_monitor_only = false
@@ -341,7 +360,7 @@ avatar_path = ""
 clipboard_auto_paste = "auto"
 clipboard_confirm_clear_history = true
 clipboard_enabled = true
-clipboard_history_max_entries = 50
+clipboard_history_max_entries = 100
 clipboard_image_action_command = ""
 corner_radius_scale = 2.0
 date_format = "%A, %x"
@@ -538,7 +557,14 @@ type = "sysmon"
 
 [widget.custom_button_2]
 command = "kitty --hold fastfetch"
-glyph = "snowflake"
+glyph = ""
+label = "󱄅"
+scale = 1.8500000000000001
+type = "custom_button"
+
+[widget.custom_button_3]
+glyph = ""
+label = "󱄅"
 type = "custom_button"
 
 [widget.date]
