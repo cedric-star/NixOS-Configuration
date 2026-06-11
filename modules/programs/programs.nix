@@ -112,6 +112,7 @@
     cliphist
     vlc
     inkscape
+    nwg-displays
 
     ### inf programme ###
     gftp
