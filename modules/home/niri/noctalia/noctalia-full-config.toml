@@ -532,7 +532,7 @@ format = "{:%H:%M %d.%m. 20%y}"
 type = "clock"
 
 [widget.cpu]
-label_min_width = 14
+label_min_width = 0
 stat = "cpu_usage"
 type = "sysmon"
 
@@ -589,7 +589,7 @@ device = "output"
 type = "volume"
 
 [widget.ram]
-label_min_width = 14
+label_min_width = 0
 stat = "ram_used"
 type = "sysmon"
 

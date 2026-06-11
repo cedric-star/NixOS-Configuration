@@ -179,13 +179,13 @@ transition = [ "disc", "fade", "honeycomb", "stripes", "wipe", "zoom" ]
 transition_duration = 100
 
     [wallpaper.default]
-    path = "/home/cedric/NixOS-Configuration/modules/theming/backgrounds/ruffy_universum.png"
+    path = "/home/cedric/NixOS-Configuration/modules/theming/backgrounds/haku_zabuza.png"
 
     [wallpaper.last]
-    path = "/home/cedric/NixOS-Configuration/modules/theming/backgrounds/ruffy_universum.png"
+    path = "/home/cedric/NixOS-Configuration/modules/theming/backgrounds/haku_zabuza.png"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/cedric/NixOS-Configuration/modules/theming/backgrounds/ruffy_universum.png"
+    path = "/home/cedric/NixOS-Configuration/modules/theming/backgrounds/haku_zabuza.png"
 
 [widget.clipboard]
 anchor = true
@@ -194,7 +194,7 @@ anchor = true
 format = "{:%H:%M %d.%m. 20%y}"
 
 [widget.cpu]
-label_min_width = 14
+label_min_width = 0
 
 [widget.custom_button_2]
 command = "kitty --hold fastfetch"
@@ -212,7 +212,7 @@ display = "text"
 label_min_width = 40
 
 [widget.ram]
-label_min_width = 14
+label_min_width = 0
 
 [widget.temp]
 display = "text"
