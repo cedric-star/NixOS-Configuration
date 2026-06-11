@@ -44,23 +44,13 @@
 - command am anfang: #!/...
 - dann für pfad: command -v sh (anders unter nixos)
 
-# Rebuild Erklärung
-
-- [A, B, C]
-- A = fertig gebaut
-- im Bau
-- gesamtzahl zu bauen
 
 # updaten
 
-- `nix flake update` updated flake.lock datei
-- git add.
-- git commit -m "flake-update"
-- system rebuild
-
-# suche nach wort in config
-
-- grep -r "xow_dongle" ./
+- `sudo nix flake update` updated flake.lock datei
+- `git add.`
+- `git commit -m "flake-update"`
+- `sudo nixos-rebuild switch --flake .#hp-buch` (oder nach # jeweiliger host)
 
 # screensharing
 
@@ -76,8 +66,8 @@
 
 - pywalfox (bzw. alle firefox extensions)
 - noctaliatheme vscode extension (damit theme aus home, nicht aus store ausgelesen wird)
-
+- theming discord: vesktop -> theming -> noctalia material
 
 # toto
-- theming: spotify, steam, discord
+- theming: spotify, steam
 - yazi: kopieren, einfügen, rename

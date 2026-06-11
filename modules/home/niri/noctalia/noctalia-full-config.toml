@@ -207,9 +207,14 @@ tint_intensity = 0.30000001192092896
 wallpaper = ""
 
 [lockscreen_widgets]
-enabled = false
+enabled = true
 schema_version = 2
-widget_order = [ "lockscreen-login-box@eDP-1" ]
+widget_order = [
+    "lockscreen-login-box@eDP-1",
+    "lockscreen-widget-0000000000000001",
+    "lockscreen-widget-0000000000000002",
+    "lockscreen-widget-0000000000000003"
+]
 
     [lockscreen_widgets.grid]
     cell_size = 16
@@ -227,6 +232,48 @@ widget_order = [ "lockscreen-login-box@eDP-1" ]
     type = "login_box"
 
         [lockscreen_widgets.widget."lockscreen-login-box@eDP-1".settings]
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
+    box_height = 96.0
+    box_width = 192.0
+    cx = 960.0
+    cy = 844.0
+    enabled = true
+    output = "eDP-1"
+    rotation = -0.0
+    type = "clock"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000001.settings]
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000002]
+    box_height = 96.0
+    box_width = 304.0
+    cx = 960.0
+    cy = 108.0
+    enabled = true
+    output = "eDP-1"
+    rotation = 0.0
+    type = "weather"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000002.settings]
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000003]
+    box_height = 32.0
+    box_width = 192.0
+    cx = 960.0
+    cy = 1068.0
+    enabled = true
+    output = "eDP-1"
+    rotation = 0.0
+    type = "label"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000003.settings]
+        background = true
+        background_opacity = 0.13
+        background_padding = 9.0
+        background_radius = 11.0
+        shadow = false
+        title = "wer das ließt ist dumm"
 
 [nightlight]
 enabled = false

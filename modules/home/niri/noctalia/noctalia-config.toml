@@ -45,9 +45,14 @@ sidebar_section = "full"
 auto_locate = true
 
 [lockscreen_widgets]
-enabled = false
+enabled = true
 schema_version = 2
-widget_order = [ "lockscreen-login-box@eDP-1" ]
+widget_order = [
+    "lockscreen-login-box@eDP-1",
+    "lockscreen-widget-0000000000000001",
+    "lockscreen-widget-0000000000000002",
+    "lockscreen-widget-0000000000000003"
+]
 
     [lockscreen_widgets.grid]
     cell_size = 16
@@ -62,6 +67,41 @@ widget_order = [ "lockscreen-login-box@eDP-1" ]
     output = "eDP-1"
     rotation = 0.0
     type = "login_box"
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
+    box_height = 96.0
+    box_width = 192.0
+    cx = 960.0
+    cy = 844.0
+    output = "eDP-1"
+    rotation = -0.0
+    type = "clock"
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000002]
+    box_height = 96.0
+    box_width = 304.0
+    cx = 960.0
+    cy = 108.0
+    output = "eDP-1"
+    rotation = 0.0
+    type = "weather"
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000003]
+    box_height = 32.0
+    box_width = 192.0
+    cx = 960.0
+    cy = 1068.0
+    output = "eDP-1"
+    rotation = 0.0
+    type = "label"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000003.settings]
+        background = true
+        background_opacity = 0.13
+        background_padding = 9.0
+        background_radius = 11.0
+        shadow = false
+        title = "wer das ließt ist dumm"
 
 [osd]
 background_opacity = 0.88999998010694981
@@ -139,13 +179,13 @@ transition = [ "disc", "fade", "honeycomb", "stripes", "wipe", "zoom" ]
 transition_duration = 100
 
     [wallpaper.default]
-    path = "/home/cedric/NixOS-Configuration/modules/theming/backgrounds/itachi.png"
+    path = "/home/cedric/NixOS-Configuration/modules/theming/backgrounds/ruffy_universum.png"
 
     [wallpaper.last]
-    path = "/home/cedric/NixOS-Configuration/modules/theming/backgrounds/itachi.png"
+    path = "/home/cedric/NixOS-Configuration/modules/theming/backgrounds/ruffy_universum.png"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/cedric/NixOS-Configuration/modules/theming/backgrounds/itachi.png"
+    path = "/home/cedric/NixOS-Configuration/modules/theming/backgrounds/ruffy_universum.png"
 
 [widget.clipboard]
 anchor = true
