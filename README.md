@@ -16,6 +16,7 @@
 - ...
 
 ## Screenshots
+
 (deprecated)
 ![neofetch](./other/images/Screenshot%20from%202026-03-02%2019-54-34.png)
 ![htop,cmatrix](./other/images/Screenshot%20from%202026-03-02%2019-53-38.png)
@@ -44,7 +45,6 @@
 - command am anfang: #!/...
 - dann für pfad: command -v sh (anders unter nixos)
 
-
 # updaten
 
 - `sudo nix flake update` updated flake.lock datei
@@ -62,12 +62,17 @@
     eigener eDP-1 monitor
 - `pkill wl-mirror` --> beendet sharing
 - oder displays
+
 # nicht deklarativ (nachinstallation nötig)
 
 - pywalfox (bzw. alle firefox extensions)
-- noctaliatheme vscode extension (damit theme aus home, nicht aus store ausgelesen wird)
+- noctaliatheme vscode extension (damit theme aus home, nicht aus store
+  ausgelesen wird)
 - theming discord: vesktop -> theming -> noctalia material
 
 # toto
+
 - theming: spotify, steam
 - yazi: kopieren, einfügen, rename
+- eine app für regex dev
+

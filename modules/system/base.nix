@@ -6,9 +6,7 @@
   
   programs.niri.enable = true;
 
-  services = {
-    desktopManager.gnome.enable = false;
-    
+  services = {    
     displayManager.ly = {
       enable = true;
     };
@@ -42,7 +40,8 @@
 
   #nixpkgs.config.permittedInsecurePackages = [ "qtwebengine-5.15.19" ];
 
-    # Ermöglicht die sichere Speicherung von Passwörtern (wird für Gmail benötigt)
+  # Ermöglicht die sichere Speicherung von Passwörtern (wird für Gmail benötigt)
+  services.desktopManager.gnome.enable = true;
   services.gnome = {
     gnome-keyring.enable = true;
     gnome-online-accounts.enable = true;

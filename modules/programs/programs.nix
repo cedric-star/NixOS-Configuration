@@ -37,12 +37,11 @@
     wlogout
     qgis-ltr
     gtksourceview
-    
+    brightnessctl # für helligkeits regulierung mit f tasten
     wallust
-    imagemagick  # für Formatkonvertierung falls nötig
+    imagemagick # für Formatkonvertierung falls nötig
     matugen
     pywal
-
 
     ### Compiler ###
     swi-prolog # prolog
