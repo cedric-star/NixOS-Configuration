@@ -75,6 +75,7 @@
     vscodium # codium
     vim # vim halt
     #neovim                      # nvim halt durch flake da
+    zed-editor-fhs
 
     ### IDE's ###
     jetbrains.webstorm
