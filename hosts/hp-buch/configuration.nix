@@ -1,18 +1,24 @@
-{ pkgs, lib, config, inputs, ... }:
+{
+  pkgs,
+  lib,
+  config,
+  inputs,
+  ...
+}:
 
 {
   imports = [
-      ./hardware-configuration.nix
-      ./boot.nix
-      ../../modules
-  ];  
+    ./hardware-configuration.nix
+    ./boot.nix
+    ../../modules
+  ];
 
   #boot.kernelPackages = pkgs.cachyosKernels.linuxPackages-cachyos-latest;
 
   networking.hostName = "hp-buch";
-  system.stateVersion = "25.05"; 
+  system.stateVersion = "25.05";
 
-    # Intel Grafik / OpenGL
+  # Intel Grafik / OpenGL
   hardware.graphics = {
     enable = true;
     enable32Bit = true;
@@ -25,5 +31,7 @@
     mesa-demos
     vulkan-tools
   ];
+
+  services.fprintd.enable = true;
 
 }

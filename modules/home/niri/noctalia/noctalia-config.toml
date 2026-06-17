@@ -4,7 +4,7 @@ enabled = true
 tint_intensity = 0.15999999642372131
 
 [bar.default]
-background_opacity = 0.21999999508261681
+background_opacity = 0.11999999731779099
 border = "hover"
 end = [
     "group:g1",
@@ -20,14 +20,16 @@ end = [
     "network",
     "session"
 ]
+font_family = "JetBrainsMono NF ExtraBold"
 font_weight = 600
 margin_edge = 0
 margin_ends = 0
 panel_overlap = 0
 radius = 0
+scale = 1.05
 shadow = false
 start = [ "custom_button_2", "workspaces", "clipboard", "control-center", "launcher", "wallpaper", "theme_mode" ]
-thickness = 28
+thickness = 24
 widget_spacing = 10
 
     [[bar.default.capsule_group]]
@@ -37,9 +39,30 @@ widget_spacing = 10
     opacity = 0.0
     padding = 6.0
 
+[battery]
+warning_threshold = 25
+
 [control_center]
 sidebar = "full"
 sidebar_section = "full"
+
+    [[control_center.shortcuts]]
+    type = "wifi"
+
+    [[control_center.shortcuts]]
+    type = "bluetooth"
+
+    [[control_center.shortcuts]]
+    type = "nightlight"
+
+    [[control_center.shortcuts]]
+    type = "power_profile"
+
+    [[control_center.shortcuts]]
+    type = "notification"
+
+    [[control_center.shortcuts]]
+    type = "caffeine"
 
 [desktop_widgets]
 schema_version = 2
@@ -67,8 +90,16 @@ widget_order = [ "desktop-widget-0000000000000001" ]
         mirrored = true
         show_when_idle = true
 
+[dock]
+reserve_space = false
+show_running = false
+
 [location]
 auto_locate = true
+
+[lockscreen]
+blurred_desktop = true
+fingerprint = false
 
 [lockscreen_widgets]
 enabled = true
@@ -129,12 +160,27 @@ widget_order = [
         shadow = false
         title = "wer das ließt ist dumm"
 
+[nightlight]
+enabled = true
+temperature_night = 3800
+
+[notification]
+background_opacity = 0.0
+layer = "overlay"
+offset_x = 8
+scale = 0.90000000596046448
+
 [osd]
-background_opacity = 0.88999998010694981
+background_opacity = 0.0
+offset_x = 8
+
+[plugins]
+enabled = []
 
 [shell]
-app_icon_color = "primary"
+app_icon_color = "secondary"
 app_icon_colorize = true
+clipboard_history_max_entries = 40
 corner_radius_scale = 2.0
 font_family = "JetBrainsMono NF ExtraBold"
 niri_overview_type_to_launch_enabled = true
@@ -155,7 +201,7 @@ settings_show_advanced = true
 
     [shell.screen_corners]
     enabled = true
-    size = 21
+    size = 18
 
     [shell.screenshot]
     directory = "/home/cedric/Pictures/Screenshots"
@@ -188,6 +234,12 @@ settings_show_advanced = true
     [shell.shadow]
     alpha = 0.0
 
+[system.monitor]
+cpu_poll_seconds = 4
+disk_poll_seconds = 30
+memory_poll_seconds = 4
+network_poll_seconds = 4
+
 [theme]
 mode = "dark"
 source = "wallpaper"
@@ -195,29 +247,36 @@ wallpaper_scheme = "vibrant"
 
     [theme.templates]
     builtin_ids = [ "btop", "gtk3", "gtk4", "kcolorscheme", "kitty", "niri", "qt" ]
-    community_ids = [ "pywalfox", "neovim", "obsidian", "vscode", "fuzzel", "discord", "steam", "yazi" ]
+    community_ids = [ "spicetify", "pywalfox", "neovim", "obsidian", "vscode", "zed", "fuzzel", "discord", "steam", "yazi" ]
 
 [wallpaper]
 directory = "/home/cedric/NixOS-Configuration/modules/theming/backgrounds"
-edge_smoothness = 0.47999998927116394
+edge_smoothness = 0.99999997764825821
 fill_mode = "stretch"
 transition = [ "disc", "fade", "honeycomb", "stripes", "wipe", "zoom" ]
 transition_duration = 100
 
     [wallpaper.default]
-    path = "/home/cedric/NixOS-Configuration/modules/theming/backgrounds/kirby.png"
+    path = "/home/cedric/NixOS-Configuration/modules/theming/backgrounds/ruffy_universum.png"
 
     [wallpaper.last]
-    path = "/home/cedric/NixOS-Configuration/modules/theming/backgrounds/kirby.png"
+    path = "/home/cedric/NixOS-Configuration/modules/theming/backgrounds/ruffy_universum.png"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/cedric/NixOS-Configuration/modules/theming/backgrounds/kirby.png"
+    path = "/home/cedric/NixOS-Configuration/modules/theming/backgrounds/ruffy_universum.png"
+
+    [[wallpaper.favorite]]
+    path = "/home/cedric/NixOS-Configuration/modules/theming/backgrounds/frutiger_3.png"
+    theme_mode = "auto"
+
+[weather]
+refresh_minutes = 15
 
 [widget.clipboard]
 anchor = true
 
 [widget.clock]
-format = "{:%H:%M %d.%m. 20%y}"
+format = "{:%H:%M %d.%m.20%y}"
 
 [widget.cpu]
 label_min_width = 0
