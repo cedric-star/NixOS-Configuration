@@ -40,6 +40,14 @@
       icon = ./icons/airplay.svg;
     };
 
+    "Signal for Niri" = {
+      name = "Signal for Niri";
+      exec = "signal-desktop --password-store=gnome-libsecret %U";
+      icon = "signal-desktop";
+      type = "Application";
+      categories = [ "Office" "Utility"];
+    };
+
     "my.gnome.Photos" = {
       name = "Photos";
       exec = "gnome-photos %U";
@@ -57,9 +65,11 @@
     extraPortals = with pkgs; [
       xdg-desktop-portal-gtk
       xdg-desktop-portal-gnome
+      xdg-desktop-portal-wlr
     ];
     config.common.default = "gnome";
     configPackages = [ pkgs.niri ];
+    config.niri.default = [ "gnome" "wlr" ];
   };
 
   xdg.mimeApps = {

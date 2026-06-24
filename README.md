@@ -34,6 +34,16 @@
 
 - repo MUSS in /hoe/{user} liegen
 - repo MUSS ordnernamen "NixOS-Configuration" haben
+- mit uni wlan verbinden
+  `nmcli connection add \
+                        type wifi \
+                        con-name "eduroam" \
+                        ssid "eduroam" \
+                        wifi-sec.key-mgmt wpa-eap \
+                        802-1x.eap peap \
+                        802-1x.phase2-auth mschapv2 \
+                        802-1x.identity "u3***" \
+                        802-1x.password "*****" \`
 
 # nützlches
 
@@ -69,10 +79,11 @@
 - noctaliatheme vscode extension (damit theme aus home, nicht aus store
   ausgelesen wird)
 - theming discord: vesktop -> theming -> noctalia material
+- plugin: "auto dark" für jet brains ides (kein theming nur automatisch hell
+  oder dunkel)
 
 # toto
 
 - theming: spotify, steam
 - yazi: kopieren, einfügen, rename
 - eine app für regex dev
-

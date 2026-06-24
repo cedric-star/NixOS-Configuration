@@ -307,7 +307,7 @@ temperature_day = 6500
 temperature_night = 3800
 
 [notification]
-background_opacity = 0.0
+background_opacity = 0.40999999642372131
 collapse_on_dismiss = true
 enable_daemon = true
 layer = "overlay"

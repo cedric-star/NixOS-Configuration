@@ -165,7 +165,7 @@ enabled = true
 temperature_night = 3800
 
 [notification]
-background_opacity = 0.0
+background_opacity = 0.40999999083578587
 layer = "overlay"
 offset_x = 8
 scale = 0.90000000596046448
@@ -257,13 +257,13 @@ transition = [ "disc", "fade", "honeycomb", "stripes", "wipe", "zoom" ]
 transition_duration = 100
 
     [wallpaper.default]
-    path = "/home/cedric/NixOS-Configuration/modules/theming/backgrounds/ruffy_universum.png"
+    path = "/home/cedric/NixOS-Configuration/modules/theming/backgrounds/barbar.png"
 
     [wallpaper.last]
-    path = "/home/cedric/NixOS-Configuration/modules/theming/backgrounds/ruffy_universum.png"
+    path = "/home/cedric/NixOS-Configuration/modules/theming/backgrounds/barbar.png"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/cedric/NixOS-Configuration/modules/theming/backgrounds/ruffy_universum.png"
+    path = "/home/cedric/NixOS-Configuration/modules/theming/backgrounds/barbar.png"
 
     [[wallpaper.favorite]]
     path = "/home/cedric/NixOS-Configuration/modules/theming/backgrounds/frutiger_3.png"
