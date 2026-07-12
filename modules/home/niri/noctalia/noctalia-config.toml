@@ -7,10 +7,10 @@ tint_intensity = 0.15999999642372131
 background_opacity = 0.11999999731779099
 border = "hover"
 end = [
+    "audio_visualizer",
     "group:g1",
     "temp",
     "brightness",
-    "audio_visualizer",
     "battery",
     "volume",
     "power_profile",
@@ -257,13 +257,13 @@ transition = [ "disc", "fade", "honeycomb", "stripes", "wipe", "zoom" ]
 transition_duration = 100
 
     [wallpaper.default]
-    path = "/home/cedric/NixOS-Configuration/modules/theming/backgrounds/barbar.png"
+    path = "/home/cedric/NixOS-Configuration/modules/theming/backgrounds/pink.png"
 
     [wallpaper.last]
-    path = "/home/cedric/NixOS-Configuration/modules/theming/backgrounds/barbar.png"
+    path = "/home/cedric/NixOS-Configuration/modules/theming/backgrounds/pink.png"
 
     [wallpaper.monitors.eDP-1]
-    path = "/home/cedric/NixOS-Configuration/modules/theming/backgrounds/barbar.png"
+    path = "/home/cedric/NixOS-Configuration/modules/theming/backgrounds/pink.png"
 
     [[wallpaper.favorite]]
     path = "/home/cedric/NixOS-Configuration/modules/theming/backgrounds/frutiger_3.png"
