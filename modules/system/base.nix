@@ -1,16 +1,15 @@
-{ config, pkgs, lib, ...}:
+{ 
+  config, 
+  pkgs, 
+  lib, 
+  ...
+}:
 
 {
   services.libinput.enable = true;
   services.touchegg.enable = true;
   
   programs.niri.enable = true;
-
-  services = {    
-    displayManager.ly = {
-      enable = true;
-    };
-  };
 
   # Enable CUPS to print documents.
   services.printing.enable = true;
@@ -32,8 +31,18 @@
   users.users.cedric = {
     isNormalUser = true;
     description = "cedric";
-    extraGroups = [ "disk" "networkmanager" "wheel" "input" "docker" "vboxusers" "dialout"];
+    extraGroups = [
+      "disk"
+      "networkmanager"
+      "wheel"
+      "input"
+      "docker"
+      "vboxusers"
+      "dialout"
+      "seat"
+    ];
     shell = pkgs.fish;
+    home = "/home/cedric";
   };
 
   programs.nix-ld.enable = true;
@@ -73,6 +82,9 @@
       "cache.nixos.org-1:6NCHdD59X431o0gWypbMrAURkbJ16ZPMQFGspcDShjY="
       "lantian:EeAUQ+W+6r7EtwnmYjeVwx5kOGEBpjlBfPlzGlTNvHc="
     ];
-    trusted-users = [ "root" "cedric" ];
+    trusted-users = [ 
+      "root" 
+      "cedric" 
+    ];
   };
 }
