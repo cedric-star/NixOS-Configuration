@@ -42,6 +42,7 @@
     imagemagick # für Formatkonvertierung falls nötig
     matugen
     pywal
+    efibootmgr
 
     ### Compiler ###
     swi-prolog # prolog

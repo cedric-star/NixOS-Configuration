@@ -3,7 +3,7 @@
 {
   # update flakes
   system.autoUpgrade = {
-    enable = true;
+    enable = false;
     flake = "/etc/nixos";
     operation = "switch"; # Änderung sofort übernehmen
     dates = "weekly";

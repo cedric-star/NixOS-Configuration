@@ -34,4 +34,9 @@
 
   services.fprintd.enable = true;
 
+  services = {    
+    displayManager.ly = {
+      enable = true;
+    };
+  };
 }

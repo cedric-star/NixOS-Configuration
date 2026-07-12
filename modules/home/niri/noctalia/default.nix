@@ -61,6 +61,9 @@ in
     settings = noctaliaSettings;
   };
 
+  home.sessionVariables = {
+    NOCTALIA_CONFIG_HOME = "/home/cedric/NixOS-Configuration/modules/home/niri/noctalia/noctalia-config.toml";
+  };
   programs.noctalia = {
     enable = true;
     settings = ./noctalia-config.toml;

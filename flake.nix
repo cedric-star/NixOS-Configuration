@@ -86,6 +86,34 @@
 
         modules = [
           ./hosts/my-tower/configuration.nix
+          
+          ({ pkgs, ... }: {
+            nixpkgs.overlays = [
+              inputs.nix-cachyos-kernel.overlays.pinned  # binary cache hits
+              inputs.millennium.overlays.default         # dein bisheriges overlay
+            ];
+            boot.kernelPackages = pkgs.cachyosKernels.linuxPackages-cachyos-latest;
+          })
+
+          {
+            environment.systemPackages = [
+              inputs.ap-visual-sorting.packages.x86_64-linux.default
+            ];
+          }
+
+          home-manager.nixosModules.default
+          {
+            home-manager.useGlobalPkgs = true;
+            home-manager.useUserPackages = true;
+            home-manager.users.cedric = import ./modules/home;
+            home-manager.backupFileExtension = "backup";
+            home-manager.extraSpecialArgs = { inherit inputs; };
+
+            home-manager.sharedModules = [ inputs.myvim.homeManagerModules.default ];
+          }
+
+          inputs.stylix.nixosModules.stylix
+          inputs.nix-flatpak.nixosModules.nix-flatpak
         ];
       };
 
