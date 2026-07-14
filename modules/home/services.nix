@@ -59,11 +59,11 @@
 
   # ─── XDG-Umgebungsvariablen (wichtig für Portale & Theming) ──────
   home.sessionVariables = {
-    GNOME_KEYRING_CONTROL = "/run/user/1000/keyring";  # UID anpassen falls nötig
-    SSH_AUTH_SOCK = "/run/user/1000/keyring/ssh";
+    #GNOME_KEYRING_CONTROL = "/run/user/1000/keyring";  # UID anpassen falls nötig
+    #SSH_AUTH_SOCK = "/run/user/1000/keyring/ssh";
     XDG_CURRENT_DESKTOP = "GNOME";   # damit gnome-control-center & Portale korrekt arbeiten
     XDG_SESSION_TYPE = "wayland";
-    DBUS_SESSION_BUS_ADDRESS = "unix:path=/run/user/1000/bus";
+    #DBUS_SESSION_BUS_ADDRESS = "unix:path=/run/user/1000/bus";
   };
 }
 

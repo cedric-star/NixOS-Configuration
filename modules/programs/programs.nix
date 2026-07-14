@@ -145,6 +145,11 @@
     antimicrox
     noctalia-qs
 
+    ### Gaming Software ###
+    mesa-demos # für glxinfo command
+    vulkan-tools # für vulkaninfo | grep command
+    clinfo # um opencl funktionalitäten zu prüfen (für blender)
+
     ### Gnome
     nautilus # File Manager
     gnome-keyring

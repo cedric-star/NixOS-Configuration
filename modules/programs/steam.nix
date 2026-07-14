@@ -1,20 +1,19 @@
-{ pkgs,inputs, ... }:
+{ pkgs, inputs, ... }:
 
 {
+  nixpkgs.overlays = [ inputs.millennium.overlays.default ];
+
   programs.steam = {
-    enable = false;
-    gamescopeSession.enable = true; #gamescope %command% (in general -> launch optinions)
+    enable = true;
+    package = pkgs.millennium-steam;
+    gamescopeSession.enable = true;
   };
 
-  environment.systemPackages = [
-    inputs.millennium.packages.x86_64-linux.millennium-steam
-  ];
-  programs.gamemode.enable = true; #gamemoderun %command% (in general -> launch optinions)
+  programs.gamemode.enable = true;
 
-
-  environment.sessionVariables = {# für protonup: einmalig command "protonup" ins terminal
-    STEAM_EXTRA_COMPAT_TOOLS_PATHS = "/home/user/.steam/rot/compatibilitytools.d";
+  environment.sessionVariables = {
+    STEAM_EXTRA_COMPAT_TOOLS_PATHS = "/home/cedric/.steam/root/compatibilitytools.d";
   };
 
-
+  # wichtig: protonup in cli damit proton geladen werden kann (eigentlich reicht einmalig)
 }

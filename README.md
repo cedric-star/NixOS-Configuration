@@ -75,12 +75,13 @@
 
 # nicht deklarativ (nachinstallation nötig)
 
-- pywalfox (bzw. alle firefox extensions)
+- pywalfox (bzw. alle firefox extensions), und einmalig `pywalfox install` in bash
 - noctaliatheme vscode extension (damit theme aus home, nicht aus store
   ausgelesen wird)
 - theming discord: vesktop -> theming -> noctalia material
 - plugin: "auto dark" für jet brains ides (kein theming nur automatisch hell
   oder dunkel)
+- steam millennium theming: https://steambrew.app/theme/ipYjqODds05KMcvh7QJn?id=ipYjqODds05KMcvh7QJn
 
 # toto
 
