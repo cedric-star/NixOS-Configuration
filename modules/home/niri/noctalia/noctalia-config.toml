@@ -268,6 +268,48 @@ widget_order = [ "lockscreen-login-box@eDP-1" ]
         input_radius = 6.0
         show_login_button = true
 
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000001]
+    box_height = 96.0
+    box_width = 192.0
+    cx = 960.0
+    cy = 844.0
+    enabled = true
+    output = "eDP-1"
+    rotation = -0.0
+    type = "clock"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000001.settings]
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000002]
+    box_height = 96.0
+    box_width = 304.0
+    cx = 960.0
+    cy = 108.0
+    enabled = true
+    output = "eDP-1"
+    rotation = 0.0
+    type = "weather"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000002.settings]
+
+    [lockscreen_widgets.widget.lockscreen-widget-0000000000000003]
+    box_height = 32.0
+    box_width = 192.0
+    cx = 960.0
+    cy = 1068.0
+    enabled = true
+    output = "eDP-1"
+    rotation = 0.0
+    type = "label"
+
+        [lockscreen_widgets.widget.lockscreen-widget-0000000000000003.settings]
+        background = true
+        background_opacity = 0.13
+        background_padding = 9.0
+        background_radius = 11.0
+        shadow = false
+        title = "wer das ließt ist dumm"
+
 [nightlight]
 enabled = true
 force = false
@@ -522,6 +564,15 @@ transition_on_startup = false
     interval_seconds = 1800
     order = "random"
     recursive = true
+
+    [wallpaper.default]
+    path = "/home/cedric/NixOS-Configuration/modules/theming/backgrounds/barbar.png"
+
+    [wallpaper.last]
+    path = "/home/cedric/NixOS-Configuration/modules/theming/backgrounds/barbar.png"
+
+    [wallpaper.monitors.eDP-1]
+    path = "/home/cedric/NixOS-Configuration/modules/theming/backgrounds/barbar.png"
 
 [weather]
 effects = true
