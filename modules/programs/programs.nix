@@ -35,7 +35,7 @@
     networkmanager
     cmatrix
     wlogout
-    qgis-ltr
+    pkgsStable.qgis-ltr # kaputte dependencies
     gtksourceview
     brightnessctl # für helligkeits regulierung mit f tasten
     wallust

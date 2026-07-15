@@ -1,5 +1,4 @@
 {
-  # jallo niri: win plus punkt und komma shortcut
   description = "mynixflake";
 
   nixConfig = {
@@ -17,6 +16,7 @@
 
   inputs = {
     nixpkgs.url = "github:NixOS/nixpkgs/nixos-unstable";
+    nixpkgs-stable.url = "github:NixOS/nixpkgs/nixos-26.05";
 
     home-manager = {
       url = "github:nix-community/home-manager";
@@ -28,9 +28,7 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    nix-flatpak = {
-      url = "github:gmodena/nix-flatpak";
-    };
+    nix-flatpak.url = "github:gmodena/nix-flatpak";
 
     nvf = {
       url = "github:notashelf/nvf";
@@ -42,31 +40,18 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    noctalia-v5 = {
-      url = "github:noctalia-dev/noctalia";
-    };
+    noctalia-v5.url = "github:noctalia-dev/noctalia";
 
-    myvim = {
-      url = "github:cedric-star/MyVim";
-    };
+    myvim.url = "github:cedric-star/MyVim";
 
     ap-visual-sorting = {
       url = "github:cedric-star/ap-visual-sorting";
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
-    matugen = {
-      url = "github:InioX/Matugen";
-    };
+    matugen.url = "github:InioX/Matugen";
 
-    nur = {
-      url = "github:nix-community/NUR";
-      inputs.nixpkgs.follows = "nixpkgs";
-    };
-
-    millennium = {
-      url = "github:SteamClientHomebrew/Millennium?dir=packages/nix";
-    };
+    millennium.url = "github:SteamClientHomebrew/Millennium?dir=packages/nix";
 
     nix-cachyos-kernel.url = "github:xddxdd/nix-cachyos-kernel";
   };
@@ -75,84 +60,67 @@
     {
       self,
       nixpkgs,
+      nixpkgs-stable,
       home-manager,
-      nur,
       ...
     }@inputs:
+    let
+      system = "x86_64-linux";
+
+      # Overlay: stellt pkgs.stable.* aus dem stable-Branch bereit
+      stableOverlay = final: prev: {
+        pkgsStable = import inputs.nixpkgs-stable {
+          inherit (prev.stdenv.hostPlatform) system;
+          config.allowUnfree = true;
+        };
+      };
+
+      # Kernel-Modul: gemeinsam für beide Hosts
+      kernelModule =
+        { pkgs, ... }:
+        {
+          nixpkgs.overlays = [
+            inputs.nix-cachyos-kernel.overlays.pinned
+            inputs.millennium.overlays.default
+            stableOverlay
+          ];
+          boot.kernelPackages = pkgs.cachyosKernels.linuxPackages-cachyos-latest;
+        };
+
+      visualSortingModule = {
+        environment.systemPackages = [
+          inputs.ap-visual-sorting.packages.x86_64-linux.default
+        ];
+      };
+
+      homeManagerModule = {
+        home-manager.useGlobalPkgs = true;
+        home-manager.useUserPackages = true;
+        home-manager.users.cedric = import ./modules/home;
+        home-manager.backupFileExtension = "backup";
+        home-manager.extraSpecialArgs = { inherit inputs; };
+        home-manager.sharedModules = [ inputs.myvim.homeManagerModules.default ];
+      };
+
+      commonModules = [
+        kernelModule
+        visualSortingModule
+        home-manager.nixosModules.default
+        homeManagerModule
+        inputs.stylix.nixosModules.stylix
+        inputs.nix-flatpak.nixosModules.nix-flatpak
+      ];
+
+      mkHost =
+        hostname:
+        nixpkgs.lib.nixosSystem {
+          inherit system;
+          specialArgs = { inherit inputs; };
+          modules = [ ./hosts/${hostname}/configuration.nix ] ++ commonModules;
+        };
+    in
     {
-      nixosConfigurations.my-tower = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
-        specialArgs = { inherit inputs; };
-
-        modules = [
-          ./hosts/my-tower/configuration.nix
-          
-          ({ pkgs, ... }: {
-            nixpkgs.overlays = [
-              inputs.nix-cachyos-kernel.overlays.pinned  # binary cache hits
-              inputs.millennium.overlays.default         # dein bisheriges overlay
-            ];
-            boot.kernelPackages = pkgs.cachyosKernels.linuxPackages-cachyos-latest;
-          })
-
-          {
-            environment.systemPackages = [
-              inputs.ap-visual-sorting.packages.x86_64-linux.default
-            ];
-          }
-
-          home-manager.nixosModules.default
-          {
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
-            home-manager.users.cedric = import ./modules/home;
-            home-manager.backupFileExtension = "backup";
-            home-manager.extraSpecialArgs = { inherit inputs; };
-
-            home-manager.sharedModules = [ inputs.myvim.homeManagerModules.default ];
-          }
-
-          inputs.stylix.nixosModules.stylix
-          inputs.nix-flatpak.nixosModules.nix-flatpak
-        ];
-      };
-
-      nixosConfigurations.hp-buch = nixpkgs.lib.nixosSystem {
-        system = "x86_64-linux";
-
-        specialArgs = { inherit inputs; };
-        modules = [
-          ./hosts/hp-buch/configuration.nix
-
-          ({ pkgs, ... }: {
-            nixpkgs.overlays = [
-              inputs.nix-cachyos-kernel.overlays.pinned  # binary cache hits
-              inputs.millennium.overlays.default         # dein bisheriges overlay
-            ];
-            boot.kernelPackages = pkgs.cachyosKernels.linuxPackages-cachyos-latest;
-          })
-
-          {
-            environment.systemPackages = [
-              inputs.ap-visual-sorting.packages.x86_64-linux.default
-            ];
-          }
-
-          home-manager.nixosModules.default
-          {
-            home-manager.useGlobalPkgs = true;
-            home-manager.useUserPackages = true;
-            home-manager.users.cedric = import ./modules/home;
-            home-manager.backupFileExtension = "backup";
-            home-manager.extraSpecialArgs = { inherit inputs; };
-
-            home-manager.sharedModules = [ inputs.myvim.homeManagerModules.default ];
-          }
-
-          inputs.stylix.nixosModules.stylix
-          inputs.nix-flatpak.nixosModules.nix-flatpak
-        ];
-      };
+      nixosConfigurations.my-tower = mkHost "my-tower";
+      nixosConfigurations.hp-buch = mkHost "hp-buch";
     };
-  
 }

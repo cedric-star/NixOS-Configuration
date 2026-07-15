@@ -36,7 +36,7 @@
     vulkan-tools
 
     mangohud
-    bottles # run games in a windows bottle
+    pkgsStable.bottles # run games in a windows bottle
   ];
 #################
 
