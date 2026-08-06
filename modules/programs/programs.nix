@@ -80,8 +80,8 @@
 
     ### IDE's ###
     jetbrains.webstorm
-    jetbrains.idea-oss
-    jetbrains.pycharm-oss
+    jetbrains.idea
+    jetbrains.pycharm
     jetbrains.datagrip
     arduino-ide
 
