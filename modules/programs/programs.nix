@@ -100,6 +100,7 @@
     postgresql
     insomnia
     uv
+    openssl
 
     ### Multimedia ###
     lmms
@@ -114,6 +115,7 @@
     vlc
     inkscape
     nwg-displays
+    kdePackages.kdenlive
 
     ### inf programme ###
     gftp
