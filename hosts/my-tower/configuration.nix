@@ -1,4 +1,4 @@
-{
+j{
   pkgs,
   lib,
   config,
@@ -39,8 +39,6 @@
     pkgsStable.bottles # run games in a windows bottle
   ];
 #################
-
-
 
   services.fprintd.enable = true;
 
