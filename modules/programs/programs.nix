@@ -116,6 +116,7 @@
     inkscape
     nwg-displays
     kdePackages.kdenlive
+    pdfarranger
 
     ### inf programme ###
     gftp
