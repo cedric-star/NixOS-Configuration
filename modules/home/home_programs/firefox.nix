@@ -1,10 +1,19 @@
-{ config, lib, pkgs, ... }:
+{
+  config,
+  lib,
+  pkgs,
+  ...
+}:
 
 {
   programs.firefox = {
+
     enable = true;
-    #configPath = "${config.xdg.configHome}/mozilla/firefox";
-    languagePacks = [ "de" "en-US" ];
+    languagePacks = [
+      "de"
+      "en-US"
+    ];
+    configPath = ".mozilla/firefox";
     profiles = {
       default = {
         #extensions.force = true;
@@ -14,15 +23,14 @@
           "identity.fxaccounts.account.device.name" = "nixos";
           "services.sync.username" = "bin130022@gmail.com";
 
-
-       	  "services.sync.enging.bookmarks" = true;
+          "services.sync.enging.bookmarks" = true;
           "services.sync.enging.history" = true;
           "services.sync.enging.tabs" = false;
           "services.sync.enging.passwords" = true;
           "services.sync.enging.addons" = true;
           "services.sync.enging.prefs" = true;
-        };  
+        };
       };
-    };    
+    };
   };
 }
