@@ -32,7 +32,7 @@
 
   services.cliphist.enable = true;
 
-  home.file.".config/niri/config.kdl".source = ./config.kdl;
+  #home.file.".config/niri/config.kdl".source = ./config.kdl;
  # WICHTIG: Environment-Variablen für Wayland-Apps
   # (Niri setzt DISPLAY automatisch für X11-Apps seit 25.08!)
   home.sessionVariables = {
@@ -47,5 +47,7 @@
     
     # Electron/Chromium Wayland
     NIXOS_OZONE_WL = "1";
+
+    NIRI_CONFIG = "/home/cedric/NixOS-Configuration/modules/home/niri/config.kdl";
   };
 }
