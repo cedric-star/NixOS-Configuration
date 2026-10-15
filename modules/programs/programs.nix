@@ -9,6 +9,7 @@
   fonts.packages = with pkgs; [
     nerd-fonts.jetbrains-mono
   ];
+  systemd.user.services.orca.enable = false;
   environment.systemPackages = with pkgs; [
     noctalia-shell
     ### System Tools
