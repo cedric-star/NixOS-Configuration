@@ -118,6 +118,7 @@
     nwg-displays
     kdePackages.kdenlive
     pdfarranger
+    pixelorama
 
     ### inf programme ###
     gftp
