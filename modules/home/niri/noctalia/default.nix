@@ -14,11 +14,12 @@ let
 in
 {
   imports = [
-    inputs.noctalia.homeModules.default
+    #inputs.noctalia.homeModules.default
     inputs.noctalia-v5.homeModules.default
   ];
 
   # Plugin-Dateien ins richtige Verzeichnis symlinken
+  #DEPRECATED
   home.file.".config/noctalia/plugins/nvim-cheatsheet" = {
     source = ./nvim-cheatsheet;
     recursive = true;
@@ -29,7 +30,7 @@ in
     source = config.lib.file.mkOutOfStoreSymlink "${config.home.homeDirectory}/.steam/steam/steamui/skins/Material-Theme/css/main/colors/matugen.css";
   };
 
-  programs.noctalia-shell = {
+  /*programs.noctalia-shell = {
     enable = true;
 
     # Plugin aktivieren
@@ -59,7 +60,7 @@ in
     };
 
     settings = noctaliaSettings;
-  };
+  };*/
 
   home.sessionVariables = {
     NOCTALIA_CONFIG_HOME = "/home/cedric/NixOS-Configuration/modules/home/niri";

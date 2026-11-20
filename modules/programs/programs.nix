@@ -11,14 +11,12 @@
   ];
   systemd.user.services.orca.enable = false;
   environment.systemPackages = with pkgs; [
-    noctalia-shell
     ### System Tools
     #neofetch                    # logo anzeigen
     wget # repos remote
     htop # systemressourcen anzeigen
     home-manager # home Konfigurationen
     kitty # Terminal Emulator
-    alac
     fish # geile Shell
     wine
     sass
@@ -37,7 +35,6 @@
     cmatrix
     wlogout
     pkgsStable.qgis-ltr # kaputte dependencies
-    gtksourceview
     brightnessctl # für helligkeits regulierung mit f tasten
     wallust
     imagemagick # für Formatkonvertierung falls nötig
@@ -109,7 +106,6 @@
     gimp
     hypnotix # tv streaming
     blender
-    davinci-resolve
     chromium
     wdisplays
     cliphist
@@ -119,6 +115,7 @@
     kdePackages.kdenlive
     pdfarranger
     pixelorama
+    loupe
 
     ### inf programme ###
     gftp
@@ -148,7 +145,6 @@
     heroic # epic games
     prismlauncher
     antimicrox
-    noctalia-qs
 
     ### Gaming Software ###
     mesa-demos # für glxinfo command
@@ -169,7 +165,6 @@
     gnome-notes
     gnome-boxes
     baobab # disk analyzer
-    gnome-photos
     eog
 
     inputs.ap-visual-sorting.packages.${pkgs.stdenv.hostPlatform.system}.default
