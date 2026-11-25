@@ -504,6 +504,12 @@ scale = 1.0
     volume_output = true
     wifi = true
 
+[plugin_settings."blackbartblues/keymap"]
+compositor = "niri"
+niri_config = "/home/cedric/NixOS-Configuration/modules/home/niri/config.kdl"
+panel_placement = "attached"
+panel_position = "auto"
+
 [plugin_settings."ishan0121/shipyard"]
 manager_open_near_click = true
 manager_placement = "attached"
